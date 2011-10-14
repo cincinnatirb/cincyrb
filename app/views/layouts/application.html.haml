@@ -9,9 +9,12 @@
     /[if IE] <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     /[if lt IE 9] <link rel="stylesheet" media="all" type="text/css" href="css/ie.css" />
   %body{ :class => page_class }
-    %header{ :id => "nav" }
-      %h1.logo= link_to "Cincinnati.rb", root_url
-    %section#main
+    .topbar
+      .fill
+        .container
+          %h1.brand= link_to "Cincinnati.rb", root_url
+          %ul.nav
+            %li= link_to "About Us", "#"
       = yield
     %footer
 
