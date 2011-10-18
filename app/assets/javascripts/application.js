@@ -9,3 +9,8 @@
 //= require underscore
 //= require backbone
 //= require bootstrap
+//= require prettify
+
+$(document).ready(function() {
+  prettyPrint();
+});

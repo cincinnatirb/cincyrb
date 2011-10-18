@@ -1,15 +1,45 @@
 @import "bootstrap"
+
+html
+  background-image: url('gray_sand.png')
+  background-repeat: x,y
+
+body
+  background-image: url('gray_sand.png')
+  background-repeat: x,y
+
 h1.brand
   background-image: url('rubylogo.png')
   background-repeat: no-repeat
+
 .brand a
-  padding-left: 1.5em
+  padding-left: 1.3em
+footer
+  @include gradientBar(#111, #202020)
+  height: 180px
+#nav-bar
+  @extend .topbar
 
-.sponsors
-  background: #ccc
+#main-section
+  padding-top: 30px
+  @include fixed-container
+  background: #fff
+  background-image: url('gray_sand.png')
+  background-repeat: x,y
 
-.sponsors h3
+#sponsors
+  @include makeColumn(5)
+  background-color: #ccc
+
+#sponsors h3
   padding-left: 20px
 
-.meeting_info
+#meeting-details
+  @include makeColumn(11)
+  margin: 0
+  background-image: url('stucco.png')
+  background-repeat: x,y
+#meeting-details h2
+  padding-left: 20px
+#meeting_info
 

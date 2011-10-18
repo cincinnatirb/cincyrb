@@ -9,12 +9,43 @@
     /[if IE] <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     /[if lt IE 9] <link rel="stylesheet" media="all" type="text/css" href="css/ie.css" />
   %body{ :class => page_class }
-    .topbar
+    #nav-bar
       .fill
         .container
           %h1.brand= link_to "Cincinnati.rb", root_url
           %ul.nav
             %li= link_to "About Us", "#"
-      = yield
-    %footer
+    #main-section
+      .hero-unit
+        .row
+          .span8
+            %h1="Welcome"
+            %br
+            %p="Cincinnati Ruby Brigade was formed lorem ipsum Cincinnati Ruby Brigade was formed lorem ipsum Cincinnati Ruby Brigade was formed lorem ipsum Cincinnati Ruby Brigade was formed lorem ipsum"
+          .span6
+            :erb
+              <pre class="prettyprint">
+                class HelloRubist
+                  def welcome(name)
+                    puts "Welcome #/{name}!"
+                  end
 
+                  #your codes here -->
+
+                end
+              </pre>
+      =yield
+      #sponsors
+        %h3="Sponsors"
+        %ul
+          %li
+            %p="Tech Pub"
+          %li
+            %p="The Circut"
+          %li
+            %p="Gaslight Software"
+  %footer
+    .fill
+      .row
+        .span16
+          %span="footer stuff goes here"
