@@ -5,45 +5,41 @@
     %title Cincinnati.rb
     %link{:href => "/assets/application.css", :media => "all", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "http://fonts.googleapis.com/css?family=Lato:100italic,300,400|PT+Serif:400,400italic,700,700italic", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Lekton", :rel => "stylesheet", :type => "text/css"}/
+
     = javascript_include_tag :application
     /[if IE] <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     /[if lt IE 9] <link rel="stylesheet" media="all" type="text/css" href="css/ie.css" />
   %body{ :class => page_class }
-    #nav-bar
-      .fill
-        .container
-          %h1.brand= link_to "Cincinnati.rb", root_url
-          %ul.nav
-            %li= link_to "About Us", "#"
     #main-section
-      .hero-unit
+      #marketing
         .row
-          .span8
-            %h1="Welcome"
-            %br
-            %p="Cincinnati Ruby Brigade was formed lorem ipsum Cincinnati Ruby Brigade was formed lorem ipsum Cincinnati Ruby Brigade was formed lorem ipsum Cincinnati Ruby Brigade was formed lorem ipsum"
-          .span6
+          .span16
+            .brand
+              %h1="Cincinnati.rb"
+        .row
+          .span16
+            %ul#nav-bar
+              %li.active= link_to "About Us", "#About Us"
+              %li= link_to "Next Meeting", "#Next Meeting"
+        .row
+          #hello-ruby
             :erb
               <pre class="prettyprint">
                 class HelloRubist
                   def welcome(name)
-                    puts "Welcome #/{name}!"
+                    puts "Welcome #/{name} lets get hacking!"
                   end
 
                   #your codes here -->
 
                 end
               </pre>
+          #about-us
+            %h3="About us"
+            %p="Cincinnati Ruby Brigade was formed by a few local developers who desired a place to talk about ruby specific topics and share code. It has since grown into a thriving community as vibrant and creative as ruby itself."
+            %p="Today we meet once a month to discuss and hack on code and strieve to keep to the princable of less slides more code"
       =yield
-      #sponsors
-        %h3="Sponsors"
-        %ul
-          %li
-            %p="Tech Pub"
-          %li
-            %p="The Circut"
-          %li
-            %p="Gaslight Software"
   %footer
     .fill
       .row
