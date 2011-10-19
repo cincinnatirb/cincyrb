@@ -19,7 +19,7 @@ html, body
   font-size: 8em 
 
 #main-section
-  padding-top: 30px
+  padding-top: 3em
   padding-left: 1.3em
   padding-right: 1.3em
   @include fixed-container
@@ -39,17 +39,18 @@ html, body
   padding-left: 2em
 
 #about-us
-  @include makeColumn(9)
+  @include makeColumn(8)
   font-size: 2em
   padding-left: 1em
 
 #about-us h2
   padding-bottom: 1em
 
+
 #meeting-details
   @extend .row
   padding-left: 2em
-  padding-bottom: 1.3em
+  padding-bottom: 4em
 
 #meeting-details h2
   padding-bottom: 1em
@@ -58,7 +59,20 @@ html, body
   @include makeColumn(6)
 
 #next-meeting
-  @include makeColumn(9)
+  @include makeColumn(8)
+  padding-left: 1em
+
+#location-details
+  @extend .row
+  padding-left: 2em
+  padding-bottom: 1.3em
+
+#location-map
+  @include makeColumn(5)
+
+#location-directions
+  @include makeColumn(4)
+  @include offset(1)
   padding-left: 1em
 
 footer
