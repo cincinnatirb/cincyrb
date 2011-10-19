@@ -35,19 +35,26 @@ html, body
 
 #hello-ruby
   @include makeColumn(6)
-
+  padding-left: 2em
 #about-us
   @include makeColumn(9)
-  padding-left: 1.3em
   font-size: 2em
+  padding-left: 1em
 
 #meeting-details
   @extend .row
-  padding-left: 1.3em
+  padding-left: 2em
   padding-bottom: 1.3em
 
 #meeting-details h2
   padding-bottom: 1em
+
+#photos
+  @include makeColumn(6)
+
+#next-meeting
+  @include makeColumn(9)
+  padding-left: 1em
 
 footer
   @include gradientBar(#111, #202020)
