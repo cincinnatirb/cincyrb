@@ -10,7 +10,7 @@
 //= require backbone
 //= require bootstrap
 //= require prettify
-
+//= require_tree .
 $(document).ready(function() {
   prettyPrint();
 });
