@@ -1,8 +1,8 @@
-class MeetingsController < Application::Controller
+class MeetingsController < ApplicationController
   respond_to :json
 
   def index
-    @meeting = Meeting.get_meeting('34506502')
+    render :json => @meeting = Meeting.get_meeting('34506502').to_json
   end
 
   def new

@@ -25,6 +25,8 @@ gem "bootstrap-sass", "~> 1.3.1"
 gem "haml-rails"
 gem "tilt-jade"
 gem "httparty"
+gem "npm_assets"
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

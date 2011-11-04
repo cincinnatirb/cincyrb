@@ -35,17 +35,21 @@ html, body
   padding-bottom: 1em
 
 #hello-ruby
-  @include makeColumn(6)
+  @include makeColumn(4)
   padding-left: 2em
 
 #about-us
-  @include makeColumn(8)
+  @include makeColumn(6)
+  @include offset(1)
   font-size: 2em
   padding-left: 1em
 
 #about-us h2
   padding-bottom: 1em
 
+#sponsors
+  @include makeColumn(3)
+  @include offset(1)
 
 #meeting-details
   @extend .row
