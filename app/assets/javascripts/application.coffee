@@ -10,6 +10,5 @@
 #= require prettify
 #= require_npm underscore
 #= require_npm backbone
-#= require_npm tilt-jade/runtime
 #= require_tree .
 #

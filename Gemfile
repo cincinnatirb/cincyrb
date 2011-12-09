@@ -23,7 +23,7 @@ end
 gem 'jquery-rails'
 gem "bootstrap-sass", "~> 1.3.1"
 gem "haml-rails"
-gem "tilt-jade"
+gem "eco"
 gem "httparty"
 gem "npm_assets"
 
@@ -37,7 +37,7 @@ gem "npm_assets"
 # gem 'capistrano'
 
 # To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
+ gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :test do
   # Pretty printed test output

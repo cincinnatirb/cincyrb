@@ -1,0 +1,3 @@
+<h2> Next Meeting </h2>
+<% console.log(this) %>
+<%- @meeting.description %>

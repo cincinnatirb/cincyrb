@@ -4,7 +4,6 @@ class MeetingsView extends Backbone.View
   template: JST['templates/meetings/next_meeting']
 
   constructor: ->
-    @el = $("#next-meeting")
     @model = app.models.meeting
 
   render: ->
