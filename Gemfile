@@ -24,6 +24,7 @@ gem 'jquery-rails'
 gem "bootstrap-sass", "~> 1.3.1"
 gem "haml-rails"
 gem "eco"
+gem "tilt-jade"
 gem "httparty"
 gem "npm_assets"
 
