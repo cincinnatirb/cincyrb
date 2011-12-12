@@ -26,6 +26,7 @@ gem "haml-rails"
 gem "eco"
 gem "tilt-jade"
 gem "httparty"
+gem "mapit"
 gem "npm_assets"
 
 # To use ActiveModel has_secure_password
