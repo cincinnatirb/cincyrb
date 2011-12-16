@@ -1,5 +1,9 @@
-  <div id='location-map'>
-
-  </div>
-  <div id='location-directions'>
-  </div>
+<small><%= @venue.name %></small>
+<p>
+  <%= @venue.address_1 %> <br/>
+  <%= @venue.city %>,
+  <%= @venue.state %>,
+  <%= @venue.zip %> <br/>
+  <a href="<%= @place.website %>"> Website </a><br/>
+  <%= @place.formatted_phone_number %>
+</p>
