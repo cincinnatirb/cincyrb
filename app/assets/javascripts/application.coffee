@@ -8,7 +8,7 @@
 #= require jquery_ujs
 #= require bootstrap
 #= require prettify
-#= require_npm underscore
-#= require_npm backbone
+#= require underscore
+#= require backbone
 #= require_tree .
 #
