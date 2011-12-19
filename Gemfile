@@ -18,6 +18,7 @@ end
 
 group :development, :test do
   gem 'jasminerice'
+  gem 'ruby-debug19', :require => 'ruby-debug'
 end
 
 gem 'jquery-rails'
@@ -39,7 +40,6 @@ gem "heroku"
 # gem 'capistrano'
 
 # To use debugger
- gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :test do
   # Pretty printed test output
