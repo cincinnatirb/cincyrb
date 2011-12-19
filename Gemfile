@@ -27,6 +27,7 @@ gem "eco"
 gem "tilt-jade"
 gem "httparty"
 gem "npm_assets"
+gem "heroku"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
