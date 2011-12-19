@@ -24,7 +24,6 @@ gem "bootstrap-sass", "~> 1.3.1"
 gem "haml-rails"
 gem "eco"
 gem "httparty"
-gem "npm_assets"
 gem "heroku"
 
 # To use ActiveModel has_secure_password
