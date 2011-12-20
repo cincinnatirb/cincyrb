@@ -1,2 +1,3 @@
-<h2> Next Meeting </h2>
+<h2>Next Meeting</h2>
+<h4>6:00pm - <%= @meeting.date %></h4>
 <%- @meeting.description %>

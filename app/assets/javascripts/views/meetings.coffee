@@ -9,6 +9,10 @@ class MeetingsView extends Backbone.View
     @venue = @model.attributes.venue
 
   render: ->
+    date = new Date
+    date.setTime(@model.get("time"))
+    formatted_date = date.toDateString()
+    @model.set(date: formatted_date)
     $('#next-meeting').html(@template( { meeting: @model.toJSON() }))
     @render_location()
 
