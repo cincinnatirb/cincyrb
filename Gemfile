@@ -15,7 +15,6 @@ end
 
 group :development, :test do
   gem 'jasminerice'
-  gem 'ruby-debug19', :require => 'ruby-debug'
   gem 'sqlite3'
 end
 
