@@ -9,20 +9,19 @@
   %head
     %meta{:charset => "utf-8"}/
     %link{:href => "/favicon.ico", :rel => "icon", :type => "image/ico"}
-      / Set the viewport width to device width for mobile
-      %meta{:content => "width=device-width", :name => "viewport"}/
-      %title Cincinnati Ruby Brigade
-      / Google Fonts
-      %link{:href => "http://fonts.googleapis.com/css?family=Cabin:400,400italic,600italic,700italic", :rel => "stylesheet", :type => "text/css"}
-        / Included CSS Files
-        %link{:href => "stylesheets/foundation.css", :rel => "stylesheet"}
-          %link{:href => "stylesheets/app.css", :rel => "stylesheet"}
-            /[if lt IE 9]
-              <link rel="stylesheet" href="stylesheets/ie.css">
-            %script{:src => "javascripts/modernizr.foundation.js"}
-            / IE Fix for HTML5 Tags
-            /[if lt IE 9]
-              <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    / Set the viewport width to device width for mobile
+    %meta{:content => "width=device-width", :name => "viewport"}/
+    %title Cincinnati Ruby Brigade
+    / Google Fonts
+    %link{:href => "http://fonts.googleapis.com/css?family=Cabin:400,400italic,600italic,700italic", :rel => "stylesheet", :type => "text/css"}
+    / Included CSS Files
+    = stylesheet_link_tag 'application.css'
+    /[if lt IE 9]
+      = stylesheet_link_tag 'ie.css'
+    = javascript_include_tag 'modernizr.foundation.js'
+    / IE Fix for HTML5 Tags
+    /[if lt IE 9]
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   %body
     %header
       .row
@@ -48,14 +47,13 @@
       .container.row
         .eight.columns
           %h1 Cincy.rb - Cincinnati Ruby Brigade
-          %img#logo{:alt => "Cincy.rb logo", :src => "images/logo.png"}/
+          = image_tag('logo.png', alt: 'Cincy.rb logo', id: 'logo')
           %p
             %strong Cincinnati Ruby Brigade
             is a group of local developers who talk about Ruby specific topics and share code.
           %a{:href => "http://goo.gl/BwcH2", :target => "_blank"} Write code with us!
         #next.four.columns
           %section
-            j
             %article
               %p
                 %em Our Next Meetup
@@ -110,13 +108,13 @@
         %form.container.row
           #left-contact.five.columns
             %input{:placeholder => "​Name", :type => "​text"}
-              ​
-              %input{:placeholder => "​Email Address", :type => "​text"}
-                ​
-                %input{:placeholder => "​Subject", :type => "​\"text"}
-                  ​
+            ​
+            %input{:placeholder => "​Email Address", :type => "​text"}
+            ​
+            %input{:placeholder => "​Subject", :type => "​\"text"}
+            ​
           #left-contact.seven.columns
-            %textarea{:id => "​standardTexted"}> ​Message
+            %textarea{:id => "​standardTexted", :placeholder => "​Message"}
             ​
           #submit
             %input{:type => "submit", :value => "Submit"}/
@@ -141,21 +139,12 @@
       .container.row
         %h5
           Designed and built by
-          %a{:href => "http://www.gaslightsoftware.com", :target => "_blnak"} Gaslight Software
+          %a{:href => "http://www.gaslightsoftware.com", :target => "_blank"} Gaslight Software
           in 2012
         %a#top.scroll{:href => "#home"} Take me to the top!
     / Included JS Files
-    %script{:src => "javascripts/jquery.min.js"}
-    %script{:src => "javascripts/foundation.js"}
-    %script{:src => "javascripts/app.js"}
-    :javascript
-      jQuery(document).ready(function($) {
- 
-        $(".scroll").click(function(event){   
-          event.preventDefault();
-          $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-        });
-      });
+    = javascript_include_tag 'vendor.js'
+    = javascript_include_tag 'application.js'
   %script{:src => "http://maps.googleapis.com/maps/api/js?key=AIzaSyCA9cUwB8Tzb_hRPdxpUZuH3rF1V6DCvr4&sensor=false&libraries=places"}
   :javascript
     var _gaq = _gaq || [];
