@@ -1,9 +1,7 @@
-<small><%= @venue.name %></small>
-<p>
-  <%= @venue.address_1 %> <br/>
-  <%= @venue.city %>,
-  <%= @venue.state %>,
-  <%= @venue.zip %> <br/>
   <a href="<%= @place.website %>"> Website </a><br/>
   <%= @place.formatted_phone_number %>
 </p>
+
+<p><em>Location</em></p>
+<h3><%= @venue.name %></h3>
+<p><%= @venue.address_1 %>, <%= @venue.city %>, <%= @venue.state %>, <%= @venue.zip %></p>
