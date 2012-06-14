@@ -1,0 +1,481 @@
+/* Foundation v2.2.1 http://foundation.zurb.com */
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Header Styles
+:: About/Events Styles
+:: Contact Styles
+:: Sponsors Styles
+:: Footer Styles
+:: Fonts
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+body {
+	background: url('../images/light-bg.jpg');
+	font-family: 'Cabin', tahoma, sans serif;
+	font-size: 18px;
+}
+
+.container { padding: 60px 0; }
+
+header, #about, #sponsors { background: url('../images/dark-bg.jpg'); }
+
+h1, h2, h3, h4, h5 {
+	color: #fff;
+	font-family: 'BebasNeueRegular', arial, sans serif;
+	text-shadow: 1px 1px 2px rgba(0,0,0,.3)
+}
+
+h2 { font-size: 2.61em;}
+
+h3 { font-size: 1.7em; }
+
+h4 { font-size: .83em; }
+
+h4 { font-size: 1.33em; }
+
+p { color: #fff; font-size: 1em; }
+
+
+/* -----------------------------------------
+   Header Styles
+----------------------------------------- */
+
+header {
+	background: url('../images/nav.png') repeat-x;
+	height: 46px;
+	position: fixed; 
+	width: 100%;
+	z-index: 99999; 
+	}
+
+#logo { display: none; }
+
+nav { float:left; }
+nav ul { margin: 10px 0; }
+nav ul li {
+	display: inline;
+	font-family: 'BebasNeueRegular', arial, sans serif;
+	font-size: 1.11em;
+	margin-right: 15px;
+}
+	nav ul li a {
+		color: #fff;
+		text0-decoration: none;
+	}
+	nav ul li a:hover {
+		color: #EDECE4;
+	}
+	
+#social {
+	background: #a3a194;
+	float: right;
+	height: 100%;
+	margin: 0;
+	padding: 10px;
+}
+	#social li {
+		color: #fff;
+		float: right;
+		font-style: italic;
+		font-weight: 400;
+		font-size: .72em;
+		margin: 0 5px;	
+	}
+	#social li a {
+		display: block;
+	}
+	#social li.twitter {
+		background: url('../images/main.png') -71px -158px  no-repeat;
+		display: block;
+		height: 15px;
+		margin-top: 3px;
+		text-indent: -9999px;
+		width: 23px;
+	}
+		#social li.twitter:hover {
+		background: url('../images/main.png') -71px -183px  no-repeat;
+		}
+	#social li.facebook {
+		background: url('../images/main.png') -40px -156px  no-repeat;
+		display: block;
+		height: 20px;
+		text-indent: -9999px;
+		width: 9px;
+	}
+		#social li.facebook:hover {
+			background: url('../images/main.png') -40px -181px  no-repeat;
+		}
+
+
+/* -----------------------------------------
+   Home Styles
+----------------------------------------- */
+
+#home {
+	background: url('../images/map.png') center no-repeat;
+}
+
+#home .container.row {
+	background: url('../images/skyline.png') bottom right no-repeat;
+}
+
+#home h1 {
+	background: url('../images/main.png') -24px -23px  no-repeat;
+	height: 101px;
+	text-indent: -9999px;
+	width: 404px;
+}
+
+#home .container {
+	padding: 124px 0;
+}
+
+#home .container .eight.columns p {
+	color: #363636;
+	font-size: 1.8em;
+	font-style: italic;
+	margin-bottom: 40px;
+}
+
+#home .container .eight.columns a {
+	background: url('../images/btn-arrow.png') 9px 9px no-repeat #a12f2e;
+	color: #fff;
+	font-family: 'BebasNeueRegular', arial, sans serif;
+	font-size: 1.2em;
+	padding: 10px 15px 10px 35px;
+}
+	#home .container .eight.columns a:hover {
+		background: url('../images/btn-arrow.png') 9px 9px no-repeat #781615;
+	}
+
+#home #next {
+	background: url('../images/next-bg.png');
+}
+
+#home #next:before {
+	border-left: 19px solid transparent;
+	border-top: 18px solid rgba(140, 137, 121, .7);
+	border-right: 19px solid transparent;
+	content: "";
+	height: 0;
+	left: 50%;
+	margin-left: -19px;
+	position: absolute;
+	bottom: -18px;
+	width: 0;
+}
+
+#home #next section {
+	margin: 15px auto;
+	width: 90%;
+}
+
+#home #next p, 
+#home #next h3 {
+	margin: 0;
+	text-shadow: none;
+}
+
+#home #next p { 
+	color: #edece4;
+	font-size: 1.11em;
+	}
+
+#home #next a {
+	background: url('../images/pin.png') left center no-repeat;
+	color: #f7cd0b;
+	font-size: .8em;
+	font-weight: 700;
+	padding-left: 20px;
+}
+	#home #next a:hover {
+		color: #58554a;
+	}
+
+#home #next article {
+	margin-bottom: 15px;
+}
+
+#home #next article#location {
+	margin-bottom: 5px;
+}
+
+
+/* -----------------------------------------
+   About/Events Styles
+----------------------------------------- */
+
+#tweet {
+	background: url('../images/dark-overlay-bg.jpg');
+	font-size: 1em;
+	padding: 20px;
+}
+
+#tweet a {
+	background: url('../images/main.png') -107px -148px no-repeat; 
+	display: block;
+	float: left;
+	height: 38px;
+	margin-top: 23px;
+	text-indent: -999px;
+	width: 61px;
+}
+
+#tweet h4 {
+	color: #42c8f4;
+	font-size: .83em;
+	padding-left: 80px;
+}
+
+#tweet p {
+	padding-left: 80px;
+}
+
+#events article {
+	background: #58554a;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+
+#events .date {
+		background: #ba1815;
+		background: -moz-linear-gradient(45deg,  #ba1815 50%, #9f1d19 51%);
+		background: -webkit-gradient(linear, left bottom, right top, color-stop(50%,#ba1815), color-stop(51%,#9f1d19));
+		background: -webkit-linear-gradient(45deg,  #ba1815 50%,#9f1d19 51%);
+		background: -o-linear-gradient(45deg,  #ba1815 50%,#9f1d19 51%);
+		background: -ms-linear-gradient(45deg,  #ba1815 50%,#9f1d19 51%);
+		background: linear-gradient(45deg,  #ba1815 50%,#9f1d19 51%);
+		float: left;
+		margin-right: 20px;
+		width: 90px;
+	}
+
+#events h1 {
+	font-size: 1.38em;
+	text-align: center;
+	margin: 15px 0 0 0;
+}
+
+#events h1 span {
+	display: block;
+	font-size: 2.22em;
+	margin-top: -14px;
+}
+
+#events article p {
+	font-size: .75em;
+	margin: 15px 0 7px 0;
+}
+
+#events article a {
+	color: #F7CD0B;
+	font-size: .8em;
+}
+	#events article a:hover {
+		color: #F7CD0B;
+		text-decoration: underline;
+	}
+
+/* -----------------------------------------
+   Contact Us Styles
+----------------------------------------- */
+
+#contact h2 {
+	color: #1e1e1e;
+	font-family: 'BebasNeueRegular', arial, sans serif;
+	text-shadow: 1px 1px 1px rgba(255,255,255,.8)
+}
+
+#contact p {
+	color: #1e1e1e;
+	width: 60%;
+}
+
+#contact form {
+	padding: 20px 0;
+}
+
+#left-contact input {
+	background: url('../images/light-overlay-bg.jpg');
+	border: none;
+	color: #5d5b52;
+	font-family: 'BebasNeueRegular', arial, sans serif;
+	font-size: 1.1em;
+	padding: 15px 15px;
+	width: 100%;
+}
+
+#contact textarea {
+	background: url('../images/light-overlay-bg.jpg');
+	border: none;
+	color: #5d5b52;
+	font-family: 'BebasNeueRegular', arial, sans serif;
+	font-size: 1.1em;
+	min-height: 210px;
+	padding: 15px 15px;
+	width: 100%;
+}
+
+#submit {
+	background: #ba1815;
+	background: -moz-linear-gradient(45deg,  #ba1815 50%, #9f1d19 51%);
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(50%,#ba1815), color-stop(51%,#9f1d19));
+	background: -webkit-linear-gradient(45deg,  #ba1815 50%,#9f1d19 51%);
+	background: -o-linear-gradient(45deg,  #ba1815 50%,#9f1d19 51%);
+	background: -ms-linear-gradient(45deg,  #ba1815 50%,#9f1d19 51%);
+	background: linear-gradient(45deg,  #ba1815 50%,#9f1d19 51%);
+	cursor: pointer;
+	display: block;
+	height: 70px;
+	width: 70px;
+	border: none;
+	float: right;
+	margin-top: -97px;
+	position: relative;
+	text-indent: -9999px;
+}
+#submit input {
+	background: url('../images/main.png') -208px -156px no-repeat;
+	cursor: pointer;
+	display: block;
+	height: 30px;
+	width: 42px;
+	border: none;
+	float: right;
+	text-indent: -9999px;
+	margin: 20px 12px 0;
+}
+
+::-webkit-input-placeholder	{ color:#5d5b52; }
+input:-moz-placeholder { color:#5d5b52; }
+
+
+/* -----------------------------------------
+   Sponsors Styles
+----------------------------------------- */
+#sponsors .sponsors {
+	padding: 15px 0;	
+}
+
+#sponsors article {
+	background: url('../images/dark-overlay-bg.jpg');
+	min-height: 300px;
+	text-align: center;
+}
+
+#sponsors article p {
+	font-size: .9em;
+	margin: 0 auto;
+	width: 80%;
+}
+
+#sponsors article a {
+	font-size: .8em;
+	font-weight: bold;
+	color: #393627;
+	display: block;
+	margin: 5px auto 0;
+}
+	#sponsors article a:hover {
+		text-decoration: underline;
+	}
+
+#edgecase .logo {
+	background: url('../images/main.png') -40px -226px no-repeat;
+	display: block;
+	height: 52px;
+	margin: 77px auto 25px;
+	text-indent: -9999px;
+	width: 189px;
+}
+
+#engine-yard .logo {
+	background: url('../images/main.png') -345px -146px no-repeat;
+	display: block;
+	height: 122px;
+	margin: 25px auto 25px;
+	text-indent: -9999px;
+	width: 73px;
+}
+
+#gaslight .logo {
+	background: url('../images/main.png') -40px -314px no-repeat;
+	display: block;
+	height: 55px;
+	margin: 75px auto 25px;
+	text-indent: -9999px;
+	width: 230px;
+}
+
+.become-a-sponsor {
+	background: #58554a;
+	color: #EDECE4;
+	float: right;
+	font-size: .9em;
+	margin-top: -53px;
+	padding: 10px 12px;
+	font-style: italic;
+}
+	.become-a-sponsor:hover {
+		background: #423f35;
+		color: #EDECE4;
+	}
+
+
+/* -----------------------------------------
+   Footer Styles
+----------------------------------------- */
+
+footer .container {
+	padding: 20px 0;
+}
+
+footer h5 { 
+	float: left; 
+	font-size: 1.2em;
+	
+}
+
+footer h5 a {
+	color: #58554a;
+	text-shadow: none;
+}
+	footer h5 a:hover {
+		color: #A12F2E;
+	}
+footer #top { 
+	background: url('../images/main.png') -272px -152px no-repeat ;
+	display: block;
+	float: right;
+	height: 44px;
+	text-indent: -9999px;
+	width: 44px; 
+}
+	footer #top:hover { 
+		background: url('../images/main.png') -272px -196px no-repeat ;
+	}
+
+/* -----------------------------------------
+   Fonts
+----------------------------------------- */
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../assets/BebasNeue-webfont.eot');
+    src: url('../assets/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/BebasNeue-webfont.woff') format('woff'),
+         url('../assets/BebasNeue-webfont.ttf') format('truetype'),
+         url('../assets/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

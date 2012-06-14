@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	
+	<link rel="icon" type="image/ico" href="/favicon.ico">
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Cincinnati Ruby Brigade</title>
+	
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Cabin:400,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+
+
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="stylesheets/foundation.css">
+	<link rel="stylesheet" href="stylesheets/app.css">   
+	
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="stylesheets/ie.css">
+	<![endif]-->
+	
+	<script src="javascripts/modernizr.foundation.js"></script>
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<header>
+		<div class="row">
+			<nav>
+				<ul>
+					<li class="home"><a href="#home" class="scroll">Home</a></li>
+					<li><a href="#about" class="scroll">About</a></li>
+					<li><a href="#about" class="scroll">Events</a></li>
+					<li><a href="#contact" class="scroll">Contact</a></li>
+					<li><a href="#sponsors" class="scroll">Sponsors</a></li>
+				</ul>
+			</nav>
+			<ul id="social">
+				<li class="twitter"><a href="https://twitter.com/#!/cincinnatirb" target="_blank">Follow us on Twitter!</a></li>
+				<li class="facebook"><a href="http://www.facebook.com/events/162252363797871/" target="_blank">Be Our Friend on Facebook!</a></li>
+				<li>share</li>
+			</ul>
+		</div>
+	</header>
+	
+	<section id="home">
+		<div class="container row">
+			<div class="eight columns">
+				<h1>Cincy.rb - Cincinnati Ruby Brigade</h1>
+				<img id="logo" src="images/logo.png" alt="Cincy.rb logo" />
+				<p><strong>Cincinnati Ruby Brigade</strong> is a group of local developers who talk about Ruby specific topics and share code.</p>
+				<a href="http://goo.gl/BwcH2" target="_blank">Write code with us!</a>
+			</div>
+			<div id="next" class="four columns">
+				<section>
+					<article>
+						<p><em>Our Next Meetup</em></p>
+						<h3>Tuesday May 15, 2012</h3>
+						<p>Double Rainbow Testing with JRuby and RSpec-given</p>
+					</article>
+					<article id="location">
+						<p><em>Location</em></p>
+						<h3>Gaslight Software</h3>
+						<p>11126 Kenwood Road, Suite C Cincinnati, OH 45242</p>
+					</article>
+				<a href="http://goo.gl/BwcH2" target="_blank">Get Directions</a>
+				</section>
+			</div>
+		</div><!-- end #container -->
+	</section>
+
+	<section id="about">
+		<div class="container row">
+			<div class="eight columns">
+				<h2>About Us</h2>
+				<p>Cincinnati Ruby Brigade was formed by local developers who desired a place to talk about Ruby specific topics and share code. It has since grown into a thriving community as vibrant and creative as the Ruby language itself.</p>				<p>Today we meet on the third tuesday of every month to discuss and hack on Ruby code and strieve to keep to the principle of less slides more code.</p>
+				<div id="tweet">
+					<a href="">Follow Us</a>
+					<h4>Recent Tweet</h4>
+					<p>BIG NEWS! Leon Gersing (@rubybuddha) will be speaking tonight! You know you cannot miss this. Please RT.</p>
+				</div>
+			</div>
+			<div id="events" class="four columns">
+				<h3>Upcoming Events</h3>
+				<section>
+					<article>
+						<div class="date">
+							<h1>May<span>15</span></h1>
+						</div>
+						<p>Double Rainbow Testing with JRuby and RSpec-given</p>
+						<a href="http://goo.gl/BwcH2" target="_blank">@ Gaslight Studios</a>
+					</article>
+					<article>
+						<div class="date">
+							<h1>May<span>15</span></h1>
+						</div>
+						<p>Double Rainbow Testing with JRuby and RSpec-given</p>
+						<a href="http://goo.gl/BwcH2" target="_blank">@ Gaslight Studios</a>
+					</article>
+					<article>
+						<div class="date">
+							<h1>May<span>15</span></h1>
+						</div>
+						<p>Double Rainbow Testing with JRuby and RSpec-given</p>
+						<a href="http://goo.gl/BwcH2" target="_blank">@ Gaslight Studios</a>
+					</article>
+				</section>
+			</div>
+		</div><!-- end .row -->
+	</section>
+
+	<section id="contact" >
+		<div class="container row">
+			<h2>Contact Us</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu quam et arcu venenatis dignissim nec id turpis. Proin non sapien elit.</p>
+			<form class="container row">
+				<div id="left-contact" class="five columns">
+					<input type="​text" placeholder=​Name >​
+					<input type="​text" placeholder=​Email&nbsp;Address >​
+					<input type=​"text" placeholder=​Subject >​
+				</div>
+				<div id="left-contact" class="seven columns">
+					<textarea id=​standardTexted>​Message</textarea>​
+				</div>
+				<div id="submit">
+					<input type="submit" value="Submit" />
+				</div>
+			</form>
+		</div>
+	</section>
+	
+	<section id="sponsors">
+		<div class="container row">
+			<h2>Sponsors</h2>
+			<a class="become-a-sponsor" href="mailto:info@gaslightsoftware.com">+ become a sponsor</a>
+			<div class="sponsors container row">
+				<article id="edgecase" class="four columns">
+					<a class="logo" href="http://www.edgecase.com" target="_blank">EdgeCase</a>
+					<p>Rhoncus dui facilisis a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>					<a href="http://www.edgecase.com" target="_blank">www.edgecase.com</a>
+				</article>
+				<article id="engine-yard" class="four columns">
+					<a class="logo" href="http://www.engineyard.com" target="_blank">Engine Yard</a>
+					<p>Rhoncus dui facilisis a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>					<a href="http://www.engineyard.com" target="_blank">www.engineyard.com</a>
+				</article>
+				<article id="gaslight" class="four columns">
+					<a class="logo" href="http://www.gaslightsoftware.com" target="_blank">Gaslight Software</a>
+					<p>Rhoncus dui facilisis a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>					<a href="http://www.gaslightsoftware.com" target="_blank">www.gaslightsoftware.com</a>
+				</article>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="container row">
+			<h5>Designed and built by <a href="http://www.gaslightsoftware.com" target="_blnak">Gaslight Software</a> in 2012</h5>
+			<a id="top" href="#home" class="scroll">Take me to the top!</a>
+		</div>
+	</footer>
+
+
+	<!-- Included JS Files -->
+	<script src="javascripts/jquery.min.js"></script>
+	<script src="javascripts/foundation.js"></script>
+	<script src="javascripts/app.js"></script>
+	<script>
+		jQuery(document).ready(function($) {
+ 
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+			});
+		});
+	</script>
+</body>
+</html>
