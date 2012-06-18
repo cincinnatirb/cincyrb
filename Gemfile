@@ -2,11 +2,11 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.1'
 
-# Bundle edge Rails instead:
-# gem 'rails',     :git => 'git://github.com/rails/rails.git'
+gem 'jquery-rails'
+gem "haml-rails"
+gem "eco"
+gem "httparty"
 
-# Gems used only for assets and not required
-# in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.1.4'
   gem 'coffee-rails', '~> 3.1.1'
@@ -15,30 +15,11 @@ end
 
 group :development, :test do
   gem 'jasminerice'
-  gem 'ruby-debug19', :require => 'ruby-debug'
   gem 'sqlite3'
+  gem "heroku"
 end
 
-gem 'jquery-rails'
-gem "bootstrap-sass", "~> 1.3.1"
-gem "haml-rails"
-gem "eco"
-gem "httparty"
-gem "heroku"
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-
 group :test do
-  # Pretty printed test output
   gem 'turn', :require => false
 end
 

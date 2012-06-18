@@ -1,62 +1,147 @@
 !!!
-%html
+/ paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+/[if IE 7] <html class="no-js lt-ie9 lt-ie8" lang="en">
+/[if IE 8] <html class="no-js lt-ie9" lang="en">
+/ [if gt IE 8]><!
+%html.no-js{:lang => "en"}
+  / <![endif]
   %head
     %meta{:charset => "utf-8"}/
-    %title Cincinnati.rb
-    %link{:href => "/assets/application.css", :media => "all", :rel => "stylesheet", :type => "text/css"}/
-    %link{:href => "http://fonts.googleapis.com/css?family=Lato:100italic,300,400|PT+Serif:400,400italic,700,700italic", :rel => "stylesheet", :type => "text/css"}/
-    %link{:href => "http://fonts.googleapis.com/css?family=Lekton", :rel => "stylesheet", :type => "text/css"}/
-    <script src="assets/application.js"></script>
-    /[if IE] <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    /[if lt IE 9] <link rel="stylesheet" media="all" type="text/css" href="css/ie.css" />
-  %body{ :class => page_class }
-    #main-section
-      #marketing
-        .row
-          .span16
-            .brand
-              %h1="Cincinnati.rb"
-        .row
-          .span16
-            %ul#nav-bar
-              %li.active= link_to "About Us", "#about-us"
-              %li= link_to "Next Meeting", "#next-meeting"
-              %li= link_to "Location", "#location-details"
-        .row
-          #hello-ruby
-            %h2="Write code with us!"
-            %br
-            :erb
-              <pre class="prettyprint">
-                class HelloRubyist
-                  def welcome(name)
-                    puts "Welcome #{name} lets get hacking!"
-                  end
-
-                  #your codes here -->
-
-                end
-              </pre>
-          #about-us
-            %h2="About us"
-            %p="Cincinnati Ruby Brigade was formed by local developers who desired a place to talk about Ruby specific topics and share code. It has since grown into a thriving community as vibrant and creative as the Ruby language itself."
-            %p="Today we meet on the third tuesday of every month to discuss and hack on Ruby code and strieve to keep to the principle of less slides more code."
-          #sponsors
-            %h2="Sponsors"
-            %ul
-              %li
-                Gaslight Software
-              %li
-                Engine Yard
-              %li
-                EdgeCase
-      =yield
-  %footer
-    .fill
+    = favicon_link_tag 'favicon.ico'
+    / Set the viewport width to device width for mobile
+    %meta{:content => "width=device-width", :name => "viewport"}/
+    %title Cincinnati Ruby Brigade
+    / Google Fonts
+    %link{:href => "http://fonts.googleapis.com/css?family=Cabin:400,400italic,600italic,700italic", :rel => "stylesheet", :type => "text/css"}
+    / Included CSS Files
+    = stylesheet_link_tag 'application.css'
+    /[if lt IE 9]
+      = stylesheet_link_tag 'ie.css'
+    = javascript_include_tag 'modernizr.foundation.js'
+    / IE Fix for HTML5 Tags
+    /[if lt IE 9]
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  %body
+    %header
       .row
-        .span16
-
-  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCA9cUwB8Tzb_hRPdxpUZuH3rF1V6DCvr4&sensor=false&libraries=places" ></script>
+        %nav
+          %ul
+            %li.home
+              %a.scroll{:href => "#home"} Home
+            %li
+              %a.scroll{:href => "#about"} About
+            %li
+              %a.scroll{:href => "#about"} Events
+            %li
+              %a.scroll{:href => "#contact"} Contact
+            %li
+              %a.scroll{:href => "#sponsors"} Sponsors
+        %ul#social
+          %li.twitter
+            %a{:href => "https://twitter.com/#!/cincinnatirb", :target => "_blank"} Follow us on Twitter!
+          %li.facebook
+            %a{:href => "http://www.facebook.com/events/162252363797871/", :target => "_blank"} Be Our Friend on Facebook!
+          %li share
+    %section#home
+      .container.row
+        .eight.columns
+          %h1 Cincy.rb - Cincinnati Ruby Brigade
+          = image_tag('logo.png', alt: 'Cincy.rb logo', id: 'logo')
+          %p
+            %strong Cincinnati Ruby Brigade
+            is a group of local developers who talk about Ruby specific topics and share code.
+          %a{:href => "http://goo.gl/BwcH2", :target => "_blank"} Write code with us!
+        #next.four.columns
+          %section
+            %article#next-meeting
+              %p
+                = image_tag 'spinner.gif'
+                Loading...
+            %article#location-info
+      / end #container
+    %section#about
+      .container.row
+        .eight.columns
+          %h2 About Us
+          %p Cincinnati Ruby Brigade was formed by local developers who desired a place to talk about Ruby specific topics and share code. It has since grown into a thriving community as vibrant and creative as the Ruby language itself.
+          %p Today we meet on the third tuesday of every month to discuss and hack on Ruby code and strieve to keep to the principle of less slides more code.
+          #tweet
+            %a{:href => ""} Follow Us
+            %h4 Recent Tweet
+            %p
+              = image_tag 'spinner.gif'
+              Loading...
+        #events.four.columns
+          %h3 Upcoming Events
+          %section
+            %article
+              .date
+                %h1
+                  May
+                  %span 15
+              %p Double Rainbow Testing with JRuby and RSpec-given
+              %a{:href => "http://goo.gl/BwcH2", :target => "_blank"} @ Gaslight Studios
+            %article
+              .date
+                %h1
+                  May
+                  %span 15
+              %p Double Rainbow Testing with JRuby and RSpec-given
+              %a{:href => "http://goo.gl/BwcH2", :target => "_blank"} @ Gaslight Studios
+            %article
+              .date
+                %h1
+                  May
+                  %span 15
+              %p Double Rainbow Testing with JRuby and RSpec-given
+              %a{:href => "http://goo.gl/BwcH2", :target => "_blank"} @ Gaslight Studios
+      / end .row
+    %section#contact
+      .container.row
+        %h2 Contact Us
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu quam et arcu venenatis dignissim nec id turpis. Proin non sapien elit.
+        %form.container.row
+          #left-contact.five.columns
+            %input{:placeholder => "​Name", :type => "​text"}
+            ​
+            %input{:placeholder => "​Email Address", :type => "​text"}
+            ​
+            %input{:placeholder => "​Subject", :type => "​\"text"}
+            ​
+          #left-contact.seven.columns
+            %textarea{:id => "​standardTexted", :placeholder => "​Message"}
+            ​
+          #submit
+            %input{:type => "submit", :value => "Submit"}/
+    %section#sponsors
+      .container.row
+        %h2 Sponsors
+        %a.become-a-sponsor{:href => "mailto:info@gaslightsoftware.com"} + become a sponsor
+        .sponsors.container.row
+          %article#edgecase.four.columns
+            %a.logo{:href => "http://www.edgecase.com", :target => "_blank"} EdgeCase
+            %p Rhoncus dui facilisis a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+            %a{:href => "http://www.edgecase.com", :target => "_blank"} www.edgecase.com
+          %article#engine-yard.four.columns
+            %a.logo{:href => "http://www.engineyard.com", :target => "_blank"} Engine Yard
+            %p Rhoncus dui facilisis a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+            %a{:href => "http://www.engineyard.com", :target => "_blank"} www.engineyard.com
+          %article#gaslight.four.columns
+            %a.logo{:href => "http://www.gaslightsoftware.com", :target => "_blank"} Gaslight Software
+            %p Rhoncus dui facilisis a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+            %a{:href => "http://www.gaslightsoftware.com", :target => "_blank"} www.gaslightsoftware.com
+    %footer
+      .container.row
+        %h5
+          Designed and built by
+          %a{:href => "http://www.gaslightsoftware.com", :target => "_blank"} Gaslight Software
+          in 2012
+        %a#top.scroll{:href => "#home"} Take me to the top!
+    / Included JS Files
+    = javascript_include_tag 'vendor.js'
+    = javascript_include_tag 'application.js'
+  %script{:src => "http://maps.googleapis.com/maps/api/js?key=AIzaSyCA9cUwB8Tzb_hRPdxpUZuH3rF1V6DCvr4&sensor=false&libraries=places"}
   :javascript
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-25957234-6']);
