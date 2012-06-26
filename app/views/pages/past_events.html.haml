@@ -1,0 +1,58 @@
+%section#home
+  .container.row
+    .eight.columns
+      %h1 Cincy.rb - Cincinnati Ruby Brigade
+      = image_tag('logo.png', alt: 'Cincy.rb logo', id: 'logo')
+      %p
+        %strong Cincinnati Ruby Brigade
+        is a group of local developers who talk about Ruby specific topics and share code.
+      %a{:href => "http://goo.gl/BwcH2", :target => "_blank"} Write code with us!
+    #next.four.columns
+      %section
+        %article#next-meeting
+          %p
+            = image_tag 'spinner.gif'
+            Loading...
+        %article#location-info
+  / end #container
+%section#about
+  .container.row
+    .twelve.columns
+      %h2 What You Missed...
+      .container
+        .row
+          .two.columns
+            = image_tag('tom_hit_avatar_100x100_20265.gif')
+            .url
+              %br
+              %p Joe Schmoe www.information.com
+          .ten.columns
+            %p Cincinnati Ruby Brigade was formed by local developers who desired a place to talk about Ruby specific topics and share code. It has since grown into a thriving community as vibrant and creative as the Ruby language itself. Today we meet on the third tuesday of every month to discuss and hack on Ruby code and strieve to keep to the principle of less slides more code.
+            %p Today we meet on the third tuesday of every month to discuss and hack on Ruby code and strieve to keep to the principle of less slides more code. Today we meet on the third tuesday of every month to discuss and hack on Ruby code and strieve to keep to the principle of less slides more code.Today we meet on the third tuesday of every month to discuss and hack on Ruby code and strieve to keep to the principle of less slides more code.
+%section#video
+  .containerVideo
+    .row
+      %h2 Media
+      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec orci eget ligula semper rutrum. Aenean venenatis porta dapibus. Donec ut tortor vitae dui pretium mattis nec quis purus.
+      .six.columns.flex-video.widescreen.vimeo
+        %iframe{:src => "http://player.vimeo.com/video/44520801", :width => "100%"}
+      .six.columns.flex-video.widescreen.vimeo
+        %iframe{:src => "http://player.vimeo.com/video/44520800", :width => "100%"}
+
+%section#sponsors
+  .container.row
+    %h2 Sponsors
+    %a.become-a-sponsor{:href => "mailto:info@gaslightsoftware.com"} + become a sponsor
+    .sponsors.container.row
+      %article#edgecase.four.columns
+        %a.logo{:href => "http://www.edgecase.com", :target => "_blank"} EdgeCase
+        %p Rhoncus dui facilisis a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+        %a{:href => "http://www.edgecase.com", :target => "_blank"} www.edgecase.com
+      %article#engine-yard.four.columns
+        %a.logo{:href => "http://www.engineyard.com", :target => "_blank"} Engine Yard
+        %p Rhoncus dui facilisis a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+        %a{:href => "http://www.engineyard.com", :target => "_blank"} www.engineyard.com
+      %article#gaslight.four.columns
+        %a.logo{:href => "http://www.gaslightsoftware.com", :target => "_blank"} Gaslight Software
+        %p Rhoncus dui facilisis a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+        %a{:href => "http://www.gaslightsoftware.com", :target => "_blank"} www.gaslightsoftware.com

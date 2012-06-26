@@ -214,7 +214,7 @@
 	/* To fix the grid into a certain size, set max-width to width */
 	.row .row { min-width: 0; }
 	
-	.column, .columns { margin-left: 4.4%; float: left; min-height: 1px; position: relative; }
+	.column, .columns { float: left; min-height: 1px; position: relative; }
 	.column:first-child, .columns:first-child { margin-left: 0; }
 	[class*="column"] + [class*="column"]:last-child { float: right; }
 	[class*="column"] + [class*="column"].end { float: left; }
@@ -629,7 +629,7 @@
 		overflow: hidden;
 	}
 	
-	.flex-video.widescreen { padding-bottom: 57.25%; }
+	.flex-video.widescreen { padding-bottom: 27%; }
 	.flex-video.vimeo { padding-top: 0; }
 	
 	.flex-video iframe,
@@ -1280,7 +1280,7 @@ ul.orbit-bullets li.active.has-thumb {
 		.row .pull-two-phone { right: 52.2% }
 		.row .pull-three-phone { right: 78.3%; }
 		
-		
+		.flex-video.widescreen { padding-bottom:56%; }
 	}
 	
 	
