@@ -34,10 +34,11 @@
     .row
       %h2 Media
       %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec orci eget ligula semper rutrum. Aenean venenatis porta dapibus. Donec ut tortor vitae dui pretium mattis nec quis purus.
-      .six.columns.flex-video.widescreen.vimeo
-        %iframe{:src => "http://player.vimeo.com/video/44520801", :width => "100%"}
-      .six.columns.flex-video.widescreen.vimeo
-        %iframe{:src => "http://player.vimeo.com/video/44520800", :width => "100%"}
+      .videos
+        .video
+          %iframe{:src => "http://player.vimeo.com/video/44520801", :width => "100%"}
+        .video
+          %iframe{:src => "http://player.vimeo.com/video/44520800", :width => "100%"}
 
 %section#sponsors
   .container.row
