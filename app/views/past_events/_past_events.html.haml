@@ -1,0 +1,25 @@
+%section#past-events
+  - @events.each do |event|
+    .event
+      %h2 What You Missed...
+      .speakers
+        - event.speakers.each do |speaker| 
+          .speaker
+            = image_tag("")
+            .url
+              %br
+                %p= speaker.name
+            .speaker-bio
+              %p= speaker.bio
+              
+
+    %section#video
+      .containerVideo
+        .row
+          %h2 Media
+          %p= event.topic
+          .videos
+            .video
+              %iframe{:src => "http://player.vimeo.com/video/44520801", :width => "100%"}
+            .video
+              %iframe{:src => "http://player.vimeo.com/video/44520800", :width => "100%"}

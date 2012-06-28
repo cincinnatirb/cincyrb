@@ -1,7 +1,8 @@
 Cincirb::Application.routes.draw do
   root :to => 'pages#index'
   match 'meetings' => 'meetings#index'
-  match 'past_events' => 'pages#past_events'
+  resources :past_events
+  #match 'past_events' => 'past_events#index'
 
   if ["development", "test"].include? Rails.env
         mount Jasminerice::Engine => "/jasmine" 
