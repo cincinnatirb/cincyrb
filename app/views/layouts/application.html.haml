@@ -28,7 +28,7 @@
         %nav
           %ul
             %li.home
-              %a.scroll{:href => "#home"} Home
+              =link_to("Home", root_path)
             %li
               %a.scroll{:href => "#about"} About
             %li
@@ -37,100 +37,17 @@
               %a.scroll{:href => "#contact"} Contact
             %li
               %a.scroll{:href => "#sponsors"} Sponsors
+            %li
+              =link_to("Past Events", past_events_path)  
         %ul#social
           %li.twitter
             %a{:href => "https://twitter.com/#!/cincinnatirb", :target => "_blank"} Follow us on Twitter!
           %li.facebook
             %a{:href => "http://www.facebook.com/events/162252363797871/", :target => "_blank"} Be Our Friend on Facebook!
           %li share
-    %section#home
-      .container.row
-        .eight.columns
-          %h1 Cincy.rb - Cincinnati Ruby Brigade
-          = image_tag('logo.png', alt: 'Cincy.rb logo', id: 'logo')
-          %p
-            %strong Cincinnati Ruby Brigade
-            is a group of local developers who talk about Ruby specific topics and share code.
-          %a{:href => "http://goo.gl/BwcH2", :target => "_blank"} Write code with us!
-        #next.four.columns
-          %section
-            %article#next-meeting
-              %p
-                = image_tag 'spinner.gif'
-                Loading...
-            %article#location-info
-      / end #container
-    %section#about
-      .container.row
-        .eight.columns
-          %h2 About Us
-          %p Cincinnati Ruby Brigade was formed by local developers who desired a place to talk about Ruby specific topics and share code. It has since grown into a thriving community as vibrant and creative as the Ruby language itself.
-          %p Today we meet on the third tuesday of every month to discuss and hack on Ruby code and strieve to keep to the principle of less slides more code.
-          #tweet
-            %a{:href => ""} Follow Us
-            %h4 Recent Tweet
-            %p
-              = image_tag 'spinner.gif'
-              Loading...
-        #events.four.columns
-          %h3 Upcoming Events
-          %section
-            %article
-              .date
-                %h1
-                  May
-                  %span 15
-              %p Double Rainbow Testing with JRuby and RSpec-given
-              %a{:href => "http://goo.gl/BwcH2", :target => "_blank"} @ Gaslight Studios
-            %article
-              .date
-                %h1
-                  May
-                  %span 15
-              %p Double Rainbow Testing with JRuby and RSpec-given
-              %a{:href => "http://goo.gl/BwcH2", :target => "_blank"} @ Gaslight Studios
-            %article
-              .date
-                %h1
-                  May
-                  %span 15
-              %p Double Rainbow Testing with JRuby and RSpec-given
-              %a{:href => "http://goo.gl/BwcH2", :target => "_blank"} @ Gaslight Studios
-      / end .row
-    %section#contact
-      .container.row
-        %h2 Contact Us
-        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu quam et arcu venenatis dignissim nec id turpis. Proin non sapien elit.
-        %form.container.row
-          #left-contact.five.columns
-            %input{:placeholder => "​Name", :type => "​text"}
-            ​
-            %input{:placeholder => "​Email Address", :type => "​text"}
-            ​
-            %input{:placeholder => "​Subject", :type => "​\"text"}
-            ​
-          #left-contact.seven.columns
-            %textarea{:id => "​standardTexted", :placeholder => "​Message"}
-            ​
-          #submit
-            %input{:type => "submit", :value => "Submit"}/
-    %section#sponsors
-      .container.row
-        %h2 Sponsors
-        %a.become-a-sponsor{:href => "mailto:info@gaslightsoftware.com"} + become a sponsor
-        .sponsors.container.row
-          %article#edgecase.four.columns
-            %a.logo{:href => "http://www.edgecase.com", :target => "_blank"} EdgeCase
-            %p We are a team of talented software artisans who love solving problems. Our dedicated group of developers and artists have individual expertise in areas such as usability, security, enterprise application integration, and business analysis. Passionate about software development, we are driven by the challenge of what we do.
-            %a{:href => "http://www.edgecase.com", :target => "_blank"} www.edgecase.com
-          %article#engine-yard.four.columns
-            %a.logo{:href => "http://www.engineyard.com", :target => "_blank"} Engine Yard
-            %p Engine Yard is the leading Platform as a Service (PaaS), empowering software application innovation more rapidly, easily and cost effectively.
-            %a{:href => "http://www.engineyard.com", :target => "_blank"} www.engineyard.com
-          %article#gaslight.four.columns
-            %a.logo{:href => "http://www.gaslightsoftware.com", :target => "_blank"} Gaslight Software
-            %p We are leading agile practitioners delivering value-driven software. We've honed our craft through practical application. We've grown with the industry. We have a history of multiple languages, environments and a mastery of the best technologies.
-            %a{:href => "http://www.gaslightsoftware.com", :target => "_blank"} www.gaslightsoftware.com
+
+    = yield
+
     %footer
       .container.row
         %h5

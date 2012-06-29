@@ -1,0 +1,25 @@
+%section#past-events
+  - @events.each do |event|
+    .event
+      %h2 What You Missed...
+      .speakers
+        %h3 Speakers
+        - event.speakers.each do |speaker| 
+          .speaker
+            - unless speaker.image_url == ""
+              = image_tag(speaker.image_url)
+            .url
+              %br
+                %p= speaker.name
+            .speaker-bio
+              %p= speaker.bio
+
+    %section#video
+      .containerVideo
+        .row
+          %h2 Media
+          %p= event.topic
+          .videos
+            - event.videos.each do |video|
+              .video
+                %iframe{:src => video.url, :width => "100%"}

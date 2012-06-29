@@ -1,6 +1,12 @@
 Cincirb::Application.routes.draw do
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   root :to => 'pages#index'
   match 'meetings' => 'meetings#index'
+  resources :past_events
+  #match 'past_events' => 'past_events#index'
 
   if ["development", "test"].include? Rails.env
         mount Jasminerice::Engine => "/jasmine" 

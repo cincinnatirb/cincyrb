@@ -6,6 +6,8 @@ gem 'jquery-rails'
 gem "haml-rails"
 gem "eco"
 gem "httparty"
+gem "activeadmin"
+gem "meta_search",    '>= 1.1.0.pre'
 
 group :assets do
   gem 'sass-rails',   '~> 3.1.4'
@@ -17,9 +19,11 @@ group :development, :test do
   gem 'jasminerice'
   gem 'sqlite3'
   gem "heroku"
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
 end
 
 group :test do
-  gem 'turn', :require => false
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner'
 end
-
