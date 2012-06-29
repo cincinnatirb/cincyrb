@@ -7,6 +7,7 @@ gem "haml-rails"
 gem "eco"
 gem "httparty"
 gem "activeadmin"
+gem "meta_search",    '>= 1.1.0.pre'
 
 group :assets do
   gem 'sass-rails',   '~> 3.1.4'

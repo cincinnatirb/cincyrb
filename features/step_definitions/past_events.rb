@@ -21,6 +21,7 @@ Then /^I should see a section for speakers$/ do
 end
 
 Then /^I should see a section for videos$/ do
+  save_and_open_page
   page.should have_css ".videos" 
 end
 
@@ -39,4 +40,13 @@ end
 
 Then /^I should see a speaker with the name: "(.*?)"$/ do |name|
   page.should have_content name 
+end
+
+Given /^I there was a video recorded$/ do
+  FactoryGirl.create(:video, :past_event => PastEvent.last, :url => "http://foo.example.com") 
+end
+
+Then /^I should see the video for the event$/ do
+  #TODO 6/28/2012 dont be lame use frame selector and xpath out the src atr
+  page.should have_css "iframe"
 end

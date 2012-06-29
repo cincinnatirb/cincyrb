@@ -28,7 +28,7 @@
         %nav
           %ul
             %li.home
-              %a.scroll{:href => "#home"} Home
+              =link_to("Home", root_path)
             %li
               %a.scroll{:href => "#about"} About
             %li
@@ -38,7 +38,7 @@
             %li
               %a.scroll{:href => "#sponsors"} Sponsors
             %li
-              %a.scroll{:href => "/past_events"} Past Events
+              =link_to("Past Events", past_events_path)  
         %ul#social
           %li.twitter
             %a{:href => "https://twitter.com/#!/cincinnatirb", :target => "_blank"} Follow us on Twitter!
