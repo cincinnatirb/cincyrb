@@ -6,7 +6,8 @@
         %h3 Speakers
         - event.speakers.each do |speaker| 
           .speaker
-            = image_tag("")
+            - unless speaker.image_url == ""
+              = image_tag(speaker.image_url)
             .url
               %br
                 %p= speaker.name
