@@ -21,7 +21,6 @@ Then /^I should see a section for speakers$/ do
 end
 
 Then /^I should see a section for videos$/ do
-  save_and_open_page
   page.should have_css ".videos" 
 end
 
