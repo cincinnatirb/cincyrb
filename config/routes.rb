@@ -1,9 +1,7 @@
 Cincirb::Application.routes.draw do
-  devise_for :admin_users, ActiveAdmin::Devise.config
-
   ActiveAdmin.routes(self)
 
-  devise_for :admin_users, ActiveAdmin::Devise.config, ActiveAdmin::Devise.config
+  devise_for :admin_users, ActiveAdmin::Devise.config
 
   root :to => 'pages#index'
   match 'meetings' => 'meetings#index'
