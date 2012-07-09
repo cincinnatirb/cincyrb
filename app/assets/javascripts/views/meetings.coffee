@@ -14,6 +14,7 @@ class MeetingsView extends Backbone.View
     formatted_date = date.toDateString()
     @model.set(date: formatted_date)
     $('#next-meeting').html(@template(meeting: @model.toJSON()))
+    $("#rsvp").attr("href", @model.get("event_url"))
     @tweet()
     @render_location()
 
