@@ -21,3 +21,12 @@ $ ->
     $('body, html').stop().animate({ scrollTop: y }, 1000)
     event.preventDefault()
   )
+ 	$("#contact-form")
+		.bind( "ajax:before", (evt, xhr, settings) ->
+			$('[type="submit"]').attr('disabled','disabled')
+			$(".flash_notice").text("Submitting your comment. Please wait...")
+		)
+		.bind("ajax:success", (evt, data, status, xhr) ->
+			$('[type="submit"]').removeAttr('disabled');
+			$(".flash_notice").text(data.message)
+		)
