@@ -9,6 +9,7 @@ gem 'httparty'
 gem 'activeadmin'
 gem 'meta_search',    '>= 1.1.0.pre'
 gem 'sass-rails',   '~> 3.1.4'
+gem 'newrelic_rpm'
 
 group :assets do
   gem 'coffee-rails', '~> 3.1.1'
@@ -23,6 +24,7 @@ group :development, :test do
   gem 'jasminerice'
   gem 'sqlite3'
   gem 'heroku'
+  gem 'taps'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'dotenv'
