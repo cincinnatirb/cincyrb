@@ -1,9 +1,0 @@
-== Cincinnati.rb Homepage / Webapp
-
-- Rails 3.1 project using the asset pipline
-
-- Uses Twitter's Bootstrap project for styling and page layout
-
-- Uses HAML and SASS for templating and stylesheets
-
-- Includes Underscore and Backbone JS
