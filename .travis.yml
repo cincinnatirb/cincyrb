@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+  - 1.9.3
+env:
+  - MEETUP_API_KEY=secret_key
+script:
+  - RAILS_ENV=test bundle exec rake --trace db:setup
+  - RAILS_ENV=test bundle exec rake --trace db:migrate
+  - RAILS_ENV=test bundle exec rake --trace db:test:prepare
+  - RAILS_ENV=test bundle exec rake --trace
