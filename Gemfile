@@ -3,11 +3,11 @@ source 'http://rubygems.org'
 gem 'rails', '3.1.1'
 
 gem 'jquery-rails'
-gem "haml-rails"
-gem "eco"
-gem "httparty"
-gem "activeadmin"
-gem "meta_search",    '>= 1.1.0.pre'
+gem 'haml-rails'
+gem 'eco'
+gem 'httparty'
+gem 'activeadmin'
+gem 'meta_search',    '>= 1.1.0.pre'
 gem 'sass-rails',   '~> 3.1.4'
 
 group :assets do
@@ -22,7 +22,7 @@ end
 group :development, :test do
   gem 'jasminerice'
   gem 'sqlite3'
-  gem "heroku"
+  gem 'heroku'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'dotenv'
