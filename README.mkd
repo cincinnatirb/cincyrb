@@ -1,4 +1,5 @@
 # Cincinnati.rb Homepage / Webapp
+[![Build Status](https://secure.travis-ci.org/cincinnatirb/cincyrb.png)](http://travis-ci.org/cincinnatirb/cincyrb)
 
 * Rails 3.1 project using the asset pipline
 * Uses Twitter's Bootstrap project for styling and page layout
