@@ -1,4 +1,7 @@
-#= require_tree .
+#= require_tree ./models
+#= require_tree ./templates
+#= require_tree ./views
+#= require main
 
 $ ->
   $(".scroll").click (event) ->
