@@ -1,0 +1,52 @@
+#!/bin/sh
+
+set -e
+
+echo ""
+echo "Setting up cincinnati.rb"
+echo ""
+
+#
+# Check for Bundler
+#
+if test ! $(which bundle)
+then
+  echo "  x You need to install Bundler:"
+  echo "    gem install bundler"
+  exit
+else
+  echo "  + Bundler found."
+fi
+
+#
+# Install gems
+#
+echo "  + Bootstrapping your Rubies with Bundler."
+bundle install --without production --binstubs --local --path vendor/ruby --quiet
+
+#
+# Setting up .env file for Meetup info
+#
+echo "  + Creating .env"
+cp -i .env.sample .env
+
+#
+# Set up the database
+#
+echo "  + Creating the development database."
+rake db:setup &> /dev/null
+
+#
+# Where can I find my API key?
+#
+echo ""
+echo "  -> Sample .env file created. Go get your API key from Meetup at:"
+echo "  ->   http://www.meetup.com/meetup_api/key/"
+echo "  -> and enter it in .env."
+echo ""
+
+#
+# Now what?
+#
+echo "  Ok, setup complete. To start the application, run"
+echo "    rails server"
