@@ -1,18 +1,18 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.1'
+gem 'rails', '3.2.8'
 
 gem 'jquery-rails'
 gem 'haml-rails'
 gem 'eco'
 gem 'httparty'
 gem 'activeadmin'
-gem 'meta_search',    '>= 1.1.0.pre'
-gem 'sass-rails',   '~> 3.1.4'
+gem 'meta_search'
+gem 'sass-rails'
 gem 'newrelic_rpm'
 
 group :assets do
-  gem 'coffee-rails', '~> 3.1.1'
+  gem 'coffee-rails'
   gem 'uglifier', '>= 1.0.3'
 end
 
