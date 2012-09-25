@@ -30,27 +30,16 @@
     #events.four.columns
       %h3 Upcoming Events
       %section
-        %article
-          .date
-            %h1
-              May
-              %span 15
-          %p Double Rainbow Testing with JRuby and RSpec-given
-          %a{:href => "http://goo.gl/BwcH2", :target => "_blank"} @ Gaslight Studios
-        %article
-          .date
-            %h1
-              May
-              %span 15
-          %p Double Rainbow Testing with JRuby and RSpec-given
-          %a{:href => "http://goo.gl/BwcH2", :target => "_blank"} @ Gaslight Studios
-        %article
-          .date
-            %h1
-              May
-              %span 15
-          %p Double Rainbow Testing with JRuby and RSpec-given
-          %a{:href => "http://goo.gl/BwcH2", :target => "_blank"} @ Gaslight Studios
+        - Meeting.get_upcoming_meetings.each do |meeting|
+          %article
+            .date
+              %h1
+                = Time.at(meeting["time"]/1000).to_date.strftime("%b")
+                %span
+                  = Time.at(meeting["time"]/1000).to_date.strftime("%e")
+            %p
+              = meeting["name"]
+            %a{:href => "http://goo.gl/BwcH2", :target => "_blank"} @ Gaslight Studios
   / end .row
 %section#contact
   .container.row
@@ -59,13 +48,13 @@
     %form.container.row
       #left-contact.five.columns
         %input{:placeholder => "​Name", :type => "​text"}
-        ​
+
         %input{:placeholder => "​Email Address", :type => "​text"}
-        ​
+
         %input{:placeholder => "​Subject", :type => "​\"text"}
-        ​
+
       #left-contact.seven.columns
         %textarea{:id => "​standardTexted", :placeholder => "​Message"}
-        ​
+
       #submit
         %input{:type => "submit", :value => "Submit"}/
