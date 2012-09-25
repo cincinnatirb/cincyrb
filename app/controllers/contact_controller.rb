@@ -2,17 +2,16 @@ class ContactController < ApplicationController
   #TODO: Should create a model to parse this stuff and validate, rather than doing it by hand
   #but need to research easiest/best way to create a non-ActiveRecord model
   def create
-    @name = params[:name]
-    @email = params[:email]
-    @subject = params[:subject]
-    @message = params[:message]
-    if (@name.blank? || @email.blank? || @subject.blank? || @message.blank?)
+    @contact = Contact.new(params[:contact])
+    if @contact.invalid?
+      messages = ''
+      @contact.errors.each {|attr, msg| messages += attr.to_s + " " + msg + "<br />"}
       @result = { 
-        :message => "Please complete all fields in the contact form.",
+        :message => messages,
         :success => false 
       }
     else
-      ContactMailer.contact_email(@name, @email, @subject, @message).deliver    
+      ContactMailer.contact_email(@contact).deliver    
       @result = { 
         :message => 'Your feedback has been submitted. We will reply as soon as possible.',
         :success => true 

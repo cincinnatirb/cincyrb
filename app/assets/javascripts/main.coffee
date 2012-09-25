@@ -27,6 +27,8 @@ $ ->
 			$(".flash_notice").text("Submitting your comment. Please wait...")
 		)
 		.bind("ajax:success", (evt, data, status, xhr) ->
-			$('[type="submit"]').removeAttr('disabled');
-			$(".flash_notice").text(data.message)
+			$('[type="submit"]').removeAttr('disabled')
+			$(".flash_notice").html(data.message)
+			if data.success 
+				$("#contact-form")[0].reset()
 		)

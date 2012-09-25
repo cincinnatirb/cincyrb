@@ -57,17 +57,17 @@
     %h2 Contact Us
     %p Have a topic idea? Want to present at a Cinci.rb meeting? Have a suggestion? Send us a comment here.
     %p.flash.flash_notice
-    = form_tag("/contact_us", :method => :post, :class => "container row", :remote => true, :id => "contact-form") do
+    = form_for Contact.new, :html => { :id => "contact-form", :class => "container row" }, :url => "/contact_us", :remote => true do |f|
       %div
         #left-contact.five.columns
-          %input{:name =>"name", :placeholder => "​Name", :type => "​text"}
+          = f.text_field :name, :placeholder => "​Name"
           ​
-          %input{:name => "email", :placeholder => "​Email Address", :type => "​text"}
+          = f.text_field :email, :placeholder => "​Email Address"
           ​
-          %input{:name => "subject", :placeholder => "​Subject", :type => "​\"text"}
+          = f.text_field :subject, :placeholder => "​Subject"
           ​
         #left-contact.seven.columns
-          %textarea{:name => "message", :placeholder => "​Message"}
+          = f.text_area :message, :placeholder => "​Message", :rows => 5
           ​
         #submit
           %input{:type => "submit", :value => "Submit"}/

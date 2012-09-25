@@ -6,9 +6,9 @@
     %h1
       Feedback from cincyrb.com
     %p
-      From: #{@name}
+      From: #{@contact.name} (#{@contact.email})
     %p
-      Subject: #{@topic}
+      Subject: #{@contact.subject}
     %p
       Message: 
-      #{@comment}
+      #{@contact.message}
