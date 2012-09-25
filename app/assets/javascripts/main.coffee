@@ -32,3 +32,7 @@ $ ->
 			if data.success 
 				$("#contact-form")[0].reset()
 		)
+		.bind("ajax:error", (xhr, status, error) ->
+			$('[type="submit"]').removeAttr('disabled')
+			$(".flash_notice").text("An error occurred subimtting your feedback. Please retry your request.")
+		)
