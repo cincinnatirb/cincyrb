@@ -5,7 +5,7 @@ class ContactController < ApplicationController
     @contact = Contact.new(params[:contact])
     if @contact.invalid?
       messages = ''
-      @contact.errors.each {|attr, msg| messages += attr.to_s + " " + msg + "<br />"}
+      @contact.errors.full_messages.each {|msg| messages +=  msg + "<br />"}
       @result = { 
         :message => messages,
         :success => false 
