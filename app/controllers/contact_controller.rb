@@ -1,6 +1,4 @@
 class ContactController < ApplicationController
-  #TODO: Should create a model to parse this stuff and validate, rather than doing it by hand
-  #but need to research easiest/best way to create a non-ActiveRecord model
   def create
     @contact = Contact.new(params[:contact])
     if @contact.invalid?
