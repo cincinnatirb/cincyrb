@@ -32,7 +32,8 @@ $ ->
 			if data.success 
 				$("#contact-form")[0].reset()
 		)
-		.bind("ajax:error", (xhr, status, error) ->
+		.bind("ajax:error", (evt, xhr, status) ->
 			$('[type="submit"]').removeAttr('disabled')
-			$(".flash_notice").text("An error occurred subimtting your feedback. Please retry your request.")
+			errors = $.parseJSON(xhr.responseText).errors
+			$(".flash_notice").text(errors)
 		)
