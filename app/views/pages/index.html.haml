@@ -56,16 +56,18 @@
   .container.row
     %h2 Contact Us
     %p Have a topic idea? Want to present at a Cinci.rb meeting? Have a suggestion? Send us a comment here.
-    %form.container.row
-      #left-contact.five.columns
-        %input{:placeholder => "​Name", :type => "​text"}
-        ​
-        %input{:placeholder => "​Email Address", :type => "​text"}
-        ​
-        %input{:placeholder => "​Subject", :type => "​\"text"}
-        ​
-      #left-contact.seven.columns
-        %textarea{:id => "​standardTexted", :placeholder => "​Message"}
-        ​
-      #submit
-        %input{:type => "submit", :value => "Submit"}/
+    %p.flash.flash_notice
+    = form_for Contact.new, :html => { :id => "contact-form", :class => "container row" }, :url => "/contact_us", :remote => true do |f|
+      %div
+        #left-contact.five.columns
+          = f.text_field :name, :placeholder => "​Name"
+          ​
+          = f.text_field :email, :placeholder => "​Email Address"
+          ​
+          = f.text_field :subject, :placeholder => "​Subject"
+          ​
+        #left-contact.seven.columns
+          = f.text_area :message, :placeholder => "​Message", :rows => 5
+          ​
+        #submit
+          %input{:type => "submit", :value => "Submit"}/
