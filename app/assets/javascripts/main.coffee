@@ -34,6 +34,9 @@ $ ->
 		)
 		.bind("ajax:error", (evt, xhr, status) ->
 			$('[type="submit"]').removeAttr('disabled')
-			errors = $.parseJSON(xhr.responseText).errors
-			$(".flash_notice").text(errors)
+			if xhr.status == 422
+				errors = $.parseJSON(xhr.responseText).errors
+				$(".flash_notice").text(errors)
+			else
+				$(".flash_notice").text("A server error occurred while processing your request. Please wait a moment and try again.")
 		)

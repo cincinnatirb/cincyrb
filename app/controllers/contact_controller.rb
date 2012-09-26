@@ -3,7 +3,7 @@ class ContactController < ApplicationController
     @contact = Contact.new(params[:contact])
     if @contact.invalid?
       messages = @contact.errors.full_messages.to_sentence
-      render :json => { :errors => messages } , :status => 422
+      render :json => { :errors => messages } , :status => :unprocessable_entity
     else
       ContactMailer.contact_email(@contact).deliver    
       render :json => { 
