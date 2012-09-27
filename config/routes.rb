@@ -5,6 +5,7 @@ Cincirb::Application.routes.draw do
 
   root :to => 'pages#index'
   match 'meetings' => 'meetings#index'
+  match 'contact_us' => 'contact#create', :via => :post
   resources :past_events
   #match 'past_events' => 'past_events#index'
 

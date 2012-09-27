@@ -21,3 +21,22 @@ $ ->
     $('body, html').stop().animate({ scrollTop: y }, 1000)
     event.preventDefault()
   )
+ 	$("#contact-form")
+		.bind( "ajax:before", (evt, xhr, settings) ->
+			$('[type="submit"]').attr('disabled','disabled')
+			$(".flash_notice").text("Submitting your comment. Please wait...")
+		)
+		.bind("ajax:success", (evt, data, status, xhr) ->
+			$('[type="submit"]').removeAttr('disabled')
+			$(".flash_notice").html(data.message)
+			if data.success 
+				$("#contact-form")[0].reset()
+		)
+		.bind("ajax:error", (evt, xhr, status) ->
+			$('[type="submit"]').removeAttr('disabled')
+			if xhr.status == 422
+				errors = $.parseJSON(xhr.responseText).errors
+				$(".flash_notice").text(errors)
+			else
+				$(".flash_notice").text("A server error occurred while processing your request. Please wait a moment and try again.")
+		)
