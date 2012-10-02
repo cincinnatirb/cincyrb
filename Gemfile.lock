@@ -127,6 +127,8 @@ GEM
     jasminerice (0.0.9)
       coffee-rails
       haml
+    jasminerice-runner (0.0.3)
+      capybara
     journey (1.0.4)
     jquery-rails (2.1.2)
       railties (>= 3.1.0, < 5.0)
@@ -254,6 +256,7 @@ DEPENDENCIES
   heroku
   httparty
   jasminerice
+  jasminerice-runner
   jquery-rails
   meta_search
   newrelic_rpm

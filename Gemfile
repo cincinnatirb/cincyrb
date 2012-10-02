@@ -22,6 +22,7 @@ end
 
 group :development, :test do
   gem 'jasminerice'
+  gem 'jasminerice-runner'
   gem 'sqlite3'
   gem 'heroku'
   gem 'taps'
