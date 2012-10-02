@@ -22,7 +22,7 @@ fi
 # Install gems
 #
 echo "  + Bootstrapping your Rubies with Bundler."
-bundle install --without production --binstubs --local --path vendor/ruby --quiet
+bundle install --without production --binstubs --local --path vendor --quiet
 
 #
 # Setting up .env file for Meetup info
