@@ -21,14 +21,14 @@ group :production do
 end
 
 group :development, :test do
-  gem 'jasminerice'
-  gem 'jasminerice-runner'
   gem 'sqlite3'
   gem 'heroku'
   gem 'taps'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'dotenv'
+  gem 'konacha'
+  gem 'poltergeist'
 end
 
 group :test do
