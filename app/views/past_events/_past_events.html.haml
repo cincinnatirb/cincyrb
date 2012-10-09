@@ -1,10 +1,9 @@
 %section#past-events
   - @events.reverse.each do |event|
     .event
-      %h2 What You Missed...
+      %h2= "Meeting from #{event.date.strftime("%-m/%-d/%Y")}"
       .speakers
-        %h3 Speakers
-        - event.speakers.each do |speaker| 
+        - event.speakers.each do |speaker|
           .speaker
             - unless speaker.image_url == ""
               = image_tag(speaker.image_url)

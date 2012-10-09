@@ -1,8 +1,9 @@
 @import foundation
+
 /* Foundation v2.2.1 http://foundation.zurb.com
 /* Artfully masterminded by ZURB
 
-/* -------------------------------------------------- 
+/* --------------------------------------------------
  *   Table of Contents
  *-----------------------------------------------------
  *:: Shared Styles
@@ -386,7 +387,6 @@ input:-moz-placeholder, textarea:-moz-placeholder
     padding: 20px 0
 
 .videos
-  @extend .container
   margin: 0
 
 .video
@@ -397,19 +397,21 @@ input:-moz-placeholder, textarea:-moz-placeholder
  * -----------------------------------------
 #past-events
   @extend #about
+  padding-bottom: 0
 
 .event
-  @extend .container
   @extend .row
 /* -----------------------------------------
  *   Speaker Styles
- * ----------------------------------------- 
+ * -----------------------------------------
 .speakers
-  @extend .container
   @extend .row
 
+.speaker
+  @extend .three, .columns
+  margin-right: 3em
+
 .speaker-bio
-  @extend .ten.columns
 
 .speaker img
   height: 128px
