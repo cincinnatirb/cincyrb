@@ -1,7 +1,7 @@
 %section#past-events
   - @events.reverse.each do |event|
     .event
-      %h2= "Meeting from #{event.date.strftime("%-m/%-d/%Y")}"
+      %h2= event.date ? "Past Meeting from #{event.date.strftime("%-m/%-d/%Y")}" : "Past Meeting"
       .speakers
         - event.speakers.each do |speaker|
           .speaker

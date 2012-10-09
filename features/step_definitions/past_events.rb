@@ -13,15 +13,15 @@ end
 
 Then /^I should see a event topic/ do
   page.current_path.should == past_events_path
-  page.should have_content "What You Missed"
+  page.should have_content PastEvent.last.topic
 end
 
 Then /^I should see a section for speakers$/ do
-  page.should have_css ".speakers" 
+  page.should have_css ".speakers"
 end
 
 Then /^I should see a section for videos$/ do
-  page.should have_css ".videos" 
+  page.should have_css ".videos"
 end
 
 Given /^There is a past event with a topic of: "(.*?)"$/ do |topic|
@@ -34,15 +34,15 @@ Given /^the past event had a speaker with the name: "(.*?)"$/ do |name|
 end
 
 Then /^I should see the topic: "(.*?)"$/ do |topic|
-  page.should have_content topic 
+  page.should have_content topic
 end
 
 Then /^I should see a speaker with the name: "(.*?)"$/ do |name|
-  page.should have_content name 
+  page.should have_content name
 end
 
 Given /^I there was a video recorded$/ do
-  FactoryGirl.create(:video, :past_event => PastEvent.last, :url => "http://foo.example.com") 
+  FactoryGirl.create(:video, :past_event => PastEvent.last, :url => "http://foo.example.com")
 end
 
 Then /^I should see the video for the event$/ do
