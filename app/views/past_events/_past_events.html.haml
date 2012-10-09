@@ -1,24 +1,25 @@
 %section#past-events
   - @events.reverse.each do |event|
+    %section#video
+      .containerVideo
+        .row
+          %h2= event.date ? "Past Meeting from #{event.date.strftime("%-m/%-d/%Y")}" : "Past Meeting"
+          %p= event.topic
+          .videos
+            - event.videos.each do |video|
+              .video
+                %iframe{:src => video.url, :width => "100%"}
     .event
-      %h2= event.date ? "Past Meeting from #{event.date.strftime("%-m/%-d/%Y")}" : "Past Meeting"
       .speakers
         - event.speakers.each do |speaker|
           .speaker
-            - unless speaker.image_url == ""
-              = image_tag(speaker.image_url)
+            .speaker-headshot
+              - unless speaker.image_url == ""
+                = image_tag(speaker.image_url)
             .url
               %br
                 %p= speaker.name
             .speaker-bio
               %p= speaker.bio
 
-    %section#video
-      .containerVideo
-        .row
-          %h2 Media
-          %p= event.topic
-          .videos
-            - event.videos.each do |video|
-              .video
-                %iframe{:src => video.url, :width => "100%"}
+
