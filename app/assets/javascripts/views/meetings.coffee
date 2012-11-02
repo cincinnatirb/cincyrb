@@ -20,7 +20,7 @@ class MeetingsView extends Backbone.View
 
   tweet: ->
     user = 'cincinnatirb'
-    $.getJSON 'http://twitter.com/statuses/user_timeline.json?screen_name=' + user + '&count=4&callback=?', (data) ->
+    $.getJSON 'http://api.twitter.com/1/statuses/user_timeline.json?screen_name=' + user + '&count=4&callback=?', (data) ->
         tweet = data[0].text
         # process links and reply
         tweet = tweet.replace /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig, (url) ->
