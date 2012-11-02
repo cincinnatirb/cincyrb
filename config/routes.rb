@@ -9,10 +9,6 @@ Cincirb::Application.routes.draw do
   resources :past_events
   #match 'past_events' => 'past_events#index'
 
-  if ["development", "test"].include? Rails.env
-        mount Jasminerice::Engine => "/jasmine" 
-  end
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
