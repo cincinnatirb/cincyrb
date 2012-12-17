@@ -2,8 +2,7 @@ language: ruby
 rvm:
   - 1.9.3
 env:
-  global:
-    - secure: "edhzwCZe/qPd/N7oNXL+ahwnFifnsHF5GFwf2GWyW6A5Tj6f//B1GJGy586w\nbdS4GVbvh+LKxUVSVkvkl3xA/QFxHIymO8AMpg13lK0tHI87xe0edlbk7odP\nzvKIJoEOmKibGpe7sDkanDyMnz4ZxbAWWCTx4s51gye0xlmDhcw="
+  - MEETUP_API_KEY=secret_key
 script:
   - RAILS_ENV=test bundle exec rake --trace db:setup
   - RAILS_ENV=test bundle exec rake --trace db:migrate
