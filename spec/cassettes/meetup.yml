@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.meetup.com/2/events?group_id=1460552&fields=name&key=586b3a2d4f6b3040507256466b55327f
+    uri: https://api.meetup.com/2/events
     body:
       encoding: US-ASCII
       string: ''
