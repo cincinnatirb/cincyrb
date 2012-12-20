@@ -30,27 +30,14 @@
     #events.four.columns
       %h3 Upcoming Events
       %section
-        %article
-          .date
-            %h1
-              May
-              %span 15
-          %p Double Rainbow Testing with JRuby and RSpec-given
-          %a{:href => "http://goo.gl/BwcH2", :target => "_blank"} @ Gaslight Studios
-        %article
-          .date
-            %h1
-              May
-              %span 15
-          %p Double Rainbow Testing with JRuby and RSpec-given
-          %a{:href => "http://goo.gl/BwcH2", :target => "_blank"} @ Gaslight Studios
-        %article
-          .date
-            %h1
-              May
-              %span 15
-          %p Double Rainbow Testing with JRuby and RSpec-given
-          %a{:href => "http://goo.gl/BwcH2", :target => "_blank"} @ Gaslight Studios
+        - Meeting.get_upcoming_meetings.each do |meeting|
+          %article
+            .date
+              %h1
+                = format_date_for_homepage(meeting["time"]).html_safe
+            %p
+              = meeting["name"]
+            %a{:href => "http://goo.gl/BwcH2", :target => "_blank"} @ Gaslight Studios
   / end .row
 %section#contact
   .container.row
@@ -60,14 +47,10 @@
     = form_for Contact.new, :html => { :id => "contact-form", :class => "container row" }, :url => "/contact_us", :remote => true do |f|
       %div
         #left-contact.five.columns
-          = f.text_field :name, :placeholder => "​Name"
-          ​
-          = f.text_field :email, :placeholder => "​Email Address"
-          ​
-          = f.text_field :subject, :placeholder => "​Subject"
-          ​
+          = f.text_field :name, :placeholder => "Name"
+          = f.text_field :email, :placeholder => "Email Address"
+          = f.text_field :subject, :placeholder => "Subject"
         #left-contact.seven.columns
-          = f.text_area :message, :placeholder => "​Message", :rows => 5
-          ​
+          = f.text_area :message, :placeholder => "Message", :rows => 5
         #submit
           %input{:type => "submit", :value => "Submit"}/

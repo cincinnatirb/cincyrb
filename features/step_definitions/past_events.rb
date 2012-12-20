@@ -1,5 +1,7 @@
 Given /^I am on the homepage$/ do
-  visit root_path
+  VCR.use_cassette("meetup", :match_requests_on => [:host, :path]) do
+    visit root_path
+  end
 end
 
 Given /^there has recently been a cincy.rb event$/ do

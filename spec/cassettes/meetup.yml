@@ -1,0 +1,1039 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.meetup.com/2/events
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sat, 01 Dec 2012 20:52:09 GMT
+      server:
+      - Apache-Coyote/1.1
+      x-meetup-server:
+      - api1.int.meetup.com
+      x-ratelimit-limit:
+      - '200'
+      x-ratelimit-remaining:
+      - '199'
+      x-ratelimit-reset:
+      - '1354395600'
+      x-oauth-scopes:
+      - basic
+      x-accepted-oauth-scopes:
+      - basic
+      content-type:
+      - application/json;charset=utf-8
+      content-length:
+      - '147826'
+      vary:
+      - Accept-Encoding,User-Agent
+      connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: ! '{"results":[{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":8200962,"zip":"45242","lon":-84.378868,"name":"Panera","state":"OH","address_1":"11033
+        Reed Hartman Highway Blue Ash, OH 45242","lat":39.266865,"city":"Cincinnati","country":"us"},"id":"qzkfddyqqbhb","utc_offset":-18000000,"time":1354710600000,"waitlist_count":0,"yes_rsvp_count":3,"created":1352990726000,"updated":1352990726000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/91513572\/","description":"<p>Meet
+        for breakfast, coffee, and Clojure coding at Panera. We will be doing \"swarm\"
+        group coding on something fun.<\/p>\n<p>Panera location: 11033 Reed Hartman
+        Highway Blue Ash, OH 45242<\/p>","headcount":0,"name":"Cincy Clojure and Coffee","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":983169,"zip":"45209","lon":-84.442532,"name":"Health
+        Foundation of Greater Cincinnati","state":"OH","address_1":"3805 Edwards Rd","address_2":"5th
+        Floor","lat":39.148198,"city":"Cincinnati","country":"us"},"id":"93334652","utc_offset":-18000000,"duration":3600000,"time":1354885200000,"waitlist_count":0,"updated":1354208845000,"created":1354204641000,"yes_rsvp_count":2,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/93334652\/","description":"<p>Battle
+        of the Tablets! <br \/>\n\nWhich one is best for you? What to buy that special
+        someone a tablet for under the Christmas Tree? Work or just play? <br \/>\n\nJoin
+        us as our advocates for Android, MS Surface and iPad battle to convince you
+        that their favorite tablet is the one you should choose. <br \/>\n\nWe''ll
+        explore connectivity, speed, versatility and the best apps for each of the
+        platforms. Look under the hood to understand your \"all in costs\" for the
+        tablet and accessories, including what you should buy to supplement your tablet
+        at minimum. <br \/>\n\nHear what changes are coming with next releases. Ask
+        questions that impact you, and hear best practice answers. Walk away better
+        informed and ready to buy this season. <br \/>\n\nRegister ahead of time at<a
+        href=\"https:\/\/www.thecircuit.net\/NewsandEvents\/EventDetails.aspx?eventID=1264\">https:\/\/www.thecircuit.net\/NewsandEvents\/EventDetails.aspx?eventID=1264<\/a>
+        or pay at the door. <br \/>\n\n$10.00 for Members $15.00 for Non-Members<\/p>","name":"Pad
+        Men","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"clsrvyqqbpb","utc_offset":-18000000,"time":1355268600000,"waitlist_count":0,"yes_rsvp_count":2,"created":1309836530000,"updated":1348833087000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/clsrvyqqbpb\/","description":"<p>We
+        are now meeting the 2nd Tuesday of the Month at the Gaslight Software\/EdgeCase
+        office.<\/p>\n<p>The meeting starts at 6:30 – No food is provided, but feel
+        free to bring you own.<\/p>\n<p><a href=\"http:\/\/cincyfp.wordpress.com\/\">http:\/\/cincyfp.wordpress.com\/<\/a><\/p>\n<p>Twitter:
+        @cincyfp<\/p>\n<p> <\/p>","headcount":0,"name":"Cincy Functional Programmers","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"mlvxpyqqbqb","utc_offset":-18000000,"time":1355331600000,"waitlist_count":0,"yes_rsvp_count":3,"created":1291265342000,"updated":1343841622000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/93405502\/","description":"<p>Bring
+        your own lunch. Register for the group for more information: <a href=\"http:\/\/groups.google.com\/group\/cincijs\">http:\/\/groups.google.com\/group\/cincijs<\/a><\/p>\n<p> <\/p>\n<p>Read
+        the blog: <a href=\"http:\/\/blog.cincijs.com\">http:\/\/blog.cincijs.com<\/a><\/p>","headcount":0,"name":"Cincinnati
+        JavaScript User Group","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":7406452,"zip":"45202","lon":-84.512535,"name":"Cincy''s
+        on Sixth","state":"OH","address_1":"41 East 6th St","lat":39.102543,"city":"Cincinnati","country":"us"},"id":"91362292","utc_offset":-18000000,"time":1355351400000,"waitlist_count":0,"updated":1352909070000,"created":1352909070000,"yes_rsvp_count":14,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/91362292\/","description":"<p><span>In
+        our last<\/span> Web Analytics Wednesday <span>of 2012, we want to end the
+        year off with a bang.  Or at least with some drinks and meaningful networking.
+         Let’s get together, get to know each other and talk web analytics. <br \/>\n\n
+        <br \/>\n\n<\/span>Please let us know if you or your company is interested
+        in getting more involved, by either speaking, sponsoring, or co-hosting an
+        event.  We are constantly trying to improve the content shared in this group
+        and would love other experts in the area to join in!  Send us a note at info@infotrustllc.com.<\/p>\n<p> <\/p>\n<p><strong>Host:<\/strong>
+        <strong>InfoTrust<\/strong><\/p>\n<p><strong>Date:<\/strong> <strong>Wednesday,
+        December 12, 2012<\/strong> at <strong>5:30 PM<\/strong><\/p>\n<p><strong>Venue:<\/strong>
+        Cincy''s on Sixth. 41 E. Sixth St. Cincinnati, OH 45202<\/p>\n<p><strong>Sponsor:<\/strong><\/p>\n<p>This
+        event is generously sponsored by <a href=\"http:\/\/infotrustllc.com\/\" target=\"_blank\">InfoTrust<\/a><\/p>\n<p> <\/p>","how_to_find_us":"Ask
+        for Web Analytics Wednesdays group at the front!","name":"Web Analytics Wednesday
+        in Cincinnati","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":5215952,"zip":"45202","lon":-84.515465,"name":"The
+        Brandery ","state":"OH","address_1":"1411 Vine St, Cincinnati","lat":39.110943,"city":"Cincinnati","country":"us"},"id":"qfrtqyqqbrb","utc_offset":-18000000,"time":1355439600000,"waitlist_count":0,"yes_rsvp_count":1,"created":1301877167000,"updated":1342622826000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qfrtqyqqbrb\/","description":"<p><strong>Please
+        RSVP at <a href=\"http:\/\/www.meetup.com\/Cincinnati-Lean-Startup-Circle\/calendar\/15947214\/\"><\/a><a
+        href=\"http:\/\/www.meetup.com\/Cincinnati-Lean-Startup-Circle\/\">http:\/\/www.meetup.com...<\/a><\/strong><\/p>","headcount":0,"name":"Cincinnati
+        Lean Startup Circle","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":673873,"zip":"45040","phone":"(513)
+        229-0809","lon":-84.3199,"name":"Brazenhead Irish Pub","state":"OH","address_1":"5650
+        Tylersville Rd","lat":39.350952,"city":"Mason","country":"us"},"id":"qqvklcyqqbbc","utc_offset":-18000000,"time":1355443200000,"waitlist_count":0,"yes_rsvp_count":8,"created":1326362944000,"updated":1353304799000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/47788122\/","description":"<p><img
+        src=\"http:\/\/photos4.meetupstatic.com\/photos\/event\/a\/f\/2\/0\/event_85364832.jpeg\"
+        style=\"max-height : 700px ; max-width : 700px ; margin : 5px\"><\/img><\/p>\n<p>Please
+        join the <strong>OINK-PUG (Ohio, Indiana, Northern Kentucky) PHP User Group<\/strong>
+        at our traditional Holiday Party!<\/p>\n<p><img src=\"http:\/\/photos1.meetupstatic.com\/photos\/event\/2\/9\/d\/8\/event_79750712.jpeg\"
+        style=\"max-height : 700px ; max-width : 700px ; margin : 5px ; float : left\"><\/img><\/p>\n<p> <\/p>\n<p> <\/p>\n<p> <\/p>\n<p> <\/p>\n<p> <\/p>\n<p> <\/p>\n<p> <\/p>\n<p> <\/p>\n<p> <\/p>\n<p> <\/p>\n<p> <\/p>\n<p>Visit
+        our Website: <strong><a href=\"http:\/\/oink-pug.org\/\" target=\"_blank\">http:\/\/oink-pug.org<\/a><\/strong><\/p>\n<p>Register
+        for the group for more information:<\/p>\n<p><a href=\"http:\/\/groups.google.com\/group\/cincijs\">http:\/\/groups.google.com\/group\/oinkpug\/<\/a><\/p>\n<p> <\/p>\n<p> <\/p>","headcount":0,"name":"PHP
+        User Group Holiday Party","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"qhtsvdyqqbxb","utc_offset":-18000000,"time":1355871600000,"waitlist_count":0,"updated":1353427993000,"created":1353427993000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qhtsvdyqqbxb\/","description":"<p>See <a
+        href=\"http:\/\/cincyrb.com\">http:\/\/cincyrb.com<\/a><\/p>","how_to_find_us":"http:\/\/cincyrb.com\/","name":"Ruby
+        Brigade","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"93392052","utc_offset":-18000000,"duration":7200000,"time":1356044400000,"waitlist_count":0,"updated":1354229098000,"created":1354229098000,"yes_rsvp_count":8,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/93392052\/","description":"<p><span>On
+        December 20th, we will be joined by special guest speaker Microsoft IT Pro
+        Technical Evangelist Keith Mayer. For this event, he will be speaking on Hyper-V
+        and PowerShell. To learn more about Keith, visit his blog at <a href=\"http:\/\/blogs.technet.com\/b\/keithmayer\/\">http:\/\/blogs.technet.com\/b\/keithmayer\/<\/a>.
+        We want to give Keith a great event too, so spread the word!<\/span><\/p>","name":"CincyPowershell
+        with Microsoft IT Pro Technical Evangelist Keith Mayer","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"ddqljcyqqbbc","utc_offset":-18000000,"time":1356044400000,"waitlist_count":0,"yes_rsvp_count":3,"created":1323639554000,"updated":1323639554000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/ddqljcyqqbbc\/","description":"<p>Come
+        join this new special interest group as we discuss topics related to software
+        architecture. This meeting is run using the open fishbowl technique where
+        the attendees are encouraged to share their thoughts with everyone while keeping
+        the meeting from becoming a free for all. :) What topic will we cover? Well,
+        that''s up to the attendees! If you have a strong opinion about a topic you''d
+        like to suggest, or want to learn more about the topics then make sure you
+        swing by the meeting. Find out more at [url=<a href=\"http:\/\/cinnug.org]http:\/\/cinnug.org[\/url\">http:\/\/cinnug.org]http:\/\/cinnug.org[\/url<\/a>].<\/p>","headcount":0,"name":"CinARC
+        Monthly Meeting","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"dmbsmdyqqbbc","utc_offset":-18000000,"time":1356044400000,"waitlist_count":0,"updated":1348586655000,"created":1348586655000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/dmbsmdyqqbbc\/","description":"<p>A
+        local forum to discuss all things PowerShell. Future meeting plans include
+        a Scripting Club, Demos and Labs access, and Scripting Games.<\/p>\n<p>Please
+        RSVP so we can get an accurate head count.<\/p>","how_to_find_us":"http:\/\/maps.google.com\/maps?hl=en&tab=wl","name":"PowerShell
+        User Group","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"qcqljcyqqbhc","utc_offset":-18000000,"time":1356476400000,"waitlist_count":0,"yes_rsvp_count":3,"created":1323639479000,"updated":1323639479000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qcqljcyqqbhc\/","description":"<p>The
+        CINNUG group was created to provide a place for practicing .NET developers
+        to expand their knowledge and network with other .Netters, but anyone who
+        is interested in learning more about .Net is more than welcome. The focus
+        of the presentations will be on learning and utilizing the .Net framework
+        to the fullest extent, best practices, and cutting edge programming tools
+        and new technologies. The meetings start at 6:00 PM; however, we have a social
+        time starting at 5:30 PM. At the start of the meetings we do announcements,
+        followed by our headliner speaker for 60-90 minutes. After the main talk we
+        break for pizza and some more social time. We wrap up the meeting with a short
+        \"grok\" talk and usually some giveaways. For more information and to see
+        the topics for each meeting visit [url=www.cinnug.org]Cincinnati .NET Users
+        Group[\/url].<\/p>","headcount":0,"name":"CINNUG Monthly Meeting","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"kxtzqyqqbkc","utc_offset":-18000000,"time":1356649200000,"waitlist_count":0,"yes_rsvp_count":1,"created":1304693203000,"updated":1304693203000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/kxtzqyqqbkc\/","description":"<p><a
+        href=\"http:\/\/cinjug.org\/meetings\/index.html\"><span>http:\/\/cinjug.org\/meetings\/index.html<\/span><\/a><\/p>","headcount":0,"name":"CinJUG","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":8200962,"zip":"45242","lon":-84.378868,"name":"Panera","state":"OH","address_1":"11033
+        Reed Hartman Highway Blue Ash, OH 45242","lat":39.266865,"city":"Cincinnati","country":"us"},"id":"qzkfddyrcbdb","utc_offset":-18000000,"time":1357129800000,"waitlist_count":0,"yes_rsvp_count":0,"created":1342280305000,"updated":1342280305000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qzkfddyrcbdb\/","description":"<p>Meet
+        for breakfast, coffee, and Clojure coding at Panera. We will be doing \"swarm\"
+        group coding on something fun.<\/p>\n<p>Panera location: 11033 Reed Hartman
+        Highway Blue Ash, OH 45242<\/p>","headcount":0,"name":"Cincy Clojure and Coffee","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":1969891,"zip":"45040","lon":-84.31395,"name":"Max
+        Technical Training","state":"OH","address_1":"4900 Parkway Dr # 160","lat":39.303802,"city":"Mason","country":"us"},"id":"dhhpkcyrcbfb","utc_offset":-18000000,"time":1357254000000,"waitlist_count":0,"updated":1325544759000,"created":1325544759000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/dhhpkcyrcbfb\/","description":"<p>First,
+        lightning talk.<\/p>\n<p>Then we''ll code katas.<\/p>\n<p>Don&#146;t forget
+        to bring food and drink as we&#146;re not actively looking for a sponsor.<\/p>\n<p>More
+        details:<\/p>\n<p><a href=\"http:\/\/cincycleancoders.com\/\">http:\/\/cincycleancoders.com\/<\/a><\/p>","how_to_find_us":"Off
+        Mason-Montgomery, north of Natorp, etc. on the east side.","name":"Cincy Clean
+        Coders","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":10220772,"lon":-84.409241,"name":"Miami
+        University Voice of America Learning Center","state":"OH","address_1":"7847
+        VOA Park Drive, Corner of VOA Park Drive and Cox Road","lat":39.346191,"country":"us","city":"West
+        Chester"},"id":"90510552","utc_offset":-18000000,"duration":21600000,"time":1357567200000,"waitlist_count":0,"updated":1352384578000,"created":1352384578000,"yes_rsvp_count":6,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/90510552\/","description":"<p>See
+        <a href=\"http:\/\/www.gcoug.org\">http:\/\/www.gcoug.org<\/a> for Agenda
+        details.<\/p>\n<p>Please RSVP to <a href=\"http:\/\/apex.oracle.com\/pls\/apex\/f?p=60184:2\">http:\/\/apex.oracle.com\/pls\/apex\/f?p=60184:2<\/a>
+        to register for this meeting.<\/p>\n<p> <br \/>\n\nBest Regards,<\/p>\n<p>
+        <br \/>\n\nBob Stoneman <br \/>\n\nCertified Oracle 7.3,8,8i,9i,10g,11g DBA
+        <br \/>\n\nPresident, Greater Cincinnati Oracle Users Group <br \/>\n\nIOUG
+        RUG Council <br \/>\n\npresident@gcoug.org <br \/>\n\n(513) 315-2482 [Cell]<\/p>","name":"GCOUG
+        1-7-2013 Meeting (Tom Kyte of Oracle Corp., & EMC)","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"clsrvyrcblb","utc_offset":-18000000,"time":1357687800000,"waitlist_count":0,"yes_rsvp_count":2,"created":1309836530000,"updated":1348833087000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/clsrvyrcblb\/","description":"<p>We
+        are now meeting the 2nd Tuesday of the Month at the Gaslight Software\/EdgeCase
+        office.<\/p>\n<p>The meeting starts at 6:30 – No food is provided, but feel
+        free to bring you own.<\/p>\n<p><a href=\"http:\/\/cincyfp.wordpress.com\/\">http:\/\/cincyfp.wordpress.com\/<\/a><\/p>\n<p>Twitter:
+        @cincyfp<\/p>\n<p> <\/p>","headcount":0,"name":"Cincy Functional Programmers","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"mlvxpyrcbmb","utc_offset":-18000000,"time":1357750800000,"waitlist_count":0,"yes_rsvp_count":2,"created":1291265342000,"updated":1343841622000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/mlvxpyrcbmb\/","description":"<p>Bring
+        your own lunch. Register for the group for more information: <a href=\"http:\/\/groups.google.com\/group\/cincijs\">http:\/\/groups.google.com\/group\/cincijs<\/a><\/p>\n<p> <\/p>\n<p>Read
+        the blog: <a href=\"http:\/\/blog.cincijs.com\">http:\/\/blog.cincijs.com<\/a><\/p>","headcount":0,"name":"Cincinnati
+        JavaScript User Group","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":5215952,"zip":"45202","lon":-84.515465,"name":"The
+        Brandery ","state":"OH","address_1":"1411 Vine St, Cincinnati","lat":39.110943,"city":"Cincinnati","country":"us"},"id":"qfrtqyrcbnb","utc_offset":-18000000,"time":1357858800000,"waitlist_count":0,"yes_rsvp_count":1,"created":1301877167000,"updated":1342622826000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qfrtqyrcbnb\/","description":"<p><strong>Please
+        RSVP at <a href=\"http:\/\/www.meetup.com\/Cincinnati-Lean-Startup-Circle\/calendar\/15947214\/\"><\/a><a
+        href=\"http:\/\/www.meetup.com\/Cincinnati-Lean-Startup-Circle\/\">http:\/\/www.meetup.com...<\/a><\/strong><\/p>","headcount":0,"name":"Cincinnati
+        Lean Startup Circle","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"qhtsvdyrcbtb","utc_offset":-18000000,"time":1358290800000,"waitlist_count":0,"updated":1353427993000,"created":1353427993000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qhtsvdyrcbtb\/","description":"<p>See <a
+        href=\"http:\/\/cincyrb.com\">http:\/\/cincyrb.com<\/a><\/p>","how_to_find_us":"http:\/\/cincyrb.com\/","name":"Ruby
+        Brigade","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"ddqljcyrcbwb","utc_offset":-18000000,"time":1358463600000,"waitlist_count":0,"yes_rsvp_count":3,"created":1323639554000,"updated":1323639554000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/ddqljcyrcbwb\/","description":"<p>Come
+        join this new special interest group as we discuss topics related to software
+        architecture. This meeting is run using the open fishbowl technique where
+        the attendees are encouraged to share their thoughts with everyone while keeping
+        the meeting from becoming a free for all. :) What topic will we cover? Well,
+        that''s up to the attendees! If you have a strong opinion about a topic you''d
+        like to suggest, or want to learn more about the topics then make sure you
+        swing by the meeting. Find out more at [url=<a href=\"http:\/\/cinnug.org]http:\/\/cinnug.org[\/url\">http:\/\/cinnug.org]http:\/\/cinnug.org[\/url<\/a>].<\/p>","headcount":0,"name":"CinARC
+        Monthly Meeting","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":4440172,"zip":"45202","lon":-84.517731,"name":"Possible
+        Worldwide","state":"OH","address_1":"302 W 3rd St # 900","lat":39.098381,"city":"Cincinnati","country":"us"},"id":"qqvklcyrcbwb","utc_offset":-18000000,"time":1358467200000,"waitlist_count":0,"yes_rsvp_count":3,"created":1326362964000,"updated":1326478038000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/47788152\/","description":"<p><img
+        src=\"http:\/\/photos4.meetupstatic.com\/photos\/event\/a\/f\/2\/0\/event_85364832.jpeg\"
+        style=\"max-height : 700px ; max-width : 700px ; margin : 5px\"><\/img><\/p>\n<p>Please
+        join the&nbsp;<strong>OINK-PUG (Ohio, Indiana, Northern Kentucky) PHP User
+        Group<\/strong>&nbsp;at our monthly meeting.<\/p>\n<p>Visit our Website:&nbsp;<strong><a
+        href=\"http:\/\/oink-pug.org\/\" target=\"_blank\">http:\/\/oink-pug.org<\/a><\/strong><\/p>\n<p>Register
+        for the group for more information:&nbsp;<\/p>\n<p><a href=\"http:\/\/groups.google.com\/group\/cincijs\">http:\/\/groups.google.com\/group\/oinkpug\/<\/a><\/p>\n<p>&nbsp;<\/p>\n<p>&nbsp;<\/p>","headcount":0,"name":"PHP
+        User Group","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"qcqljcyrcbdc","utc_offset":-18000000,"time":1358895600000,"waitlist_count":0,"yes_rsvp_count":3,"created":1323639479000,"updated":1323639479000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qcqljcyrcbdc\/","description":"<p>The
+        CINNUG group was created to provide a place for practicing .NET developers
+        to expand their knowledge and network with other .Netters, but anyone who
+        is interested in learning more about .Net is more than welcome. The focus
+        of the presentations will be on learning and utilizing the .Net framework
+        to the fullest extent, best practices, and cutting edge programming tools
+        and new technologies. The meetings start at 6:00 PM; however, we have a social
+        time starting at 5:30 PM. At the start of the meetings we do announcements,
+        followed by our headliner speaker for 60-90 minutes. After the main talk we
+        break for pizza and some more social time. We wrap up the meeting with a short
+        \"grok\" talk and usually some giveaways. For more information and to see
+        the topics for each meeting visit [url=www.cinnug.org]Cincinnati .NET Users
+        Group[\/url].<\/p>","headcount":0,"name":"CINNUG Monthly Meeting","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"kxtzqyrcbgc","utc_offset":-18000000,"time":1359068400000,"waitlist_count":0,"yes_rsvp_count":1,"created":1304693203000,"updated":1304693203000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/kxtzqyrcbgc\/","description":"<p><a
+        href=\"http:\/\/cinjug.org\/meetings\/index.html\"><span>http:\/\/cinjug.org\/meetings\/index.html<\/span><\/a><\/p>","headcount":0,"name":"CinJUG","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":8200962,"zip":"45242","lon":-84.378868,"name":"Panera","state":"OH","address_1":"11033
+        Reed Hartman Highway Blue Ash, OH 45242","lat":39.266865,"city":"Cincinnati","country":"us"},"id":"qzkfddyrdbjb","utc_offset":-18000000,"time":1360153800000,"waitlist_count":0,"yes_rsvp_count":0,"created":1342280305000,"updated":1342280305000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qzkfddyrdbjb\/","description":"<p>Meet
+        for breakfast, coffee, and Clojure coding at Panera. We will be doing \"swarm\"
+        group coding on something fun.<\/p>\n<p>Panera location: 11033 Reed Hartman
+        Highway Blue Ash, OH 45242<\/p>","headcount":0,"name":"Cincy Clojure and Coffee","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":1969891,"zip":"45040","lon":-84.31395,"name":"Max
+        Technical Training","state":"OH","address_1":"4900 Parkway Dr # 160","lat":39.303802,"city":"Mason","country":"us"},"id":"dhhpkcyrdbkb","utc_offset":-18000000,"time":1360278000000,"waitlist_count":0,"updated":1325544759000,"created":1325544759000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/dhhpkcyrdbkb\/","description":"<p>First,
+        lightning talk.<\/p>\n<p>Then we''ll code katas.<\/p>\n<p>Don&#146;t forget
+        to bring food and drink as we&#146;re not actively looking for a sponsor.<\/p>\n<p>More
+        details:<\/p>\n<p><a href=\"http:\/\/cincycleancoders.com\/\">http:\/\/cincycleancoders.com\/<\/a><\/p>","how_to_find_us":"Off
+        Mason-Montgomery, north of Natorp, etc. on the east side.","name":"Cincy Clean
+        Coders","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"clsrvyrdbqb","utc_offset":-18000000,"time":1360711800000,"waitlist_count":0,"yes_rsvp_count":2,"created":1309836530000,"updated":1348833087000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/clsrvyrdbqb\/","description":"<p>We
+        are now meeting the 2nd Tuesday of the Month at the Gaslight Software\/EdgeCase
+        office.<\/p>\n<p>The meeting starts at 6:30 – No food is provided, but feel
+        free to bring you own.<\/p>\n<p><a href=\"http:\/\/cincyfp.wordpress.com\/\">http:\/\/cincyfp.wordpress.com\/<\/a><\/p>\n<p>Twitter:
+        @cincyfp<\/p>\n<p> <\/p>","headcount":0,"name":"Cincy Functional Programmers","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"mlvxpyrdbrb","utc_offset":-18000000,"time":1360774800000,"waitlist_count":0,"yes_rsvp_count":2,"created":1291265342000,"updated":1343841622000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/mlvxpyrdbrb\/","description":"<p>Bring
+        your own lunch. Register for the group for more information: <a href=\"http:\/\/groups.google.com\/group\/cincijs\">http:\/\/groups.google.com\/group\/cincijs<\/a><\/p>\n<p> <\/p>\n<p>Read
+        the blog: <a href=\"http:\/\/blog.cincijs.com\">http:\/\/blog.cincijs.com<\/a><\/p>","headcount":0,"name":"Cincinnati
+        JavaScript User Group","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":5215952,"zip":"45202","lon":-84.515465,"name":"The
+        Brandery ","state":"OH","address_1":"1411 Vine St, Cincinnati","lat":39.110943,"city":"Cincinnati","country":"us"},"id":"qfrtqyrdbsb","utc_offset":-18000000,"time":1360882800000,"waitlist_count":0,"yes_rsvp_count":1,"created":1301877167000,"updated":1342622826000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qfrtqyrdbsb\/","description":"<p><strong>Please
+        RSVP at <a href=\"http:\/\/www.meetup.com\/Cincinnati-Lean-Startup-Circle\/calendar\/15947214\/\"><\/a><a
+        href=\"http:\/\/www.meetup.com\/Cincinnati-Lean-Startup-Circle\/\">http:\/\/www.meetup.com...<\/a><\/strong><\/p>","headcount":0,"name":"Cincinnati
+        Lean Startup Circle","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"qhtsvdyrdbzb","utc_offset":-18000000,"time":1361314800000,"waitlist_count":0,"updated":1353427993000,"created":1353427993000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qhtsvdyrdbzb\/","description":"<p>See <a
+        href=\"http:\/\/cincyrb.com\">http:\/\/cincyrb.com<\/a><\/p>","how_to_find_us":"http:\/\/cincyrb.com\/","name":"Ruby
+        Brigade","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"ddqljcyrdbcc","utc_offset":-18000000,"time":1361487600000,"waitlist_count":0,"yes_rsvp_count":3,"created":1323639554000,"updated":1323639554000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/ddqljcyrdbcc\/","description":"<p>Come
+        join this new special interest group as we discuss topics related to software
+        architecture. This meeting is run using the open fishbowl technique where
+        the attendees are encouraged to share their thoughts with everyone while keeping
+        the meeting from becoming a free for all. :) What topic will we cover? Well,
+        that''s up to the attendees! If you have a strong opinion about a topic you''d
+        like to suggest, or want to learn more about the topics then make sure you
+        swing by the meeting. Find out more at [url=<a href=\"http:\/\/cinnug.org]http:\/\/cinnug.org[\/url\">http:\/\/cinnug.org]http:\/\/cinnug.org[\/url<\/a>].<\/p>","headcount":0,"name":"CinARC
+        Monthly Meeting","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"dmbsmdyrdbcc","utc_offset":-18000000,"time":1361487600000,"waitlist_count":0,"updated":1348586655000,"created":1348586655000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/dmbsmdyrdbcc\/","description":"<p>A
+        local forum to discuss all things PowerShell. Future meeting plans include
+        a Scripting Club, Demos and Labs access, and Scripting Games.<\/p>\n<p>Please
+        RSVP so we can get an accurate head count.<\/p>","how_to_find_us":"http:\/\/maps.google.com\/maps?hl=en&tab=wl","name":"PowerShell
+        User Group","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":4440172,"zip":"45202","lon":-84.517731,"name":"Possible
+        Worldwide","state":"OH","address_1":"302 W 3rd St # 900","lat":39.098381,"city":"Cincinnati","country":"us"},"id":"qqvklcyrdbcc","utc_offset":-18000000,"time":1361491200000,"waitlist_count":0,"yes_rsvp_count":3,"created":1326360811000,"updated":1326360811000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qqvklcyrdbcc\/","description":"<p>Please
+        join the OINK (Ohio, Indiana, Northern Kentucky) PHP User Group at our first
+        working meeting of 2012.<\/p>\n<p>&nbsp;<\/p>\n<p>In this meeting, we will
+        finalize our 2012 Schedule and Plan of Activities.&nbsp;<\/p>\n<p>&nbsp;<\/p>\n<p>As
+        a speaker, we''ll have Dr. Hazem Said, the new Chair of IT Department of University
+        of Cincinnati, who will introduce his Department.<\/p>\n<p>&nbsp;<\/p>\n<p>We''ll
+        also have a \"Swap Exchange\": bring old equipment, or unwanted Christmas
+        gifts that you would like to exchange for something else.<\/p>\n<p>&nbsp;<\/p>\n<p>As
+        last time, to make it more enjoyable, we''ll have FREE pizza and soda\/beer
+        :) To know exactly how much pizza and refreshments we need, please RSVP ASAP
+        if you will be attending.<\/p>\n<p>&nbsp;<\/p>\n<p><a href=\"http:\/\/oink-pug.org\/\"
+        target=\"_blank\">http:\/\/oink-pug.org<\/a><\/p>","headcount":0,"name":"OINK
+        PHP User Group","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"qcqljcyrdbjc","utc_offset":-18000000,"time":1361919600000,"waitlist_count":0,"yes_rsvp_count":3,"created":1323639479000,"updated":1323639479000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qcqljcyrdbjc\/","description":"<p>The
+        CINNUG group was created to provide a place for practicing .NET developers
+        to expand their knowledge and network with other .Netters, but anyone who
+        is interested in learning more about .Net is more than welcome. The focus
+        of the presentations will be on learning and utilizing the .Net framework
+        to the fullest extent, best practices, and cutting edge programming tools
+        and new technologies. The meetings start at 6:00 PM; however, we have a social
+        time starting at 5:30 PM. At the start of the meetings we do announcements,
+        followed by our headliner speaker for 60-90 minutes. After the main talk we
+        break for pizza and some more social time. We wrap up the meeting with a short
+        \"grok\" talk and usually some giveaways. For more information and to see
+        the topics for each meeting visit [url=www.cinnug.org]Cincinnati .NET Users
+        Group[\/url].<\/p>","headcount":0,"name":"CINNUG Monthly Meeting","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"kxtzqyrdblc","utc_offset":-18000000,"time":1362092400000,"waitlist_count":0,"yes_rsvp_count":1,"created":1304693203000,"updated":1304693203000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/kxtzqyrdblc\/","description":"<p><a
+        href=\"http:\/\/cinjug.org\/meetings\/index.html\"><span>http:\/\/cinjug.org\/meetings\/index.html<\/span><\/a><\/p>","headcount":0,"name":"CinJUG","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":8200962,"zip":"45242","lon":-84.378868,"name":"Panera","state":"OH","address_1":"11033
+        Reed Hartman Highway Blue Ash, OH 45242","lat":39.266865,"city":"Cincinnati","country":"us"},"id":"qzkfddyrfbjb","utc_offset":-18000000,"time":1362573000000,"waitlist_count":0,"yes_rsvp_count":0,"created":1342280305000,"updated":1342280305000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qzkfddyrfbjb\/","description":"<p>Meet
+        for breakfast, coffee, and Clojure coding at Panera. We will be doing \"swarm\"
+        group coding on something fun.<\/p>\n<p>Panera location: 11033 Reed Hartman
+        Highway Blue Ash, OH 45242<\/p>","headcount":0,"name":"Cincy Clojure and Coffee","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":1969891,"zip":"45040","lon":-84.31395,"name":"Max
+        Technical Training","state":"OH","address_1":"4900 Parkway Dr # 160","lat":39.303802,"city":"Mason","country":"us"},"id":"dhhpkcyrfbkb","utc_offset":-18000000,"time":1362697200000,"waitlist_count":0,"updated":1325544759000,"created":1325544759000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/dhhpkcyrfbkb\/","description":"<p>First,
+        lightning talk.<\/p>\n<p>Then we''ll code katas.<\/p>\n<p>Don&#146;t forget
+        to bring food and drink as we&#146;re not actively looking for a sponsor.<\/p>\n<p>More
+        details:<\/p>\n<p><a href=\"http:\/\/cincycleancoders.com\/\">http:\/\/cincycleancoders.com\/<\/a><\/p>","how_to_find_us":"Off
+        Mason-Montgomery, north of Natorp, etc. on the east side.","name":"Cincy Clean
+        Coders","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"clsrvyrfbqb","utc_offset":-14400000,"time":1363127400000,"waitlist_count":0,"yes_rsvp_count":2,"created":1309836530000,"updated":1348833087000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/clsrvyrfbqb\/","description":"<p>We
+        are now meeting the 2nd Tuesday of the Month at the Gaslight Software\/EdgeCase
+        office.<\/p>\n<p>The meeting starts at 6:30 – No food is provided, but feel
+        free to bring you own.<\/p>\n<p><a href=\"http:\/\/cincyfp.wordpress.com\/\">http:\/\/cincyfp.wordpress.com\/<\/a><\/p>\n<p>Twitter:
+        @cincyfp<\/p>\n<p> <\/p>","headcount":0,"name":"Cincy Functional Programmers","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"mlvxpyrfbrb","utc_offset":-14400000,"time":1363190400000,"waitlist_count":0,"yes_rsvp_count":2,"created":1291265342000,"updated":1343841622000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/mlvxpyrfbrb\/","description":"<p>Bring
+        your own lunch. Register for the group for more information: <a href=\"http:\/\/groups.google.com\/group\/cincijs\">http:\/\/groups.google.com\/group\/cincijs<\/a><\/p>\n<p> <\/p>\n<p>Read
+        the blog: <a href=\"http:\/\/blog.cincijs.com\">http:\/\/blog.cincijs.com<\/a><\/p>","headcount":0,"name":"Cincinnati
+        JavaScript User Group","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":5215952,"zip":"45202","lon":-84.515465,"name":"The
+        Brandery ","state":"OH","address_1":"1411 Vine St, Cincinnati","lat":39.110943,"city":"Cincinnati","country":"us"},"id":"qfrtqyrfbsb","utc_offset":-14400000,"time":1363298400000,"waitlist_count":0,"yes_rsvp_count":1,"created":1301877167000,"updated":1342622826000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qfrtqyrfbsb\/","description":"<p><strong>Please
+        RSVP at <a href=\"http:\/\/www.meetup.com\/Cincinnati-Lean-Startup-Circle\/calendar\/15947214\/\"><\/a><a
+        href=\"http:\/\/www.meetup.com\/Cincinnati-Lean-Startup-Circle\/\">http:\/\/www.meetup.com...<\/a><\/strong><\/p>","headcount":0,"name":"Cincinnati
+        Lean Startup Circle","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"qhtsvdyrfbzb","utc_offset":-14400000,"time":1363730400000,"waitlist_count":0,"updated":1353427993000,"created":1353427993000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qhtsvdyrfbzb\/","description":"<p>See <a
+        href=\"http:\/\/cincyrb.com\">http:\/\/cincyrb.com<\/a><\/p>","how_to_find_us":"http:\/\/cincyrb.com\/","name":"Ruby
+        Brigade","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"ddqljcyrfbcc","utc_offset":-14400000,"time":1363903200000,"waitlist_count":0,"yes_rsvp_count":3,"created":1323639554000,"updated":1323639554000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/ddqljcyrfbcc\/","description":"<p>Come
+        join this new special interest group as we discuss topics related to software
+        architecture. This meeting is run using the open fishbowl technique where
+        the attendees are encouraged to share their thoughts with everyone while keeping
+        the meeting from becoming a free for all. :) What topic will we cover? Well,
+        that''s up to the attendees! If you have a strong opinion about a topic you''d
+        like to suggest, or want to learn more about the topics then make sure you
+        swing by the meeting. Find out more at [url=<a href=\"http:\/\/cinnug.org]http:\/\/cinnug.org[\/url\">http:\/\/cinnug.org]http:\/\/cinnug.org[\/url<\/a>].<\/p>","headcount":0,"name":"CinARC
+        Monthly Meeting","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":4440172,"zip":"45202","lon":-84.517731,"name":"Possible
+        Worldwide","state":"OH","address_1":"302 W 3rd St # 900","lat":39.098381,"city":"Cincinnati","country":"us"},"id":"qqvklcyrfbcc","utc_offset":-14400000,"time":1363906800000,"waitlist_count":0,"yes_rsvp_count":3,"created":1326360811000,"updated":1326360811000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qqvklcyrfbcc\/","description":"<p>Please
+        join the OINK (Ohio, Indiana, Northern Kentucky) PHP User Group at our first
+        working meeting of 2012.<\/p>\n<p>&nbsp;<\/p>\n<p>In this meeting, we will
+        finalize our 2012 Schedule and Plan of Activities.&nbsp;<\/p>\n<p>&nbsp;<\/p>\n<p>As
+        a speaker, we''ll have Dr. Hazem Said, the new Chair of IT Department of University
+        of Cincinnati, who will introduce his Department.<\/p>\n<p>&nbsp;<\/p>\n<p>We''ll
+        also have a \"Swap Exchange\": bring old equipment, or unwanted Christmas
+        gifts that you would like to exchange for something else.<\/p>\n<p>&nbsp;<\/p>\n<p>As
+        last time, to make it more enjoyable, we''ll have FREE pizza and soda\/beer
+        :) To know exactly how much pizza and refreshments we need, please RSVP ASAP
+        if you will be attending.<\/p>\n<p>&nbsp;<\/p>\n<p><a href=\"http:\/\/oink-pug.org\/\"
+        target=\"_blank\">http:\/\/oink-pug.org<\/a><\/p>","headcount":0,"name":"OINK
+        PHP User Group","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"qcqljcyrfbjc","utc_offset":-14400000,"time":1364335200000,"waitlist_count":0,"yes_rsvp_count":3,"created":1323639479000,"updated":1323639479000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qcqljcyrfbjc\/","description":"<p>The
+        CINNUG group was created to provide a place for practicing .NET developers
+        to expand their knowledge and network with other .Netters, but anyone who
+        is interested in learning more about .Net is more than welcome. The focus
+        of the presentations will be on learning and utilizing the .Net framework
+        to the fullest extent, best practices, and cutting edge programming tools
+        and new technologies. The meetings start at 6:00 PM; however, we have a social
+        time starting at 5:30 PM. At the start of the meetings we do announcements,
+        followed by our headliner speaker for 60-90 minutes. After the main talk we
+        break for pizza and some more social time. We wrap up the meeting with a short
+        \"grok\" talk and usually some giveaways. For more information and to see
+        the topics for each meeting visit [url=www.cinnug.org]Cincinnati .NET Users
+        Group[\/url].<\/p>","headcount":0,"name":"CINNUG Monthly Meeting","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"kxtzqyrfblc","utc_offset":-14400000,"time":1364508000000,"waitlist_count":0,"yes_rsvp_count":1,"created":1304693203000,"updated":1304693203000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/kxtzqyrfblc\/","description":"<p><a
+        href=\"http:\/\/cinjug.org\/meetings\/index.html\"><span>http:\/\/cinjug.org\/meetings\/index.html<\/span><\/a><\/p>","headcount":0,"name":"CinJUG","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":8200962,"zip":"45242","lon":-84.378868,"name":"Panera","state":"OH","address_1":"11033
+        Reed Hartman Highway Blue Ash, OH 45242","lat":39.266865,"city":"Cincinnati","country":"us"},"id":"qzkfddyrgbfb","utc_offset":-14400000,"time":1364988600000,"waitlist_count":0,"yes_rsvp_count":0,"created":1342280305000,"updated":1342280305000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qzkfddyrgbfb\/","description":"<p>Meet
+        for breakfast, coffee, and Clojure coding at Panera. We will be doing \"swarm\"
+        group coding on something fun.<\/p>\n<p>Panera location: 11033 Reed Hartman
+        Highway Blue Ash, OH 45242<\/p>","headcount":0,"name":"Cincy Clojure and Coffee","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":1969891,"zip":"45040","lon":-84.31395,"name":"Max
+        Technical Training","state":"OH","address_1":"4900 Parkway Dr # 160","lat":39.303802,"city":"Mason","country":"us"},"id":"dhhpkcyrgbgb","utc_offset":-14400000,"time":1365112800000,"waitlist_count":0,"updated":1325544759000,"created":1325544759000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/dhhpkcyrgbgb\/","description":"<p>First,
+        lightning talk.<\/p>\n<p>Then we''ll code katas.<\/p>\n<p>Don&#146;t forget
+        to bring food and drink as we&#146;re not actively looking for a sponsor.<\/p>\n<p>More
+        details:<\/p>\n<p><a href=\"http:\/\/cincycleancoders.com\/\">http:\/\/cincycleancoders.com\/<\/a><\/p>","how_to_find_us":"Off
+        Mason-Montgomery, north of Natorp, etc. on the east side.","name":"Cincy Clean
+        Coders","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"clsrvyrgbmb","utc_offset":-14400000,"time":1365546600000,"waitlist_count":0,"yes_rsvp_count":2,"created":1309836530000,"updated":1348833087000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/clsrvyrgbmb\/","description":"<p>We
+        are now meeting the 2nd Tuesday of the Month at the Gaslight Software\/EdgeCase
+        office.<\/p>\n<p>The meeting starts at 6:30 – No food is provided, but feel
+        free to bring you own.<\/p>\n<p><a href=\"http:\/\/cincyfp.wordpress.com\/\">http:\/\/cincyfp.wordpress.com\/<\/a><\/p>\n<p>Twitter:
+        @cincyfp<\/p>\n<p> <\/p>","headcount":0,"name":"Cincy Functional Programmers","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"mlvxpyrgbnb","utc_offset":-14400000,"time":1365609600000,"waitlist_count":0,"yes_rsvp_count":2,"created":1291265342000,"updated":1343841622000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/mlvxpyrgbnb\/","description":"<p>Bring
+        your own lunch. Register for the group for more information: <a href=\"http:\/\/groups.google.com\/group\/cincijs\">http:\/\/groups.google.com\/group\/cincijs<\/a><\/p>\n<p> <\/p>\n<p>Read
+        the blog: <a href=\"http:\/\/blog.cincijs.com\">http:\/\/blog.cincijs.com<\/a><\/p>","headcount":0,"name":"Cincinnati
+        JavaScript User Group","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":5215952,"zip":"45202","lon":-84.515465,"name":"The
+        Brandery ","state":"OH","address_1":"1411 Vine St, Cincinnati","lat":39.110943,"city":"Cincinnati","country":"us"},"id":"qfrtqyrgbpb","utc_offset":-14400000,"time":1365717600000,"waitlist_count":0,"yes_rsvp_count":1,"created":1301877167000,"updated":1342622826000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qfrtqyrgbpb\/","description":"<p><strong>Please
+        RSVP at <a href=\"http:\/\/www.meetup.com\/Cincinnati-Lean-Startup-Circle\/calendar\/15947214\/\"><\/a><a
+        href=\"http:\/\/www.meetup.com\/Cincinnati-Lean-Startup-Circle\/\">http:\/\/www.meetup.com...<\/a><\/strong><\/p>","headcount":0,"name":"Cincinnati
+        Lean Startup Circle","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"qhtsvdyrgbvb","utc_offset":-14400000,"time":1366149600000,"waitlist_count":0,"updated":1353427993000,"created":1353427993000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qhtsvdyrgbvb\/","description":"<p>See <a
+        href=\"http:\/\/cincyrb.com\">http:\/\/cincyrb.com<\/a><\/p>","how_to_find_us":"http:\/\/cincyrb.com\/","name":"Ruby
+        Brigade","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"ddqljcyrgbxb","utc_offset":-14400000,"time":1366322400000,"waitlist_count":0,"yes_rsvp_count":3,"created":1323639554000,"updated":1323639554000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/ddqljcyrgbxb\/","description":"<p>Come
+        join this new special interest group as we discuss topics related to software
+        architecture. This meeting is run using the open fishbowl technique where
+        the attendees are encouraged to share their thoughts with everyone while keeping
+        the meeting from becoming a free for all. :) What topic will we cover? Well,
+        that''s up to the attendees! If you have a strong opinion about a topic you''d
+        like to suggest, or want to learn more about the topics then make sure you
+        swing by the meeting. Find out more at [url=<a href=\"http:\/\/cinnug.org]http:\/\/cinnug.org[\/url\">http:\/\/cinnug.org]http:\/\/cinnug.org[\/url<\/a>].<\/p>","headcount":0,"name":"CinARC
+        Monthly Meeting","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"dmbsmdyrgbxb","utc_offset":-14400000,"time":1366322400000,"waitlist_count":0,"updated":1348586655000,"created":1348586655000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/dmbsmdyrgbxb\/","description":"<p>A
+        local forum to discuss all things PowerShell. Future meeting plans include
+        a Scripting Club, Demos and Labs access, and Scripting Games.<\/p>\n<p>Please
+        RSVP so we can get an accurate head count.<\/p>","how_to_find_us":"http:\/\/maps.google.com\/maps?hl=en&tab=wl","name":"PowerShell
+        User Group","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":4440172,"zip":"45202","lon":-84.517731,"name":"Possible
+        Worldwide","state":"OH","address_1":"302 W 3rd St # 900","lat":39.098381,"city":"Cincinnati","country":"us"},"id":"qqvklcyrgbxb","utc_offset":-14400000,"time":1366326000000,"waitlist_count":0,"yes_rsvp_count":3,"created":1326360811000,"updated":1326360811000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qqvklcyrgbxb\/","description":"<p>Please
+        join the OINK (Ohio, Indiana, Northern Kentucky) PHP User Group at our first
+        working meeting of 2012.<\/p>\n<p>&nbsp;<\/p>\n<p>In this meeting, we will
+        finalize our 2012 Schedule and Plan of Activities.&nbsp;<\/p>\n<p>&nbsp;<\/p>\n<p>As
+        a speaker, we''ll have Dr. Hazem Said, the new Chair of IT Department of University
+        of Cincinnati, who will introduce his Department.<\/p>\n<p>&nbsp;<\/p>\n<p>We''ll
+        also have a \"Swap Exchange\": bring old equipment, or unwanted Christmas
+        gifts that you would like to exchange for something else.<\/p>\n<p>&nbsp;<\/p>\n<p>As
+        last time, to make it more enjoyable, we''ll have FREE pizza and soda\/beer
+        :) To know exactly how much pizza and refreshments we need, please RSVP ASAP
+        if you will be attending.<\/p>\n<p>&nbsp;<\/p>\n<p><a href=\"http:\/\/oink-pug.org\/\"
+        target=\"_blank\">http:\/\/oink-pug.org<\/a><\/p>","headcount":0,"name":"OINK
+        PHP User Group","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"qcqljcyrgbfc","utc_offset":-14400000,"time":1366754400000,"waitlist_count":0,"yes_rsvp_count":3,"created":1323639479000,"updated":1323639479000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qcqljcyrgbfc\/","description":"<p>The
+        CINNUG group was created to provide a place for practicing .NET developers
+        to expand their knowledge and network with other .Netters, but anyone who
+        is interested in learning more about .Net is more than welcome. The focus
+        of the presentations will be on learning and utilizing the .Net framework
+        to the fullest extent, best practices, and cutting edge programming tools
+        and new technologies. The meetings start at 6:00 PM; however, we have a social
+        time starting at 5:30 PM. At the start of the meetings we do announcements,
+        followed by our headliner speaker for 60-90 minutes. After the main talk we
+        break for pizza and some more social time. We wrap up the meeting with a short
+        \"grok\" talk and usually some giveaways. For more information and to see
+        the topics for each meeting visit [url=www.cinnug.org]Cincinnati .NET Users
+        Group[\/url].<\/p>","headcount":0,"name":"CINNUG Monthly Meeting","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"kxtzqyrgbhc","utc_offset":-14400000,"time":1366927200000,"waitlist_count":0,"yes_rsvp_count":1,"created":1304693203000,"updated":1304693203000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/kxtzqyrgbhc\/","description":"<p><a
+        href=\"http:\/\/cinjug.org\/meetings\/index.html\"><span>http:\/\/cinjug.org\/meetings\/index.html<\/span><\/a><\/p>","headcount":0,"name":"CinJUG","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":8200962,"zip":"45242","lon":-84.378868,"name":"Panera","state":"OH","address_1":"11033
+        Reed Hartman Highway Blue Ash, OH 45242","lat":39.266865,"city":"Cincinnati","country":"us"},"id":"qzkfddyrhbcb","utc_offset":-14400000,"time":1367407800000,"waitlist_count":0,"yes_rsvp_count":0,"created":1342280305000,"updated":1342280305000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qzkfddyrhbcb\/","description":"<p>Meet
+        for breakfast, coffee, and Clojure coding at Panera. We will be doing \"swarm\"
+        group coding on something fun.<\/p>\n<p>Panera location: 11033 Reed Hartman
+        Highway Blue Ash, OH 45242<\/p>","headcount":0,"name":"Cincy Clojure and Coffee","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":1969891,"zip":"45040","lon":-84.31395,"name":"Max
+        Technical Training","state":"OH","address_1":"4900 Parkway Dr # 160","lat":39.303802,"city":"Mason","country":"us"},"id":"dhhpkcyrhbdb","utc_offset":-14400000,"time":1367532000000,"waitlist_count":0,"updated":1325544759000,"created":1325544759000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/dhhpkcyrhbdb\/","description":"<p>First,
+        lightning talk.<\/p>\n<p>Then we''ll code katas.<\/p>\n<p>Don&#146;t forget
+        to bring food and drink as we&#146;re not actively looking for a sponsor.<\/p>\n<p>More
+        details:<\/p>\n<p><a href=\"http:\/\/cincycleancoders.com\/\">http:\/\/cincycleancoders.com\/<\/a><\/p>","how_to_find_us":"Off
+        Mason-Montgomery, north of Natorp, etc. on the east side.","name":"Cincy Clean
+        Coders","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"mlvxpyrhblb","utc_offset":-14400000,"time":1368028800000,"waitlist_count":0,"yes_rsvp_count":2,"created":1291265342000,"updated":1343841622000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/mlvxpyrhblb\/","description":"<p>Bring
+        your own lunch. Register for the group for more information: <a href=\"http:\/\/groups.google.com\/group\/cincijs\">http:\/\/groups.google.com\/group\/cincijs<\/a><\/p>\n<p> <\/p>\n<p>Read
+        the blog: <a href=\"http:\/\/blog.cincijs.com\">http:\/\/blog.cincijs.com<\/a><\/p>","headcount":0,"name":"Cincinnati
+        JavaScript User Group","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":5215952,"zip":"45202","lon":-84.515465,"name":"The
+        Brandery ","state":"OH","address_1":"1411 Vine St, Cincinnati","lat":39.110943,"city":"Cincinnati","country":"us"},"id":"qfrtqyrhbmb","utc_offset":-14400000,"time":1368136800000,"waitlist_count":0,"yes_rsvp_count":1,"created":1301877167000,"updated":1342622826000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qfrtqyrhbmb\/","description":"<p><strong>Please
+        RSVP at <a href=\"http:\/\/www.meetup.com\/Cincinnati-Lean-Startup-Circle\/calendar\/15947214\/\"><\/a><a
+        href=\"http:\/\/www.meetup.com\/Cincinnati-Lean-Startup-Circle\/\">http:\/\/www.meetup.com...<\/a><\/strong><\/p>","headcount":0,"name":"Cincinnati
+        Lean Startup Circle","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"clsrvyrhbsb","utc_offset":-14400000,"time":1368570600000,"waitlist_count":0,"yes_rsvp_count":2,"created":1309836530000,"updated":1348833087000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/clsrvyrhbsb\/","description":"<p>We
+        are now meeting the 2nd Tuesday of the Month at the Gaslight Software\/EdgeCase
+        office.<\/p>\n<p>The meeting starts at 6:30 – No food is provided, but feel
+        free to bring you own.<\/p>\n<p><a href=\"http:\/\/cincyfp.wordpress.com\/\">http:\/\/cincyfp.wordpress.com\/<\/a><\/p>\n<p>Twitter:
+        @cincyfp<\/p>\n<p> <\/p>","headcount":0,"name":"Cincy Functional Programmers","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"ddqljcyrhbvb","utc_offset":-14400000,"time":1368741600000,"waitlist_count":0,"yes_rsvp_count":3,"created":1323639554000,"updated":1323639554000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/ddqljcyrhbvb\/","description":"<p>Come
+        join this new special interest group as we discuss topics related to software
+        architecture. This meeting is run using the open fishbowl technique where
+        the attendees are encouraged to share their thoughts with everyone while keeping
+        the meeting from becoming a free for all. :) What topic will we cover? Well,
+        that''s up to the attendees! If you have a strong opinion about a topic you''d
+        like to suggest, or want to learn more about the topics then make sure you
+        swing by the meeting. Find out more at [url=<a href=\"http:\/\/cinnug.org]http:\/\/cinnug.org[\/url\">http:\/\/cinnug.org]http:\/\/cinnug.org[\/url<\/a>].<\/p>","headcount":0,"name":"CinARC
+        Monthly Meeting","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":4440172,"zip":"45202","lon":-84.517731,"name":"Possible
+        Worldwide","state":"OH","address_1":"302 W 3rd St # 900","lat":39.098381,"city":"Cincinnati","country":"us"},"id":"qqvklcyrhbvb","utc_offset":-14400000,"time":1368745200000,"waitlist_count":0,"yes_rsvp_count":3,"created":1326360811000,"updated":1326360811000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qqvklcyrhbvb\/","description":"<p>Please
+        join the OINK (Ohio, Indiana, Northern Kentucky) PHP User Group at our first
+        working meeting of 2012.<\/p>\n<p>&nbsp;<\/p>\n<p>In this meeting, we will
+        finalize our 2012 Schedule and Plan of Activities.&nbsp;<\/p>\n<p>&nbsp;<\/p>\n<p>As
+        a speaker, we''ll have Dr. Hazem Said, the new Chair of IT Department of University
+        of Cincinnati, who will introduce his Department.<\/p>\n<p>&nbsp;<\/p>\n<p>We''ll
+        also have a \"Swap Exchange\": bring old equipment, or unwanted Christmas
+        gifts that you would like to exchange for something else.<\/p>\n<p>&nbsp;<\/p>\n<p>As
+        last time, to make it more enjoyable, we''ll have FREE pizza and soda\/beer
+        :) To know exactly how much pizza and refreshments we need, please RSVP ASAP
+        if you will be attending.<\/p>\n<p>&nbsp;<\/p>\n<p><a href=\"http:\/\/oink-pug.org\/\"
+        target=\"_blank\">http:\/\/oink-pug.org<\/a><\/p>","headcount":0,"name":"OINK
+        PHP User Group","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"qhtsvdyrhbcc","utc_offset":-14400000,"time":1369173600000,"waitlist_count":0,"updated":1353427993000,"created":1353427993000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qhtsvdyrhbcc\/","description":"<p>See <a
+        href=\"http:\/\/cincyrb.com\">http:\/\/cincyrb.com<\/a><\/p>","how_to_find_us":"http:\/\/cincyrb.com\/","name":"Ruby
+        Brigade","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"kxtzqyrhbfc","utc_offset":-14400000,"time":1369346400000,"waitlist_count":0,"yes_rsvp_count":1,"created":1304693203000,"updated":1304693203000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/kxtzqyrhbfc\/","description":"<p><a
+        href=\"http:\/\/cinjug.org\/meetings\/index.html\"><span>http:\/\/cinjug.org\/meetings\/index.html<\/span><\/a><\/p>","headcount":0,"name":"CinJUG","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"qcqljcyrhblc","utc_offset":-14400000,"time":1369778400000,"waitlist_count":0,"yes_rsvp_count":3,"created":1323639479000,"updated":1323639479000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qcqljcyrhblc\/","description":"<p>The
+        CINNUG group was created to provide a place for practicing .NET developers
+        to expand their knowledge and network with other .Netters, but anyone who
+        is interested in learning more about .Net is more than welcome. The focus
+        of the presentations will be on learning and utilizing the .Net framework
+        to the fullest extent, best practices, and cutting edge programming tools
+        and new technologies. The meetings start at 6:00 PM; however, we have a social
+        time starting at 5:30 PM. At the start of the meetings we do announcements,
+        followed by our headliner speaker for 60-90 minutes. After the main talk we
+        break for pizza and some more social time. We wrap up the meeting with a short
+        \"grok\" talk and usually some giveaways. For more information and to see
+        the topics for each meeting visit [url=www.cinnug.org]Cincinnati .NET Users
+        Group[\/url].<\/p>","headcount":0,"name":"CINNUG Monthly Meeting","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":8200962,"zip":"45242","lon":-84.378868,"name":"Panera","state":"OH","address_1":"11033
+        Reed Hartman Highway Blue Ash, OH 45242","lat":39.266865,"city":"Cincinnati","country":"us"},"id":"qzkfddyrjbhb","utc_offset":-14400000,"time":1370431800000,"waitlist_count":0,"yes_rsvp_count":0,"created":1342280305000,"updated":1342280305000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qzkfddyrjbhb\/","description":"<p>Meet
+        for breakfast, coffee, and Clojure coding at Panera. We will be doing \"swarm\"
+        group coding on something fun.<\/p>\n<p>Panera location: 11033 Reed Hartman
+        Highway Blue Ash, OH 45242<\/p>","headcount":0,"name":"Cincy Clojure and Coffee","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":1969891,"zip":"45040","lon":-84.31395,"name":"Max
+        Technical Training","state":"OH","address_1":"4900 Parkway Dr # 160","lat":39.303802,"city":"Mason","country":"us"},"id":"dhhpkcyrjbjb","utc_offset":-14400000,"time":1370556000000,"waitlist_count":0,"updated":1325544759000,"created":1325544759000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/dhhpkcyrjbjb\/","description":"<p>First,
+        lightning talk.<\/p>\n<p>Then we''ll code katas.<\/p>\n<p>Don&#146;t forget
+        to bring food and drink as we&#146;re not actively looking for a sponsor.<\/p>\n<p>More
+        details:<\/p>\n<p><a href=\"http:\/\/cincycleancoders.com\/\">http:\/\/cincycleancoders.com\/<\/a><\/p>","how_to_find_us":"Off
+        Mason-Montgomery, north of Natorp, etc. on the east side.","name":"Cincy Clean
+        Coders","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"clsrvyrjbpb","utc_offset":-14400000,"time":1370989800000,"waitlist_count":0,"yes_rsvp_count":2,"created":1309836530000,"updated":1348833087000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/clsrvyrjbpb\/","description":"<p>We
+        are now meeting the 2nd Tuesday of the Month at the Gaslight Software\/EdgeCase
+        office.<\/p>\n<p>The meeting starts at 6:30 – No food is provided, but feel
+        free to bring you own.<\/p>\n<p><a href=\"http:\/\/cincyfp.wordpress.com\/\">http:\/\/cincyfp.wordpress.com\/<\/a><\/p>\n<p>Twitter:
+        @cincyfp<\/p>\n<p> <\/p>","headcount":0,"name":"Cincy Functional Programmers","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"mlvxpyrjbqb","utc_offset":-14400000,"time":1371052800000,"waitlist_count":0,"yes_rsvp_count":2,"created":1291265342000,"updated":1343841622000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/mlvxpyrjbqb\/","description":"<p>Bring
+        your own lunch. Register for the group for more information: <a href=\"http:\/\/groups.google.com\/group\/cincijs\">http:\/\/groups.google.com\/group\/cincijs<\/a><\/p>\n<p> <\/p>\n<p>Read
+        the blog: <a href=\"http:\/\/blog.cincijs.com\">http:\/\/blog.cincijs.com<\/a><\/p>","headcount":0,"name":"Cincinnati
+        JavaScript User Group","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":5215952,"zip":"45202","lon":-84.515465,"name":"The
+        Brandery ","state":"OH","address_1":"1411 Vine St, Cincinnati","lat":39.110943,"city":"Cincinnati","country":"us"},"id":"qfrtqyrjbrb","utc_offset":-14400000,"time":1371160800000,"waitlist_count":0,"yes_rsvp_count":1,"created":1301877167000,"updated":1342622826000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qfrtqyrjbrb\/","description":"<p><strong>Please
+        RSVP at <a href=\"http:\/\/www.meetup.com\/Cincinnati-Lean-Startup-Circle\/calendar\/15947214\/\"><\/a><a
+        href=\"http:\/\/www.meetup.com\/Cincinnati-Lean-Startup-Circle\/\">http:\/\/www.meetup.com...<\/a><\/strong><\/p>","headcount":0,"name":"Cincinnati
+        Lean Startup Circle","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"qhtsvdyrjbxb","utc_offset":-14400000,"time":1371592800000,"waitlist_count":0,"updated":1353427993000,"created":1353427993000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qhtsvdyrjbxb\/","description":"<p>See <a
+        href=\"http:\/\/cincyrb.com\">http:\/\/cincyrb.com<\/a><\/p>","how_to_find_us":"http:\/\/cincyrb.com\/","name":"Ruby
+        Brigade","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"ddqljcyrjbbc","utc_offset":-14400000,"time":1371765600000,"waitlist_count":0,"yes_rsvp_count":3,"created":1323639554000,"updated":1323639554000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/ddqljcyrjbbc\/","description":"<p>Come
+        join this new special interest group as we discuss topics related to software
+        architecture. This meeting is run using the open fishbowl technique where
+        the attendees are encouraged to share their thoughts with everyone while keeping
+        the meeting from becoming a free for all. :) What topic will we cover? Well,
+        that''s up to the attendees! If you have a strong opinion about a topic you''d
+        like to suggest, or want to learn more about the topics then make sure you
+        swing by the meeting. Find out more at [url=<a href=\"http:\/\/cinnug.org]http:\/\/cinnug.org[\/url\">http:\/\/cinnug.org]http:\/\/cinnug.org[\/url<\/a>].<\/p>","headcount":0,"name":"CinARC
+        Monthly Meeting","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"dmbsmdyrjbbc","utc_offset":-14400000,"time":1371765600000,"waitlist_count":0,"updated":1348586655000,"created":1348586655000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/dmbsmdyrjbbc\/","description":"<p>A
+        local forum to discuss all things PowerShell. Future meeting plans include
+        a Scripting Club, Demos and Labs access, and Scripting Games.<\/p>\n<p>Please
+        RSVP so we can get an accurate head count.<\/p>","how_to_find_us":"http:\/\/maps.google.com\/maps?hl=en&tab=wl","name":"PowerShell
+        User Group","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":4440172,"zip":"45202","lon":-84.517731,"name":"Possible
+        Worldwide","state":"OH","address_1":"302 W 3rd St # 900","lat":39.098381,"city":"Cincinnati","country":"us"},"id":"qqvklcyrjbbc","utc_offset":-14400000,"time":1371769200000,"waitlist_count":0,"yes_rsvp_count":3,"created":1326360811000,"updated":1326360811000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qqvklcyrjbbc\/","description":"<p>Please
+        join the OINK (Ohio, Indiana, Northern Kentucky) PHP User Group at our first
+        working meeting of 2012.<\/p>\n<p>&nbsp;<\/p>\n<p>In this meeting, we will
+        finalize our 2012 Schedule and Plan of Activities.&nbsp;<\/p>\n<p>&nbsp;<\/p>\n<p>As
+        a speaker, we''ll have Dr. Hazem Said, the new Chair of IT Department of University
+        of Cincinnati, who will introduce his Department.<\/p>\n<p>&nbsp;<\/p>\n<p>We''ll
+        also have a \"Swap Exchange\": bring old equipment, or unwanted Christmas
+        gifts that you would like to exchange for something else.<\/p>\n<p>&nbsp;<\/p>\n<p>As
+        last time, to make it more enjoyable, we''ll have FREE pizza and soda\/beer
+        :) To know exactly how much pizza and refreshments we need, please RSVP ASAP
+        if you will be attending.<\/p>\n<p>&nbsp;<\/p>\n<p><a href=\"http:\/\/oink-pug.org\/\"
+        target=\"_blank\">http:\/\/oink-pug.org<\/a><\/p>","headcount":0,"name":"OINK
+        PHP User Group","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"qcqljcyrjbhc","utc_offset":-14400000,"time":1372197600000,"waitlist_count":0,"yes_rsvp_count":3,"created":1323639479000,"updated":1323639479000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qcqljcyrjbhc\/","description":"<p>The
+        CINNUG group was created to provide a place for practicing .NET developers
+        to expand their knowledge and network with other .Netters, but anyone who
+        is interested in learning more about .Net is more than welcome. The focus
+        of the presentations will be on learning and utilizing the .Net framework
+        to the fullest extent, best practices, and cutting edge programming tools
+        and new technologies. The meetings start at 6:00 PM; however, we have a social
+        time starting at 5:30 PM. At the start of the meetings we do announcements,
+        followed by our headliner speaker for 60-90 minutes. After the main talk we
+        break for pizza and some more social time. We wrap up the meeting with a short
+        \"grok\" talk and usually some giveaways. For more information and to see
+        the topics for each meeting visit [url=www.cinnug.org]Cincinnati .NET Users
+        Group[\/url].<\/p>","headcount":0,"name":"CINNUG Monthly Meeting","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"kxtzqyrjbkc","utc_offset":-14400000,"time":1372370400000,"waitlist_count":0,"yes_rsvp_count":1,"created":1304693203000,"updated":1304693203000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/kxtzqyrjbkc\/","description":"<p><a
+        href=\"http:\/\/cinjug.org\/meetings\/index.html\"><span>http:\/\/cinjug.org\/meetings\/index.html<\/span><\/a><\/p>","headcount":0,"name":"CinJUG","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":8200962,"zip":"45242","lon":-84.378868,"name":"Panera","state":"OH","address_1":"11033
+        Reed Hartman Highway Blue Ash, OH 45242","lat":39.266865,"city":"Cincinnati","country":"us"},"id":"qzkfddyrkbfb","utc_offset":-14400000,"time":1372851000000,"waitlist_count":0,"yes_rsvp_count":0,"created":1342280305000,"updated":1342280305000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qzkfddyrkbfb\/","description":"<p>Meet
+        for breakfast, coffee, and Clojure coding at Panera. We will be doing \"swarm\"
+        group coding on something fun.<\/p>\n<p>Panera location: 11033 Reed Hartman
+        Highway Blue Ash, OH 45242<\/p>","headcount":0,"name":"Cincy Clojure and Coffee","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":1969891,"zip":"45040","lon":-84.31395,"name":"Max
+        Technical Training","state":"OH","address_1":"4900 Parkway Dr # 160","lat":39.303802,"city":"Mason","country":"us"},"id":"dhhpkcyrkbgb","utc_offset":-14400000,"time":1372975200000,"waitlist_count":0,"updated":1325544759000,"created":1325544759000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/dhhpkcyrkbgb\/","description":"<p>First,
+        lightning talk.<\/p>\n<p>Then we''ll code katas.<\/p>\n<p>Don&#146;t forget
+        to bring food and drink as we&#146;re not actively looking for a sponsor.<\/p>\n<p>More
+        details:<\/p>\n<p><a href=\"http:\/\/cincycleancoders.com\/\">http:\/\/cincycleancoders.com\/<\/a><\/p>","how_to_find_us":"Off
+        Mason-Montgomery, north of Natorp, etc. on the east side.","name":"Cincy Clean
+        Coders","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"clsrvyrkbmb","utc_offset":-14400000,"time":1373409000000,"waitlist_count":0,"yes_rsvp_count":2,"created":1309836530000,"updated":1348833087000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/clsrvyrkbmb\/","description":"<p>We
+        are now meeting the 2nd Tuesday of the Month at the Gaslight Software\/EdgeCase
+        office.<\/p>\n<p>The meeting starts at 6:30 – No food is provided, but feel
+        free to bring you own.<\/p>\n<p><a href=\"http:\/\/cincyfp.wordpress.com\/\">http:\/\/cincyfp.wordpress.com\/<\/a><\/p>\n<p>Twitter:
+        @cincyfp<\/p>\n<p> <\/p>","headcount":0,"name":"Cincy Functional Programmers","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"mlvxpyrkbnb","utc_offset":-14400000,"time":1373472000000,"waitlist_count":0,"yes_rsvp_count":2,"created":1291265342000,"updated":1343841622000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/mlvxpyrkbnb\/","description":"<p>Bring
+        your own lunch. Register for the group for more information: <a href=\"http:\/\/groups.google.com\/group\/cincijs\">http:\/\/groups.google.com\/group\/cincijs<\/a><\/p>\n<p> <\/p>\n<p>Read
+        the blog: <a href=\"http:\/\/blog.cincijs.com\">http:\/\/blog.cincijs.com<\/a><\/p>","headcount":0,"name":"Cincinnati
+        JavaScript User Group","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":5215952,"zip":"45202","lon":-84.515465,"name":"The
+        Brandery ","state":"OH","address_1":"1411 Vine St, Cincinnati","lat":39.110943,"city":"Cincinnati","country":"us"},"id":"qfrtqyrkbpb","utc_offset":-14400000,"time":1373580000000,"waitlist_count":0,"yes_rsvp_count":1,"created":1301877167000,"updated":1342622826000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qfrtqyrkbpb\/","description":"<p><strong>Please
+        RSVP at <a href=\"http:\/\/www.meetup.com\/Cincinnati-Lean-Startup-Circle\/calendar\/15947214\/\"><\/a><a
+        href=\"http:\/\/www.meetup.com\/Cincinnati-Lean-Startup-Circle\/\">http:\/\/www.meetup.com...<\/a><\/strong><\/p>","headcount":0,"name":"Cincinnati
+        Lean Startup Circle","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"qhtsvdyrkbvb","utc_offset":-14400000,"time":1374012000000,"waitlist_count":0,"updated":1353427993000,"created":1353427993000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qhtsvdyrkbvb\/","description":"<p>See <a
+        href=\"http:\/\/cincyrb.com\">http:\/\/cincyrb.com<\/a><\/p>","how_to_find_us":"http:\/\/cincyrb.com\/","name":"Ruby
+        Brigade","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"ddqljcyrkbxb","utc_offset":-14400000,"time":1374184800000,"waitlist_count":0,"yes_rsvp_count":3,"created":1323639554000,"updated":1323639554000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/ddqljcyrkbxb\/","description":"<p>Come
+        join this new special interest group as we discuss topics related to software
+        architecture. This meeting is run using the open fishbowl technique where
+        the attendees are encouraged to share their thoughts with everyone while keeping
+        the meeting from becoming a free for all. :) What topic will we cover? Well,
+        that''s up to the attendees! If you have a strong opinion about a topic you''d
+        like to suggest, or want to learn more about the topics then make sure you
+        swing by the meeting. Find out more at [url=<a href=\"http:\/\/cinnug.org]http:\/\/cinnug.org[\/url\">http:\/\/cinnug.org]http:\/\/cinnug.org[\/url<\/a>].<\/p>","headcount":0,"name":"CinARC
+        Monthly Meeting","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":4440172,"zip":"45202","lon":-84.517731,"name":"Possible
+        Worldwide","state":"OH","address_1":"302 W 3rd St # 900","lat":39.098381,"city":"Cincinnati","country":"us"},"id":"qqvklcyrkbxb","utc_offset":-14400000,"time":1374188400000,"waitlist_count":0,"yes_rsvp_count":3,"created":1326360811000,"updated":1326360811000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qqvklcyrkbxb\/","description":"<p>Please
+        join the OINK (Ohio, Indiana, Northern Kentucky) PHP User Group at our first
+        working meeting of 2012.<\/p>\n<p>&nbsp;<\/p>\n<p>In this meeting, we will
+        finalize our 2012 Schedule and Plan of Activities.&nbsp;<\/p>\n<p>&nbsp;<\/p>\n<p>As
+        a speaker, we''ll have Dr. Hazem Said, the new Chair of IT Department of University
+        of Cincinnati, who will introduce his Department.<\/p>\n<p>&nbsp;<\/p>\n<p>We''ll
+        also have a \"Swap Exchange\": bring old equipment, or unwanted Christmas
+        gifts that you would like to exchange for something else.<\/p>\n<p>&nbsp;<\/p>\n<p>As
+        last time, to make it more enjoyable, we''ll have FREE pizza and soda\/beer
+        :) To know exactly how much pizza and refreshments we need, please RSVP ASAP
+        if you will be attending.<\/p>\n<p>&nbsp;<\/p>\n<p><a href=\"http:\/\/oink-pug.org\/\"
+        target=\"_blank\">http:\/\/oink-pug.org<\/a><\/p>","headcount":0,"name":"OINK
+        PHP User Group","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"qcqljcyrkbfc","utc_offset":-14400000,"time":1374616800000,"waitlist_count":0,"yes_rsvp_count":3,"created":1323639479000,"updated":1323639479000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qcqljcyrkbfc\/","description":"<p>The
+        CINNUG group was created to provide a place for practicing .NET developers
+        to expand their knowledge and network with other .Netters, but anyone who
+        is interested in learning more about .Net is more than welcome. The focus
+        of the presentations will be on learning and utilizing the .Net framework
+        to the fullest extent, best practices, and cutting edge programming tools
+        and new technologies. The meetings start at 6:00 PM; however, we have a social
+        time starting at 5:30 PM. At the start of the meetings we do announcements,
+        followed by our headliner speaker for 60-90 minutes. After the main talk we
+        break for pizza and some more social time. We wrap up the meeting with a short
+        \"grok\" talk and usually some giveaways. For more information and to see
+        the topics for each meeting visit [url=www.cinnug.org]Cincinnati .NET Users
+        Group[\/url].<\/p>","headcount":0,"name":"CINNUG Monthly Meeting","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"kxtzqyrkbhc","utc_offset":-14400000,"time":1374789600000,"waitlist_count":0,"yes_rsvp_count":1,"created":1304693203000,"updated":1304693203000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/kxtzqyrkbhc\/","description":"<p><a
+        href=\"http:\/\/cinjug.org\/meetings\/index.html\"><span>http:\/\/cinjug.org\/meetings\/index.html<\/span><\/a><\/p>","headcount":0,"name":"CinJUG","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":1969891,"zip":"45040","lon":-84.31395,"name":"Max
+        Technical Training","state":"OH","address_1":"4900 Parkway Dr # 160","lat":39.303802,"city":"Mason","country":"us"},"id":"dhhpkcyrlbcb","utc_offset":-14400000,"time":1375394400000,"waitlist_count":0,"updated":1325544759000,"created":1325544759000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/dhhpkcyrlbcb\/","description":"<p>First,
+        lightning talk.<\/p>\n<p>Then we''ll code katas.<\/p>\n<p>Don&#146;t forget
+        to bring food and drink as we&#146;re not actively looking for a sponsor.<\/p>\n<p>More
+        details:<\/p>\n<p><a href=\"http:\/\/cincycleancoders.com\/\">http:\/\/cincycleancoders.com\/<\/a><\/p>","how_to_find_us":"Off
+        Mason-Montgomery, north of Natorp, etc. on the east side.","name":"Cincy Clean
+        Coders","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":8200962,"zip":"45242","lon":-84.378868,"name":"Panera","state":"OH","address_1":"11033
+        Reed Hartman Highway Blue Ash, OH 45242","lat":39.266865,"city":"Cincinnati","country":"us"},"id":"qzkfddyrlbkb","utc_offset":-14400000,"time":1375875000000,"waitlist_count":0,"yes_rsvp_count":0,"created":1342280305000,"updated":1342280305000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qzkfddyrlbkb\/","description":"<p>Meet
+        for breakfast, coffee, and Clojure coding at Panera. We will be doing \"swarm\"
+        group coding on something fun.<\/p>\n<p>Panera location: 11033 Reed Hartman
+        Highway Blue Ash, OH 45242<\/p>","headcount":0,"name":"Cincy Clojure and Coffee","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":5215952,"zip":"45202","lon":-84.515465,"name":"The
+        Brandery ","state":"OH","address_1":"1411 Vine St, Cincinnati","lat":39.110943,"city":"Cincinnati","country":"us"},"id":"qfrtqyrlblb","utc_offset":-14400000,"time":1375999200000,"waitlist_count":0,"yes_rsvp_count":1,"created":1301877167000,"updated":1342622826000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qfrtqyrlblb\/","description":"<p><strong>Please
+        RSVP at <a href=\"http:\/\/www.meetup.com\/Cincinnati-Lean-Startup-Circle\/calendar\/15947214\/\"><\/a><a
+        href=\"http:\/\/www.meetup.com\/Cincinnati-Lean-Startup-Circle\/\">http:\/\/www.meetup.com...<\/a><\/strong><\/p>","headcount":0,"name":"Cincinnati
+        Lean Startup Circle","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"clsrvyrlbrb","utc_offset":-14400000,"time":1376433000000,"waitlist_count":0,"yes_rsvp_count":2,"created":1309836530000,"updated":1348833087000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/clsrvyrlbrb\/","description":"<p>We
+        are now meeting the 2nd Tuesday of the Month at the Gaslight Software\/EdgeCase
+        office.<\/p>\n<p>The meeting starts at 6:30 – No food is provided, but feel
+        free to bring you own.<\/p>\n<p><a href=\"http:\/\/cincyfp.wordpress.com\/\">http:\/\/cincyfp.wordpress.com\/<\/a><\/p>\n<p>Twitter:
+        @cincyfp<\/p>\n<p> <\/p>","headcount":0,"name":"Cincy Functional Programmers","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"mlvxpyrlbsb","utc_offset":-14400000,"time":1376496000000,"waitlist_count":0,"yes_rsvp_count":2,"created":1291265342000,"updated":1343841622000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/mlvxpyrlbsb\/","description":"<p>Bring
+        your own lunch. Register for the group for more information: <a href=\"http:\/\/groups.google.com\/group\/cincijs\">http:\/\/groups.google.com\/group\/cincijs<\/a><\/p>\n<p> <\/p>\n<p>Read
+        the blog: <a href=\"http:\/\/blog.cincijs.com\">http:\/\/blog.cincijs.com<\/a><\/p>","headcount":0,"name":"Cincinnati
+        JavaScript User Group","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"ddqljcyrlbtb","utc_offset":-14400000,"time":1376604000000,"waitlist_count":0,"yes_rsvp_count":3,"created":1323639554000,"updated":1323639554000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/ddqljcyrlbtb\/","description":"<p>Come
+        join this new special interest group as we discuss topics related to software
+        architecture. This meeting is run using the open fishbowl technique where
+        the attendees are encouraged to share their thoughts with everyone while keeping
+        the meeting from becoming a free for all. :) What topic will we cover? Well,
+        that''s up to the attendees! If you have a strong opinion about a topic you''d
+        like to suggest, or want to learn more about the topics then make sure you
+        swing by the meeting. Find out more at [url=<a href=\"http:\/\/cinnug.org]http:\/\/cinnug.org[\/url\">http:\/\/cinnug.org]http:\/\/cinnug.org[\/url<\/a>].<\/p>","headcount":0,"name":"CinARC
+        Monthly Meeting","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"dmbsmdyrlbtb","utc_offset":-14400000,"time":1376604000000,"waitlist_count":0,"updated":1348586655000,"created":1348586655000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/dmbsmdyrlbtb\/","description":"<p>A
+        local forum to discuss all things PowerShell. Future meeting plans include
+        a Scripting Club, Demos and Labs access, and Scripting Games.<\/p>\n<p>Please
+        RSVP so we can get an accurate head count.<\/p>","how_to_find_us":"http:\/\/maps.google.com\/maps?hl=en&tab=wl","name":"PowerShell
+        User Group","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":4440172,"zip":"45202","lon":-84.517731,"name":"Possible
+        Worldwide","state":"OH","address_1":"302 W 3rd St # 900","lat":39.098381,"city":"Cincinnati","country":"us"},"id":"qqvklcyrlbtb","utc_offset":-14400000,"time":1376607600000,"waitlist_count":0,"yes_rsvp_count":3,"created":1326360811000,"updated":1326360811000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qqvklcyrlbtb\/","description":"<p>Please
+        join the OINK (Ohio, Indiana, Northern Kentucky) PHP User Group at our first
+        working meeting of 2012.<\/p>\n<p>&nbsp;<\/p>\n<p>In this meeting, we will
+        finalize our 2012 Schedule and Plan of Activities.&nbsp;<\/p>\n<p>&nbsp;<\/p>\n<p>As
+        a speaker, we''ll have Dr. Hazem Said, the new Chair of IT Department of University
+        of Cincinnati, who will introduce his Department.<\/p>\n<p>&nbsp;<\/p>\n<p>We''ll
+        also have a \"Swap Exchange\": bring old equipment, or unwanted Christmas
+        gifts that you would like to exchange for something else.<\/p>\n<p>&nbsp;<\/p>\n<p>As
+        last time, to make it more enjoyable, we''ll have FREE pizza and soda\/beer
+        :) To know exactly how much pizza and refreshments we need, please RSVP ASAP
+        if you will be attending.<\/p>\n<p>&nbsp;<\/p>\n<p><a href=\"http:\/\/oink-pug.org\/\"
+        target=\"_blank\">http:\/\/oink-pug.org<\/a><\/p>","headcount":0,"name":"OINK
+        PHP User Group","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"qhtsvdyrlbbc","utc_offset":-14400000,"time":1377036000000,"waitlist_count":0,"updated":1353427993000,"created":1353427993000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qhtsvdyrlbbc\/","description":"<p>See <a
+        href=\"http:\/\/cincyrb.com\">http:\/\/cincyrb.com<\/a><\/p>","how_to_find_us":"http:\/\/cincyrb.com\/","name":"Ruby
+        Brigade","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"kxtzqyrlbdc","utc_offset":-14400000,"time":1377208800000,"waitlist_count":0,"yes_rsvp_count":1,"created":1304693203000,"updated":1304693203000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/kxtzqyrlbdc\/","description":"<p><a
+        href=\"http:\/\/cinjug.org\/meetings\/index.html\"><span>http:\/\/cinjug.org\/meetings\/index.html<\/span><\/a><\/p>","headcount":0,"name":"CinJUG","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"qcqljcyrlbkc","utc_offset":-14400000,"time":1377640800000,"waitlist_count":0,"yes_rsvp_count":3,"created":1323639479000,"updated":1323639479000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qcqljcyrlbkc\/","description":"<p>The
+        CINNUG group was created to provide a place for practicing .NET developers
+        to expand their knowledge and network with other .Netters, but anyone who
+        is interested in learning more about .Net is more than welcome. The focus
+        of the presentations will be on learning and utilizing the .Net framework
+        to the fullest extent, best practices, and cutting edge programming tools
+        and new technologies. The meetings start at 6:00 PM; however, we have a social
+        time starting at 5:30 PM. At the start of the meetings we do announcements,
+        followed by our headliner speaker for 60-90 minutes. After the main talk we
+        break for pizza and some more social time. We wrap up the meeting with a short
+        \"grok\" talk and usually some giveaways. For more information and to see
+        the topics for each meeting visit [url=www.cinnug.org]Cincinnati .NET Users
+        Group[\/url].<\/p>","headcount":0,"name":"CINNUG Monthly Meeting","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":8200962,"zip":"45242","lon":-84.378868,"name":"Panera","state":"OH","address_1":"11033
+        Reed Hartman Highway Blue Ash, OH 45242","lat":39.266865,"city":"Cincinnati","country":"us"},"id":"qzkfddyrmbgb","utc_offset":-14400000,"time":1378294200000,"waitlist_count":0,"yes_rsvp_count":0,"created":1342280305000,"updated":1342280305000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qzkfddyrmbgb\/","description":"<p>Meet
+        for breakfast, coffee, and Clojure coding at Panera. We will be doing \"swarm\"
+        group coding on something fun.<\/p>\n<p>Panera location: 11033 Reed Hartman
+        Highway Blue Ash, OH 45242<\/p>","headcount":0,"name":"Cincy Clojure and Coffee","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":1969891,"zip":"45040","lon":-84.31395,"name":"Max
+        Technical Training","state":"OH","address_1":"4900 Parkway Dr # 160","lat":39.303802,"city":"Mason","country":"us"},"id":"dhhpkcyrmbhb","utc_offset":-14400000,"time":1378418400000,"waitlist_count":0,"updated":1325544759000,"created":1325544759000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/dhhpkcyrmbhb\/","description":"<p>First,
+        lightning talk.<\/p>\n<p>Then we''ll code katas.<\/p>\n<p>Don&#146;t forget
+        to bring food and drink as we&#146;re not actively looking for a sponsor.<\/p>\n<p>More
+        details:<\/p>\n<p><a href=\"http:\/\/cincycleancoders.com\/\">http:\/\/cincycleancoders.com\/<\/a><\/p>","how_to_find_us":"Off
+        Mason-Montgomery, north of Natorp, etc. on the east side.","name":"Cincy Clean
+        Coders","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"clsrvyrmbnb","utc_offset":-14400000,"time":1378852200000,"waitlist_count":0,"yes_rsvp_count":2,"created":1309836530000,"updated":1348833087000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/clsrvyrmbnb\/","description":"<p>We
+        are now meeting the 2nd Tuesday of the Month at the Gaslight Software\/EdgeCase
+        office.<\/p>\n<p>The meeting starts at 6:30 – No food is provided, but feel
+        free to bring you own.<\/p>\n<p><a href=\"http:\/\/cincyfp.wordpress.com\/\">http:\/\/cincyfp.wordpress.com\/<\/a><\/p>\n<p>Twitter:
+        @cincyfp<\/p>\n<p> <\/p>","headcount":0,"name":"Cincy Functional Programmers","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"mlvxpyrmbpb","utc_offset":-14400000,"time":1378915200000,"waitlist_count":0,"yes_rsvp_count":2,"created":1291265342000,"updated":1343841622000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/mlvxpyrmbpb\/","description":"<p>Bring
+        your own lunch. Register for the group for more information: <a href=\"http:\/\/groups.google.com\/group\/cincijs\">http:\/\/groups.google.com\/group\/cincijs<\/a><\/p>\n<p> <\/p>\n<p>Read
+        the blog: <a href=\"http:\/\/blog.cincijs.com\">http:\/\/blog.cincijs.com<\/a><\/p>","headcount":0,"name":"Cincinnati
+        JavaScript User Group","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":5215952,"zip":"45202","lon":-84.515465,"name":"The
+        Brandery ","state":"OH","address_1":"1411 Vine St, Cincinnati","lat":39.110943,"city":"Cincinnati","country":"us"},"id":"qfrtqyrmbqb","utc_offset":-14400000,"time":1379023200000,"waitlist_count":0,"yes_rsvp_count":1,"created":1301877167000,"updated":1342622826000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qfrtqyrmbqb\/","description":"<p><strong>Please
+        RSVP at <a href=\"http:\/\/www.meetup.com\/Cincinnati-Lean-Startup-Circle\/calendar\/15947214\/\"><\/a><a
+        href=\"http:\/\/www.meetup.com\/Cincinnati-Lean-Startup-Circle\/\">http:\/\/www.meetup.com...<\/a><\/strong><\/p>","headcount":0,"name":"Cincinnati
+        Lean Startup Circle","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"qhtsvdyrmbwb","utc_offset":-14400000,"time":1379455200000,"waitlist_count":0,"updated":1353427993000,"created":1353427993000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qhtsvdyrmbwb\/","description":"<p>See <a
+        href=\"http:\/\/cincyrb.com\">http:\/\/cincyrb.com<\/a><\/p>","how_to_find_us":"http:\/\/cincyrb.com\/","name":"Ruby
+        Brigade","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"ddqljcyrmbzb","utc_offset":-14400000,"time":1379628000000,"waitlist_count":0,"yes_rsvp_count":3,"created":1323639554000,"updated":1323639554000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/ddqljcyrmbzb\/","description":"<p>Come
+        join this new special interest group as we discuss topics related to software
+        architecture. This meeting is run using the open fishbowl technique where
+        the attendees are encouraged to share their thoughts with everyone while keeping
+        the meeting from becoming a free for all. :) What topic will we cover? Well,
+        that''s up to the attendees! If you have a strong opinion about a topic you''d
+        like to suggest, or want to learn more about the topics then make sure you
+        swing by the meeting. Find out more at [url=<a href=\"http:\/\/cinnug.org]http:\/\/cinnug.org[\/url\">http:\/\/cinnug.org]http:\/\/cinnug.org[\/url<\/a>].<\/p>","headcount":0,"name":"CinARC
+        Monthly Meeting","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":4440172,"zip":"45202","lon":-84.517731,"name":"Possible
+        Worldwide","state":"OH","address_1":"302 W 3rd St # 900","lat":39.098381,"city":"Cincinnati","country":"us"},"id":"qqvklcyrmbzb","utc_offset":-14400000,"time":1379631600000,"waitlist_count":0,"yes_rsvp_count":3,"created":1326360811000,"updated":1326360811000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qqvklcyrmbzb\/","description":"<p>Please
+        join the OINK (Ohio, Indiana, Northern Kentucky) PHP User Group at our first
+        working meeting of 2012.<\/p>\n<p>&nbsp;<\/p>\n<p>In this meeting, we will
+        finalize our 2012 Schedule and Plan of Activities.&nbsp;<\/p>\n<p>&nbsp;<\/p>\n<p>As
+        a speaker, we''ll have Dr. Hazem Said, the new Chair of IT Department of University
+        of Cincinnati, who will introduce his Department.<\/p>\n<p>&nbsp;<\/p>\n<p>We''ll
+        also have a \"Swap Exchange\": bring old equipment, or unwanted Christmas
+        gifts that you would like to exchange for something else.<\/p>\n<p>&nbsp;<\/p>\n<p>As
+        last time, to make it more enjoyable, we''ll have FREE pizza and soda\/beer
+        :) To know exactly how much pizza and refreshments we need, please RSVP ASAP
+        if you will be attending.<\/p>\n<p>&nbsp;<\/p>\n<p><a href=\"http:\/\/oink-pug.org\/\"
+        target=\"_blank\">http:\/\/oink-pug.org<\/a><\/p>","headcount":0,"name":"OINK
+        PHP User Group","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"qcqljcyrmbgc","utc_offset":-14400000,"time":1380060000000,"waitlist_count":0,"yes_rsvp_count":3,"created":1323639479000,"updated":1323639479000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qcqljcyrmbgc\/","description":"<p>The
+        CINNUG group was created to provide a place for practicing .NET developers
+        to expand their knowledge and network with other .Netters, but anyone who
+        is interested in learning more about .Net is more than welcome. The focus
+        of the presentations will be on learning and utilizing the .Net framework
+        to the fullest extent, best practices, and cutting edge programming tools
+        and new technologies. The meetings start at 6:00 PM; however, we have a social
+        time starting at 5:30 PM. At the start of the meetings we do announcements,
+        followed by our headliner speaker for 60-90 minutes. After the main talk we
+        break for pizza and some more social time. We wrap up the meeting with a short
+        \"grok\" talk and usually some giveaways. For more information and to see
+        the topics for each meeting visit [url=www.cinnug.org]Cincinnati .NET Users
+        Group[\/url].<\/p>","headcount":0,"name":"CINNUG Monthly Meeting","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"kxtzqyrmbjc","utc_offset":-14400000,"time":1380232800000,"waitlist_count":0,"yes_rsvp_count":1,"created":1304693203000,"updated":1304693203000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/kxtzqyrmbjc\/","description":"<p><a
+        href=\"http:\/\/cinjug.org\/meetings\/index.html\"><span>http:\/\/cinjug.org\/meetings\/index.html<\/span><\/a><\/p>","headcount":0,"name":"CinJUG","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":8200962,"zip":"45242","lon":-84.378868,"name":"Panera","state":"OH","address_1":"11033
+        Reed Hartman Highway Blue Ash, OH 45242","lat":39.266865,"city":"Cincinnati","country":"us"},"id":"qzkfddyrnbdb","utc_offset":-14400000,"time":1380713400000,"waitlist_count":0,"yes_rsvp_count":0,"created":1342280305000,"updated":1342280305000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qzkfddyrnbdb\/","description":"<p>Meet
+        for breakfast, coffee, and Clojure coding at Panera. We will be doing \"swarm\"
+        group coding on something fun.<\/p>\n<p>Panera location: 11033 Reed Hartman
+        Highway Blue Ash, OH 45242<\/p>","headcount":0,"name":"Cincy Clojure and Coffee","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":1969891,"zip":"45040","lon":-84.31395,"name":"Max
+        Technical Training","state":"OH","address_1":"4900 Parkway Dr # 160","lat":39.303802,"city":"Mason","country":"us"},"id":"dhhpkcyrnbfb","utc_offset":-14400000,"time":1380837600000,"waitlist_count":0,"updated":1325544759000,"created":1325544759000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/dhhpkcyrnbfb\/","description":"<p>First,
+        lightning talk.<\/p>\n<p>Then we''ll code katas.<\/p>\n<p>Don&#146;t forget
+        to bring food and drink as we&#146;re not actively looking for a sponsor.<\/p>\n<p>More
+        details:<\/p>\n<p><a href=\"http:\/\/cincycleancoders.com\/\">http:\/\/cincycleancoders.com\/<\/a><\/p>","how_to_find_us":"Off
+        Mason-Montgomery, north of Natorp, etc. on the east side.","name":"Cincy Clean
+        Coders","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"clsrvyrnblb","utc_offset":-14400000,"time":1381271400000,"waitlist_count":0,"yes_rsvp_count":2,"created":1309836530000,"updated":1348833087000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/clsrvyrnblb\/","description":"<p>We
+        are now meeting the 2nd Tuesday of the Month at the Gaslight Software\/EdgeCase
+        office.<\/p>\n<p>The meeting starts at 6:30 – No food is provided, but feel
+        free to bring you own.<\/p>\n<p><a href=\"http:\/\/cincyfp.wordpress.com\/\">http:\/\/cincyfp.wordpress.com\/<\/a><\/p>\n<p>Twitter:
+        @cincyfp<\/p>\n<p> <\/p>","headcount":0,"name":"Cincy Functional Programmers","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"mlvxpyrnbmb","utc_offset":-14400000,"time":1381334400000,"waitlist_count":0,"yes_rsvp_count":2,"created":1291265342000,"updated":1343841622000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/mlvxpyrnbmb\/","description":"<p>Bring
+        your own lunch. Register for the group for more information: <a href=\"http:\/\/groups.google.com\/group\/cincijs\">http:\/\/groups.google.com\/group\/cincijs<\/a><\/p>\n<p> <\/p>\n<p>Read
+        the blog: <a href=\"http:\/\/blog.cincijs.com\">http:\/\/blog.cincijs.com<\/a><\/p>","headcount":0,"name":"Cincinnati
+        JavaScript User Group","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":5215952,"zip":"45202","lon":-84.515465,"name":"The
+        Brandery ","state":"OH","address_1":"1411 Vine St, Cincinnati","lat":39.110943,"city":"Cincinnati","country":"us"},"id":"qfrtqyrnbnb","utc_offset":-14400000,"time":1381442400000,"waitlist_count":0,"yes_rsvp_count":1,"created":1301877167000,"updated":1342622826000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qfrtqyrnbnb\/","description":"<p><strong>Please
+        RSVP at <a href=\"http:\/\/www.meetup.com\/Cincinnati-Lean-Startup-Circle\/calendar\/15947214\/\"><\/a><a
+        href=\"http:\/\/www.meetup.com\/Cincinnati-Lean-Startup-Circle\/\">http:\/\/www.meetup.com...<\/a><\/strong><\/p>","headcount":0,"name":"Cincinnati
+        Lean Startup Circle","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"qhtsvdyrnbtb","utc_offset":-14400000,"time":1381874400000,"waitlist_count":0,"updated":1353427993000,"created":1353427993000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qhtsvdyrnbtb\/","description":"<p>See <a
+        href=\"http:\/\/cincyrb.com\">http:\/\/cincyrb.com<\/a><\/p>","how_to_find_us":"http:\/\/cincyrb.com\/","name":"Ruby
+        Brigade","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"ddqljcyrnbwb","utc_offset":-14400000,"time":1382047200000,"waitlist_count":0,"yes_rsvp_count":3,"created":1323639554000,"updated":1323639554000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/ddqljcyrnbwb\/","description":"<p>Come
+        join this new special interest group as we discuss topics related to software
+        architecture. This meeting is run using the open fishbowl technique where
+        the attendees are encouraged to share their thoughts with everyone while keeping
+        the meeting from becoming a free for all. :) What topic will we cover? Well,
+        that''s up to the attendees! If you have a strong opinion about a topic you''d
+        like to suggest, or want to learn more about the topics then make sure you
+        swing by the meeting. Find out more at [url=<a href=\"http:\/\/cinnug.org]http:\/\/cinnug.org[\/url\">http:\/\/cinnug.org]http:\/\/cinnug.org[\/url<\/a>].<\/p>","headcount":0,"name":"CinARC
+        Monthly Meeting","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"dmbsmdyrnbwb","utc_offset":-14400000,"time":1382047200000,"waitlist_count":0,"updated":1348586655000,"created":1348586655000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/dmbsmdyrnbwb\/","description":"<p>A
+        local forum to discuss all things PowerShell. Future meeting plans include
+        a Scripting Club, Demos and Labs access, and Scripting Games.<\/p>\n<p>Please
+        RSVP so we can get an accurate head count.<\/p>","how_to_find_us":"http:\/\/maps.google.com\/maps?hl=en&tab=wl","name":"PowerShell
+        User Group","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":4440172,"zip":"45202","lon":-84.517731,"name":"Possible
+        Worldwide","state":"OH","address_1":"302 W 3rd St # 900","lat":39.098381,"city":"Cincinnati","country":"us"},"id":"qqvklcyrnbwb","utc_offset":-14400000,"time":1382050800000,"waitlist_count":0,"yes_rsvp_count":3,"created":1326360811000,"updated":1326360811000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qqvklcyrnbwb\/","description":"<p>Please
+        join the OINK (Ohio, Indiana, Northern Kentucky) PHP User Group at our first
+        working meeting of 2012.<\/p>\n<p>&nbsp;<\/p>\n<p>In this meeting, we will
+        finalize our 2012 Schedule and Plan of Activities.&nbsp;<\/p>\n<p>&nbsp;<\/p>\n<p>As
+        a speaker, we''ll have Dr. Hazem Said, the new Chair of IT Department of University
+        of Cincinnati, who will introduce his Department.<\/p>\n<p>&nbsp;<\/p>\n<p>We''ll
+        also have a \"Swap Exchange\": bring old equipment, or unwanted Christmas
+        gifts that you would like to exchange for something else.<\/p>\n<p>&nbsp;<\/p>\n<p>As
+        last time, to make it more enjoyable, we''ll have FREE pizza and soda\/beer
+        :) To know exactly how much pizza and refreshments we need, please RSVP ASAP
+        if you will be attending.<\/p>\n<p>&nbsp;<\/p>\n<p><a href=\"http:\/\/oink-pug.org\/\"
+        target=\"_blank\">http:\/\/oink-pug.org<\/a><\/p>","headcount":0,"name":"OINK
+        PHP User Group","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"qcqljcyrnbdc","utc_offset":-14400000,"time":1382479200000,"waitlist_count":0,"yes_rsvp_count":3,"created":1323639479000,"updated":1323639479000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qcqljcyrnbdc\/","description":"<p>The
+        CINNUG group was created to provide a place for practicing .NET developers
+        to expand their knowledge and network with other .Netters, but anyone who
+        is interested in learning more about .Net is more than welcome. The focus
+        of the presentations will be on learning and utilizing the .Net framework
+        to the fullest extent, best practices, and cutting edge programming tools
+        and new technologies. The meetings start at 6:00 PM; however, we have a social
+        time starting at 5:30 PM. At the start of the meetings we do announcements,
+        followed by our headliner speaker for 60-90 minutes. After the main talk we
+        break for pizza and some more social time. We wrap up the meeting with a short
+        \"grok\" talk and usually some giveaways. For more information and to see
+        the topics for each meeting visit [url=www.cinnug.org]Cincinnati .NET Users
+        Group[\/url].<\/p>","headcount":0,"name":"CINNUG Monthly Meeting","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"kxtzqyrnbgc","utc_offset":-14400000,"time":1382652000000,"waitlist_count":0,"yes_rsvp_count":1,"created":1304693203000,"updated":1304693203000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/kxtzqyrnbgc\/","description":"<p><a
+        href=\"http:\/\/cinjug.org\/meetings\/index.html\"><span>http:\/\/cinjug.org\/meetings\/index.html<\/span><\/a><\/p>","headcount":0,"name":"CinJUG","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":8200962,"zip":"45242","lon":-84.378868,"name":"Panera","state":"OH","address_1":"11033
+        Reed Hartman Highway Blue Ash, OH 45242","lat":39.266865,"city":"Cincinnati","country":"us"},"id":"qzkfddyrpbjb","utc_offset":-18000000,"time":1383741000000,"waitlist_count":0,"yes_rsvp_count":0,"created":1342280305000,"updated":1342280305000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qzkfddyrpbjb\/","description":"<p>Meet
+        for breakfast, coffee, and Clojure coding at Panera. We will be doing \"swarm\"
+        group coding on something fun.<\/p>\n<p>Panera location: 11033 Reed Hartman
+        Highway Blue Ash, OH 45242<\/p>","headcount":0,"name":"Cincy Clojure and Coffee","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":1969891,"zip":"45040","lon":-84.31395,"name":"Max
+        Technical Training","state":"OH","address_1":"4900 Parkway Dr # 160","lat":39.303802,"city":"Mason","country":"us"},"id":"dhhpkcyrpbkb","utc_offset":-18000000,"time":1383865200000,"waitlist_count":0,"updated":1325544759000,"created":1325544759000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/dhhpkcyrpbkb\/","description":"<p>First,
+        lightning talk.<\/p>\n<p>Then we''ll code katas.<\/p>\n<p>Don&#146;t forget
+        to bring food and drink as we&#146;re not actively looking for a sponsor.<\/p>\n<p>More
+        details:<\/p>\n<p><a href=\"http:\/\/cincycleancoders.com\/\">http:\/\/cincycleancoders.com\/<\/a><\/p>","how_to_find_us":"Off
+        Mason-Montgomery, north of Natorp, etc. on the east side.","name":"Cincy Clean
+        Coders","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"clsrvyrpbqb","utc_offset":-18000000,"time":1384299000000,"waitlist_count":0,"yes_rsvp_count":2,"created":1309836530000,"updated":1348833087000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/clsrvyrpbqb\/","description":"<p>We
+        are now meeting the 2nd Tuesday of the Month at the Gaslight Software\/EdgeCase
+        office.<\/p>\n<p>The meeting starts at 6:30 – No food is provided, but feel
+        free to bring you own.<\/p>\n<p><a href=\"http:\/\/cincyfp.wordpress.com\/\">http:\/\/cincyfp.wordpress.com\/<\/a><\/p>\n<p>Twitter:
+        @cincyfp<\/p>\n<p> <\/p>","headcount":0,"name":"Cincy Functional Programmers","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"mlvxpyrpbrb","utc_offset":-18000000,"time":1384362000000,"waitlist_count":0,"yes_rsvp_count":2,"created":1291265342000,"updated":1343841622000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/mlvxpyrpbrb\/","description":"<p>Bring
+        your own lunch. Register for the group for more information: <a href=\"http:\/\/groups.google.com\/group\/cincijs\">http:\/\/groups.google.com\/group\/cincijs<\/a><\/p>\n<p> <\/p>\n<p>Read
+        the blog: <a href=\"http:\/\/blog.cincijs.com\">http:\/\/blog.cincijs.com<\/a><\/p>","headcount":0,"name":"Cincinnati
+        JavaScript User Group","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":5215952,"zip":"45202","lon":-84.515465,"name":"The
+        Brandery ","state":"OH","address_1":"1411 Vine St, Cincinnati","lat":39.110943,"city":"Cincinnati","country":"us"},"id":"qfrtqyrpbsb","utc_offset":-18000000,"time":1384470000000,"waitlist_count":0,"yes_rsvp_count":1,"created":1301877167000,"updated":1342622826000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qfrtqyrpbsb\/","description":"<p><strong>Please
+        RSVP at <a href=\"http:\/\/www.meetup.com\/Cincinnati-Lean-Startup-Circle\/calendar\/15947214\/\"><\/a><a
+        href=\"http:\/\/www.meetup.com\/Cincinnati-Lean-Startup-Circle\/\">http:\/\/www.meetup.com...<\/a><\/strong><\/p>","headcount":0,"name":"Cincinnati
+        Lean Startup Circle","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"status":"upcoming","visibility":"public","maybe_rsvp_count":0,"venue":{"id":3487332,"zip":"45242","lon":-84.372009,"name":"Gaslight
+        Software","state":"OH","address_1":"11126 Kenwood Road, Suite C.","lat":39.267883,"city":"Cincinnati","country":"us"},"id":"qhtsvdyrpbzb","utc_offset":-18000000,"time":1384902000000,"waitlist_count":0,"updated":1353427993000,"created":1353427993000,"yes_rsvp_count":1,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qhtsvdyrpbzb\/","description":"<p>See <a
+        href=\"http:\/\/cincyrb.com\">http:\/\/cincyrb.com<\/a><\/p>","how_to_find_us":"http:\/\/cincyrb.com\/","name":"Ruby
+        Brigade","headcount":0,"group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"ddqljcyrpbcc","utc_offset":-18000000,"time":1385074800000,"waitlist_count":0,"yes_rsvp_count":3,"created":1323639554000,"updated":1323639554000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/ddqljcyrpbcc\/","description":"<p>Come
+        join this new special interest group as we discuss topics related to software
+        architecture. This meeting is run using the open fishbowl technique where
+        the attendees are encouraged to share their thoughts with everyone while keeping
+        the meeting from becoming a free for all. :) What topic will we cover? Well,
+        that''s up to the attendees! If you have a strong opinion about a topic you''d
+        like to suggest, or want to learn more about the topics then make sure you
+        swing by the meeting. Find out more at [url=<a href=\"http:\/\/cinnug.org]http:\/\/cinnug.org[\/url\">http:\/\/cinnug.org]http:\/\/cinnug.org[\/url<\/a>].<\/p>","headcount":0,"name":"CinARC
+        Monthly Meeting","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":4440172,"zip":"45202","lon":-84.517731,"name":"Possible
+        Worldwide","state":"OH","address_1":"302 W 3rd St # 900","lat":39.098381,"city":"Cincinnati","country":"us"},"id":"qqvklcyrpbcc","utc_offset":-18000000,"time":1385078400000,"waitlist_count":0,"yes_rsvp_count":3,"created":1326360811000,"updated":1326360811000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qqvklcyrpbcc\/","description":"<p>Please
+        join the OINK (Ohio, Indiana, Northern Kentucky) PHP User Group at our first
+        working meeting of 2012.<\/p>\n<p>&nbsp;<\/p>\n<p>In this meeting, we will
+        finalize our 2012 Schedule and Plan of Activities.&nbsp;<\/p>\n<p>&nbsp;<\/p>\n<p>As
+        a speaker, we''ll have Dr. Hazem Said, the new Chair of IT Department of University
+        of Cincinnati, who will introduce his Department.<\/p>\n<p>&nbsp;<\/p>\n<p>We''ll
+        also have a \"Swap Exchange\": bring old equipment, or unwanted Christmas
+        gifts that you would like to exchange for something else.<\/p>\n<p>&nbsp;<\/p>\n<p>As
+        last time, to make it more enjoyable, we''ll have FREE pizza and soda\/beer
+        :) To know exactly how much pizza and refreshments we need, please RSVP ASAP
+        if you will be attending.<\/p>\n<p>&nbsp;<\/p>\n<p><a href=\"http:\/\/oink-pug.org\/\"
+        target=\"_blank\">http:\/\/oink-pug.org<\/a><\/p>","headcount":0,"name":"OINK
+        PHP User Group","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"qcqljcyrpbjc","utc_offset":-18000000,"time":1385506800000,"waitlist_count":0,"yes_rsvp_count":3,"created":1323639479000,"updated":1323639479000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/qcqljcyrpbjc\/","description":"<p>The
+        CINNUG group was created to provide a place for practicing .NET developers
+        to expand their knowledge and network with other .Netters, but anyone who
+        is interested in learning more about .Net is more than welcome. The focus
+        of the presentations will be on learning and utilizing the .Net framework
+        to the fullest extent, best practices, and cutting edge programming tools
+        and new technologies. The meetings start at 6:00 PM; however, we have a social
+        time starting at 5:30 PM. At the start of the meetings we do announcements,
+        followed by our headliner speaker for 60-90 minutes. After the main talk we
+        break for pizza and some more social time. We wrap up the meeting with a short
+        \"grok\" talk and usually some giveaways. For more information and to see
+        the topics for each meeting visit [url=www.cinnug.org]Cincinnati .NET Users
+        Group[\/url].<\/p>","headcount":0,"name":"CINNUG Monthly Meeting","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}},{"visibility":"public","status":"upcoming","maybe_rsvp_count":0,"venue":{"id":1000172,"zip":"45040","phone":"513
+        322-8888","lon":-84.313302,"name":"MAX Technical Training","state":"OH","address_1":"4900
+        Parkway Dr ","address_2":"Suite 160","lat":39.304155,"city":"Mason","country":"us"},"id":"kxtzqyrpblc","utc_offset":-18000000,"time":1385679600000,"waitlist_count":0,"yes_rsvp_count":1,"created":1304693203000,"updated":1304693203000,"event_url":"http:\/\/www.meetup.com\/TechLife-Cincinnati\/events\/kxtzqyrpblc\/","description":"<p><a
+        href=\"http:\/\/cinjug.org\/meetings\/index.html\"><span>http:\/\/cinjug.org\/meetings\/index.html<\/span><\/a><\/p>","headcount":0,"name":"CinJUG","group":{"id":1460552,"group_lat":39.27000045776367,"name":"TechLife
+        Cincinnati","group_lon":-84.41000366210938,"join_mode":"open","urlname":"TechLife-Cincinnati","who":"members"}}],"meta":{"lon":"","count":129,"link":"https:\/\/api.meetup.com\/2\/events","next":"","total_count":129,"url":"https:\/\/api.meetup.com\/2\/events?key=586b3a2d4f6b3040507256466b55327f&group_id=1460552&status=upcoming&order=time&desc=false&offset=0&format=json&page=200&fields=name","id":"","title":"Meetup
+        Events v2","updated":1354229098000,"description":"Access Meetup events using
+        a group, member, or event id. Events in private groups are available only
+        to authenticated members of those groups. To search events by topic or location,
+        see [Open Events](\/meetup_api\/docs\/2\/open_events).","method":"Events","lat":""}}
+
+'
+    http_version: '1.1'
+  recorded_at: Sat, 01 Dec 2012 20:52:14 GMT
+recorded_with: VCR 2.3.0
