@@ -6,3 +6,4 @@ tmp/
 vendor/ruby
 /bin/
 /.env
+.rvmrc
