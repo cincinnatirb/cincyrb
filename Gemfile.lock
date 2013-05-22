@@ -278,6 +278,7 @@ DEPENDENCIES
   pg
   poltergeist
   rails (= 3.2.11)
+  rake (>= 10)
   rspec-rails
   sass-rails
   sqlite3
