@@ -14,8 +14,7 @@
         - event.speakers.each do |speaker|
           .speaker
             .speaker-headshot
-              - unless speaker.image_url == ""
-                = image_tag(speaker.image_url)
+              = image_tag(gravatar_url(speaker.email))
             .speaker-text
               %h3.speaker-name= speaker.name
               .speaker-bio
