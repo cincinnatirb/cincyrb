@@ -34,7 +34,8 @@ cp -i .env.sample .env
 # Set up the database
 #
 echo "  + Creating the development database."
-rake db:setup &> /dev/null
+bundle exec rake db:setup
+bundle exec rake db:migrate
 
 #
 # Where can I find my API key?
