@@ -409,20 +409,26 @@ input:-moz-placeholder, textarea:-moz-placeholder
  *   Speaker Styles
  * -----------------------------------------
 .speakers
-  @extend .row
+  //@extend .row
 
 .speaker
-  @extend .three, .columns
-  margin-right: 3em
-
-.speaker-bio
+  @extend .row
+  margin-bottom: 2em
 
 .speaker-headshot
-  height: 128px
+  @extend .two, .columns
   width: 128px
 
 .speaker img
   width: 100%
+
+.speaker-text
+  @extend .ten, .columns
+
+.speaker-name
+
+.speaker-bio
+
 /* -----------------------------------------
  *   Footer Styles
  *-----------------------------------------

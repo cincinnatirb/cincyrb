@@ -16,10 +16,9 @@
             .speaker-headshot
               - unless speaker.image_url == ""
                 = image_tag(speaker.image_url)
-            .url
-              %br
-                %p= speaker.name
-            .speaker-bio
-              %p= speaker.bio
+            .speaker-text
+              %h3.speaker-name= speaker.name
+              .speaker-bio
+                %p= speaker.bio
 
 
