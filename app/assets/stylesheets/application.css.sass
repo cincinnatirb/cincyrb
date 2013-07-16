@@ -395,7 +395,13 @@ input:-moz-placeholder, textarea:-moz-placeholder
 
 .video
   @extend .six, .columns, .flex-video, .widescreen, .vimeo
-  padding-bottom: 27%
+  height: 265px 
+  padding-bottom: 0 !important
+
+.event-sponsor
+  @extend .six, .columns
+
+
 /* -----------------------------------------
  *   Past Events Styles
  * -----------------------------------------
@@ -405,24 +411,30 @@ input:-moz-placeholder, textarea:-moz-placeholder
 
 .event
   @extend .row
+
+
 /* -----------------------------------------
  *   Speaker Styles
  * -----------------------------------------
 .speakers
-  @extend .row
 
 .speaker
-  @extend .three, .columns
-  margin-right: 3em
+  @extend .row
+  margin-bottom: 2em
+
+.speaker-headshot
+  @extend .two, .columns
+  height: 150px
+
+.speaker img
+
+.speaker-text
+  @extend .ten, .columns
+
+.speaker-name
 
 .speaker-bio
 
-.speaker-headshot
-  height: 128px
-  width: 128px
-
-.speaker img
-  width: 100%
 /* -----------------------------------------
  *   Footer Styles
  *-----------------------------------------
