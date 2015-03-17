@@ -11,6 +11,7 @@ gem 'activeadmin'
 gem 'meta_search'
 gem 'sass-rails'
 gem 'newrelic_rpm'
+gem 'oauth'
 
 group :assets do
   gem 'coffee-rails'

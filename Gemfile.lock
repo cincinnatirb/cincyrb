@@ -163,6 +163,7 @@ GEM
     netrc (0.7.7)
     newrelic_rpm (3.4.2.1)
     nokogiri (1.5.5)
+    oauth (0.4.7)
     orm_adapter (0.4.0)
     pg (0.14.1)
     poltergeist (0.7.0)
@@ -275,6 +276,7 @@ DEPENDENCIES
   konacha
   meta_search
   newrelic_rpm
+  oauth
   pg
   poltergeist
   rails (= 3.2.11)
