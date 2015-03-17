@@ -1,4 +1,6 @@
 Cincirb::Application.routes.draw do
+  get "twitter/timeline"
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
