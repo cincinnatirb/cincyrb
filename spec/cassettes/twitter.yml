@@ -1,0 +1,86 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=cincinnatirb&count=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - OAuth gem v0.4.7
+      authorization:
+      - OAuth oauth_consumer_key="qS7T79LONVGpRT1ngrqcfv2VY", oauth_nonce="sULoc2VUPoendM9lmNkIvrEoYAJPU19YaAQOpPy8FE",
+        oauth_signature="qCMDLg003HQ6GlPwtLND92g%2F220%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1426693634", oauth_token="577297716-VUKCjaXKQS2KITVUyG73N2SwbBKLGVP8VlqJpWzn",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      connection:
+      - close
+      content-disposition:
+      - attachment; filename=json.json
+      content-length:
+      - '2536'
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Wed, 18 Mar 2015 15:47:14 GMT
+      expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      last-modified:
+      - Wed, 18 Mar 2015 15:47:14 GMT
+      pragma:
+      - no-cache
+      server:
+      - tsa_a
+      set-cookie:
+      - lang=en
+      - guest_id=v1%3A142669363481030517; Domain=.twitter.com; Path=/; Expires=Fri,
+        17-Mar-2017 15:47:14 UTC
+      status:
+      - 200 OK
+      strict-transport-security:
+      - max-age=631138519
+      x-access-level:
+      - read
+      x-connection-hash:
+      - 1f285e285f334086830887791901bf63
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-rate-limit-limit:
+      - '180'
+      x-rate-limit-remaining:
+      - '179'
+      x-rate-limit-reset:
+      - '1426694534'
+      x-response-time:
+      - '32'
+      x-transaction:
+      - 171e538013bfb9e2
+      x-twitter-response-tags:
+      - BouncerCompliant
+      x-xss-protection:
+      - 1; mode=block
+    body:
+      encoding: US-ASCII
+      string: ! '[{"created_at":"Mon Mar 16 15:03:58 +0000 2015","id":577485463495188480,"id_str":"577485463495188480","text":"@superchris
+        @teamgaslight oh yeah that''s tomorrow night at 6 :)","source":"\u003ca href=\"http:\/\/twitter.com\"
+        rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":577485290836643841,"in_reply_to_status_id_str":"577485290836643841","in_reply_to_user_id":17484526,"in_reply_to_user_id_str":"17484526","in_reply_to_screen_name":"cincinnatirb","user":{"id":17484526,"id_str":"17484526","name":"cincinnatirb","screen_name":"cincinnatirb","location":"Cincinnati,
+        OH","profile_location":null,"description":"Cincinnati Ruby Brigade supports
+        local Ruby enthusiasts in code only style meetings. Fun times.","url":"http:\/\/t.co\/rMIO7rDFQZ","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/rMIO7rDFQZ","expanded_url":"http:\/\/cincyrb.com","display_url":"cincyrb.com","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":249,"friends_count":54,"listed_count":23,"created_at":"Wed
+        Nov 19 12:01:10 +0000 2008","favourites_count":50,"utc_offset":-14400,"time_zone":"Eastern
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":232,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/76058969\/cincirb_logo.jpg","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/76058969\/cincirb_logo.jpg","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/701756387\/cincirb_logo_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/701756387\/cincirb_logo_normal.jpg","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"superchris","name":"Chris
+        Nelson","id":14080298,"id_str":"14080298","indices":[0,11]},{"screen_name":"teamgaslight","name":"Gaslight","id":54681071,"id_str":"54681071","indices":[12,25]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"}]'
+    http_version: '1.1'
+  recorded_at: Wed, 18 Mar 2015 15:47:14 GMT
+recorded_with: VCR 2.3.0
