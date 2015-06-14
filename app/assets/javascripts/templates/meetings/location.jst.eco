@@ -1,4 +1,4 @@
 <p><em>Location</em></p>
 <h3><%= @venue.name %></h3>
 <p><%= @venue.address_1 %>, <%= @venue.city %>, <%= @venue.state %>, <%= @venue.zip %></p>
-<a href="http://goo.gl/BwcH2" target="_blank">Directions</a>
+<a href="https://goo.gl/maps/JkcBR" target="_blank">Directions</a>
