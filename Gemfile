@@ -1,7 +1,9 @@
 source 'http://rubygems.org'
+ruby '2.0.0'
 
 gem 'rails', '3.2.11'
 gem 'rake', '>= 10'
+gem 'pg'
 
 gem 'jquery-rails'
 gem 'haml-rails'
@@ -17,12 +19,10 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-group :production do
-  gem 'pg'
-end
-
 group :development, :test do
-  gem 'sqlite3'
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'byebug'
   gem 'heroku'
   gem 'taps'
   gem 'rspec-rails'
