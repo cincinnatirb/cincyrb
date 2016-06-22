@@ -13,6 +13,10 @@ class Meeting
 
   def self.ruby_brigade_meetings
     all_events = get("/events?group_id=1460552&fields=name&key=#{ENV.fetch('MEETUP_API_KEY')}")
-    all_events["results"].select { |m| m["name"] == "Ruby Brigade" }
+    if all_events["results"]
+      all_events["results"].select { |m| m["name"] == "Ruby Brigade" }
+    else
+      []
+    end
   end
 end

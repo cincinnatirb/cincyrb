@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Meeting do
 
   context "limiting number of results" do
-    before { Meeting.stub!(:ruby_brigade_meetings).and_return([1,2,3,4]) }
+    before { allow(Meeting).to receive(:ruby_brigade_meetings).and_return([1,2,3,4]) }
 
     describe ".get_next_meeting" do
       it "should return the first upcoming event" do

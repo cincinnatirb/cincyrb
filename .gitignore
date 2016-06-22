@@ -5,6 +5,5 @@ log/*.log
 tmp/
 .sass-cache/
 vendor/ruby
-/bin/
 /.env
 .rvmrc

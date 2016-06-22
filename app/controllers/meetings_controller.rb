@@ -2,22 +2,14 @@ class MeetingsController < ApplicationController
   respond_to :json
 
   def index
-    render :json => @meeting = Meeting.get_next_meeting.to_json
+    render json: @meeting = Meeting.get_next_meeting.to_json
   end
 
-  def new
+  def new; end
 
-  end
+  def create; end
 
-  def create
+  def edit; end
 
-  end
-
-  def edit
-
-  end
-
-  def update
-
-  end
+  def update; end
 end
