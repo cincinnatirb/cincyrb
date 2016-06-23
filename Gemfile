@@ -17,6 +17,10 @@ gem 'protected_attributes'
 gem 'coffee-rails'
 gem 'uglifier', '>= 1.0.3'
 
+group :production, :staging do
+  gem 'rails_12factor'
+end
+
 group :development, :test do
   gem 'spring'
   gem 'pry-rails'
