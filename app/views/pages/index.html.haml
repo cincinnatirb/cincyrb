@@ -30,7 +30,7 @@
     #events.four.columns
       %h3 Upcoming Events
       %section
-        - Meeting.get_upcoming_meetings.each do |meeting|
+        - @upcoming_meetings.each do |meeting|
           %article
             .date
               %h1
@@ -44,7 +44,7 @@
     %h2 Contact Us
     %p Have a topic idea? Want to present at a Cinci.rb meeting? Have a suggestion? Send us a comment here.
     %p.flash.flash_notice
-    = form_for Contact.new, :html => { :id => "contact-form", :class => "container row" }, :url => "/contact_us", :remote => true do |f|
+    = form_for Contact.new, html: { id: "contact-form", class: "container row" }, url: "/contact_us", :remote => true do |f|
       %div
         #left-contact.five.columns
           = f.text_field :name, :placeholder => "Name"
