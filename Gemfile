@@ -16,6 +16,7 @@ gem 'newrelic_rpm'
 gem 'protected_attributes'
 gem 'coffee-rails'
 gem 'uglifier', '>= 1.0.3'
+gem 'oauth'
 
 group :production, :staging do
   gem 'rails_12factor'
@@ -26,7 +27,6 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-byebug'
   gem 'byebug'
-  gem 'heroku'
   gem 'taps'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
