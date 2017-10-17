@@ -30,13 +30,13 @@
             %li.home
               =link_to("Home", root_path)
             %li
-              %a.scroll{:href => "#about"} About
+              =link_to("About", root_path(anchor: "about"))
             %li
-              %a.scroll{:href => "#about"} Events
+              =link_to("Events", root_path(anchor: "about"))
             %li
-              %a.scroll{:href => "#contact"} Contact
+              =link_to("Contact", root_path(anchor: "contact"))
             %li
-              %a.scroll{:href => "#sponsors"} Sponsors
+              =link_to("Sponsors", root_path(anchor: "sponsors"))
             %li
               =link_to("Past Events", past_events_path)
         %ul#social
