@@ -1,5 +1,5 @@
 source 'http://rubygems.org'
-ruby '2.1.10'
+ruby '2.3.5'
 
 gem 'rails', '4.1.15'
 gem 'rake', '>= 10'
