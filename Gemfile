@@ -1,7 +1,7 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 ruby '2.3.5'
 
-gem 'rails', '4.1.15'
+gem 'rails', '~> 4.2.0'
 gem 'rake', '>= 10'
 gem 'pg'
 
@@ -10,11 +10,11 @@ gem 'jquery-rails'
 gem 'haml-rails'
 gem 'eco'
 gem 'httparty'
-gem 'activeadmin', github: 'activeadmin'
-gem 'sass-rails'
+gem 'activeadmin', '~> 1.0'
+gem 'sass-rails', '~> 5.0'
 gem 'newrelic_rpm'
 gem 'protected_attributes'
-gem 'coffee-rails'
+gem 'coffee-rails', '~> 4.1.0'
 gem 'uglifier', '>= 1.0.3'
 gem 'oauth'
 
@@ -23,7 +23,6 @@ group :production, :staging do
 end
 
 group :development, :test do
-  gem 'spring'
   gem 'pry-rails'
   gem 'pry-byebug'
   gem 'byebug'
@@ -40,4 +39,12 @@ group :test do
   gem 'database_cleaner'
   gem 'vcr'
   gem 'fakeweb'
+end
+
+group :development do
+  # Access an IRB console on exception pages or by using <%= console %> in views
+  gem 'web-console', '~> 2.0'
+
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
 end
