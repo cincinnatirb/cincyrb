@@ -1,22 +1,51 @@
 # Cincinnati.rb Homepage / Webapp
 [![Build Status](https://secure.travis-ci.org/cincinnatirb/cincyrb.png)](http://travis-ci.org/cincinnatirb/cincyrb)
 
-* Rails 3.1 project using the asset pipline
-* Uses Zurb's foundation project for styling and page layout
-* Uses HAML and SASS for templating and stylesheets
-* Includes Underscore and Backbone JS
+The [CincyRb](http://cincyrb.com) website.
 
-### Setup
+To run or develop this project:
 
-On a * nix environment, just run:
+* `git clone <repository-url>` this repository
+* change into the new directory
+* `rbenv install`
+* `gem install bundler`
+* `bundle install`
 
-`script/bootstrap`
+## Functionality
 
-and you should be setup to go. You'll need a Meetup API key, which you can find at 
+This is a Rails application that uses:
 
-http://www.meetup.com/meetup_api/key/
+* [ActiveAdmin](http://activeadmin.info) to provide a UI that allows users to manage data.
+* [Devise](https://github.com/plataformatec/devise) to authenticate users.
+* Zurb's foundation project for styling and page layout.
+* HAML and SASS for templating and stylesheets.
+* Includes Underscore and Backbone JS.
+* Postgres as a relational database. It [manages changes to the structure of the database](http://guides.rubyonrails.org/active_record_migrations.html).
 
-### Contributing
+### Prerequisites
+
+This project uses `rbenv` to install and select the correct version of Ruby.
+This is optional, but it is highly recommended.
+You can also use rvm for example, but you will need to configure it within this project.
+
+The `pg` gem requires that Postgres client libraries be installed.
+
+### Configuration
+
+The following environment variables are used:
+
+- `DATABASE_URL`: Database used to store operational data.
+- `NEW_RELIC_LICENSE_KEY`: Used by New Relic. Should not be set in development unless developing changes to New Relic integration. Should never be set in test environment.
+- `NEW_RELIC_APP_NAME`: Used by New Relic.
+- `DEVISE_SECRET_KEY`: The secret token used by Devise.
+- `SENDGRID_USERNAME`
+- `SENDGRID_PASSWORD`
+
+### Tests
+
+We use [rspec](https://www.relishapp.com/rspec) and [cucumber](https://github.com/cucumber/cucumber).
+
+## Contributing
 
 1. Fork the project
 2. Add your feature or fix the issue you found.
