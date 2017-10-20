@@ -3,9 +3,9 @@ rvm:
   - 2.3.5
 env:
   - MEETUP_API_KEY=secret_key
+  - RAILS_ENV=test
 script:
-  - cp config/database.example.yml config/database.yml
-  - RAILS_ENV=test bundle exec rake --trace db:setup
-  - RAILS_ENV=test bundle exec rake --trace db:migrate
-  - RAILS_ENV=test bundle exec rake --trace db:test:prepare
-  - RAILS_ENV=test bundle exec rake --trace
+  - bundle exec rake --trace db:setup
+  - bundle exec rake --trace db:schema:load
+  - bundle exec rake --trace db:test:prepare
+  - bundle exec rake --trace

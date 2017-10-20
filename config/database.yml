@@ -1,23 +1,22 @@
-development:
+default: &default
   adapter: postgresql
-  database: cincyrb_development
   pool: 5
-  min_messages: 'warning'
   encoding: utf8
+
+development:
+  <<: *default
+  database: cincyrb_development
+  min_messages: 'warning'
 
 staging:
-  adapter: postgresql
+  <<: *default
   database: cincyrb_staging
-  pool: 5
   min_messages: 'warning'
-  encoding: utf8
 
 test: &test
-  adapter: postgresql
+  <<: *default
   database: cincyrb_test
-  pool: 5
   min_messages: 'warning'
-  encoding: utf8
 
 cucumber:
   <<: *test
