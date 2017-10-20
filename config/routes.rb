@@ -1,4 +1,4 @@
-Cincirb::Application.routes.draw do
+Rails.application.routes.draw do
   get "twitter/timeline"
 
   ActiveAdmin.routes(self)

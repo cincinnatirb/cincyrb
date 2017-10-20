@@ -11,4 +11,3 @@ module ApplicationHelper
     image_src = "http://www.gravatar.com/avatar/#{hash}?s=127"
   end
 end
-

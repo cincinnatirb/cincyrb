@@ -1,8 +1,9 @@
 .bundle
 config/database.yml
 db/*.sqlite3
-log/*.log
-tmp/
+log/*
+!/log/.keep
+/tmp
 .sass-cache/
 vendor/ruby
 /.env
