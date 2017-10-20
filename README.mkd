@@ -40,6 +40,10 @@ The following environment variables are used:
 - `DEVISE_SECRET_KEY`: The secret token used by Devise.
 - `SENDGRID_USERNAME`
 - `SENDGRID_PASSWORD`
+- `TWITTER_API_KEY`
+- `TWITTER_API_SECRET`
+- `TWITTER_ACCESS_TOKEN`
+- `TWITTER_ACCESS_TOKEN_SECRET`
 
 ### Tests
 
