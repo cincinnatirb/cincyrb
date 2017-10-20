@@ -5,4 +5,8 @@ class PastEvent < ActiveRecord::Base
   def self.recent
     order('date DESC')
   end
+
+  def display_name
+    "#{date} #{topic}"
+  end
 end
