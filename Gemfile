@@ -31,6 +31,7 @@ group :development, :test do
   gem 'dotenv'
   gem 'konacha'
   gem 'poltergeist'
+  gem 'letter_opener'
 end
 
 group :test do
