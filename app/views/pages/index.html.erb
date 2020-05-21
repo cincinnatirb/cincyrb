@@ -1,0 +1,81 @@
+<section id='home'>
+  <div class='container row'>
+    <div class='eight columns'>
+      <h1>Cincy.rb - Cincinnati Ruby Brigade</h1>
+      <%= image_tag('logo.png', alt: 'Cincy.rb logo', id: 'logo') %>
+      <p>
+        <strong>Cincinnati Ruby Brigade</strong>
+        is a group of local developers who talk about Ruby specific topics and share code.
+      </p>
+      <%= link_to_location_map('Write code with us!', :target => '_blank', :id => 'rsvp') %>
+    </div>
+    <div class='four columns' id='next'>
+      <section>
+        <article id='next-meeting'>
+          <p>
+            <%= image_tag 'spinner.gif' %>
+            Loading...
+          </p>
+        </article>
+        <article id='location-info'></article>
+      </section>
+    </div>
+  </div>
+  <!-- end #container -->
+</section>
+<section id='about'>
+  <div class='container row'>
+    <div class='eight columns'>
+      <h2>About Us</h2>
+      <p>Cincinnati Ruby Brigade was formed by local developers who desired a place to talk about Ruby specific topics and share code. It has since grown into a thriving community as vibrant and creative as the Ruby language itself.</p>
+      <p>Today we meet on the third tuesday of every month to discuss and hack on Ruby code and strive to keep to the principle of less slides more code.</p>
+      <div id='tweet'>
+        <a href='https://twitter.com/cincinnatirb'>Follow Us</a>
+        <h4>Recent Tweet</h4>
+        <p>
+          <%= image_tag 'spinner.gif' %>
+          Loading...
+        </p>
+      </div>
+    </div>
+    <div class='four columns' id='events'>
+      <h3>Upcoming Events</h3>
+      <section>
+        <%- @upcoming_meetings.each do |meeting| %>
+          <article>
+            <div class="date">
+              <h1><%= format_date_for_homepage(meeting["time"]).html_safe %></h1>
+            </div>
+            <p>
+              <%= meeting["name"] %>
+              <%= link_to_location_map '@ Gaslight', :target => '_blank' %>
+            </p>
+          </article>
+        <%- end %>
+      </section>
+    </div>
+  </div>
+  <!-- end .row -->
+</section>
+<section id='contact'>
+  <div class='container row'>
+    <h2>Contact Us</h2>
+    <p>Have a topic idea? Want to present at a Cinci.rb meeting? Have a suggestion? Send us a comment here.</p>
+    <p class='flash flash_notice'></p>
+    <%= form_for Contact.new, html: { id: "contact-form", class: "container row" }, url: "/contact_us", :remote => true do |f| %>
+      <div>
+        <div class="left-contact five columns">
+          <%= f.text_field :name, :placeholder => "Name" %>
+          <%= f.text_field :email, :placeholder => "Email Address" %>
+          <%= f.text_field :subject, :placeholder => "Subject" %>
+        </div>
+        <div class="left-contact seven columns">
+          <%= f.text_area :message, :placeholder => "Message", :rows => 5 %>
+        </div>
+        <div class="submit">
+          <input type="submit" value="Submit">
+        </div>
+      </div>
+    <%- end %>
+  </div>
+</section>

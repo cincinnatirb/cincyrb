@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <h1>
+      Feedback from cincyrb.com
+    </h1>
+    <p>
+      From: <%= "#{@contact.name} (#{@contact.email})" %>
+    </p>
+    <p>
+      Subject: <%= @contact.subject %>
+    </p>
+    <p>
+      Message:
+      <%= @contact.message %>
+    </p>
+  </body>
+</html>
