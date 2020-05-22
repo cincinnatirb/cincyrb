@@ -32,7 +32,6 @@ group :development, :test do
   gem 'rspec-rails', '~> 4.0'
   gem 'factory_girl_rails'
   gem 'dotenv'
-  gem 'konacha'
   gem 'poltergeist'
 end
 

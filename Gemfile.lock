@@ -73,7 +73,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    colorize (0.8.1)
     concurrent-ruby (1.1.6)
     crass (1.0.6)
     cucumber (3.1.2)
@@ -157,12 +156,6 @@ GEM
       activerecord
       kaminari-core (= 1.2.0)
     kaminari-core (1.2.0)
-    konacha (3.3.0)
-      actionpack (>= 3.1, < 5)
-      capybara
-      colorize
-      railties (>= 3.1, < 5)
-      sprockets
     loofah (2.5.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -327,7 +320,6 @@ DEPENDENCIES
   httparty
   jquery-rails
   json
-  konacha
   newrelic_rpm
   oauth
   pg (~> 0.11)
