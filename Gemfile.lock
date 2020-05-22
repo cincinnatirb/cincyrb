@@ -74,6 +74,8 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.6)
+    crack (0.4.3)
+      safe_yaml (~> 1.0.0)
     crass (1.0.6)
     cucumber (3.1.2)
       builder (>= 2.1.2)
@@ -118,7 +120,6 @@ GEM
     factory_girl_rails (4.9.0)
       factory_girl (~> 4.9.0)
       railties (>= 3.0.0)
-    fakeweb (1.3.0)
     ffi (1.12.2)
     formtastic (3.1.5)
       actionpack (>= 3.2.13)
@@ -129,6 +130,7 @@ GEM
     has_scope (0.7.2)
       actionpack (>= 4.1)
       activesupport (>= 4.1)
+    hashdiff (1.0.1)
     httparty (0.18.0)
       mime-types (~> 3.0)
       multi_xml (>= 0.5.2)
@@ -259,6 +261,7 @@ GEM
       rspec-mocks (~> 3.9)
       rspec-support (~> 3.9)
     rspec-support (3.9.3)
+    safe_yaml (1.0.5)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -300,6 +303,10 @@ GEM
     vcr (5.1.0)
     warden (1.2.7)
       rack (>= 1.0)
+    webmock (3.8.3)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff (>= 0.4.0, < 2.0.0)
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
@@ -319,7 +326,6 @@ DEPENDENCIES
   dotenv
   eco
   factory_girl_rails
-  fakeweb
   httparty
   jquery-rails
   json
@@ -341,6 +347,7 @@ DEPENDENCIES
   taps
   uglifier (>= 1.0.3)
   vcr
+  webmock
 
 RUBY VERSION
    ruby 2.6.5p114
