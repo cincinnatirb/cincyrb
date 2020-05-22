@@ -8,14 +8,18 @@
   <!-- <![endif] -->
   <head>
     <meta charset='utf-8'>
+    <%= favicon_link_tag 'favicon.ico', type: 'image/vnd.microsoft.ico' %>
     <!-- Set the viewport width to device width for mobile -->
     <meta content='width=device-width' name='viewport'>
     <title>Cincinnati Ruby Brigade</title>
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Cabin:400,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
     <!-- Included CSS Files -->
+    <%= stylesheet_link_tag 'application', media: 'screen' %>
     <!--[if lt IE 9]>
+    <%= stylesheet_link_tag 'ie', media: 'screen' %>
     <![endif]-->
+    <%= javascript_include_tag 'modernizr-foundation', media: 'screen' %>
     <!-- IE Fix for HTML5 Tags -->
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
