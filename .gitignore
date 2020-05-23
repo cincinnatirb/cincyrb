@@ -2,6 +2,7 @@
 config/database.yml
 db/*.sqlite3
 log/*.log
+spec/examples.txt
 tmp/
 .sass-cache/
 vendor/ruby
