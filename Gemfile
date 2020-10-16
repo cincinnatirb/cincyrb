@@ -18,6 +18,7 @@ gem 'protected_attributes'
 gem 'coffee-rails'
 gem 'uglifier', '>= 1.0.3'
 gem 'oauth'
+gem 'puma', '~> 3.7.0'
 gem 'websocket-extensions', '~> 0.1.5' # dependabot recommendation
 
 group :production, :staging do
