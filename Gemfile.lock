@@ -365,6 +365,7 @@ DEPENDENCIES
   rspec-rails
   sass-rails (~> 5.0)
   spring
+  sprockets (~> 3.7.2)
   taps
   uglifier (>= 1.0.3)
   vcr

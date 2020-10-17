@@ -4,6 +4,7 @@ ruby '2.3.5'
 gem 'rails', '~> 4.2.0'
 gem 'rake', '>= 10'
 gem 'pg'
+gem 'sprockets', '~> 3.7.2'
 
 gem 'devise'
 gem 'jquery-rails'
