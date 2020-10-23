@@ -12,6 +12,7 @@ gem 'eco'
 gem 'httparty'
 gem 'json'
 gem 'activeadmin', '1.4.3'
+gem 'kaminari', '~> 1.2.1' # dependabot (activeadmin requirement)
 gem 'sass-rails'
 gem 'newrelic_rpm'
 gem 'protected_attributes'
