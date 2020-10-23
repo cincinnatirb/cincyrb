@@ -329,6 +329,7 @@ DEPENDENCIES
   httparty
   jquery-rails
   json
+  kaminari (~> 1.2.1)
   newrelic_rpm
   oauth
   pg (~> 0.11)
