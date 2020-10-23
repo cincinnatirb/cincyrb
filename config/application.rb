@@ -1,13 +1,6 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
-# Pick the frameworks you want:
-#require "active_record/railtie"
-#require "action_controller/railtie"
-#require "action_mailer/railtie"
-#require "active_resource/railtie"
-#require "rails/test_unit/railtie"
-#require "sprockets/railtie"
 
 if defined?(Bundler)
   # Require the gems listed in Gemfile, including any gems
@@ -41,6 +34,9 @@ module Cincirb
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
+    # Do not swallow errors in after_commit/after_rollback callbacks.
+    config.active_record.raise_in_transactional_callbacks = true
+
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
 
@@ -52,7 +48,5 @@ module Cincirb
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
-
-    config.assets.initialize_on_precompile = false
   end
 end

@@ -1,3 +1,0 @@
-<p><em>Our Next Meetup</em></p>
-<h3>6:00pm - <%= @meeting.date %></h3>
-<p><%- @meeting.name %></p>

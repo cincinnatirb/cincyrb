@@ -1,1 +1,0 @@
-task :default => 'konacha:run'

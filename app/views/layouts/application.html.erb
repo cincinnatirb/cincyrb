@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]> ><! <![endif]-->
+<html class='no-js' lang='en'>
+  <!-- <![endif] -->
+  <head>
+    <meta charset='utf-8'>
+    <%= favicon_link_tag 'favicon.ico', type: 'image/vnd.microsoft.ico' %>
+    <!-- Set the viewport width to device width for mobile -->
+    <meta content='width=device-width' name='viewport'>
+    <title>Cincinnati Ruby Brigade</title>
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Cabin:400,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+    <!-- Included CSS Files -->
+    <%= stylesheet_link_tag 'application', media: 'screen' %>
+    <!--[if lt IE 9]>
+    <%= stylesheet_link_tag 'ie', media: 'screen' %>
+    <![endif]-->
+    <%= javascript_include_tag 'modernizr-foundation', media: 'screen' %>
+    <!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      <div class='row'>
+        <nav>
+          <ul>
+            <li class='home'><%= link_to("Home", root_path) %></li>
+            <li><%= link_to("About", root_path(anchor: "about")) %></li>
+            <li><%= link_to("Events", root_path(anchor: "about")) %></li>
+            <li><%= link_to("Contact", root_path(anchor: "contact")) %></li>
+            <li><%= link_to("Sponsors", root_path(anchor: "sponsors")) %></li>
+            <li><%= link_to("Past Events", past_events_path) %></li>
+          </ul>
+        </nav>
+        <ul id='social'>
+          <li class='twitter'><a href='https://twitter.com/#!/cincinnatirb' target='_blank'>Follow us on Twitter!</a></li>
+          <li class='facebook'><a href='http://www.facebook.com/events/162252363797871/' target='_blank'>Be Our Friend on Facebook!</a></li>
+          <li>share</li>
+        </ul>
+      </div>
+    </header>
+
+    <%= yield %>
+
+    <section id='sponsors'>
+      <div class='container row'>
+        <h2>Sponsors</h2>
+        <a class='become-a-sponsor' href='mailto:hello@teamgaslight.com'>+ become a sponsor</a>
+        <div class='sponsors container row'>
+          <article class='four columns' id='gaslight'>
+            <a class='logo' href='http://www.teamgaslight.com' target='_blank'>Gaslight</a>
+            <p>A design and development shop passionate about building your best ideas. We partner with you to create custom software, web apps and mobile apps.</p>
+            <a href='http://www.teamgaslight.com' target='_blank'>www.teamgaslight.com</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class='container row'>
+        <h5>
+          Designed and built by
+          <a href='http://www.teamgaslight.com' target='_blank'>Gaslight</a>
+          in 2012
+        </h5>
+        <a class='scroll' href='#home' id='top'>Take me to the top!</a>
+      </div>
+    </footer>
+    <!-- Included JS Files -->
+  </body>
+  <script src='http://maps.googleapis.com/maps/api/js?key=AIzaSyCA9cUwB8Tzb_hRPdxpUZuH3rF1V6DCvr4&amp;sensor=false&amp;libraries=places'></script>
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-25957234-6']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</html>

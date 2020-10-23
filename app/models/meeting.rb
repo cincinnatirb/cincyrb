@@ -1,7 +1,7 @@
 class Meeting
   include HTTParty
 
-  base_uri 'https://api.meetup.com/2'
+  base_uri 'https://api.meetup.com/'
 
   def self.get_next_meeting
     self.ruby_brigade_meetings.first
@@ -12,9 +12,9 @@ class Meeting
   end
 
   def self.ruby_brigade_meetings
-    all_events = get("/events?group_id=1460552&fields=name&key=#{ENV.fetch('MEETUP_API_KEY')}")
-    if all_events["results"]
-      all_events["results"].select { |m| m["name"] == "Ruby Brigade" }
+    response = get('/TechLife-Cincinnati/events')
+    if response.parsed_response.is_a?(Array)
+      response.parsed_response.select { |event| event["name"] == "Ruby Brigade" }
     else
       []
     end

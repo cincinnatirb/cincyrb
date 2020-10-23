@@ -1,20 +1,21 @@
-source 'http://rubygems.org'
-ruby '2.3.5'
+source 'https://rubygems.org'
+ruby '2.6.5'
 
-gem 'rails', '4.1.15'
+gem 'rails', '4.2.8'
 gem 'rake', '>= 10'
-gem 'pg'
-gem 'sprockets', '~> 3.7.2'
+gem 'pg', '~> 0.11'
+gem 'sprockets-rails', require: 'sprockets/railtie'
 
 gem 'devise'
 gem 'jquery-rails'
-gem 'haml-rails'
 gem 'eco'
 gem 'httparty'
-gem 'activeadmin', github: 'activeadmin'
+gem 'json'
+gem 'activeadmin', '1.4.3'
 gem 'sass-rails'
 gem 'newrelic_rpm'
 gem 'protected_attributes'
+gem 'puma'
 gem 'coffee-rails'
 gem 'uglifier', '>= 1.0.3'
 gem 'oauth'
@@ -29,10 +30,9 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'byebug'
   gem 'taps'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 4.0'
   gem 'factory_girl_rails'
   gem 'dotenv'
-  gem 'konacha'
   gem 'poltergeist'
 end
 
@@ -40,5 +40,5 @@ group :test do
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
   gem 'vcr'
-  gem 'fakeweb'
+  gem 'webmock'
 end

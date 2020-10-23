@@ -1,0 +1,36 @@
+<section id='past-events'>
+  <%- @events.each do |event| %>
+    <section id='video'>
+      <div class='containerVideo'>
+        <div class='row'>
+          <h2><%= event.date ? "Past Meeting from #{event.date.strftime("%-m/%-d/%Y")}" : "Past Meeting" %></h2>
+          <p><%= event.topic %></p>
+          <div class='videos'>
+            <%- event.videos.each do |video| %>
+              <div class='video'>
+                <iframe src="<%= video.url %>" width="100%"></iframe>
+              </div>
+            <%- end %>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class='event'>
+      <div class='speakers'>
+        <%- event.speakers.each do |speaker| %>
+          <div class='speaker'>
+            <div class='speaker-headshot'>
+              <%= image_tag(gravatar_url(speaker.email)) %>
+            </div>
+            <div class='speaker-text'>
+              <h3 class='speaker-name'><%= speaker.name %></h3>
+              <div class='speaker-bio'>
+                <p><%= speaker.bio %></p>
+              </div>
+            </div>
+          </div>
+        <%- end %>
+      </div>
+    </div>
+  <%- end %>
+</section>
