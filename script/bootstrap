@@ -3,7 +3,7 @@
 set -e
 
 echo ""
-echo "Setting up cincinnati.rb"
+echo "Setting up cincyrb"
 echo ""
 
 #
@@ -22,13 +22,17 @@ fi
 # Install gems
 #
 echo "  + Bootstrapping your Rubies with Bundler."
-bundle install --without production --binstubs --local --path vendor --quiet
+bundle install --without production --local --path vendor
 
 #
 # Setting up .env file for Meetup info
 #
-echo "  + Creating .env"
-cp -i .env.sample .env
+if test -f .env; then
+  echo "  + Creating .env"
+else
+  echo "  + .env exists, good."
+  cp .env.sample .env
+fi
 
 #
 # Set up the database
@@ -36,15 +40,6 @@ cp -i .env.sample .env
 echo "  + Creating the development database."
 bundle exec rake db:setup
 bundle exec rake db:migrate
-
-#
-# Where can I find my API key?
-#
-echo ""
-echo "  -> Sample .env file created. Go get your API key from Meetup at:"
-echo "  ->   http://www.meetup.com/meetup_api/key/"
-echo "  -> and enter it in .env."
-echo ""
 
 #
 # Now what?
