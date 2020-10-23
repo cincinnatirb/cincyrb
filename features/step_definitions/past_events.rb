@@ -27,12 +27,12 @@ Then /^I should see a section for videos$/ do
 end
 
 Given /^There is a past event with a topic of: "(.*?)"$/ do |topic|
-  FactoryGirl.create(:past_event, :topic => topic)
+  FactoryBot.create(:past_event, :topic => topic)
 end
 
 Given /^the past event had a speaker with the name: "(.*?)"$/ do |name|
   event = PastEvent.first
-  FactoryGirl.create(:speaker, :name => name, :past_events => [event])
+  FactoryBot.create(:speaker, :name => name, :past_events => [event])
 end
 
 Then /^I should see the topic: "(.*?)"$/ do |topic|
@@ -44,7 +44,7 @@ Then /^I should see a speaker with the name: "(.*?)"$/ do |name|
 end
 
 Given /^I there was a video recorded$/ do
-  FactoryGirl.create(:video, :past_event => PastEvent.last, :url => "http://foo.example.com")
+  FactoryBot.create(:video, :past_event => PastEvent.last, :url => "http://foo.example.com")
 end
 
 Then /^I should see the video for the event$/ do

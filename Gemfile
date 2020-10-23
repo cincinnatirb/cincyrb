@@ -31,7 +31,7 @@ group :development, :test do
   gem 'byebug'
   gem 'taps'
   gem 'rspec-rails', '~> 4.0'
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   gem 'dotenv'
   gem 'poltergeist'
 end
