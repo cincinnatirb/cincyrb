@@ -100,6 +100,19 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 
+  # System Tests
+  config.before(:each, type: :system) do
+    driven_by :rack_test
+  end
+
+  config.before(:each, type: :system, js: true) do
+    # :selenium => Selenium driving Firefox
+    # :selenium_headless => Selenium driving Firefox in a headless configuration
+    # :selenium_chrome => Selenium driving Chrome
+    # :selenium_chrome_headless => Selenium driving Chrome in a headless configuration
+    driven_by :selenium_chrome_headless
+  end
+
   config.include ActiveSupport::Testing::TimeHelpers
   config.before(:each, type: :system, js: true) do
     Rails.application.load_tasks

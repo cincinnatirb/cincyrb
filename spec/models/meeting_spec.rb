@@ -7,13 +7,13 @@ describe Meeting do
 
     describe ".get_next_meeting" do
       it "should return the first upcoming event" do
-        Meeting.get_next_meeting.should == 1
+        expect(Meeting.get_next_meeting).to eq(1)
       end
     end
 
     describe ".get_upcoming_meetings" do
       it "should return the next three events that follow the first upcoming event" do
-        Meeting.get_upcoming_meetings.should == [2,3,4]
+        expect(Meeting.get_upcoming_meetings).to eq([2,3,4])
       end
     end
   end
@@ -22,7 +22,7 @@ describe Meeting do
     it "should only return events named as Ruby Brigade" do
       VCR.use_cassette("meetup", :match_requests_on => [:host, :path]) do
         events = Meeting.ruby_brigade_meetings.map { |meeting| meeting["name"] }
-        events.uniq.should == ["Ruby Brigade"]
+        expect(events.uniq).to eq(["Ruby Brigade"])
       end
     end
   end

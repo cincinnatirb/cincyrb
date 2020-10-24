@@ -79,44 +79,10 @@ GEM
     concurrent-ruby (1.1.7)
     crack (0.4.4)
     crass (1.0.6)
-    cucumber (5.2.0)
-      builder (~> 3.2, >= 3.2.4)
-      cucumber-core (~> 8.0, >= 8.0.1)
-      cucumber-create-meta (~> 2.0, >= 2.0.2)
-      cucumber-cucumber-expressions (~> 10.3, >= 10.3.0)
-      cucumber-gherkin (~> 15.0, >= 15.0.2)
-      cucumber-html-formatter (~> 9.0, >= 9.0.0)
-      cucumber-messages (~> 13.1, >= 13.1.0)
-      cucumber-wire (~> 4.0, >= 4.0.1)
-      diff-lcs (~> 1.4, >= 1.4.4)
-      multi_test (~> 0.1, >= 0.1.2)
-      sys-uname (~> 1.2, >= 1.2.1)
-    cucumber-core (8.0.1)
-      cucumber-gherkin (~> 15.0, >= 15.0.2)
-      cucumber-messages (~> 13.0, >= 13.0.1)
-      cucumber-tag-expressions (~> 2.0, >= 2.0.4)
-    cucumber-create-meta (2.0.2)
-      cucumber-messages (~> 13.0, >= 13.0.1)
-      sys-uname (~> 1.2, >= 1.2.1)
-    cucumber-cucumber-expressions (10.3.0)
-    cucumber-gherkin (15.0.2)
-      cucumber-messages (~> 13.0, >= 13.0.1)
-    cucumber-html-formatter (9.0.0)
-      cucumber-messages (~> 13.0, >= 13.0.1)
-    cucumber-messages (13.1.0)
-      protobuf-cucumber (~> 3.10, >= 3.10.8)
-    cucumber-rails (2.2.0)
-      capybara (>= 2.18, < 4)
-      cucumber (>= 3.0.2, < 6)
-      mime-types (~> 3.2)
-      nokogiri (~> 1.8)
-      rails (>= 5.0, < 7)
-    cucumber-tag-expressions (2.0.4)
-    cucumber-wire (4.0.1)
-      cucumber-core (~> 8.0, >= 8.0.1)
-      cucumber-cucumber-expressions (~> 10.3, >= 10.3.0)
-      cucumber-messages (~> 13.0, >= 13.0.1)
     database_cleaner (1.8.5)
+    database_cleaner-active_record (1.8.0)
+      activerecord
+      database_cleaner (~> 1.8.0)
     devise (4.7.3)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -174,20 +140,21 @@ GEM
       activerecord
       kaminari-core (= 1.2.1)
     kaminari-core (1.2.1)
+    listen (3.2.1)
+      rb-fsevent (~> 0.10, >= 0.10.3)
+      rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.7.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
     method_source (1.0.0)
-    middleware (0.1.0)
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2020.0512)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
     minitest (5.14.2)
-    multi_test (0.1.2)
     multi_xml (0.6.0)
     newrelic_rpm (6.13.1)
     nio4r (2.5.4)
@@ -202,11 +169,6 @@ GEM
       websocket-driver (>= 0.2.0)
     polyamorous (2.3.0)
       activerecord (>= 5.0)
-    protobuf-cucumber (3.10.8)
-      activesupport (>= 3.2)
-      middleware
-      thor
-      thread_safe
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -309,8 +271,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sys-uname (1.2.1)
-      ffi (>= 1.0.0)
     taps (0.3.24)
       rack (>= 1.0.1)
       rest-client (>= 1.4.0, < 1.7.0)
@@ -343,8 +303,7 @@ DEPENDENCIES
   activeadmin (= 1.4.3)
   byebug
   coffee-rails
-  cucumber-rails
-  database_cleaner
+  database_cleaner-active_record
   devise
   dotenv
   eco
@@ -353,6 +312,7 @@ DEPENDENCIES
   jquery-rails
   json
   kaminari (~> 1.2.1)
+  listen
   newrelic_rpm
   oauth
   pg (~> 0.11)
