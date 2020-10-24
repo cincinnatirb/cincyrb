@@ -1,5 +1,6 @@
 require 'spec_helper'
 require 'rspec/rails'
+require 'support/factory_bot'
 
 if RUBY_VERSION>='2.6.0'
   if Rails.version < '5'
