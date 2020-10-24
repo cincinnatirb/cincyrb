@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  before_filter :ensure_domain
+  before_action :ensure_domain
   APP_DOMAIN = 'cincyrb.com'
 
   def ensure_domain
