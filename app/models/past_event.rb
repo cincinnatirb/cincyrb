@@ -1,4 +1,4 @@
-class PastEvent < ActiveRecord::Base
+class PastEvent < ApplicationRecord
   has_and_belongs_to_many :speakers
   has_many :videos
 
