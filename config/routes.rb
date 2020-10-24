@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
-  get "twitter/timeline"
+  root 'pages#index'
 
   ActiveAdmin.routes(self)
 
-  devise_for :admin_users, ActiveAdmin::Devise.config
-
-  root :to => 'pages#index'
-  get 'meetings' => 'meetings#index'
   post 'contact_us' => 'contact#create'
+  get  'meetings' => 'meetings#index'
+  get  'twitter/timeline'
+
   resources :past_events
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
 end

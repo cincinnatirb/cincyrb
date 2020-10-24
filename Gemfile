@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.6.5'
 
-gem 'rails', '4.2.8'
+gem 'rails', '5.0.7.2'
 gem 'rake', '>= 10'
 gem 'pg', '~> 0.11'
 gem 'sprockets-rails', require: 'sprockets/railtie'
@@ -15,7 +15,6 @@ gem 'activeadmin', '1.4.3'
 gem 'kaminari', '~> 1.2.1' # dependabot (activeadmin requirement)
 gem 'sass-rails'
 gem 'newrelic_rpm'
-gem 'protected_attributes'
 gem 'puma'
 gem 'coffee-rails'
 gem 'uglifier', '>= 1.0.3'
