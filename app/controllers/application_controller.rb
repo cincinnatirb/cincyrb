@@ -10,4 +10,15 @@ class ApplicationController < ActionController::Base
       redirect_to "http://#{APP_DOMAIN}", :status => 301
     end
   end
+
+  def next_meeting
+    return 'No meeting found.' unless upcoming_meetings.any?
+
+    time = Time.at(upcoming_meetings.first['time'] / 1000)
+    time.strftime('%I:%M %P on %e %b %Y')
+  end
+
+  def upcoming_meetings
+    @upcoming_meetings ||= Meeting.get_upcoming_meetings
+  end
 end
