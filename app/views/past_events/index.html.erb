@@ -9,17 +9,7 @@
       </p>
       <%= link_to_location_map 'Write code with us!', :target => '_blank' %>
     </div>
-    <div class='four columns' id='next'>
-      <section>
-        <article id='next-meeting'>
-          <p>
-            <%= image_tag 'spinner.gif' %>
-            Loading...
-          </p>
-        </article>
-        <article id='location-info'></article>
-      </section>
-    </div>
+    <%= render 'next_meeting' %>
   </div>
   <!-- end #container -->
 </section>

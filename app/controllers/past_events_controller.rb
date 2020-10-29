@@ -1,5 +1,6 @@
 class PastEventsController < ApplicationController
   def index
-    @events = PastEvent.recent
+    @past_events = PastEvent.recent
+    @next_meeting = next_meeting
   end
 end
