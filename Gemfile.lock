@@ -234,8 +234,6 @@ GEM
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
-    rest-client (1.6.7)
-      mime-types (>= 1.16)
     rspec-core (3.9.3)
       rspec-support (~> 3.9.3)
     rspec-expectations (3.9.3)
@@ -264,9 +262,6 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    sequel (3.20.0)
-    sinatra (1.0)
-      rack (>= 1.0)
     spring (2.1.1)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
@@ -275,11 +270,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    taps (0.3.24)
-      rack (>= 1.0.1)
-      rest-client (>= 1.4.0, < 1.7.0)
-      sequel (~> 3.20.0)
-      sinatra (~> 1.0.0)
     thor (1.0.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
@@ -331,7 +321,6 @@ DEPENDENCIES
   sass-rails
   spring
   sprockets-rails
-  taps
   uglifier (>= 1.0.3)
   vcr
   webmock
