@@ -8,14 +8,16 @@ RSpec.describe "Past Events", type: :system do
   end
 
   scenario 'Visiting the Past Events page' do
-    visit past_events_path
+    VCR.use_cassette('spec_system_past-events-spec') do
+      visit past_events_path
 
-    expect(page).to have_text(@past_event.topic)
+      expect(page).to have_text(@past_event.topic)
 
-    expect(page).to have_selector('div.speakers')
-    expect(page).to have_text(@speaker.name)
+      expect(page).to have_selector('div.speakers')
+      expect(page).to have_text(@speaker.name)
 
-    expect(page).to have_selector('div.videos')
-    expect(page).to have_selector("iframe[src='#{@video.url}']")
+      expect(page).to have_selector('div.videos')
+      expect(page).to have_selector("iframe[src='#{@video.url}']")
+    end
   end
 end
