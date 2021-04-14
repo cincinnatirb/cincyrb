@@ -5,13 +5,6 @@ development:
   min_messages: 'warning'
   encoding: utf8
 
-staging:
-  adapter: postgresql
-  database: cincyrb_staging
-  pool: 5
-  min_messages: 'warning'
-  encoding: utf8
-
 test: &test
   adapter: postgresql
   database: cincyrb_test
