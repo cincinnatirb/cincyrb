@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.7.2'
 
-gem 'rails', '5.2.4.4'
+gem 'rails', '5.2.4.5'
 gem 'rake', '>= 10'
 gem 'pg'
 gem 'sprockets-rails', require: 'sprockets/railtie'
