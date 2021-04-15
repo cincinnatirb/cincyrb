@@ -12,10 +12,7 @@ class ApplicationController < ActionController::Base
   end
 
   def next_meeting
-    return 'No meeting found.' unless upcoming_meetings.any?
-
-    time = Time.at(upcoming_meetings.first['time'] / 1000)
-    time.strftime('%I:%M %P on %e %b %Y')
+    @next_meeting ||= Meeting.get_next_meeting
   end
 
   def upcoming_meetings

@@ -8,7 +8,7 @@ RSpec.describe "Past Events", type: :system do
   end
 
   scenario 'Visiting the Past Events page' do
-    VCR.use_cassette('spec_system_past-events-spec') do
+    VCR.use_cassette('spec_system_past-events-spec', record: :new_episodes) do
       visit past_events_path
 
       expect(page).to have_text(@past_event.topic)

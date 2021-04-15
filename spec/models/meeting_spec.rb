@@ -20,7 +20,7 @@ describe Meeting do
 
   describe ".ruby_brigade_meetings" do
     it "should only return events named as Ruby Brigade" do
-      VCR.use_cassette("meetup", :match_requests_on => [:host, :path]) do
+      VCR.use_cassette("meetup", match_requests_on: [:host, :path], record: :new_episodes) do
         events = Meeting.ruby_brigade_meetings.map { |meeting| meeting["name"] }
         expect(events.uniq).to eq(["Ruby Brigade"])
       end
