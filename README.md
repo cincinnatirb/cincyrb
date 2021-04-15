@@ -1,26 +1,29 @@
 # Cincinnati.rb Homepage / Webapp
 [![Build Status](https://secure.travis-ci.org/cincinnatirb/cincyrb.png)](http://travis-ci.org/cincinnatirb/cincyrb)
 
-* Ruby 2.6.5
-* Rails 4.2.8
+## Dependencies
+* [asdf](https://asdf-vm.com/#/)
+* [Ruby](https://www.ruby-lang.org/en/) 2.7.2
+* [Rails](https://rubyonrails.org/) 5.2.4.4
 
-### Setup
-
+## Setup
 On a * nix environment, just run:
-
-`script/bootstrap`
-
+```sh
+./bin/setup
+```
 and you should be setup to go.
 
-### Hosting
+## Hosting
 Hosting and related infrastructure info is documented in another repo in the
 [cincinnatirb](https://github.com/cincinnatirb) GitHub organization.
 
-### Contributing
+## Contributing
+[How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
+offer's the best advice.
 
-1. Fork the project
-2. Add your feature or fix the issue you found.
-3. Run/add tests! This is important so we don't break anything.
-4. Send a Pull Request and an email to cincinnatirb@googlegroups.com, so
-someone knows it's out there.
-5. Pat yourself on the back for being wicked awesome!
+### tl;dr
+1. [Fork it](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)!
+1. Create your feature branch: `git checkout -b cool-new-feature`
+1. Commit your changes: `git commit -am 'Added a cool feature'`
+1. Push to the branch: `git push origin cool-new-feature`
+1. [Create new Pull Request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
