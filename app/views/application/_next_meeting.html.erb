@@ -3,7 +3,7 @@
     <article id='next-meeting'>
       <p>
         <em>Our Next Meeting</em>
-      <h3><%= Time.at(@next_meeting['time']).strftime('%I:%M %P on %b %e') %></h3>
+      <h3><%= Time.at(@next_meeting['time']/1000).strftime('%l:%M %P on %b %-d') %></h3>
       </p>
     </article>
   </section>
