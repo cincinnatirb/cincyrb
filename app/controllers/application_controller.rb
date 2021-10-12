@@ -6,8 +6,9 @@ class ApplicationController < ActionController::Base
   def ensure_domain
     return unless Rails.env.production?
 
-    # HTTP 301 is a "permanent" redirect
-    redirect_to("http://#{APP_DOMAIN}", status: :moved_permanently) and return unless request.env['HTTP_HOST'] == APP_DOMAIN
+    if request.env['HTTP_HOST'] != APP_DOMAIN # rubocop: disable Style/GuardClause
+      redirect_to("http://#{APP_DOMAIN}", status: :moved_permanently) and return
+    end
   end
 
   def next_meeting

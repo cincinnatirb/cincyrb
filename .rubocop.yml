@@ -115,8 +115,19 @@ Rails/WhereExists:
   Enabled: true
 Rails/WhereNot:
   Enabled: true
+RSpec/Capybara/FeatureMethods:
+  Enabled: true
+  Exclude:
+    - spec/system/**/*
+# We use expect in before hooks to validate contexts & scenarios
+RSpec/ExpectInHook:
+  Enabled: false
 RSpec/ExampleLength:
   Enabled: false
+RSpec/MultipleExpectations:
+  Enabled: true
+  Exclude:
+    - spec/system/**/*
 Style/ArgumentsForwarding:
   Enabled: true
 Style/BlockComments:
