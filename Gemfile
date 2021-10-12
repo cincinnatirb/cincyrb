@@ -1,38 +1,41 @@
 source 'https://rubygems.org'
 ruby '2.7.2'
 
-gem 'rails', '6.0.4.1'
-gem 'rake', '>= 10'
-gem 'pg'
-gem 'sprockets-rails', require: 'sprockets/railtie'
-
+gem 'activeadmin'
 gem 'bootsnap'
+gem 'coffee-rails'
 gem 'devise'
-gem 'jquery-rails'
 gem 'eco'
 gem 'httparty'
+gem 'jquery-rails'
 gem 'json'
-gem 'activeadmin'
-gem 'sass-rails'
 gem 'newrelic_rpm'
-gem 'puma'
-gem 'coffee-rails'
-gem 'uglifier', '>= 1.0.3'
 gem 'oauth'
+gem 'pg'
+gem 'puma'
+gem 'rails', '6.0.4.1'
+gem 'rake', '>= 10'
+gem 'sass-rails'
+gem 'sprockets-rails', require: 'sprockets/railtie'
+gem 'uglifier', '>= 1.0.3'
 
 group :production, :staging do
   gem 'rails_12factor'
 end
 
 group :development, :test do
-  gem 'spring'
-  gem 'pry-rails'
-  gem 'pry-byebug'
   gem 'byebug'
-  gem 'rspec-rails'
-  gem 'factory_bot_rails'
   gem 'dotenv'
+  gem 'factory_bot_rails'
   gem 'poltergeist'
+  gem 'pry-byebug'
+  gem 'pry-rails'
+  gem 'rspec-rails'
+  gem 'rubocop'
+  gem 'rubocop-performance', require: false
+  gem 'rubocop-rails', require: false
+  gem 'rubocop-rspec', require: false
+  gem 'spring'
 end
 
 group :development do
@@ -42,6 +45,7 @@ end
 group :test do
   gem 'capybara'
   gem 'database_cleaner-active_record'
+  gem 'shoulda-matchers'
   gem 'vcr'
   gem 'webdrivers'
   gem 'webmock'
