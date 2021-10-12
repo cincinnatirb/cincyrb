@@ -5,10 +5,10 @@ class Contact
 
   attr_accessor :name, :email, :subject, :message
 
-  validates_presence_of :name, :subject, :message
-  validates_format_of :email, :with => /\A[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}\z/i
-  validates_length_of :subject, :maximum => 100
-  validates_length_of :message, :maximum => 1000
+  validates :name, :subject, :message, presence: true
+  validates :email, format: { with: /\A[-a-z0-9_+.]+@([-a-z0-9]+\.)+[a-z0-9]{2,4}\z/i }
+  validates :subject, length: { maximum: 100 }
+  validates :message, length: { maximum: 1000 }
 
   def initialize(attributes = {})
     attributes.each do |name, value|
