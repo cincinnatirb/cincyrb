@@ -1,8 +1,6 @@
-<%= link_to("Past Events", past_events_path) %>
-<ul id='social'>
+<ul>
   <li><a href='https://twitter.com/#!/cincinnatirb' target='_blank'>Follow us on Twitter!</a></li>
   <li><a href='http://www.facebook.com/events/162252363797871/' target='_blank'>Be Our Friend on Facebook!</a></li>
-  <li>share</li>
 </ul>
 <header class="header">
   <%= image_tag('cincyrb-icon.png', alt: 'Cincy.rb logo', class: 'logo') %>
@@ -38,12 +36,12 @@
     </article>
   </div>
 </section>
-<section id='contact'>
+<section>
   <div>
     <h2>Contact Us</h2>
     <p>Have a topic idea? Want to present at a Cinci.rb meeting? Have a suggestion? Send us a comment here.</p>
     <p class='flash flash_notice'></p>
-    <%= form_for Contact.new, html: { id: "contact-form" }, url: "/contact_us", :remote => true do |f| %>
+    <%= form_for Contact.new, url: "/contact_us", :remote => true do |f| %>
     <div>
       <div>
         <%= f.text_field :name, :placeholder => "Name" %>
@@ -58,5 +56,16 @@
       </div>
     </div>
     <%- end %>
+  </div>
+</section>
+<section>
+  <div>
+    <div>
+      <a href='https://twitter.com/cincinnatirb'>Follow Us</a>
+      <p>
+        <a class="twitter-timeline" href="https://twitter.com/cincinnatirb?ref_src=twsrc%5Etfw">Tweets by @cincinnatirb</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </p>
+    </div>
   </div>
 </section>
