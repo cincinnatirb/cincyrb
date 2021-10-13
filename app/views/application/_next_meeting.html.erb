@@ -1,10 +1,9 @@
-<div class='four columns' id='next'>
-  <section>
-    <article id='next-meeting'>
-      <p>
-        <em>Our Next Meeting</em>
-      <h3><%= Time.at(@next_meeting['time']/1000).strftime('%l:%M %P on %b %-d') %></h3>
-      </p>
-    </article>
-  </section>
-</div>
+<article id='next next-meeting' class="event event--next">
+  <div class="event__date">
+    <%= Time.at(@next_meeting['time']/1000).strftime('%b %-d') %>
+  </div>
+  <div class="event__time">
+    <%= Time.at(@next_meeting['time']/1000).strftime('%l:%M %P') %>
+  </div>
+  <a href="https://www.meetup.com/TechLife-Cincinnati/events/<%= @next_meeting['id'] %>" target="_blank">RSVP</a>
+</article>

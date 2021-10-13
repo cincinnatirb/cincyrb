@@ -19,8 +19,24 @@
   </p>
   <%# link_to_location_map('Write code with us!', :target => '_blank', :id => 'rsvp') %>
 </header>
+<section>
+  <h3>Upcoming Meetups</h3>
+  <div class="events">
+    <%= render 'next_meeting' %>
+    <%- @upcoming_meetings.each do |meeting| %>
+      <article class="event">
+        <div class="event__date">
+          <%= Time.at(meeting['time']/1000).strftime('%b %-d') %>
+        </div>
+        <div class="event__time">
+          <%= Time.at(meeting['time']/1000).strftime('%l:%M %P') %>
+        </div>
+      </article>
+    <%- end %>
+    <article class="event">
+      <%= link_to("View Past Events", past_events_path) %>
+    </article>
   </div>
-  <!-- end .row -->
 </section>
 <section id='contact'>
   <div>
