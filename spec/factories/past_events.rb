@@ -2,8 +2,7 @@
 
 FactoryBot.define do
   factory :past_event do
-    topic { "" }
-    date { "" }
-    description { "MyText" }
+    date { Time.zone.today + (1..12).to_a.sample.weeks }
+    sequence(:topic) { |n| "Topic #{n}" }
   end
 end

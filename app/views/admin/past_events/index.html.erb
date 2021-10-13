@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Admin Past Events</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @admin_past_events.each do |admin_past_event| %>
+      <tr>
+        <td><%= link_to 'Show', admin_past_event %></td>
+        <td><%= link_to 'Edit', edit_admin_past_event_path(admin_past_event) %></td>
+        <td><%= link_to 'Destroy', admin_past_event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Admin Past Event', new_admin_past_event_path %>

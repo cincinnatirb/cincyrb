@@ -27,6 +27,8 @@ RSpec.configure do |config|
   # config.use_active_record = false
 
   config.include ActiveSupport::Testing::TimeHelpers
+  config.include SystemAuthenticationHelpers, type: :system
+  config.include RequestAuthenticationHelpers, type: :request
 
   # RSpec Rails can automatically mix in different behaviours to your tests
   # based on their file location, for example enabling you to call `get` and
