@@ -26,25 +26,6 @@
     <![endif]-->
   </head>
   <body>
-    <header>
-      <div class='row'>
-        <nav>
-          <ul>
-            <li class='home'><%= link_to("Home", root_path) %></li>
-            <li><%= link_to("About", root_path(anchor: "about")) %></li>
-            <li><%= link_to("Events", root_path(anchor: "about")) %></li>
-            <li><%= link_to("Contact", root_path(anchor: "contact")) %></li>
-            <li><%= link_to("Sponsors", root_path(anchor: "sponsors")) %></li>
-            <li><%= link_to("Past Events", past_events_path) %></li>
-          </ul>
-        </nav>
-        <ul id='social'>
-          <li class='twitter'><a href='https://twitter.com/#!/cincinnatirb' target='_blank'>Follow us on Twitter!</a></li>
-          <li class='facebook'><a href='http://www.facebook.com/events/162252363797871/' target='_blank'>Be Our Friend on Facebook!</a></li>
-          <li>share</li>
-        </ul>
-      </div>
-    </header>
 
     <%= yield %>
 
