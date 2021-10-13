@@ -4,46 +4,21 @@
   <li><a href='http://www.facebook.com/events/162252363797871/' target='_blank'>Be Our Friend on Facebook!</a></li>
   <li>share</li>
 </ul>
-<section id='home'>
-  <%= image_tag('cincyrb-icon.png', alt: 'Cincy.rb logo', id: 'logo') %>
-  <h1>Cincy.rb - Cincinnati Ruby Brigade</h1>
+<header class="header">
+  <%= image_tag('cincyrb-icon.png', alt: 'Cincy.rb logo', class: 'logo') %>
+  <h1>Cincy.rb</h1>
   <p>
-    <strong>Cincinnati Ruby Brigade</strong>
-    is a group of local developers who talk about Ruby specific topics and share code.
+    <strong>We are Cincinnati Ruby Brigade.</strong>
+    A group of local developers who get together to talk Ruby, share code, and meet new people.
+    And outcome of the desire for a space to collaborate and grow the Ruby community in Cincinnati,
+    Cincy.rb has become a thriving community that is as vibrant and creative as the Ruby language itself.
   </p>
-  <%= link_to_location_map('Write code with us!', :target => '_blank', :id => 'rsvp') %>
-  <%= render 'next_meeting' %>
-</section>
-<section id='about'>
-  <div>
-    <div>
-      <h2>About Us</h2>
-      <p>Cincinnati Ruby Brigade was formed by local developers who desired a place to talk about Ruby specific topics and share code. It has since grown into a thriving community as vibrant and creative as the Ruby language itself.</p>
-      <p>Today we meet on the third Thursday of every month to discuss and hack on Ruby code and strive to keep to the principle of less slides more code.</p>
-      <div id='tweet'>
-        <a href='https://twitter.com/cincinnatirb'>Follow Us</a>
-        <p>
-          <a class="twitter-timeline" href="https://twitter.com/cincinnatirb?ref_src=twsrc%5Etfw">Tweets by @cincinnatirb</a>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </p>
-      </div>
-    </div>
-    <div id='events'>
-      <h3>Upcoming Events</h3>
-      <section>
-        <%- @upcoming_meetings.each do |meeting| %>
-        <article>
-          <div>
-            <h1><%= format_date_for_homepage(meeting["time"]).html_safe %></h1>
-          </div>
-          <p>
-            <%= meeting["name"] %>
-            <%= link_to_location_map '@ Gaslight', :target => '_blank' %>
-          </p>
-        </article>
-        <%- end %>
-      </section>
-    </div>
+  <p>
+    We currently meet on the third Tuesday of every month to discuss and mob-program on Ruby code.
+    Less slides, more code!
+  </p>
+  <%# link_to_location_map('Write code with us!', :target => '_blank', :id => 'rsvp') %>
+</header>
   </div>
   <!-- end .row -->
 </section>
