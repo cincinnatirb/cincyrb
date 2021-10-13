@@ -36,36 +36,38 @@
     </article>
   </div>
 </section>
-<section>
-  <div>
-    <h2>Contact Us</h2>
-    <p>Have a topic idea? Want to present at a Cinci.rb meeting? Have a suggestion? Send us a comment here.</p>
-    <p class='flash flash_notice'></p>
-    <%= form_for Contact.new, url: "/contact_us", :remote => true do |f| %>
+<section class="offset-col u-pad__top--xl">
+  <section class="offset-col__left">
+    <div>
+      <h2>Contact Us</h2>
+      <p>Have a topic idea? Want to present at a Cinci.rb meeting? Have a suggestion? Send us a comment here.</p>
+      <p class='flash flash_notice'></p>
+      <%= form_for Contact.new, url: "/contact_us", :remote => true do |f| %>
+      <div>
+        <div>
+          <%= f.text_field :name, :placeholder => "Name" %>
+          <%= f.text_field :email, :placeholder => "Email Address" %>
+          <%= f.text_field :subject, :placeholder => "Subject" %>
+        </div>
+        <div>
+          <%= f.text_area :message, :placeholder => "Message", :rows => 5 %>
+        </div>
+        <div>
+          <input type="submit" value="Submit">
+        </div>
+      </div>
+      <%- end %>
+    </div>
+  </section>
+  <section class="offset-col__right">
     <div>
       <div>
-        <%= f.text_field :name, :placeholder => "Name" %>
-        <%= f.text_field :email, :placeholder => "Email Address" %>
-        <%= f.text_field :subject, :placeholder => "Subject" %>
-      </div>
-      <div>
-        <%= f.text_area :message, :placeholder => "Message", :rows => 5 %>
-      </div>
-      <div>
-        <input type="submit" value="Submit">
+        <a href='https://twitter.com/cincinnatirb'>Follow Us</a>
+        <p>
+          <a class="twitter-timeline" href="https://twitter.com/cincinnatirb?ref_src=twsrc%5Etfw">Tweets by @cincinnatirb</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </p>
       </div>
     </div>
-    <%- end %>
-  </div>
-</section>
-<section>
-  <div>
-    <div>
-      <a href='https://twitter.com/cincinnatirb'>Follow Us</a>
-      <p>
-        <a class="twitter-timeline" href="https://twitter.com/cincinnatirb?ref_src=twsrc%5Etfw">Tweets by @cincinnatirb</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </p>
-    </div>
-  </div>
+  </section>
 </section>

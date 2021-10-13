@@ -2,3 +2,22 @@ body {
   background-color: #FBFBFB;
   padding: $space-md;
 }
+
+.offset-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "left ."
+    "left right"
+    ".    right";
+  gap: $space-xl;
+
+  &__left {
+    grid-area: left;
+  }
+
+  &__right {
+    grid-area: right;
+  }
+}
