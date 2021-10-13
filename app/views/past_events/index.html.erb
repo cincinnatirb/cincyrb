@@ -1,17 +1,12 @@
-<section id='home'>
-  <div class='container row'>
-    <div class='eight columns'>
-      <h1>Cincy.rb - Cincinnati Ruby Brigade</h1>
-      <%= image_tag('cincyrb-icon', alt: 'Cincy.rb logo', id: 'logo') %>
-      <p>
-        <strong>Cincinnati Ruby Brigade</strong>
-        is a group of local developers who talk about Ruby specific topics and share code.
-      </p>
-      <%= link_to_location_map 'Write code with us!', :target => '_blank' %>
-    </div>
-    <%= render 'next_meeting' %>
-  </div>
-  <!-- end #container -->
+<section>
+  <%= image_tag('cincyrb-icon', alt: 'Cincy.rb logo', id: 'logo') %>
+  <h1>Cincy.rb</h1>
+  <p>
+    <strong>Cincinnati Ruby Brigade</strong>
+    is a group of local developers who talk about Ruby specific topics and share code.
+  </p>
+  <%= link_to_location_map 'Write code with us!', :target => '_blank' %>
+  <%= render 'next_meeting' %>
 </section>
 
 <%= render :partial => "past_events" %>
