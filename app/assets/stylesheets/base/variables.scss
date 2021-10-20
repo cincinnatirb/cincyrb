@@ -1,3 +1,7 @@
+$screen-mobile: 480px;
+$screen-tablet: 768px;
+$screen-desktop: 1200px;
+
 $space-xs: .5rem;
 $space-sm: 1rem;
 $space-md: 2rem;
@@ -13,3 +17,5 @@ $border: 1px solid $gray;
 $border-radius: 10px;
 
 $box-shadow: 0px 0px 10px transparentize($black, .9);
+
+$font-size-sm: .9rem;

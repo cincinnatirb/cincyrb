@@ -13,7 +13,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  padding: $space-sm $space-lg;
+  padding: $space-xs $space-lg;
 
   &:nth-of-type(2) {
     border-left: 0;
@@ -26,10 +26,10 @@
   }
 
   &__date {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   &__time {
-    font-size: 1rem;
+    font-size: .9rem;
   }
 }

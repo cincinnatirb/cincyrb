@@ -1,9 +1,22 @@
 .header,
 header {
-  width: 50%;
+  width: 45%;
+
+  @media screen and (max-width: $screen-mobile) {
+    width: 100%;
+  }
 
   p {
     font-family: 'Zilla Slab', serif;
     font-size: 1.25rem;
+  }
+
+  &__illustration {
+    max-height: 100vh;
+    max-width: 80%;
+    position: absolute;
+      top: 0;
+      right: 0;
+    z-index: -1;
   }
 }
