@@ -60,17 +60,20 @@
           <input type="submit" value="Submit">
         </div>
       </div>
-      <%- end %>
+      <% end %>
     </div>
   </section>
   <section class="offset-col__right">
     <div>
       <div>
-        <a href='https://twitter.com/cincinnatirb'>Follow Us</a>
-        <p>
-          <a class="twitter-timeline" href="https://twitter.com/cincinnatirb?ref_src=twsrc%5Etfw">Tweets by @cincinnatirb</a>
+        <div class="u-flex u-flex__justify--between">
+          <h2>Stay in the loop</h2>
+          <%= link_to("Follow Us", 'https://twitter.com/cincinnatirb', target: "_blank")%>
+        </div>
+        <div>
+          <a class="twitter-timeline" data-height="800" data-theme="light" href="https://twitter.com/cincinnatirb?ref_src=twsrc%5Etfw">Tweets by cincinnatirb</a>
           <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </p>
+        </div>
       </div>
     </div>
   </section>
