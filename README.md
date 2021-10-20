@@ -4,7 +4,7 @@
 ## Dependencies
 * [asdf](https://asdf-vm.com/#/)
 * [Ruby](https://www.ruby-lang.org/en/) 2.7.2
-* [Rails](https://rubyonrails.org/) 5.2.4.4
+* [Rails](https://rubyonrails.org/) 6.0.4.1
 
 ## Setup
 On a * nix environment, just run:
