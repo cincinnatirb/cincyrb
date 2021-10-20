@@ -18,7 +18,7 @@
   </p>
   <%# link_to_location_map('Write code with us!', :target => '_blank', :id => 'rsvp') %>
 </header>
-<section>
+<section class="u-push__top">
   <h3>Upcoming Meetups</h3>
   <div class="events">
     <%= render 'next_meeting' %>
@@ -33,7 +33,10 @@
       </article>
     <%- end %>
     <article class="event">
-      <%= link_to("View Past Events", past_events_path) %>
+      <%= link_to past_events_path do %>
+        View Past Events
+        <i class="material-icons u-text--sm">open_in_new</i>
+      <% end %>
     </article>
   </div>
 </section>
