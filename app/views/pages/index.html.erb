@@ -41,12 +41,11 @@
   </div>
 </section>
 <section class="offset-col u-pad__top--xl">
-  <section class="offset-col__left">
-    <div>
-      <h2>Contact Us</h2>
-      <p>Have a topic idea? Want to present at a Cinci.rb meeting? Have a suggestion? Send us a comment here.</p>
-      <p class='flash flash_notice'></p>
-      <%= form_for Contact.new, url: "/contact_us", :remote => true do |f| %>
+  <article class="offset-col__left">
+    <h2>Contact Us</h2>
+    <p>Have a topic idea? Want to present at a Cinci.rb meeting? Have a suggestion? Send us a comment here.</p>
+    <p class='flash flash_notice'></p>
+    <%= form_for Contact.new, url: "/contact_us", :remote => true do |f| %>
       <div>
         <div>
           <%= f.text_field :name, :placeholder => "Name" %>
@@ -60,17 +59,14 @@
           <input type="submit" value="Submit">
         </div>
       </div>
-      <% end %>
+    <% end %>
+  </article>
+  <article class="offset-col__right">
+    <div class="u-flex u-flex__justify--between">
+      <h2>Stay in the loop</h2>
+      <%= link_to("Follow Us", 'https://twitter.com/cincinnatirb', target: "_blank")%>
     </div>
-  </section>
-  <section class="offset-col__right">
-    <div>
-      <div class="u-flex u-flex__justify--between">
-        <h2>Stay in the loop</h2>
-        <%= link_to("Follow Us", 'https://twitter.com/cincinnatirb', target: "_blank")%>
-      </div>
-      <a class="twitter-timeline" data-height="800" data-theme="light" href="https://twitter.com/cincinnatirb?ref_src=twsrc%5Etfw">Tweets by cincinnatirb</a>
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-  </section>
+    <a class="twitter-timeline" data-height="800" data-theme="light" href="https://twitter.com/cincinnatirb?ref_src=twsrc%5Etfw">Tweets by cincinnatirb</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </article>
 </section>
