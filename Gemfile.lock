@@ -337,6 +337,7 @@ DEPENDENCIES
   json
   listen
   newrelic_rpm
+  nokogiri (>= 1.12.5)
   oauth
   pg
   poltergeist
