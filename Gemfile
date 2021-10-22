@@ -15,6 +15,7 @@ gem 'json'
 gem 'activeadmin'
 gem 'sass-rails'
 gem 'newrelic_rpm'
+gem "nokogiri", ">= 1.12.5"
 gem 'puma', '>= 5.5.1'
 gem 'coffee-rails'
 gem 'uglifier', '>= 1.0.3'

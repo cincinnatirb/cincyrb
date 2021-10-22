@@ -1,3 +1,16 @@
+// FLEX
+.u-flex {
+  display: flex;
+    align-items: baseline;
+    gap: $space-md;
+
+  &__justify {
+    &--between {
+      justify-content: space-between;
+    }
+  }
+}
+
 .u-text {
   &--sm {
     font-size: $font-size-sm;
