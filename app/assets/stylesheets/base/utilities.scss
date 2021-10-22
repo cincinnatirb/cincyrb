@@ -4,6 +4,15 @@
   }
 }
 
+.u-flex {
+  align-items: start;
+  display: flex;
+}
+
+.u-icon {
+  width: 30px;
+}
+
 // MARGIN
 .u-push {
   margin: $space-md;
