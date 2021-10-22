@@ -20,4 +20,8 @@ h6 {
 h1 {
   font-size: 4rem;
   font-weight: 300;
+
+  @media screen and (max-width: $screen-mobile) {
+    font-size: 3rem;;
+  }
 }

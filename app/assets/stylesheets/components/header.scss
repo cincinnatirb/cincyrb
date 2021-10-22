@@ -1,8 +1,9 @@
 .header,
 header {
-  width: 45%;
+  width: 50%;
 
   @media screen and (max-width: $screen-mobile) {
+    margin-top: 3rem;
     width: 100%;
   }
 
@@ -18,5 +19,9 @@ header {
       top: 0;
       right: 0;
     z-index: -1;
+
+    @media screen and (max-width: $screen-mobile) {
+      top: -26px;
+    }
   }
 }
