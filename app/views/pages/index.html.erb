@@ -45,18 +45,12 @@
     <p>Have a topic idea? Want to present at a Cinci.rb meeting? Have a suggestion? Send us a comment here.</p>
     <p class='flash flash_notice'></p>
     <%= form_for Contact.new, url: "/contact_us", :remote => true do |f| %>
-      <div>
-        <div>
-          <%= f.text_field :name, :placeholder => "Name" %>
-          <%= f.text_field :email, :placeholder => "Email Address" %>
-          <%= f.text_field :subject, :placeholder => "Subject" %>
-        </div>
-        <div>
-          <%= f.text_area :message, :placeholder => "Message", :rows => 5 %>
-        </div>
-        <div>
-          <input type="submit" value="Submit">
-        </div>
+      <div class="new_contact">
+        <%= f.text_field :name, :placeholder => "Name" %>
+        <%= f.text_field :email, :placeholder => "Email Address" %>
+        <%= f.text_field :subject, :placeholder => "Subject" %>
+        <%= f.text_area :message, :placeholder => "Message", :rows => 5, :class => "message" %>
+        <input class="button" type="submit" value="Submit">
       </div>
     <% end %>
   </article>
