@@ -1,0 +1,32 @@
+.sponsorship {
+  display: flex;
+    align-items: flex-end;
+    color: $white;
+    flex-direction: column;
+
+  &__sponsor{
+    align-items: center;
+    display: flex;
+    gap: 0;
+    text-transform: capitalize;
+    font-size: .8rem;
+    letter-spacing: 1px;
+
+    img {
+      max-width: 50px;
+    }
+  }
+
+  .become-a-sponsor,
+  a {
+    align-items: center;
+    color: $white;
+    display: flex;
+    font-size: .8rem;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

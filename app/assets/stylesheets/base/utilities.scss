@@ -8,6 +8,16 @@
     &--between {
       justify-content: space-between;
     }
+
+    &--end {
+      justify-content: end;
+    }
+  }
+
+  &__align {
+    &--start {
+      align-items: flex-start;
+    }
   }
 }
 
