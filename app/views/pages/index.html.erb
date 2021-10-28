@@ -1,8 +1,4 @@
 <%= image_tag('cincyrb-illustration.svg', aria_hidden: 'true', class: 'header__illustration') %>
-<ul>
-  <li><a href='https://twitter.com/#!/cincinnatirb' target='_blank'>Follow us on Twitter!</a></li>
-  <li><a href='http://www.facebook.com/events/162252363797871/' target='_blank'>Be Our Friend on Facebook!</a></li>
-</ul>
 <header class="header">
   <%= image_tag('cincyrb-icon.png', alt: 'Cincy.rb logo', class: 'logo') %>
   <h1>Cincy.rb</h1>
@@ -19,7 +15,10 @@
   <%# link_to_location_map('Write code with us!', :target => '_blank', :id => 'rsvp') %>
 </header>
 <section class="u-push__top">
-  <h3>Upcoming Meetups</h3>
+  <div class="u-flex event-header">
+    <i class="material-icons u-icon">events</i>
+    <h3>Upcoming Meetups</h3>
+  </div>
   <div class="events">
     <%= render 'next_meeting' %>
     <%- @upcoming_meetings.each do |meeting| %>
@@ -70,3 +69,7 @@
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </article>
 </section>
+<ul>
+  <li><a href='https://twitter.com/#!/cincinnatirb' target='_blank'>Follow us on Twitter!</a></li>
+  <li><a href='http://www.facebook.com/events/162252363797871/' target='_blank'>Be Our Friend on Facebook!</a></li>
+</ul>

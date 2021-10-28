@@ -15,6 +15,10 @@ body {
     ".    right";
   gap: $space-xl;
 
+  @media screen and (max-width: $screen-mobile) {
+    display: block;
+  }
+
   &__left {
     grid-area: left;
   }
