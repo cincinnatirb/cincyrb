@@ -1,7 +1,21 @@
 <%= image_tag('cincyrb-illustration.svg', aria_hidden: 'true', class: 'header__illustration') %>
-<header class="header">
-  <%= image_tag('cincyrb-icon.png', alt: 'Cincy.rb logo', class: 'logo') %>
-  <h1>Cincy.rb</h1>
+<header class="u-flex u-flex__justify--between u-flex__align--start">
+  <div>
+    <%= image_tag('cincyrb-icon.png', alt: 'Cincy.rb logo', class: 'logo') %>
+    <h1>Cincy.rb</h1>
+  </div>
+  <div class="sponsorship">
+    <div class="sponsorship__sponsor">
+      <span class="u-push__right--xs"><i class="material-icons">favorite_border</i></span>
+      SPONSORED BY
+      <span><%= image_tag('gaslight_mark-inverse.png', alt: 'Gaslight logo', class: 'logo') %></span>
+      GASLIGHT
+    </div>
+    <a class='become-a-sponsor' href='mailto:hello@teamgaslight.com'><i class="material-icons u-text--sm u-push__right--xxs">add</i> Become a Sponsor</a>
+  </div>
+
+</header>
+<section class="header">
   <p>
     <strong>We are Cincinnati Ruby Brigade.</strong>
     A group of local developers who get together to talk Ruby, share code, and meet new people.
@@ -13,7 +27,7 @@
     Less slides, more code!
   </p>
   <%# link_to_location_map('Write code with us!', :target => '_blank', :id => 'rsvp') %>
-</header>
+</section>
 <section class="u-push__top">
   <div class="u-flex event-header">
     <i class="material-icons u-icon">events</i>
