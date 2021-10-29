@@ -5,6 +5,7 @@ gem 'rails', '6.0.4.1'
 gem 'rake', '>= 10'
 gem 'pg'
 gem 'sprockets-rails', require: 'sprockets/railtie'
+gem 'mail_form'
 
 gem 'bootsnap'
 gem 'devise'

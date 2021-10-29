@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
 
   resources :pages, only: [:index, :new, :create]
-  # post 'contact_us' => 'contact#create'
+ 
   get  'meetings' => 'meetings#index'
   get  'twitter/timeline'
 
