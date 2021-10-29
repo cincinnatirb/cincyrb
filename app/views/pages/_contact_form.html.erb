@@ -1,0 +1,26 @@
+<%= form_for @contact, url: pages_index_path, remote: true do |f| %>
+
+
+<div>
+      <h2>Contact Us</h2>
+      <p>Have a topic idea? Want to present at a Cinci.rb meeting? Have a suggestion? Send us a comment here.</p>
+      <p class='flash flash_notice'></p>
+      <%= form_for Contact.new, url: "/pages", :remote => true do |f| %>
+      <div>
+        <div>
+          <%= f.text_field :name, :placeholder => "Name" %>
+          <%= f.text_field :email, :placeholder => "Email Address" %>
+          <%= f.text_field :subject, :placeholder => "Subject" %>
+        </div>
+        <div>
+          <%= f.text_area :message, :placeholder => "Message", :rows => 5 %>
+        </div>
+        <div>
+          <input type="submit" value="Submit">
+        </div>
+      </div>
+      <%- end %>
+      <div class="col-md-6" id="flash-message">
+    <%= render 'flash' %>
+  </div>
+    </div>
