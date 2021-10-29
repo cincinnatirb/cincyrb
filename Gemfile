@@ -47,6 +47,7 @@ group :test do
   gem 'capybara'
   gem 'database_cleaner-active_record'
   gem 'shoulda-matchers'
+  gem 'simplecov', require: false
   gem 'vcr'
   gem 'webdrivers'
   gem 'webmock'

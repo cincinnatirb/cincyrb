@@ -7,3 +7,5 @@ tmp/
 vendor/ruby
 /.env
 .rvmrc
+.yarn-integrity
+/coverage/
