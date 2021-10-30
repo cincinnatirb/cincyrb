@@ -35,6 +35,7 @@ group :development, :test do
   gem 'rubocop'
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
+  gem 'rubocop-rake', require: false
   gem 'rubocop-rspec', require: false
   gem 'spring'
 end
