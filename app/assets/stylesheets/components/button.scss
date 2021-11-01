@@ -7,7 +7,7 @@ input[type="submit"] {
   border: 2px solid $dark-red;
   border-radius: calc(#{$border-radius} * 2);
   font-size: $font-size-sm;
-  font-weight: 700;
+  font-weight: 700 !important;
   line-height: 1rem;
   padding: calc(#{$space-xs} + .1rem) $space-sm;
   text-decoration: none;
