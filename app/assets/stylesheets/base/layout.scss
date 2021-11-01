@@ -8,7 +8,7 @@ body {
 .offset-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: 30px auto auto;
   grid-template-areas:
     "left ."
     "left right"
@@ -17,6 +17,10 @@ body {
 
   @media screen and (max-width: $screen-mobile) {
     display: block;
+
+    > * {
+      margin-bottom: $space-md;
+    }
   }
 
   &__left {

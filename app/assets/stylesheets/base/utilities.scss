@@ -1,3 +1,15 @@
+// COLOR
+.u-color {
+  &--red {
+    color: $dark-red;
+  }
+}
+
+// ALIGNMENT
+.u-middle {
+  vertical-align: middle;
+}
+
 // FLEX
 .u-flex {
   display: flex;

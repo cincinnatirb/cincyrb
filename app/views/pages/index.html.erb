@@ -1,5 +1,5 @@
 <%= image_tag('cincyrb-illustration.svg', aria_hidden: 'true', class: 'header__illustration') %>
-<header class="u-flex u-flex__justify--between u-flex__align--start">
+<header>
   <div>
     <%= image_tag('cincyrb-icon.png', alt: 'Cincy.rb logo', class: 'logo') %>
     <h1>Cincy.rb</h1>
@@ -8,14 +8,13 @@
     <div class="sponsorship__sponsor">
       <span class="u-push__right--xs"><i class="material-icons">favorite_border</i></span>
       SPONSORED BY
-      <span><%= image_tag('gaslight_mark-inverse.png', alt: 'Gaslight logo', class: 'logo') %></span>
+      <span class="sponsorship__logo" aria-hidden="true"></span>
       GASLIGHT
     </div>
     <a class='become-a-sponsor' href='mailto:hello@teamgaslight.com'><i class="material-icons u-text--sm u-push__right--xxs">add</i> Become a Sponsor</a>
   </div>
-
 </header>
-<section class="header">
+<section class="intro">
   <p>
     <strong>We are Cincinnati Ruby Brigade.</strong>
     A group of local developers who get together to talk Ruby, share code, and meet new people.
@@ -64,20 +63,19 @@
         <%= f.text_field :email, :placeholder => "Email Address" %>
         <%= f.text_field :subject, :placeholder => "Subject" %>
         <%= f.text_area :message, :placeholder => "Message", :rows => 5, :class => "message" %>
-        <input class="button" type="submit" value="Submit">
+        <input class="button u-push__top--sm" type="submit" value="Submit">
       </div>
     <% end %>
   </article>
   <article class="offset-col__right">
-    <div class="u-flex u-flex__justify--between">
-      <h2>Stay in the loop</h2>
-      <%= link_to("Follow Us", 'https://twitter.com/cincinnatirb', target: "_blank")%>
+    <h2>Stay in the loop</h2>
+    <p>Follow along and join the conversation to get plugged-in and stay connected!</p>
+    <div class="u-push__bottom">
+      <%= link_to("Twitter", 'https://twitter.com/cincinnatirb', target: "_blank", class: "button")%>
+      <%= link_to("Discord", 'https://discord.gg/dBjVX9mNB4', target: "_blank", class: "button") %>
     </div>
-    <a class="twitter-timeline" data-height="800" data-theme="light" href="https://twitter.com/cincinnatirb?ref_src=twsrc%5Etfw">Tweets by cincinnatirb</a>
+
+    <a class="twitter-timeline" data-height="600" data-theme="light" href="https://twitter.com/cincinnatirb?ref_src=twsrc%5Etfw">Tweets by cincinnatirb</a>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </article>
 </section>
-<ul>
-  <li><a href='https://twitter.com/#!/cincinnatirb' target='_blank'>Follow us on Twitter!</a></li>
-  <li><a href='http://www.facebook.com/events/162252363797871/' target='_blank'>Be Our Friend on Facebook!</a></li>
-</ul>

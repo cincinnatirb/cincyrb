@@ -1,14 +1,11 @@
-.header {
-  width: 45%;
+.header,
+header {
+  display: flex;
+    justify-content: space-between;
+    align-items: start;
 
   @media screen and (max-width: $screen-mobile) {
-    margin-top: 3rem;
-    width: 100%;
-  }
-
-  p {
-    font-family: 'Zilla Slab', serif;
-    font-size: 1.25rem;
+    display: block;
   }
 
   &__illustration {
