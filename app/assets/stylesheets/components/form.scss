@@ -4,7 +4,7 @@
     gap: calc(#{$space-xs} + .1rem);
   margin-top: $space-sm;
 
-  input,
+  input:not([type="submit"]),
   text-area,
   .message {
     border: $border;
@@ -16,23 +16,4 @@
       border-color: $color-info;
     }
   }
-
-  .button {
-    background-color: $white;
-    color: $dark-red;
-    border: 2px solid $dark-red;
-    border-radius: calc(#{$border-radius} * 2);
-    font-weight: 700;
-    padding: calc(#{$space-xs} + .1rem) $space-sm;
-    margin-top: $space-sm;
-    width: fit-content;
-
-    &:hover {
-      cursor: pointer;
-      background-color: $dark-red;
-      color: $white;
-    }
-  }
 }
-
-    

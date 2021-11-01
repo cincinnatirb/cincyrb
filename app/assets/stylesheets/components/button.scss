@@ -1,0 +1,22 @@
+.button,
+button,
+input[type="submit"] {
+  appearance: "none";
+  background-color: $white;
+  color: $dark-red;
+  border: 2px solid $dark-red;
+  border-radius: calc(#{$border-radius} * 2);
+  font-size: $font-size-sm;
+  font-weight: 700;
+  line-height: 1rem;
+  padding: calc(#{$space-xs} + .1rem) $space-sm;
+  text-decoration: none;
+  transition: all .2s ease;
+  width: fit-content;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $dark-red;
+    color: $white;
+  }
+}
