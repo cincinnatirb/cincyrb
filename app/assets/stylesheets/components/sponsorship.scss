@@ -4,7 +4,7 @@
     color: $white;
     flex-direction: column;
 
-  @media screen and (max-width: $screen-mobile) {
+  @media screen and (max-width: $screen-tablet) {
     align-items: flex-start;
     color: $black;
     margin-top: $space-md;
@@ -32,7 +32,7 @@
     width: 50px;
     height: 50px;
 
-    @media screen and (max-width: $screen-mobile) {
+    @media screen and (max-width: $screen-tablet) {
       background-image: url('/assets/gaslight_mark.png');
       width: 35px;
     }
@@ -50,7 +50,19 @@
       text-decoration: underline;
     }
 
-    @media screen and (max-width: $screen-mobile) {
+    @media screen and (max-width: $screen-tablet) {
+      color: $black;
+    }
+  }
+
+  &--dark {
+    color: $black;
+
+    .sponsorship__logo {
+      background-image: url('/assets/gaslight_mark.png');
+    }
+
+    .become-a-sponsor, a {
       color: $black;
     }
   }
