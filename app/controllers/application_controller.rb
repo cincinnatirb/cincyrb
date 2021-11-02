@@ -1,21 +1,21 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
   before_action :ensure_domain
-  APP_DOMAIN = 'cincyrb.com'
+  APP_DOMAIN = 'cincyrb.com'.freeze
 
   def ensure_domain
-    return unless Rails.env == "production"
-    if request.env['HTTP_HOST'] != APP_DOMAIN
-      # HTTP 301 is a "permanent" redirect
-      redirect_to "http://#{APP_DOMAIN}", :status => 301
+    return unless Rails.env.production?
+
+    if request.env['HTTP_HOST'] != APP_DOMAIN # rubocop: disable Style/GuardClause
+      redirect_to("http://#{APP_DOMAIN}", status: :moved_permanently) and return
     end
   end
 
   def next_meeting
-    @next_meeting ||= Meeting.get_next_meeting
+    @next_meeting ||= Meeting.next_meeting
   end
 
   def upcoming_meetings
-    @upcoming_meetings ||= Meeting.get_upcoming_meetings
+    @upcoming_meetings ||= Meeting.upcoming_meetings
   end
 end

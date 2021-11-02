@@ -1,0 +1,36 @@
+<%= form_with(model: past_event, local: true, url: url) do |form| %>
+  <% if past_event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(past_event.errors.count, "error") %> prohibited this past_event from being saved:</h2>
+      <ul>
+        <% past_event.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :date, 'Date' %><br />
+    <%= form.date_field :date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :topic, 'Topic' %><br />
+    <%= form.text_field :topic %>
+  </div>
+
+  <div class="field">
+    <%= form.label :speaker_ids, 'Speakers' %><br />
+    <%= form.collection_select :speaker_ids, Speaker.order(:name), :id, :name, {}, multiple: true, data: { test: 'speaker-select' } %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description, 'Description' %><br />
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'Submit' %>
+  </div>
+<% end %>

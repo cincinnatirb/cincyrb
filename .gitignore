@@ -1,4 +1,5 @@
 .bundle
+.byebug_history
 db/*.sqlite3
 log/*.log
 spec/examples.txt
@@ -7,3 +8,5 @@ tmp/
 vendor/ruby
 /.env
 .rvmrc
+.yarn-integrity
+/coverage/
