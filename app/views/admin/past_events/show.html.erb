@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<div>
+  <p><span>Topic:</span> <%= @past_event.topic %></p>
+</div>
+
+<div>
+  <p><span>Date:</span> <%= @past_event.date %></p>
+</div>
+
+<div>
+  <p><span>Speakers:</span> <%= @past_event.speaker_names %></p>
+</div>
+
+<div>
+  <p><span>Description:</span> <%= @past_event.description %></p>
+</div>
+
+<%= link_to 'Edit', edit_admin_past_event_path(@past_event) %> |
+<%= link_to 'Back', admin_past_events_path %>

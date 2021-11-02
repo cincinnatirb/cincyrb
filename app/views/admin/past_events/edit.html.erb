@@ -1,0 +1,6 @@
+<h1>Editing Past Event</h1>
+
+<%= render 'form', past_event: @past_event, url: admin_past_event_path(@past_event) %>
+
+<%= link_to 'Show', admin_past_events_path(@past_event) %> |
+<%= link_to 'Back', admin_past_events_path %>

@@ -2,7 +2,7 @@
 
 FactoryBot.define do
   factory :speaker do
-    name { "MyString" }
-    bio { "MyText" }
+    name { Faker::Name.unique.name }
+    bio { Faker::Lorem.sentence(word_count: (3..10).to_a.sample) }
   end
 end

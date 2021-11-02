@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_12_051449) do
+ActiveRecord::Schema.define(version: 2021_10_30_114808) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "active_admin_comments", id: :serial, force: :cascade do |t|
+  create_table "active_admin_comments", id: :integer, force: :cascade do |t|
     t.string "resource_id", limit: 255, null: false
     t.string "resource_type", limit: 255, null: false
     t.integer "author_id"
@@ -54,9 +54,10 @@ ActiveRecord::Schema.define(version: 2021_10_12_051449) do
     t.datetime "updated_at"
   end
 
-  create_table "speaker_assignments", id: false, force: :cascade do |t|
+  create_table "speaker_assignments", force: :cascade do |t|
     t.integer "speaker_id"
     t.integer "past_event_id"
+    t.index ["past_event_id", "speaker_id"], name: "index_speaker_assignments_on_past_event_id_and_speaker_id"
   end
 
   create_table "speakers", id: :serial, force: :cascade do |t|
