@@ -1,0 +1,22 @@
+.speaker {
+  display: flex;
+    gap: $space-xs;
+  &__bio {
+
+  }
+
+  &__headshot {
+    border-radius: 50%;
+    height: 25px;
+    overflow: hidden;
+    width: 25px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__name {
+
+  }
+}

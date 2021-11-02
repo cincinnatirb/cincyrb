@@ -10,6 +10,13 @@
   vertical-align: middle;
 }
 
+// GRID
+.u-grid {
+  display: grid;
+    gap: $space-md;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
 // FLEX
 .u-flex {
   display: flex;
@@ -52,6 +59,10 @@
 .u-push {
   margin: $space-md;
 
+  &--none {
+    margin: none !important;
+  }
+
   &--xs {
     margin: $space-xs;
   }
@@ -70,6 +81,10 @@
 
   &__top {
     margin-top: $space-md;
+
+    &--none {
+      margin-top: none !important;
+    }
 
     &--xs {
       margin-top: $space-xs;
@@ -91,6 +106,10 @@
   &__right {
     margin-right: $space-md;
 
+    &--none {
+      margin-right: none !important;
+    }
+
     &--xs {
       margin-right: $space-xs;
     }
@@ -111,6 +130,10 @@
   &__bottom {
     margin-bottom: $space-md;
 
+    &--none {
+      margin-bottom: none !important;
+    }
+
     &--xs {
       margin-bottom: $space-xs;
     }
@@ -130,6 +153,10 @@
 
   &__left {
     margin-left: $space-md;
+
+    &--none {
+      margin-left: none !important;
+    }
 
     &--xs {
       margin-left: $space-xs;

@@ -1,0 +1,39 @@
+.past-event  {
+  margin-bottom: $space-lg;
+  position: relative;
+
+  &__blob {
+    fill: $red;
+    height: 100px;
+    position: absolute;
+      top: -30px;
+      left: -40px;
+    z-index: -1;
+  }
+
+  &__date {
+    font-weight: bold;
+    margin: 0;
+  }
+
+  &__description {
+    font-size: $font-size-sm;
+  }
+
+  &__topic {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    margin-bottom: $space-xs;
+  }
+
+  &__video {
+
+  }
+
+  &__speakers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-md;
+  }
+
+}
