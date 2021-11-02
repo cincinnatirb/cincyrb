@@ -123,6 +123,8 @@ GEM
     factory_bot_rails (6.2.0)
       factory_bot (~> 6.2.0)
       railties (>= 5.0.0)
+    faker (2.19.0)
+      i18n (>= 1.6, < 2)
     ffi (1.15.4)
     formtastic (4.0.0)
       actionpack (>= 5.2.0)
@@ -370,6 +372,7 @@ DEPENDENCIES
   dotenv
   eco
   factory_bot_rails
+  faker
   httparty
   jquery-rails
   json

@@ -47,6 +47,7 @@ end
 group :test do
   gem 'capybara'
   gem 'database_cleaner-active_record'
+  gem 'faker'
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
   gem 'vcr'
