@@ -1,12 +1,28 @@
-<section>
-  <%= image_tag('cincyrb-icon', alt: 'Cincy.rb logo', id: 'logo') %>
-  <h1>Cincy.rb</h1>
-  <p>
-    <strong>Cincinnati Ruby Brigade</strong>
-    is a group of local developers who talk about Ruby specific topics and share code.
+<header>
+  <div>
+    <%= image_tag('cincyrb-icon.png', alt: 'Cincy.rb logo', class: 'logo') %>
+    <h1>Cincy.rb</h1>
+  </div>
+  <div class="sponsorship sponsorship--dark">
+    <div class="sponsorship__sponsor">
+      <span class="u-push__right--xs"><i class="material-icons">favorite_border</i></span>
+      SPONSORED BY
+      <span class="sponsorship__logo" aria-hidden="true"></span>
+      GASLIGHT
+    </div>
+    <a class='become-a-sponsor' href='mailto:hello@teamgaslight.com'><i class="material-icons u-text--sm u-push__right--xxs">add</i> Become a Sponsor</a>
+  </div>
+</header>
+
+<section class="u-push__top">
+  <%= link_to "/" do %>
+    <i class="material-icons u-middle">arrow_back</i> Back
+  <% end %>
+  <h2 class="u-push__top">Past Cincy.rb Event Recordings</h2>
+  <p class="intro intro--wide u-push__top--none">
+    Here is a collection of recorded events from our previous gatherings.
+    Meetups are recorded when there is a speaker presentation, and you'll find them here!
   </p>
-  <%= link_to_location_map 'Write code with us!', :target => '_blank' %>
-  <%= render 'next_meeting' %>
 </section>
 
 <%= render :partial => "past_events" %>
