@@ -1,13 +1,18 @@
 .intro {
+  font-family: 'Zilla Slab', serif;
+  font-size: 1.25rem;
   width: 45%;
 
+  &--wide {
+    width: 75%;
+  }
+
+  @media screen and (max-width: $screen-tablet) {
+    width: 60%;
+  }
+
   @media screen and (max-width: $screen-mobile) {
-    margin-top: 3rem;
     width: 100%;
   }
 
-  p {
-    font-family: 'Zilla Slab', serif;
-    font-size: 1.25rem;
-  }
 }
