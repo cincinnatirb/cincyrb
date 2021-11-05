@@ -1,7 +1,7 @@
-<tr>
+<tr data-test="past-event-id-<%= past_event.id %>">
   <td><%= past_event.topic %></td>
   <td><%= past_event.date.strftime('%Y-%m-%d') %></td>
-  <td><%= past_event.speakers.map(&:name).sort.join(', ') %></td>
+  <td><%= past_event.speaker_names %></td>
   <td><%= past_event.description %></td>
   <td><%= link_to 'Show', admin_past_event_path(past_event) %></td>
   <td><%= link_to 'Edit', edit_admin_past_event_path(past_event) %></td>

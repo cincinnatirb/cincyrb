@@ -52,4 +52,28 @@ RSpec.describe "PastEvent Administration", type: :system do
       expect(past_event.reload.speakers.map(&:name)).to eq([other_speaker.name, past_event.speakers.last.name])
     end
   end
+
+  context 'when listing' do
+    subject { page }
+
+    let!(:past_events) { create_list(:past_event, 4, :all_fields, :with_speakers, speaker_count: 2) }
+
+    before do
+      visit admin_user_session_path
+      fill_in :admin_user_email, with: admin_user.email
+      fill_in :admin_user_password, with: 'P4ssw0rd'
+      click_on 'Login'
+      visit admin_past_events_path
+      expect(page).to have_text('Past Events')
+    end
+
+    it { is_expected.to have_text(past_events[0].topic) }
+    it { is_expected.to have_text(past_events[1].date.to_date) }
+    it { is_expected.to have_text(past_events[2].speaker_names) }
+    it { is_expected.to have_text(past_events[3].description) }
+
+    it 'lists all Past Events' do
+      expect(page.all('[data-test^="past-event-id"]').count).to eq(past_events.count)
+    end
+  end
 end
