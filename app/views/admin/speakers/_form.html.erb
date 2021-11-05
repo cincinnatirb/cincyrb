@@ -1,0 +1,36 @@
+<%= form_with(model: speaker, local: true, url: url) do |form| %>
+  <% if speaker.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(speaker.errors.count, "error") %> prohibited this speaker from being saved:</h2>
+      <ul>
+        <% speaker.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name, 'Name' %><br />
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bio, 'Bio' %><br />
+    <%= form.text_field :bio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email, 'Email' %><br />
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image_url, 'Image URL' %><br />
+    <%= form.text_field :image_url %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'Submit' %>
+  </div>
+<% end %>

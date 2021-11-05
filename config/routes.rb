@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :past_events
+    resources :speakers
   end
 
   begin
