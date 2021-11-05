@@ -1,0 +1,9 @@
+<tr data-test="speaker-id-<%= speaker.id %>">
+  <td><%= speaker.name %></td>
+  <td><%= speaker.bio %></td>
+  <td><%= speaker.email %></td>
+  <td><%= speaker.image_url %></td>
+  <td><%= link_to 'Show', admin_speaker_path(speaker) %></td>
+  <td><%= link_to 'Edit', edit_admin_speaker_path(speaker) %></td>
+  <td><%= link_to 'Destroy', admin_speaker_path(speaker), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>
