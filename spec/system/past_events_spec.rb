@@ -14,9 +14,11 @@ RSpec.describe "Past Events", type: :system do
     end
 
     it { is_expected.to have_text(past_event.topic) }
+
     it 'lists all event speakers' do
       expect(page.all('div.speaker').count).to eq(past_event.speakers.count)
     end
+
     it { is_expected.to have_text(past_event.speakers.first.name) }
     it { is_expected.to have_text(past_event.speakers.last.name) }
     it { is_expected.to have_selector('div.past-event__video') }
