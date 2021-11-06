@@ -1,0 +1,7 @@
+<tr data-test="video-id-<%= video.id %>">
+  <td><%= video.url %></td>
+  <td><%= video.past_event.topic %></td>
+  <td><%= link_to 'Show', admin_video_path(video) %></td>
+  <td><%= link_to 'Edit', edit_admin_video_path(video) %></td>
+  <td><%= link_to 'Destroy', admin_video_path(video), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>

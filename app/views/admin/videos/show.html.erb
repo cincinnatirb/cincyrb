@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<div>
+  <p><span>URL:</span> <%= @video.url %></p>
+</div>
+
+<div>
+  <p><span>Past Event:</span> <%= @video.past_event.topic %></p>
+</div>
+
+<%= link_to 'Edit', edit_admin_video_path(@video) %> |
+<%= link_to 'Back', admin_videos_path %>
