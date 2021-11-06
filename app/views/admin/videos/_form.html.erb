@@ -1,0 +1,26 @@
+<%= form_with(model: video, local: true, url: url) do |form| %>
+  <% if video.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(video.errors.count, "error") %> prohibited this video from being saved:</h2>
+      <ul>
+        <% video.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :url, 'URL' %><br />
+    <%= form.text_field :url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :past_event_id, 'Past Event' %><br />
+    <%= form.collection_select :past_event_id, PastEvent.all.order(:topic), :id, :topic, {}, data: { test: 'past-event-select' } %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'Submit' %>
+  </div>
+<% end %>
