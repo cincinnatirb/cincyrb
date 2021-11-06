@@ -1,0 +1,14 @@
+<div class="header" id="header">
+  <h1 class="site_title" id="site_title"><a href="/">Cincinnati Ruby Brigade</a></h1>
+  <ul class="header-item tabs" id="tabs">
+    <li class="menu_item" id="past-events"><a href="/admin/past_events">Past Events</a></li>
+    <li class="menu_item" id="speakers"><a href="/admin/speakers">Speakers</a></li>
+    <li class="menu_item" id="videos"><a href="/admin/videos">Videos</a></li>
+  </ul>
+  <ul class="header-item tabs" id="utility_nav">
+    <li class="menu_item" id="current_user">
+      <span><%= current_admin_user.email %></span>
+    </li>
+    <li class="menu_item" id="logout"><a data-method="get" href="/admin/logout">Logout</a></li>
+  </ul>
+</div>
