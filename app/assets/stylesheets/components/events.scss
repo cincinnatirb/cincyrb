@@ -27,7 +27,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  padding: $space-xs $space-md;
+  padding: $space-sm $space-md;
 
   @media screen and (max-width: $screen-tablet) {
     border-left: 0;
@@ -46,7 +46,7 @@
   &--next {
     background-color: $color-info;
     border-left: 0;
-    color: $white;
+    // color: $white;
   }
 
   &__date {
