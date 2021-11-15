@@ -9,15 +9,26 @@ header {
   }
 
   &__illustration {
+    background-image: url('/assets/cincyrb-illustration.svg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
     max-height: 80vh;
     max-width: 80%;
     position: absolute;
       top: 0;
       right: 0;
+    width: 100%;
     z-index: -1;
 
     @media screen and (max-width: $screen-tablet) {
       top: -26px;
+    }
+
+    &--secondary {
+      background-image: url('/assets/cincyrb-illustration-02.svg');
+      max-height: 50vh;
     }
   }
 }
