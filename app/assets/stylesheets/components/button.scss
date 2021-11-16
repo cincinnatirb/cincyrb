@@ -19,4 +19,18 @@ input[type="submit"] {
     background-color: $dark-red;
     color: $white;
   }
+
+  &--cta {
+    background-color: $dark-red;
+    color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $dark-red;
+    }
+  }
+
+  &--sm {
+    padding: calc(#{$space-xs} - .4rem) $space-xs;
+  }
 }

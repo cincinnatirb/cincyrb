@@ -60,7 +60,7 @@
   margin: $space-md;
 
   &--none {
-    margin: none !important;
+    margin: 0 !important;
   }
 
   &--xs {
@@ -83,7 +83,7 @@
     margin-top: $space-md;
 
     &--none {
-      margin-top: none !important;
+      margin-top: 0 !important;
     }
 
     &--xs {
@@ -107,7 +107,7 @@
     margin-right: $space-md;
 
     &--none {
-      margin-right: none !important;
+      margin-right: 0 !important;
     }
 
     &--xs {
@@ -131,7 +131,7 @@
     margin-bottom: $space-md;
 
     &--none {
-      margin-bottom: none !important;
+      margin-bottom: 0 !important;
     }
 
     &--xs {
@@ -155,7 +155,7 @@
     margin-left: $space-md;
 
     &--none {
-      margin-left: none !important;
+      margin-left: 0 !important;
     }
 
     &--xs {
