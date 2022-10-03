@@ -9,7 +9,7 @@ header {
   }
 
   &__illustration {
-    background-image: url('/assets/cincyrb-illustration.svg');
+    background-image: url('cincyrb-illustration.svg');
     background-position: top right;
     background-repeat: no-repeat;
     background-size: contain;
@@ -27,7 +27,7 @@ header {
     }
 
     &--secondary {
-      background-image: url('/assets/cincyrb-illustration-02.svg');
+      background-image: url('cincyrb-illustration-02.svg');
       max-height: 50vh;
     }
   }
