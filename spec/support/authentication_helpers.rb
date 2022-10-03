@@ -12,7 +12,7 @@ module RequestAuthenticationHelpers
 
   def sign_in_as(admin_user)
     scope = Devise::Mapping.find_scope!(admin_user)
-    login_as(admin_user, scope: scope)
+    login_as(admin_user, scope:)
   end
 
   def sign_out(admin_user)

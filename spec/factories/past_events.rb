@@ -16,7 +16,7 @@ FactoryBot.define do
 
     trait :with_speakers do
       after(:create) do |past_event, evaluator|
-        evaluator.speaker_count.times { create(:speaker_assignment, past_event: past_event) }
+        evaluator.speaker_count.times { create(:speaker_assignment, past_event:) }
       end
     end
   end

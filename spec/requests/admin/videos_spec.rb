@@ -107,7 +107,7 @@ RSpec.describe '/admin/videos', type: :request do
         it 'does not create a new video' do
           expect {
             post admin_videos_url, params: { video: invalid_attributes }
-          }.to change(Video, :count).by(0)
+          }.not_to change(Video, :count)
         end
 
         it "renders a successful response (i.e. to display the 'new' template)" do

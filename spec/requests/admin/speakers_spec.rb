@@ -106,7 +106,7 @@ RSpec.describe '/admin/speakers', type: :request do
         it 'does not create a new Speaker' do
           expect {
             post admin_speakers_url, params: { speaker: invalid_attributes }
-          }.to change(Speaker, :count).by(0)
+          }.not_to change(Speaker, :count)
         end
 
         it "renders a successful response (i.e. to display the 'new' template)" do
