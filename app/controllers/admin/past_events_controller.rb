@@ -8,7 +8,7 @@ module Admin
       PastEvent.transaction do
         @past_event.save
         speaker_ids.each do |speaker_id|
-          SpeakerAssignment.create(past_event_id: @past_event.id, speaker_id: speaker_id)
+          SpeakerAssignment.create(past_event_id: @past_event.id, speaker_id:)
         end
       end
 

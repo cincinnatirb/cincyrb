@@ -111,7 +111,7 @@ RSpec.describe '/admin/past_events', type: :request do
         it 'does not create a new PastEvent' do
           expect {
             post admin_past_events_url, params: { past_event: invalid_attributes }
-          }.to change(PastEvent, :count).by(0)
+          }.not_to change(PastEvent, :count)
         end
 
         it "renders a successful response (i.e. to display the 'new' template)" do

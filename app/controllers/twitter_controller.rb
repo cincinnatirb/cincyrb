@@ -20,7 +20,7 @@ class TwitterController < ApplicationController
                                    { site: "https://api.twitter.com", scheme: :header })
 
     # now create the access token object from passed values
-    token_hash = { oauth_token: oauth_token, oauth_token_secret: oauth_token_secret }
+    token_hash = { oauth_token:, oauth_token_secret: }
     OAuth::AccessToken.from_hash(consumer, token_hash)
   end
 end
