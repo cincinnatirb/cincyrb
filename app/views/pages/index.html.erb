@@ -39,7 +39,7 @@
           <%= Time.at(meeting['time']/1000).strftime('%b %-d') %>
         </div>
         <div class="event__time">
-          <%= Time.at(meeting['time']/1000).strftime('%l:%M %P') %>
+          <%= Time.at(meeting['time']/1000).in_time_zone('EST').strftime('%l:%M %P') %>
         </div>
       </article>
     <%- end %>
@@ -56,7 +56,7 @@
     <%= form_for Contact.new, url: "/contact_us", :remote => true do |f| %>
       <div class="new_contact">
         <%= f.text_field :name, :placeholder => "Name" %>
-        <%= f.text_field :email, :placeholder => "Email Address" %>
+        <%= f.text_field :email, :placeholder => "EmailAddress" %>
         <%= f.text_field :subject, :placeholder => "Subject" %>
         <%= f.text_area :message, :placeholder => "Message", :rows => 5, :class => "message" %>
         <input class="button u-push__top--sm" type="submit" value="Submit">
