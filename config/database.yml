@@ -11,6 +11,3 @@ test: &test
   pool: 5
   min_messages: 'warning'
   encoding: utf8
-
-cucumber:
-  <<: *test

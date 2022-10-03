@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '3.0.4'
+ruby '3.1.2'
 
 gem 'activeadmin'
 gem 'bootsnap'
@@ -9,6 +9,7 @@ gem 'eco'
 gem 'httparty'
 gem 'jquery-rails'
 gem 'json'
+gem 'net-smtp', require: false
 gem 'newrelic_rpm'
 gem "nokogiri", ">= 1.12.5"
 gem 'oauth'
