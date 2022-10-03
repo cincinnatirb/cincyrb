@@ -36,10 +36,10 @@
     <%- @upcoming_meetings.each do |meeting| %>
       <article class="event">
         <div class="event__date">
-          <%= Time.at(meeting['time']/1000).strftime('%b %-d') %>
+          <%= Time.at(meeting['time']/1000).in_time_zone('America/New_York').strftime('%b %-d') %>
         </div>
         <div class="event__time">
-          <%= Time.at(meeting['time']/1000).in_time_zone('EST').strftime('%l:%M %P') %>
+          <%= Time.at(meeting['time']/1000).in_time_zone('America/New_York').strftime('%l:%M %P') %>
         </div>
       </article>
     <%- end %>
