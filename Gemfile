@@ -15,7 +15,7 @@ gem "nokogiri", ">= 1.12.5"
 gem 'oauth'
 gem 'pg'
 gem 'puma', '>= 5.5.1'
-gem 'rails', '6.0.4.1'
+gem 'rails', '6.1.6.1'
 gem 'rake', '>= 10'
 gem 'sass-rails'
 gem 'sprockets-rails', require: 'sprockets/railtie'

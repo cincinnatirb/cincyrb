@@ -36,11 +36,8 @@ module Admin
     def show; end
 
     def update
-      PastEvent.transaction do
-        @past_event.update(past_event_params)
-
-        redirect_to admin_past_event_path(@past_event) and return unless @past_event.errors.any?
-      end
+      @past_event.update(past_event_params)
+      redirect_to admin_past_event_path(@past_event) and return unless @past_event.errors.any?
 
       render 'edit'
     end
