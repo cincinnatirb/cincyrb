@@ -3,8 +3,8 @@
 
 ## Dependencies
 * [asdf](https://asdf-vm.com/#/)
-* [Ruby](https://www.ruby-lang.org/en/) 2.7.2
-* [Rails](https://rubyonrails.org/) 6.0.4.1
+* [Ruby](https://www.ruby-lang.org/en/) 3.1
+* [Rails](https://rubyonrails.org/) 7.0
 
 ## Setup
 On a * nix environment, just run:
