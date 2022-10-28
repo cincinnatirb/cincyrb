@@ -8,7 +8,6 @@
     <div class="sponsorship__sponsor">
       <span class="u-push__right--xs"><i class="material-icons">favorite_border</i></span>
       Sponsored by LAUNCH SCOUT
-      <span class="sponsorship__logo" aria-hidden="true"></span>
     </div>
     <a class='become-a-sponsor' href='mailto:hello@launchscout.com'><i class="material-icons u-text--sm u-push__right--xxs">add</i> Become a Sponsor</a>
   </div>
@@ -50,6 +49,17 @@
 </section>
 <section class="offset-col u-pad__top--xl">
   <article class="offset-col__left">
+    <h2>Stay in the loop</h2>
+    <p>Follow along and join the conversation to get plugged-in and stay connected!</p>
+    <div class="u-push__bottom">
+      <%= link_to("Twitter", 'https://twitter.com/cincinnatirb', target: "_blank", class: "button")%>
+      <%= link_to("Discord", 'https://discord.gg/dBjVX9mNB4', target: "_blank", class: "button") %>
+    </div>
+
+    <a class="twitter-timeline" data-height="600" data-theme="light" href="https://twitter.com/cincinnatirb?ref_src=twsrc%5Etfw">Tweets by cincinnatirb</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </article>
+  <article class="offset-col__right">
     <h2>Contact Us</h2>
     <p>Have a topic idea? Want to present at a Cincy.rb meeting? Have a suggestion? Send us a comment here.</p>
     <p class='flash flash_notice'></p>
@@ -63,15 +73,5 @@
       </div>
     <% end %>
   </article>
-  <article class="offset-col__right">
-    <h2>Stay in the loop</h2>
-    <p>Follow along and join the conversation to get plugged-in and stay connected!</p>
-    <div class="u-push__bottom">
-      <%= link_to("Twitter", 'https://twitter.com/cincinnatirb', target: "_blank", class: "button")%>
-      <%= link_to("Discord", 'https://discord.gg/dBjVX9mNB4', target: "_blank", class: "button") %>
-    </div>
 
-    <a class="twitter-timeline" data-height="600" data-theme="light" href="https://twitter.com/cincinnatirb?ref_src=twsrc%5Etfw">Tweets by cincinnatirb</a>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </article>
 </section>
