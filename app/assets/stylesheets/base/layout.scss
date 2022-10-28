@@ -7,16 +7,26 @@ body {
 
 .offset-col {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 35%;
   grid-template-rows: 30px auto auto;
   grid-template-areas:
-    "left ."
+    "left right"
     "left right"
     ".    right";
   gap: $space-xl;
 
-  @media screen and (max-width: $screen-mobile) {
+  @media screen and (max-width: $screen-tablet) {
     display: block;
+
+    > * {
+      margin-bottom: $space-md;
+    }
+  }
+
+  @media screen and (max-width: 1235px) {
+    display: grid;
+    grid-template-columns: 1fr 35%;
+    gap: $space-lg;
 
     > * {
       margin-bottom: $space-md;
@@ -30,4 +40,5 @@ body {
   &__right {
     grid-area: right;
   }
+
 }
