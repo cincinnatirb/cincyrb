@@ -14,6 +14,7 @@ AllCops:
     - 'tmp/**/*'
     - 'vendor/**/*'
   NewCops: enable
+  SuggestExtensions: false
 
 Layout/LineLength:
   Enabled: true
@@ -77,6 +78,8 @@ Rails/FindById:
   Enabled: true
 Rails/Inquiry:
   Enabled: true
+Rails/I18nLocaleTexts:
+  Enabled: false
 Rails/MailerName:
   Enabled: true
 Rails/MatchRoute:
