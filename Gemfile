@@ -43,6 +43,7 @@ end
 
 group :development do
   gem 'listen'
+  gem 'solargraph'
 end
 
 group :test do

@@ -1,6 +1,18 @@
 .past-event  {
   margin-bottom: $space-lg;
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: $space-xl;
+
+  @media screen and (max-width: 995px) {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: $space-lg;
+  }
+
+  @media screen and (max-width: $screen-mobile) {
+    display: block;
+  }
 
   &__blob {
     fill: $red;
@@ -12,8 +24,12 @@
   }
 
   &__date {
+    display: flex;
     font-weight: bold;
     margin: 0;
+    font-size: 1rem;
+    color: grey;
+    align-items: center;
   }
 
   &__description {
