@@ -41,6 +41,22 @@
       <%= render 'admin/shared/menu' %>
     <% end %>
 
+    <div class="header__illustration header__illustration--secondary" aria-hidden="true"></div>
+    <header>
+      <div>
+        <%= image_tag('cincyrb-icon.png', alt: 'Cincy.rb logo', class: 'logo') %>
+        <h1>Cincy.rb</h1>
+      </div>
+      <div class="sponsorship">
+        <div class="sponsorship__sponsor">
+          <span class="u-push__right--xs"><i class="material-icons">favorite_border</i></span>
+          <span class="u-push__right--xs">Sponsored by </span>
+          <a href='https://launchscout.com/' target='_blank'>LAUNCH SCOUT</a>
+        </div>
+        <a class='become-a-sponsor' href='mailto:hello@launchscout.com'><i class="material-icons u-text--sm u-push__right--xxs">add</i> Become a Sponsor</a>
+      </div>
+    </header>
+
     <%= yield %>
 
     <footer>
