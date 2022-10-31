@@ -43,12 +43,12 @@
 
     <div class="header__illustration header__illustration--secondary" aria-hidden="true"></div>
     <header>
-      <a href="https://cincyrb.com/">
+      <%= link_to root_path do %>
         <div>
           <%= image_tag('cincyrb-icon.png', alt: 'Cincy.rb logo', class: 'logo') %>
           <h1>Cincy.rb</h1>
         </div>
-      </a>
+      <% end %>
       <div class="sponsorship">
         <div class="sponsorship__sponsor">
           <span class="u-push__right--xs"><i class="material-icons">favorite_border</i></span>
