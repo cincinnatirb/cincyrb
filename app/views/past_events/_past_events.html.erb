@@ -15,7 +15,13 @@
       <%- event.speakers.each do |speaker| %>
         <div class='speaker'>
           <div class='speaker__headshot'>
-            <%= image_tag(gravatar_url(speaker.email)) %>
+            <% if speaker.name == "Jim Weirich" %>
+              <a href="https://en.wikipedia.org/wiki/Jim_Weirich">
+                <%= image_tag(gravatar_url(speaker.email)) %>
+              </a>
+            <% else %>
+              <%= image_tag(gravatar_url(speaker.email)) %>
+            <% end %>
           </div>
           <h4 class='speaker__name'><%= speaker.name %></h4>
           <!-- <p class="speaker__bio"><%= speaker.bio %></p> -->
