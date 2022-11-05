@@ -13,5 +13,8 @@ Rails.application.routes.draw do
   get  'past_events' => 'past_events#index'
   get  'twitter/timeline'
 
-  devise_for :admin_users
+  devise_for :admin_users, path: 'admin', path_names: {
+    sign_in: 'login',
+    sign_out: 'logout'
+  }, sign_out_via: %i[delete get]
 end
