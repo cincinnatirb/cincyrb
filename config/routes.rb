@@ -8,16 +8,13 @@ Rails.application.routes.draw do
     resources :videos
   end
 
-  begin
-    ActiveAdmin.routes(self)
-  rescue StandardError
-    ActiveAdmin::DatabaseHitDuringLoad
-  end
-
   post 'contact_us' => 'contact#create'
   get  'meetings' => 'meetings#index'
   get  'past_events' => 'past_events#index'
   get  'twitter/timeline'
 
-  devise_for :admin_users, ActiveAdmin::Devise.config
+  devise_for :admin_users, path: 'admin', path_names: {
+    sign_in: 'login',
+    sign_out: 'logout'
+  }, sign_out_via: %i[delete get]
 end

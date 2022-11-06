@@ -9,9 +9,11 @@ RSpec.describe "PastEvent Administration", type: :system do
 
     before do
       visit admin_user_session_path
+
       fill_in :admin_user_email, with: admin_user.email
       fill_in :admin_user_password, with: 'P4ssw0rd'
-      click_on 'Login'
+      click_on 'Log in'
+
       visit new_admin_past_event_path
       expect(page).to have_text('New Past Event')
     end
@@ -36,9 +38,11 @@ RSpec.describe "PastEvent Administration", type: :system do
 
     before do
       visit admin_user_session_path
+
       fill_in :admin_user_email, with: admin_user.email
       fill_in :admin_user_password, with: 'P4ssw0rd'
-      click_on 'Login'
+      click_on 'Log in'
+
       visit edit_admin_past_event_path(past_event)
       expect(page).to have_text('Editing Past Event')
     end
@@ -49,7 +53,7 @@ RSpec.describe "PastEvent Administration", type: :system do
 
       click_on 'commit'
 
-      expect(past_event.reload.speakers.map(&:name)).to eq([other_speaker.name, past_event.speakers.last.name])
+      expect(past_event.reload.speakers.map(&:name).sort).to eq([other_speaker.name, past_event.speakers.last.name].sort)
     end
   end
 
@@ -60,9 +64,11 @@ RSpec.describe "PastEvent Administration", type: :system do
 
     before do
       visit admin_user_session_path
+
       fill_in :admin_user_email, with: admin_user.email
       fill_in :admin_user_password, with: 'P4ssw0rd'
-      click_on 'Login'
+      click_on 'Log in'
+
       visit admin_past_events_path
       expect(page).to have_text('Past Events')
     end

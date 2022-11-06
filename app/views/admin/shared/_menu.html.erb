@@ -9,6 +9,6 @@
     <li class="menu_item" id="current_user">
       <span><%= current_admin_user.email %></span>
     </li>
-    <li class="menu_item" id="logout"><a data-method="get" href="/admin/logout">Logout</a></li>
+    <li class="menu_item" id="logout"><%= link_to 'Logout', destroy_admin_user_session_path, method: :delete %></li>
   </ul>
 </div>

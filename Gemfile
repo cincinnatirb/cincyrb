@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 ruby '3.1.2'
 
-gem 'activeadmin'
 gem 'bootsnap'
 gem 'coffee-rails'
 gem 'devise'
@@ -50,6 +49,7 @@ group :test do
   gem 'capybara'
   gem 'database_cleaner-active_record'
   gem 'faker'
+  gem 'rails-controller-testing'
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
   gem 'vcr'

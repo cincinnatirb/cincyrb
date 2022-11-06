@@ -3,6 +3,10 @@ class ApplicationController < ActionController::Base
   before_action :ensure_domain
   APP_DOMAIN = 'cincyrb.com'.freeze
 
+  def after_sign_in_path_for(_resource)
+    admin_past_events_path
+  end
+
   def ensure_domain
     return unless Rails.env.production?
 

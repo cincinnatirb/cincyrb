@@ -28,4 +28,12 @@ RSpec.describe PastEvent, type: :model do
 
     it { is_expected.to match("#{past_event.speakers.first.name}, #{past_event.speakers.last.name}") }
   end
+
+  describe '#topic_with_date' do
+    subject(:topic_with_date) { create(:past_event, topic: 'Welcome Polly!', date: Date.new(2005, 2)).topic_with_date }
+
+    it 'returns the topic proceeded by the month and day of the event' do
+      expect(topic_with_date).to eq('February 2005: Welcome Polly!')
+    end
+  end
 end

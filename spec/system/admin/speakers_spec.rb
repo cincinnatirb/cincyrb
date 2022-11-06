@@ -6,9 +6,12 @@ RSpec.describe "Speaker Administration", type: :system do
   context 'when creating' do
     before do
       visit admin_user_session_path
+
       fill_in :admin_user_email, with: admin_user.email
       fill_in :admin_user_password, with: 'P4ssw0rd'
-      click_on 'Login'
+
+      click_on 'Log in'
+
       visit new_admin_speaker_path
       expect(page).to have_text('New Speaker')
     end
@@ -34,9 +37,11 @@ RSpec.describe "Speaker Administration", type: :system do
 
     before do
       visit admin_user_session_path
+
       fill_in :admin_user_email, with: admin_user.email
       fill_in :admin_user_password, with: 'P4ssw0rd'
-      click_on 'Login'
+      click_on 'Log in'
+
       visit edit_admin_speaker_path(speaker)
       expect(page).to have_text('Editing Speaker')
     end
@@ -65,9 +70,11 @@ RSpec.describe "Speaker Administration", type: :system do
 
     before do
       visit admin_user_session_path
+
       fill_in :admin_user_email, with: admin_user.email
       fill_in :admin_user_password, with: 'P4ssw0rd'
-      click_on 'Login'
+      click_on 'Log in'
+
       visit admin_speakers_path
       expect(page).to have_text('Speakers')
     end

@@ -17,7 +17,7 @@
 
   <div class="field">
     <%= form.label :past_event_id, 'Past Event' %><br />
-    <%= form.collection_select :past_event_id, PastEvent.all.order(:topic), :id, :topic, {}, data: { test: 'past-event-select' } %>
+    <%= form.collection_select :past_event_id, PastEvent.all.order('date DESC'), :id, :topic_with_date, {}, data: { test: 'past-event-select' } %>
   </div>
 
   <div class="actions">

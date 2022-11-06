@@ -13,4 +13,8 @@ class PastEvent < ApplicationRecord
   def speaker_names
     speakers.map(&:name).join(', ')
   end
+
+  def topic_with_date
+    "#{date.strftime('%B %Y')}: #{topic}"
+  end
 end
