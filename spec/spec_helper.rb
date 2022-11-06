@@ -25,6 +25,8 @@ Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
+  config.include ActiveSupport::Testing::TimeHelpers
+
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
@@ -103,22 +105,12 @@ RSpec.configure do |config|
 
   # System Tests
   config.before(:each, type: :system) do
-    driven_by :rack_test
-  end
+    Rails.application.load_tasks
 
-  config.before(:each, type: :system, js: true) do
     # :selenium => Selenium driving Firefox
     # :selenium_headless => Selenium driving Firefox in a headless configuration
     # :selenium_chrome => Selenium driving Chrome
     # :selenium_chrome_headless => Selenium driving Chrome in a headless configuration
-    driven_by :selenium_chrome_headless
-  end
-
-  config.include ActiveSupport::Testing::TimeHelpers
-  config.before(:each, type: :system, js: true) do
-    Rails.application.load_tasks
-    Rake::Task["assets:precompile"].invoke
-    driven_by :selenium, using: :chrome
-    # driven_by :selenium_chrome_headless
+    driven_by ENV.fetch('JAVASCRIPT_DRIVER', 'selenium_chrome_headless').to_sym
   end
 end
