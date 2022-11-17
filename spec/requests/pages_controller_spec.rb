@@ -7,4 +7,12 @@ RSpec.describe PagesController, type: :controller do
       expect(response.code).to eq('200')
     end
   end
+
+  describe 'GET #this_month_in_ruby' do
+    it 'is publicly accessible' do
+      get :this_month_in_ruby
+
+      expect(response.code).to eq('200')
+    end
+  end
 end

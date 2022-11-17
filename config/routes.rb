@@ -8,9 +8,10 @@ Rails.application.routes.draw do
     resources :videos
   end
 
-  post 'contact_us' => 'contact#create'
-  get  'meetings' => 'meetings#index'
-  get  'past_events' => 'past_events#index'
+  post 'contact_us'         => 'contact#create'
+  get  'meetings'           => 'meetings#index'
+  get  'past_events'        => 'past_events#index'
+  get  'this_month_in_ruby' => 'pages#this_month_in_ruby'
   get  'twitter/timeline'
 
   devise_for :admin_users, path: 'admin', path_names: {
