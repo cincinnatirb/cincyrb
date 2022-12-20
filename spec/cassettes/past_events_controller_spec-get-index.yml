@@ -1,0 +1,1136 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.meetup.com/TechLife-Cincinnati/events
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '6144'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Oauth-Scopes:
+      - basic
+      X-Accepted-Oauth-Scopes:
+      - basic
+      X-Ratelimit-Limit:
+      - '30'
+      X-Ratelimit-Remaining:
+      - '29'
+      X-Ratelimit-Reset:
+      - '10'
+      X-Total-Count:
+      - '81'
+      Etag:
+      - '"5b2660ff1c891a3344aa95e91e2249e1-gzip"'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 20 Dec 2022 13:43:12 GMT
+      Vary:
+      - Accept-Encoding,User-Agent,Accept-Language
+      X-Geo-Gql-Beta:
+      - east
+      X-Geo-Rest-Beta:
+      - east
+      X-Geo:
+      - east
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"created":1655948621000,"duration":7200000,"id":"rvbvvsyfccbgb","name":"CINPA
+        Monthly Meeting","date_in_series_pattern":false,"status":"upcoming","time":1672876800000,"local_date":"2023-01-04","local_time":"19:00","updated":1655948621000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":1,"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/rvbvvsyfccbgb/","description":"<p>N.B.:
+        Check comments here (below) or [<a href=\"http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic\"
+        class=\"linkified\">http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic</a>)
+        each month for new meeting LINK.</p> <p>Cincinnati Networking Professionals
+        Association - CINPA</p> <p>Monthly Meeting - FIRST WEDNESDAY - Typically we
+        have an IT Industry professional present on a subject of interest. Oftentimes
+        these are hardware, software or services vendors.</p> <p>We usually take a
+        break half way through the evening for a pizza (etc.) socializing time.</p>
+        <p>Specific meeting information can be found at CINPA website ([<a href=\"http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic\"
+        class=\"linkified\">http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic</a>))</p>
+        ","visibility":"public","member_pay_fee":false},{"created":1578415364000,"duration":10800000,"id":"rhfrmryfccbnb","name":"Cincy
+        Functional Programmers","date_in_series_pattern":false,"status":"upcoming","time":1673393400000,"local_date":"2023-01-10","local_time":"18:30","updated":1578415364000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26800165,"name":"8035
+        Hosbrook Rd","lat":39.203285217285156,"lon":-84.37220764160156,"repinned":false,"address_1":"8035
+        Hosbrook Rd","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45236","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/rhfrmryfccbnb/","description":"<p>Functional
+        Programmers Group meets 2nd Tuesday of each month at Pinnacle Solutions Group.</p>
+        <p>The meeting starts at 6:30 \u2013 Food is not usually provided, but feel
+        free to bring you own.</p> <p>Twitter: @cincyfp</p> ","visibility":"public","member_pay_fee":false},{"created":1610660852000,"duration":7200000,"id":"xqzhdsyfccbqb","name":"Agile
+        Cincinnati","date_in_series_pattern":false,"status":"upcoming","time":1673564400000,"local_date":"2023-01-12","local_time":"18:00","updated":1610660853000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/xqzhdsyfccbqb/","description":"<p>Check
+        out the Agile Cincinnati Eventbrite page or our website for more information:
+        <a href=\"https://agilecincinnati.eventbrite.com/\" class=\"linkified\">https://agilecincinnati.eventbrite.com/</a></p>
+        <p>Please be sure to register on Eventbrite to receive the meeting Zoom link.</p>
+        <p>We''re a non-profit group focused on serving the Cincinnati and Northern
+        Kentucky Agile communities.</p> <p>More details: <a href=\"http://www.agilecincy.org/\"
+        class=\"linkified\">http://www.agilecincy.org/</a></p> ","visibility":"public","member_pay_fee":false},{"created":1548685236000,"duration":5400000,"id":"lrctqqyfccbxb","name":"CinJUG:
+        Java User''s Group","date_in_series_pattern":false,"status":"upcoming","time":1674059400000,"local_date":"2023-01-18","local_time":"11:30","updated":1548685236000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":25548413,"name":"Callibrity","lat":39.253318786621094,"lon":-84.38121032714844,"repinned":true,"address_1":"4555
+        Lake Forest Drive","city":"Blue Ash","country":"US","localized_country_name":"USA"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/lrctqqyfccbxb/","description":"<p>Details<br/>&lt;
+        Presentor needed &gt;</p> <p>Location:<br/>4555 Lake Forest Drive<br/>Suite
+        150<br/>Blue Ash, OH. 45242</p> <p>The building has a big \"HQ\" sign on it
+        and is right next to BW3.</p> <p>Enter lobby, head down the left hallway and
+        look for a Cinjug sign.</p> <p>Bio:<br/>&lt; Presentor Bio &gt;</p> <p>Site
+        Sponsor:<br/>Callibrity - www.callibrity.com</p> <p>Meeting Sponsor:<br/>&lt;
+        Meeting Sponsor &gt;</p> <p>Cinjug links:<br/><a href=\"https://groups.google.com/forum/#!forum/cinjug\"
+        class=\"linkified\">https://groups.google.com/forum/#!forum/cinjug</a><br/><a
+        href=\"https://plus.google.com/u/0/communities/102335575810446164227?cfem=1\"
+        class=\"linkified\">https://plus.google.com/u/0/communities/102335575810446164227?cfem=1</a></p>
+        ","how_to_find_us":"Suite 150, enter Lobby, halfway on left, follow sign","visibility":"public","member_pay_fee":false},{"created":1663170626000,"duration":3600000,"id":"gnzkxsyfccbzb","name":"Ruby
+        Brigade","date_in_series_pattern":false,"status":"upcoming","time":1674147600000,"local_date":"2023-01-19","local_time":"12:00","updated":1663170626000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/gnzkxsyfccbzb/","why":"We
+        love Ruby!","description":"<p>Meet and talk about the best stuff going on
+        in your Ruby world or the community in general!</p> <p><a href=\"https://cincyrb.com/\"
+        class=\"linkified\">https://cincyrb.com/</a></p> <p><a href=\"https://twitter.com/#!/cincinnatirb\"
+        class=\"linkified\">https://twitter.com/#!/cincinnatirb</a></p> ","visibility":"public","member_pay_fee":false},{"created":1646715886000,"duration":9000000,"id":"pfsvssyfccbzb","name":"CiNPA
+        - Security SIG","rsvp_limit":60,"date_in_series_pattern":false,"status":"upcoming","time":1674171000000,"local_date":"2023-01-19","local_time":"18:30","updated":1646715886000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":27142074,"name":"TechSolve,
+        Inc","lat":39.18585968017578,"lon":-84.47218322753906,"repinned":true,"address_1":"6705
+        Steger Dr","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45237","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/pfsvssyfccbzb/","description":"<p>Meeting
+        Topic: TBD</p> <p>Please stay tuned and check back later for our meeting topic(s)
+        and speaker(s) announcement.</p> <p>About Us:</p> <p>The CiNPA Security SIG
+        is the Cincinnati Networking Professionals Association Security Special Interest
+        Group. We meet monthly on the third Thursday of each month, starting at 6:30
+        p.m.</p> <p>The CiNPA Security SIG''s monthly meeting format typically consists
+        of one or two main monthly meeting topics featuring live presentations or
+        demonstrations promoting open and interactive group discussions. Our focus
+        is primarily on the technical aspects of InfoSec, but we occasionally touch
+        on other areas of cybersecurity as well. Information security news, announcements,
+        and round-table discussions follow our main meeting topics.</p> <p>Attendee
+        Benefits:</p> <p>\u2022 Attendance qualifies for 2 hours of CPE or CEU credit
+        towards certification renewals</p> <p>\u2022 Maintaining awareness of new
+        vulnerabilities and exploits</p> <p>\u2022 Learning about the latest security
+        tools, utilities, products, services, solutions, strategies, techniques, frameworks,
+        and best practices</p> <p>\u2022 Sharing of information regarding trends concerning
+        enterprise systems and technology</p> <p>\u2022 Hearing announcements of upcoming
+        area security conferences and events</p> <p>\u2022 Networking with peers in
+        the local Information Security (InfoSec) community</p> ","how_to_find_us":"Kettering
+        & Wright Conference Rooms.","visibility":"public","member_pay_fee":false},{"created":1652196752000,"duration":7200000,"id":"qfxztsyfccbgc","name":"CINNUG/CinARC
+        Monthly Meeting","date_in_series_pattern":false,"status":"upcoming","time":1674601200000,"local_date":"2023-01-24","local_time":"18:00","updated":1652196752000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26333709,"name":"Tech
+        Elevator Cincinnati","lat":39.15209197998047,"lon":-84.46752166748047,"repinned":true,"address_1":"1776
+        Mentor Ave Suite 355","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45212","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/qfxztsyfccbgc/","description":"<p>Catching
+        up with the CINNUG Community.</p> <p>We are back to meeting in person! Special
+        thanks for TechElevator for sponsoring us!</p> <p>CINNUG:</p> <p>Topic: TBD<br/>Presenter:
+        TBD</p> <p>CINARC:</p> <p>Come join this new special interest group as we
+        discuss topics related to software architecture. This meeting is run after
+        CINNUG where the attendees are encouraged to share their thoughts with everyone.
+        What topic will we cover? Well, that''s up to the attendees! If you have a
+        strong opinion about a topic you''d like to suggest or want to learn more
+        about the topics, then make sure you swing by the meeting.</p> ","how_to_find_us":"We
+        are in the first floor conference room #160. Just follow the signs!\nThe door
+        locks at 6:00, so please be early or email us if you get there late so we
+        can let you in.","visibility":"public","member_pay_fee":false},{"created":1655948621000,"duration":7200000,"id":"rvbvvsyfcdbcb","name":"CINPA
+        Monthly Meeting","date_in_series_pattern":false,"status":"upcoming","time":1675296000000,"local_date":"2023-02-01","local_time":"19:00","updated":1655948621000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/rvbvvsyfcdbcb/","description":"<p>N.B.:
+        Check comments here (below) or [<a href=\"http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic\"
+        class=\"linkified\">http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic</a>)
+        each month for new meeting LINK.</p> <p>Cincinnati Networking Professionals
+        Association - CINPA</p> <p>Monthly Meeting - FIRST WEDNESDAY - Typically we
+        have an IT Industry professional present on a subject of interest. Oftentimes
+        these are hardware, software or services vendors.</p> <p>We usually take a
+        break half way through the evening for a pizza (etc.) socializing time.</p>
+        <p>Specific meeting information can be found at CINPA website ([<a href=\"http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic\"
+        class=\"linkified\">http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic</a>))</p>
+        ","visibility":"public","member_pay_fee":false},{"created":1610660852000,"duration":7200000,"id":"xqzhdsyfcdbmb","name":"Agile
+        Cincinnati","date_in_series_pattern":false,"status":"upcoming","time":1675983600000,"local_date":"2023-02-09","local_time":"18:00","updated":1610660853000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/xqzhdsyfcdbmb/","description":"<p>Check
+        out the Agile Cincinnati Eventbrite page or our website for more information:
+        <a href=\"https://agilecincinnati.eventbrite.com/\" class=\"linkified\">https://agilecincinnati.eventbrite.com/</a></p>
+        <p>Please be sure to register on Eventbrite to receive the meeting Zoom link.</p>
+        <p>We''re a non-profit group focused on serving the Cincinnati and Northern
+        Kentucky Agile communities.</p> <p>More details: <a href=\"http://www.agilecincy.org/\"
+        class=\"linkified\">http://www.agilecincy.org/</a></p> ","visibility":"public","member_pay_fee":false},{"created":1578415364000,"duration":10800000,"id":"rhfrmryfcdbsb","name":"Cincy
+        Functional Programmers","date_in_series_pattern":false,"status":"upcoming","time":1676417400000,"local_date":"2023-02-14","local_time":"18:30","updated":1578415364000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26800165,"name":"8035
+        Hosbrook Rd","lat":39.203285217285156,"lon":-84.37220764160156,"repinned":false,"address_1":"8035
+        Hosbrook Rd","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45236","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/rhfrmryfcdbsb/","description":"<p>Functional
+        Programmers Group meets 2nd Tuesday of each month at Pinnacle Solutions Group.</p>
+        <p>The meeting starts at 6:30 \u2013 Food is not usually provided, but feel
+        free to bring you own.</p> <p>Twitter: @cincyfp</p> ","visibility":"public","member_pay_fee":false},{"created":1548685236000,"duration":5400000,"id":"lrctqqyfcdbtb","name":"CinJUG:
+        Java User''s Group","date_in_series_pattern":false,"status":"upcoming","time":1676478600000,"local_date":"2023-02-15","local_time":"11:30","updated":1548685236000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":25548413,"name":"Callibrity","lat":39.253318786621094,"lon":-84.38121032714844,"repinned":true,"address_1":"4555
+        Lake Forest Drive","city":"Blue Ash","country":"US","localized_country_name":"USA"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/lrctqqyfcdbtb/","description":"<p>Details<br/>&lt;
+        Presentor needed &gt;</p> <p>Location:<br/>4555 Lake Forest Drive<br/>Suite
+        150<br/>Blue Ash, OH. 45242</p> <p>The building has a big \"HQ\" sign on it
+        and is right next to BW3.</p> <p>Enter lobby, head down the left hallway and
+        look for a Cinjug sign.</p> <p>Bio:<br/>&lt; Presentor Bio &gt;</p> <p>Site
+        Sponsor:<br/>Callibrity - www.callibrity.com</p> <p>Meeting Sponsor:<br/>&lt;
+        Meeting Sponsor &gt;</p> <p>Cinjug links:<br/><a href=\"https://groups.google.com/forum/#!forum/cinjug\"
+        class=\"linkified\">https://groups.google.com/forum/#!forum/cinjug</a><br/><a
+        href=\"https://plus.google.com/u/0/communities/102335575810446164227?cfem=1\"
+        class=\"linkified\">https://plus.google.com/u/0/communities/102335575810446164227?cfem=1</a></p>
+        ","how_to_find_us":"Suite 150, enter Lobby, halfway on left, follow sign","visibility":"public","member_pay_fee":false},{"created":1663170626000,"duration":3600000,"id":"gnzkxsyfcdbvb","name":"Ruby
+        Brigade","date_in_series_pattern":false,"status":"upcoming","time":1676566800000,"local_date":"2023-02-16","local_time":"12:00","updated":1663170626000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/gnzkxsyfcdbvb/","why":"We
+        love Ruby!","description":"<p>Meet and talk about the best stuff going on
+        in your Ruby world or the community in general!</p> <p><a href=\"https://cincyrb.com/\"
+        class=\"linkified\">https://cincyrb.com/</a></p> <p><a href=\"https://twitter.com/#!/cincinnatirb\"
+        class=\"linkified\">https://twitter.com/#!/cincinnatirb</a></p> ","visibility":"public","member_pay_fee":false},{"created":1646715886000,"duration":9000000,"id":"pfsvssyfcdbvb","name":"CiNPA
+        - Security SIG","rsvp_limit":60,"date_in_series_pattern":false,"status":"upcoming","time":1676590200000,"local_date":"2023-02-16","local_time":"18:30","updated":1646715886000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":27142074,"name":"TechSolve,
+        Inc","lat":39.18585968017578,"lon":-84.47218322753906,"repinned":true,"address_1":"6705
+        Steger Dr","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45237","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/pfsvssyfcdbvb/","description":"<p>Meeting
+        Topic: TBD</p> <p>Please stay tuned and check back later for our meeting topic(s)
+        and speaker(s) announcement.</p> <p>About Us:</p> <p>The CiNPA Security SIG
+        is the Cincinnati Networking Professionals Association Security Special Interest
+        Group. We meet monthly on the third Thursday of each month, starting at 6:30
+        p.m.</p> <p>The CiNPA Security SIG''s monthly meeting format typically consists
+        of one or two main monthly meeting topics featuring live presentations or
+        demonstrations promoting open and interactive group discussions. Our focus
+        is primarily on the technical aspects of InfoSec, but we occasionally touch
+        on other areas of cybersecurity as well. Information security news, announcements,
+        and round-table discussions follow our main meeting topics.</p> <p>Attendee
+        Benefits:</p> <p>\u2022 Attendance qualifies for 2 hours of CPE or CEU credit
+        towards certification renewals</p> <p>\u2022 Maintaining awareness of new
+        vulnerabilities and exploits</p> <p>\u2022 Learning about the latest security
+        tools, utilities, products, services, solutions, strategies, techniques, frameworks,
+        and best practices</p> <p>\u2022 Sharing of information regarding trends concerning
+        enterprise systems and technology</p> <p>\u2022 Hearing announcements of upcoming
+        area security conferences and events</p> <p>\u2022 Networking with peers in
+        the local Information Security (InfoSec) community</p> ","how_to_find_us":"Kettering
+        & Wright Conference Rooms.","visibility":"public","member_pay_fee":false},{"created":1652196752000,"duration":7200000,"id":"qfxztsyfcdblc","name":"CINNUG/CinARC
+        Monthly Meeting","date_in_series_pattern":false,"status":"upcoming","time":1677625200000,"local_date":"2023-02-28","local_time":"18:00","updated":1652196752000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26333709,"name":"Tech
+        Elevator Cincinnati","lat":39.15209197998047,"lon":-84.46752166748047,"repinned":true,"address_1":"1776
+        Mentor Ave Suite 355","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45212","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/qfxztsyfcdblc/","description":"<p>Catching
+        up with the CINNUG Community.</p> <p>We are back to meeting in person! Special
+        thanks for TechElevator for sponsoring us!</p> <p>CINNUG:</p> <p>Topic: TBD<br/>Presenter:
+        TBD</p> <p>CINARC:</p> <p>Come join this new special interest group as we
+        discuss topics related to software architecture. This meeting is run after
+        CINNUG where the attendees are encouraged to share their thoughts with everyone.
+        What topic will we cover? Well, that''s up to the attendees! If you have a
+        strong opinion about a topic you''d like to suggest or want to learn more
+        about the topics, then make sure you swing by the meeting.</p> ","how_to_find_us":"We
+        are in the first floor conference room #160. Just follow the signs!\nThe door
+        locks at 6:00, so please be early or email us if you get there late so we
+        can let you in.","visibility":"public","member_pay_fee":false},{"created":1655948621000,"duration":7200000,"id":"rvbvvsyfcfbcb","name":"CINPA
+        Monthly Meeting","date_in_series_pattern":false,"status":"upcoming","time":1677715200000,"local_date":"2023-03-01","local_time":"19:00","updated":1655948621000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/rvbvvsyfcfbcb/","description":"<p>N.B.:
+        Check comments here (below) or [<a href=\"http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic\"
+        class=\"linkified\">http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic</a>)
+        each month for new meeting LINK.</p> <p>Cincinnati Networking Professionals
+        Association - CINPA</p> <p>Monthly Meeting - FIRST WEDNESDAY - Typically we
+        have an IT Industry professional present on a subject of interest. Oftentimes
+        these are hardware, software or services vendors.</p> <p>We usually take a
+        break half way through the evening for a pizza (etc.) socializing time.</p>
+        <p>Specific meeting information can be found at CINPA website ([<a href=\"http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic\"
+        class=\"linkified\">http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic</a>))</p>
+        ","visibility":"public","member_pay_fee":false},{"created":1610660852000,"duration":7200000,"id":"xqzhdsyfcfbmb","name":"Agile
+        Cincinnati","date_in_series_pattern":false,"status":"upcoming","time":1678402800000,"local_date":"2023-03-09","local_time":"18:00","updated":1610660853000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/xqzhdsyfcfbmb/","description":"<p>Check
+        out the Agile Cincinnati Eventbrite page or our website for more information:
+        <a href=\"https://agilecincinnati.eventbrite.com/\" class=\"linkified\">https://agilecincinnati.eventbrite.com/</a></p>
+        <p>Please be sure to register on Eventbrite to receive the meeting Zoom link.</p>
+        <p>We''re a non-profit group focused on serving the Cincinnati and Northern
+        Kentucky Agile communities.</p> <p>More details: <a href=\"http://www.agilecincy.org/\"
+        class=\"linkified\">http://www.agilecincy.org/</a></p> ","visibility":"public","member_pay_fee":false},{"created":1578415364000,"duration":10800000,"id":"rhfrmryfcfbsb","name":"Cincy
+        Functional Programmers","date_in_series_pattern":false,"status":"upcoming","time":1678833000000,"local_date":"2023-03-14","local_time":"18:30","updated":1578415364000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26800165,"name":"8035
+        Hosbrook Rd","lat":39.203285217285156,"lon":-84.37220764160156,"repinned":false,"address_1":"8035
+        Hosbrook Rd","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45236","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/rhfrmryfcfbsb/","description":"<p>Functional
+        Programmers Group meets 2nd Tuesday of each month at Pinnacle Solutions Group.</p>
+        <p>The meeting starts at 6:30 \u2013 Food is not usually provided, but feel
+        free to bring you own.</p> <p>Twitter: @cincyfp</p> ","visibility":"public","member_pay_fee":false},{"created":1548685236000,"duration":5400000,"id":"lrctqqyfcfbtb","name":"CinJUG:
+        Java User''s Group","date_in_series_pattern":false,"status":"upcoming","time":1678894200000,"local_date":"2023-03-15","local_time":"11:30","updated":1548685236000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":25548413,"name":"Callibrity","lat":39.253318786621094,"lon":-84.38121032714844,"repinned":true,"address_1":"4555
+        Lake Forest Drive","city":"Blue Ash","country":"US","localized_country_name":"USA"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/lrctqqyfcfbtb/","description":"<p>Details<br/>&lt;
+        Presentor needed &gt;</p> <p>Location:<br/>4555 Lake Forest Drive<br/>Suite
+        150<br/>Blue Ash, OH. 45242</p> <p>The building has a big \"HQ\" sign on it
+        and is right next to BW3.</p> <p>Enter lobby, head down the left hallway and
+        look for a Cinjug sign.</p> <p>Bio:<br/>&lt; Presentor Bio &gt;</p> <p>Site
+        Sponsor:<br/>Callibrity - www.callibrity.com</p> <p>Meeting Sponsor:<br/>&lt;
+        Meeting Sponsor &gt;</p> <p>Cinjug links:<br/><a href=\"https://groups.google.com/forum/#!forum/cinjug\"
+        class=\"linkified\">https://groups.google.com/forum/#!forum/cinjug</a><br/><a
+        href=\"https://plus.google.com/u/0/communities/102335575810446164227?cfem=1\"
+        class=\"linkified\">https://plus.google.com/u/0/communities/102335575810446164227?cfem=1</a></p>
+        ","how_to_find_us":"Suite 150, enter Lobby, halfway on left, follow sign","visibility":"public","member_pay_fee":false},{"created":1663170626000,"duration":3600000,"id":"gnzkxsyfcfbvb","name":"Ruby
+        Brigade","date_in_series_pattern":false,"status":"upcoming","time":1678982400000,"local_date":"2023-03-16","local_time":"12:00","updated":1663170626000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/gnzkxsyfcfbvb/","why":"We
+        love Ruby!","description":"<p>Meet and talk about the best stuff going on
+        in your Ruby world or the community in general!</p> <p><a href=\"https://cincyrb.com/\"
+        class=\"linkified\">https://cincyrb.com/</a></p> <p><a href=\"https://twitter.com/#!/cincinnatirb\"
+        class=\"linkified\">https://twitter.com/#!/cincinnatirb</a></p> ","visibility":"public","member_pay_fee":false},{"created":1646715886000,"duration":9000000,"id":"pfsvssyfcfbvb","name":"CiNPA
+        - Security SIG","rsvp_limit":60,"date_in_series_pattern":false,"status":"upcoming","time":1679005800000,"local_date":"2023-03-16","local_time":"18:30","updated":1646715886000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":27142074,"name":"TechSolve,
+        Inc","lat":39.18585968017578,"lon":-84.47218322753906,"repinned":true,"address_1":"6705
+        Steger Dr","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45237","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/pfsvssyfcfbvb/","description":"<p>Meeting
+        Topic: TBD</p> <p>Please stay tuned and check back later for our meeting topic(s)
+        and speaker(s) announcement.</p> <p>About Us:</p> <p>The CiNPA Security SIG
+        is the Cincinnati Networking Professionals Association Security Special Interest
+        Group. We meet monthly on the third Thursday of each month, starting at 6:30
+        p.m.</p> <p>The CiNPA Security SIG''s monthly meeting format typically consists
+        of one or two main monthly meeting topics featuring live presentations or
+        demonstrations promoting open and interactive group discussions. Our focus
+        is primarily on the technical aspects of InfoSec, but we occasionally touch
+        on other areas of cybersecurity as well. Information security news, announcements,
+        and round-table discussions follow our main meeting topics.</p> <p>Attendee
+        Benefits:</p> <p>\u2022 Attendance qualifies for 2 hours of CPE or CEU credit
+        towards certification renewals</p> <p>\u2022 Maintaining awareness of new
+        vulnerabilities and exploits</p> <p>\u2022 Learning about the latest security
+        tools, utilities, products, services, solutions, strategies, techniques, frameworks,
+        and best practices</p> <p>\u2022 Sharing of information regarding trends concerning
+        enterprise systems and technology</p> <p>\u2022 Hearing announcements of upcoming
+        area security conferences and events</p> <p>\u2022 Networking with peers in
+        the local Information Security (InfoSec) community</p> ","how_to_find_us":"Kettering
+        & Wright Conference Rooms.","visibility":"public","member_pay_fee":false},{"created":1652196752000,"duration":7200000,"id":"qfxztsyfcfblc","name":"CINNUG/CinARC
+        Monthly Meeting","date_in_series_pattern":false,"status":"upcoming","time":1680040800000,"local_date":"2023-03-28","local_time":"18:00","updated":1652196752000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26333709,"name":"Tech
+        Elevator Cincinnati","lat":39.15209197998047,"lon":-84.46752166748047,"repinned":true,"address_1":"1776
+        Mentor Ave Suite 355","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45212","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/qfxztsyfcfblc/","description":"<p>Catching
+        up with the CINNUG Community.</p> <p>We are back to meeting in person! Special
+        thanks for TechElevator for sponsoring us!</p> <p>CINNUG:</p> <p>Topic: TBD<br/>Presenter:
+        TBD</p> <p>CINARC:</p> <p>Come join this new special interest group as we
+        discuss topics related to software architecture. This meeting is run after
+        CINNUG where the attendees are encouraged to share their thoughts with everyone.
+        What topic will we cover? Well, that''s up to the attendees! If you have a
+        strong opinion about a topic you''d like to suggest or want to learn more
+        about the topics, then make sure you swing by the meeting.</p> ","how_to_find_us":"We
+        are in the first floor conference room #160. Just follow the signs!\nThe door
+        locks at 6:00, so please be early or email us if you get there late so we
+        can let you in.","visibility":"public","member_pay_fee":false},{"created":1655948621000,"duration":7200000,"id":"rvbvvsyfcgbhb","name":"CINPA
+        Monthly Meeting","date_in_series_pattern":false,"status":"upcoming","time":1680735600000,"local_date":"2023-04-05","local_time":"19:00","updated":1655948621000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/rvbvvsyfcgbhb/","description":"<p>N.B.:
+        Check comments here (below) or [<a href=\"http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic\"
+        class=\"linkified\">http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic</a>)
+        each month for new meeting LINK.</p> <p>Cincinnati Networking Professionals
+        Association - CINPA</p> <p>Monthly Meeting - FIRST WEDNESDAY - Typically we
+        have an IT Industry professional present on a subject of interest. Oftentimes
+        these are hardware, software or services vendors.</p> <p>We usually take a
+        break half way through the evening for a pizza (etc.) socializing time.</p>
+        <p>Specific meeting information can be found at CINPA website ([<a href=\"http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic\"
+        class=\"linkified\">http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic</a>))</p>
+        ","visibility":"public","member_pay_fee":false},{"created":1578415364000,"duration":10800000,"id":"rhfrmryfcgbpb","name":"Cincy
+        Functional Programmers","date_in_series_pattern":false,"status":"upcoming","time":1681252200000,"local_date":"2023-04-11","local_time":"18:30","updated":1578415364000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26800165,"name":"8035
+        Hosbrook Rd","lat":39.203285217285156,"lon":-84.37220764160156,"repinned":false,"address_1":"8035
+        Hosbrook Rd","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45236","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/rhfrmryfcgbpb/","description":"<p>Functional
+        Programmers Group meets 2nd Tuesday of each month at Pinnacle Solutions Group.</p>
+        <p>The meeting starts at 6:30 \u2013 Food is not usually provided, but feel
+        free to bring you own.</p> <p>Twitter: @cincyfp</p> ","visibility":"public","member_pay_fee":false},{"created":1610660852000,"duration":7200000,"id":"xqzhdsyfcgbrb","name":"Agile
+        Cincinnati","date_in_series_pattern":false,"status":"upcoming","time":1681423200000,"local_date":"2023-04-13","local_time":"18:00","updated":1610660853000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/xqzhdsyfcgbrb/","description":"<p>Check
+        out the Agile Cincinnati Eventbrite page or our website for more information:
+        <a href=\"https://agilecincinnati.eventbrite.com/\" class=\"linkified\">https://agilecincinnati.eventbrite.com/</a></p>
+        <p>Please be sure to register on Eventbrite to receive the meeting Zoom link.</p>
+        <p>We''re a non-profit group focused on serving the Cincinnati and Northern
+        Kentucky Agile communities.</p> <p>More details: <a href=\"http://www.agilecincy.org/\"
+        class=\"linkified\">http://www.agilecincy.org/</a></p> ","visibility":"public","member_pay_fee":false},{"created":1548685236000,"duration":5400000,"id":"lrctqqyfcgbzb","name":"CinJUG:
+        Java User''s Group","date_in_series_pattern":false,"status":"upcoming","time":1681918200000,"local_date":"2023-04-19","local_time":"11:30","updated":1548685236000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":25548413,"name":"Callibrity","lat":39.253318786621094,"lon":-84.38121032714844,"repinned":true,"address_1":"4555
+        Lake Forest Drive","city":"Blue Ash","country":"US","localized_country_name":"USA"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/lrctqqyfcgbzb/","description":"<p>Details<br/>&lt;
+        Presentor needed &gt;</p> <p>Location:<br/>4555 Lake Forest Drive<br/>Suite
+        150<br/>Blue Ash, OH. 45242</p> <p>The building has a big \"HQ\" sign on it
+        and is right next to BW3.</p> <p>Enter lobby, head down the left hallway and
+        look for a Cinjug sign.</p> <p>Bio:<br/>&lt; Presentor Bio &gt;</p> <p>Site
+        Sponsor:<br/>Callibrity - www.callibrity.com</p> <p>Meeting Sponsor:<br/>&lt;
+        Meeting Sponsor &gt;</p> <p>Cinjug links:<br/><a href=\"https://groups.google.com/forum/#!forum/cinjug\"
+        class=\"linkified\">https://groups.google.com/forum/#!forum/cinjug</a><br/><a
+        href=\"https://plus.google.com/u/0/communities/102335575810446164227?cfem=1\"
+        class=\"linkified\">https://plus.google.com/u/0/communities/102335575810446164227?cfem=1</a></p>
+        ","how_to_find_us":"Suite 150, enter Lobby, halfway on left, follow sign","visibility":"public","member_pay_fee":false},{"created":1663170626000,"duration":3600000,"id":"gnzkxsyfcgbbc","name":"Ruby
+        Brigade","date_in_series_pattern":false,"status":"upcoming","time":1682006400000,"local_date":"2023-04-20","local_time":"12:00","updated":1663170626000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/gnzkxsyfcgbbc/","why":"We
+        love Ruby!","description":"<p>Meet and talk about the best stuff going on
+        in your Ruby world or the community in general!</p> <p><a href=\"https://cincyrb.com/\"
+        class=\"linkified\">https://cincyrb.com/</a></p> <p><a href=\"https://twitter.com/#!/cincinnatirb\"
+        class=\"linkified\">https://twitter.com/#!/cincinnatirb</a></p> ","visibility":"public","member_pay_fee":false},{"created":1646715886000,"duration":9000000,"id":"pfsvssyfcgbbc","name":"CiNPA
+        - Security SIG","rsvp_limit":60,"date_in_series_pattern":false,"status":"upcoming","time":1682029800000,"local_date":"2023-04-20","local_time":"18:30","updated":1646715886000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":27142074,"name":"TechSolve,
+        Inc","lat":39.18585968017578,"lon":-84.47218322753906,"repinned":true,"address_1":"6705
+        Steger Dr","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45237","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/pfsvssyfcgbbc/","description":"<p>Meeting
+        Topic: TBD</p> <p>Please stay tuned and check back later for our meeting topic(s)
+        and speaker(s) announcement.</p> <p>About Us:</p> <p>The CiNPA Security SIG
+        is the Cincinnati Networking Professionals Association Security Special Interest
+        Group. We meet monthly on the third Thursday of each month, starting at 6:30
+        p.m.</p> <p>The CiNPA Security SIG''s monthly meeting format typically consists
+        of one or two main monthly meeting topics featuring live presentations or
+        demonstrations promoting open and interactive group discussions. Our focus
+        is primarily on the technical aspects of InfoSec, but we occasionally touch
+        on other areas of cybersecurity as well. Information security news, announcements,
+        and round-table discussions follow our main meeting topics.</p> <p>Attendee
+        Benefits:</p> <p>\u2022 Attendance qualifies for 2 hours of CPE or CEU credit
+        towards certification renewals</p> <p>\u2022 Maintaining awareness of new
+        vulnerabilities and exploits</p> <p>\u2022 Learning about the latest security
+        tools, utilities, products, services, solutions, strategies, techniques, frameworks,
+        and best practices</p> <p>\u2022 Sharing of information regarding trends concerning
+        enterprise systems and technology</p> <p>\u2022 Hearing announcements of upcoming
+        area security conferences and events</p> <p>\u2022 Networking with peers in
+        the local Information Security (InfoSec) community</p> ","how_to_find_us":"Kettering
+        & Wright Conference Rooms.","visibility":"public","member_pay_fee":false},{"created":1652196752000,"duration":7200000,"id":"qfxztsyfcgbhc","name":"CINNUG/CinARC
+        Monthly Meeting","date_in_series_pattern":false,"status":"upcoming","time":1682460000000,"local_date":"2023-04-25","local_time":"18:00","updated":1652196752000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26333709,"name":"Tech
+        Elevator Cincinnati","lat":39.15209197998047,"lon":-84.46752166748047,"repinned":true,"address_1":"1776
+        Mentor Ave Suite 355","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45212","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/qfxztsyfcgbhc/","description":"<p>Catching
+        up with the CINNUG Community.</p> <p>We are back to meeting in person! Special
+        thanks for TechElevator for sponsoring us!</p> <p>CINNUG:</p> <p>Topic: TBD<br/>Presenter:
+        TBD</p> <p>CINARC:</p> <p>Come join this new special interest group as we
+        discuss topics related to software architecture. This meeting is run after
+        CINNUG where the attendees are encouraged to share their thoughts with everyone.
+        What topic will we cover? Well, that''s up to the attendees! If you have a
+        strong opinion about a topic you''d like to suggest or want to learn more
+        about the topics, then make sure you swing by the meeting.</p> ","how_to_find_us":"We
+        are in the first floor conference room #160. Just follow the signs!\nThe door
+        locks at 6:00, so please be early or email us if you get there late so we
+        can let you in.","visibility":"public","member_pay_fee":false},{"created":1655948621000,"duration":7200000,"id":"rvbvvsyfchbfb","name":"CINPA
+        Monthly Meeting","date_in_series_pattern":false,"status":"upcoming","time":1683154800000,"local_date":"2023-05-03","local_time":"19:00","updated":1655948621000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/rvbvvsyfchbfb/","description":"<p>N.B.:
+        Check comments here (below) or [<a href=\"http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic\"
+        class=\"linkified\">http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic</a>)
+        each month for new meeting LINK.</p> <p>Cincinnati Networking Professionals
+        Association - CINPA</p> <p>Monthly Meeting - FIRST WEDNESDAY - Typically we
+        have an IT Industry professional present on a subject of interest. Oftentimes
+        these are hardware, software or services vendors.</p> <p>We usually take a
+        break half way through the evening for a pizza (etc.) socializing time.</p>
+        <p>Specific meeting information can be found at CINPA website ([<a href=\"http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic\"
+        class=\"linkified\">http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic</a>))</p>
+        ","visibility":"public","member_pay_fee":false},{"created":1578415364000,"duration":10800000,"id":"rhfrmryfchbmb","name":"Cincy
+        Functional Programmers","date_in_series_pattern":false,"status":"upcoming","time":1683671400000,"local_date":"2023-05-09","local_time":"18:30","updated":1578415364000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26800165,"name":"8035
+        Hosbrook Rd","lat":39.203285217285156,"lon":-84.37220764160156,"repinned":false,"address_1":"8035
+        Hosbrook Rd","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45236","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/rhfrmryfchbmb/","description":"<p>Functional
+        Programmers Group meets 2nd Tuesday of each month at Pinnacle Solutions Group.</p>
+        <p>The meeting starts at 6:30 \u2013 Food is not usually provided, but feel
+        free to bring you own.</p> <p>Twitter: @cincyfp</p> ","visibility":"public","member_pay_fee":false},{"created":1610660852000,"duration":7200000,"id":"xqzhdsyfchbpb","name":"Agile
+        Cincinnati","date_in_series_pattern":false,"status":"upcoming","time":1683842400000,"local_date":"2023-05-11","local_time":"18:00","updated":1610660853000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/xqzhdsyfchbpb/","description":"<p>Check
+        out the Agile Cincinnati Eventbrite page or our website for more information:
+        <a href=\"https://agilecincinnati.eventbrite.com/\" class=\"linkified\">https://agilecincinnati.eventbrite.com/</a></p>
+        <p>Please be sure to register on Eventbrite to receive the meeting Zoom link.</p>
+        <p>We''re a non-profit group focused on serving the Cincinnati and Northern
+        Kentucky Agile communities.</p> <p>More details: <a href=\"http://www.agilecincy.org/\"
+        class=\"linkified\">http://www.agilecincy.org/</a></p> ","visibility":"public","member_pay_fee":false},{"created":1548685236000,"duration":5400000,"id":"lrctqqyfchbwb","name":"CinJUG:
+        Java User''s Group","date_in_series_pattern":false,"status":"upcoming","time":1684337400000,"local_date":"2023-05-17","local_time":"11:30","updated":1548685236000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":25548413,"name":"Callibrity","lat":39.253318786621094,"lon":-84.38121032714844,"repinned":true,"address_1":"4555
+        Lake Forest Drive","city":"Blue Ash","country":"US","localized_country_name":"USA"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/lrctqqyfchbwb/","description":"<p>Details<br/>&lt;
+        Presentor needed &gt;</p> <p>Location:<br/>4555 Lake Forest Drive<br/>Suite
+        150<br/>Blue Ash, OH. 45242</p> <p>The building has a big \"HQ\" sign on it
+        and is right next to BW3.</p> <p>Enter lobby, head down the left hallway and
+        look for a Cinjug sign.</p> <p>Bio:<br/>&lt; Presentor Bio &gt;</p> <p>Site
+        Sponsor:<br/>Callibrity - www.callibrity.com</p> <p>Meeting Sponsor:<br/>&lt;
+        Meeting Sponsor &gt;</p> <p>Cinjug links:<br/><a href=\"https://groups.google.com/forum/#!forum/cinjug\"
+        class=\"linkified\">https://groups.google.com/forum/#!forum/cinjug</a><br/><a
+        href=\"https://plus.google.com/u/0/communities/102335575810446164227?cfem=1\"
+        class=\"linkified\">https://plus.google.com/u/0/communities/102335575810446164227?cfem=1</a></p>
+        ","how_to_find_us":"Suite 150, enter Lobby, halfway on left, follow sign","visibility":"public","member_pay_fee":false},{"created":1663170626000,"duration":3600000,"id":"gnzkxsyfchbxb","name":"Ruby
+        Brigade","date_in_series_pattern":false,"status":"upcoming","time":1684425600000,"local_date":"2023-05-18","local_time":"12:00","updated":1663170626000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/gnzkxsyfchbxb/","why":"We
+        love Ruby!","description":"<p>Meet and talk about the best stuff going on
+        in your Ruby world or the community in general!</p> <p><a href=\"https://cincyrb.com/\"
+        class=\"linkified\">https://cincyrb.com/</a></p> <p><a href=\"https://twitter.com/#!/cincinnatirb\"
+        class=\"linkified\">https://twitter.com/#!/cincinnatirb</a></p> ","visibility":"public","member_pay_fee":false},{"created":1646715886000,"duration":9000000,"id":"pfsvssyfchbxb","name":"CiNPA
+        - Security SIG","rsvp_limit":60,"date_in_series_pattern":false,"status":"upcoming","time":1684449000000,"local_date":"2023-05-18","local_time":"18:30","updated":1646715886000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":27142074,"name":"TechSolve,
+        Inc","lat":39.18585968017578,"lon":-84.47218322753906,"repinned":true,"address_1":"6705
+        Steger Dr","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45237","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/pfsvssyfchbxb/","description":"<p>Meeting
+        Topic: TBD</p> <p>Please stay tuned and check back later for our meeting topic(s)
+        and speaker(s) announcement.</p> <p>About Us:</p> <p>The CiNPA Security SIG
+        is the Cincinnati Networking Professionals Association Security Special Interest
+        Group. We meet monthly on the third Thursday of each month, starting at 6:30
+        p.m.</p> <p>The CiNPA Security SIG''s monthly meeting format typically consists
+        of one or two main monthly meeting topics featuring live presentations or
+        demonstrations promoting open and interactive group discussions. Our focus
+        is primarily on the technical aspects of InfoSec, but we occasionally touch
+        on other areas of cybersecurity as well. Information security news, announcements,
+        and round-table discussions follow our main meeting topics.</p> <p>Attendee
+        Benefits:</p> <p>\u2022 Attendance qualifies for 2 hours of CPE or CEU credit
+        towards certification renewals</p> <p>\u2022 Maintaining awareness of new
+        vulnerabilities and exploits</p> <p>\u2022 Learning about the latest security
+        tools, utilities, products, services, solutions, strategies, techniques, frameworks,
+        and best practices</p> <p>\u2022 Sharing of information regarding trends concerning
+        enterprise systems and technology</p> <p>\u2022 Hearing announcements of upcoming
+        area security conferences and events</p> <p>\u2022 Networking with peers in
+        the local Information Security (InfoSec) community</p> ","how_to_find_us":"Kettering
+        & Wright Conference Rooms.","visibility":"public","member_pay_fee":false},{"created":1652196752000,"duration":7200000,"id":"qfxztsyfchbfc","name":"CINNUG/CinARC
+        Monthly Meeting","date_in_series_pattern":false,"status":"upcoming","time":1684879200000,"local_date":"2023-05-23","local_time":"18:00","updated":1652196752000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26333709,"name":"Tech
+        Elevator Cincinnati","lat":39.15209197998047,"lon":-84.46752166748047,"repinned":true,"address_1":"1776
+        Mentor Ave Suite 355","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45212","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/qfxztsyfchbfc/","description":"<p>Catching
+        up with the CINNUG Community.</p> <p>We are back to meeting in person! Special
+        thanks for TechElevator for sponsoring us!</p> <p>CINNUG:</p> <p>Topic: TBD<br/>Presenter:
+        TBD</p> <p>CINARC:</p> <p>Come join this new special interest group as we
+        discuss topics related to software architecture. This meeting is run after
+        CINNUG where the attendees are encouraged to share their thoughts with everyone.
+        What topic will we cover? Well, that''s up to the attendees! If you have a
+        strong opinion about a topic you''d like to suggest or want to learn more
+        about the topics, then make sure you swing by the meeting.</p> ","how_to_find_us":"We
+        are in the first floor conference room #160. Just follow the signs!\nThe door
+        locks at 6:00, so please be early or email us if you get there late so we
+        can let you in.","visibility":"public","member_pay_fee":false},{"created":1655948621000,"duration":7200000,"id":"rvbvvsyfcjbkb","name":"CINPA
+        Monthly Meeting","date_in_series_pattern":false,"status":"upcoming","time":1686178800000,"local_date":"2023-06-07","local_time":"19:00","updated":1655948621000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/rvbvvsyfcjbkb/","description":"<p>N.B.:
+        Check comments here (below) or [<a href=\"http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic\"
+        class=\"linkified\">http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic</a>)
+        each month for new meeting LINK.</p> <p>Cincinnati Networking Professionals
+        Association - CINPA</p> <p>Monthly Meeting - FIRST WEDNESDAY - Typically we
+        have an IT Industry professional present on a subject of interest. Oftentimes
+        these are hardware, software or services vendors.</p> <p>We usually take a
+        break half way through the evening for a pizza (etc.) socializing time.</p>
+        <p>Specific meeting information can be found at CINPA website ([<a href=\"http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic\"
+        class=\"linkified\">http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic</a>))</p>
+        ","visibility":"public","member_pay_fee":false},{"created":1610660852000,"duration":7200000,"id":"xqzhdsyfcjblb","name":"Agile
+        Cincinnati","date_in_series_pattern":false,"status":"upcoming","time":1686261600000,"local_date":"2023-06-08","local_time":"18:00","updated":1610660853000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/xqzhdsyfcjblb/","description":"<p>Check
+        out the Agile Cincinnati Eventbrite page or our website for more information:
+        <a href=\"https://agilecincinnati.eventbrite.com/\" class=\"linkified\">https://agilecincinnati.eventbrite.com/</a></p>
+        <p>Please be sure to register on Eventbrite to receive the meeting Zoom link.</p>
+        <p>We''re a non-profit group focused on serving the Cincinnati and Northern
+        Kentucky Agile communities.</p> <p>More details: <a href=\"http://www.agilecincy.org/\"
+        class=\"linkified\">http://www.agilecincy.org/</a></p> ","visibility":"public","member_pay_fee":false},{"created":1578415364000,"duration":10800000,"id":"rhfrmryfcjbrb","name":"Cincy
+        Functional Programmers","date_in_series_pattern":false,"status":"upcoming","time":1686695400000,"local_date":"2023-06-13","local_time":"18:30","updated":1578415364000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26800165,"name":"8035
+        Hosbrook Rd","lat":39.203285217285156,"lon":-84.37220764160156,"repinned":false,"address_1":"8035
+        Hosbrook Rd","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45236","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/rhfrmryfcjbrb/","description":"<p>Functional
+        Programmers Group meets 2nd Tuesday of each month at Pinnacle Solutions Group.</p>
+        <p>The meeting starts at 6:30 \u2013 Food is not usually provided, but feel
+        free to bring you own.</p> <p>Twitter: @cincyfp</p> ","visibility":"public","member_pay_fee":false},{"created":1663170626000,"duration":3600000,"id":"gnzkxsyfcjbtb","name":"Ruby
+        Brigade","date_in_series_pattern":false,"status":"upcoming","time":1686844800000,"local_date":"2023-06-15","local_time":"12:00","updated":1663170626000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/gnzkxsyfcjbtb/","why":"We
+        love Ruby!","description":"<p>Meet and talk about the best stuff going on
+        in your Ruby world or the community in general!</p> <p><a href=\"https://cincyrb.com/\"
+        class=\"linkified\">https://cincyrb.com/</a></p> <p><a href=\"https://twitter.com/#!/cincinnatirb\"
+        class=\"linkified\">https://twitter.com/#!/cincinnatirb</a></p> ","visibility":"public","member_pay_fee":false},{"created":1646715886000,"duration":9000000,"id":"pfsvssyfcjbtb","name":"CiNPA
+        - Security SIG","rsvp_limit":60,"date_in_series_pattern":false,"status":"upcoming","time":1686868200000,"local_date":"2023-06-15","local_time":"18:30","updated":1646715886000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":27142074,"name":"TechSolve,
+        Inc","lat":39.18585968017578,"lon":-84.47218322753906,"repinned":true,"address_1":"6705
+        Steger Dr","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45237","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/pfsvssyfcjbtb/","description":"<p>Meeting
+        Topic: TBD</p> <p>Please stay tuned and check back later for our meeting topic(s)
+        and speaker(s) announcement.</p> <p>About Us:</p> <p>The CiNPA Security SIG
+        is the Cincinnati Networking Professionals Association Security Special Interest
+        Group. We meet monthly on the third Thursday of each month, starting at 6:30
+        p.m.</p> <p>The CiNPA Security SIG''s monthly meeting format typically consists
+        of one or two main monthly meeting topics featuring live presentations or
+        demonstrations promoting open and interactive group discussions. Our focus
+        is primarily on the technical aspects of InfoSec, but we occasionally touch
+        on other areas of cybersecurity as well. Information security news, announcements,
+        and round-table discussions follow our main meeting topics.</p> <p>Attendee
+        Benefits:</p> <p>\u2022 Attendance qualifies for 2 hours of CPE or CEU credit
+        towards certification renewals</p> <p>\u2022 Maintaining awareness of new
+        vulnerabilities and exploits</p> <p>\u2022 Learning about the latest security
+        tools, utilities, products, services, solutions, strategies, techniques, frameworks,
+        and best practices</p> <p>\u2022 Sharing of information regarding trends concerning
+        enterprise systems and technology</p> <p>\u2022 Hearing announcements of upcoming
+        area security conferences and events</p> <p>\u2022 Networking with peers in
+        the local Information Security (InfoSec) community</p> ","how_to_find_us":"Kettering
+        & Wright Conference Rooms.","visibility":"public","member_pay_fee":false},{"created":1548685236000,"duration":5400000,"id":"lrctqqyfcjbcc","name":"CinJUG:
+        Java User''s Group","date_in_series_pattern":false,"status":"upcoming","time":1687361400000,"local_date":"2023-06-21","local_time":"11:30","updated":1548685236000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":25548413,"name":"Callibrity","lat":39.253318786621094,"lon":-84.38121032714844,"repinned":true,"address_1":"4555
+        Lake Forest Drive","city":"Blue Ash","country":"US","localized_country_name":"USA"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/lrctqqyfcjbcc/","description":"<p>Details<br/>&lt;
+        Presentor needed &gt;</p> <p>Location:<br/>4555 Lake Forest Drive<br/>Suite
+        150<br/>Blue Ash, OH. 45242</p> <p>The building has a big \"HQ\" sign on it
+        and is right next to BW3.</p> <p>Enter lobby, head down the left hallway and
+        look for a Cinjug sign.</p> <p>Bio:<br/>&lt; Presentor Bio &gt;</p> <p>Site
+        Sponsor:<br/>Callibrity - www.callibrity.com</p> <p>Meeting Sponsor:<br/>&lt;
+        Meeting Sponsor &gt;</p> <p>Cinjug links:<br/><a href=\"https://groups.google.com/forum/#!forum/cinjug\"
+        class=\"linkified\">https://groups.google.com/forum/#!forum/cinjug</a><br/><a
+        href=\"https://plus.google.com/u/0/communities/102335575810446164227?cfem=1\"
+        class=\"linkified\">https://plus.google.com/u/0/communities/102335575810446164227?cfem=1</a></p>
+        ","how_to_find_us":"Suite 150, enter Lobby, halfway on left, follow sign","visibility":"public","member_pay_fee":false},{"created":1652196752000,"duration":7200000,"id":"qfxztsyfcjbkc","name":"CINNUG/CinARC
+        Monthly Meeting","date_in_series_pattern":false,"status":"upcoming","time":1687903200000,"local_date":"2023-06-27","local_time":"18:00","updated":1652196752000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26333709,"name":"Tech
+        Elevator Cincinnati","lat":39.15209197998047,"lon":-84.46752166748047,"repinned":true,"address_1":"1776
+        Mentor Ave Suite 355","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45212","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/qfxztsyfcjbkc/","description":"<p>Catching
+        up with the CINNUG Community.</p> <p>We are back to meeting in person! Special
+        thanks for TechElevator for sponsoring us!</p> <p>CINNUG:</p> <p>Topic: TBD<br/>Presenter:
+        TBD</p> <p>CINARC:</p> <p>Come join this new special interest group as we
+        discuss topics related to software architecture. This meeting is run after
+        CINNUG where the attendees are encouraged to share their thoughts with everyone.
+        What topic will we cover? Well, that''s up to the attendees! If you have a
+        strong opinion about a topic you''d like to suggest or want to learn more
+        about the topics, then make sure you swing by the meeting.</p> ","how_to_find_us":"We
+        are in the first floor conference room #160. Just follow the signs!\nThe door
+        locks at 6:00, so please be early or email us if you get there late so we
+        can let you in.","visibility":"public","member_pay_fee":false},{"created":1655948621000,"duration":7200000,"id":"rvbvvsyfckbhb","name":"CINPA
+        Monthly Meeting","date_in_series_pattern":false,"status":"upcoming","time":1688598000000,"local_date":"2023-07-05","local_time":"19:00","updated":1655948621000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/rvbvvsyfckbhb/","description":"<p>N.B.:
+        Check comments here (below) or [<a href=\"http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic\"
+        class=\"linkified\">http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic</a>)
+        each month for new meeting LINK.</p> <p>Cincinnati Networking Professionals
+        Association - CINPA</p> <p>Monthly Meeting - FIRST WEDNESDAY - Typically we
+        have an IT Industry professional present on a subject of interest. Oftentimes
+        these are hardware, software or services vendors.</p> <p>We usually take a
+        break half way through the evening for a pizza (etc.) socializing time.</p>
+        <p>Specific meeting information can be found at CINPA website ([<a href=\"http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic\"
+        class=\"linkified\">http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic</a>))</p>
+        ","visibility":"public","member_pay_fee":false},{"created":1578415364000,"duration":10800000,"id":"rhfrmryfckbpb","name":"Cincy
+        Functional Programmers","date_in_series_pattern":false,"status":"upcoming","time":1689114600000,"local_date":"2023-07-11","local_time":"18:30","updated":1578415364000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26800165,"name":"8035
+        Hosbrook Rd","lat":39.203285217285156,"lon":-84.37220764160156,"repinned":false,"address_1":"8035
+        Hosbrook Rd","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45236","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/rhfrmryfckbpb/","description":"<p>Functional
+        Programmers Group meets 2nd Tuesday of each month at Pinnacle Solutions Group.</p>
+        <p>The meeting starts at 6:30 \u2013 Food is not usually provided, but feel
+        free to bring you own.</p> <p>Twitter: @cincyfp</p> ","visibility":"public","member_pay_fee":false},{"created":1610660852000,"duration":7200000,"id":"xqzhdsyfckbrb","name":"Agile
+        Cincinnati","date_in_series_pattern":false,"status":"upcoming","time":1689285600000,"local_date":"2023-07-13","local_time":"18:00","updated":1610660853000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/xqzhdsyfckbrb/","description":"<p>Check
+        out the Agile Cincinnati Eventbrite page or our website for more information:
+        <a href=\"https://agilecincinnati.eventbrite.com/\" class=\"linkified\">https://agilecincinnati.eventbrite.com/</a></p>
+        <p>Please be sure to register on Eventbrite to receive the meeting Zoom link.</p>
+        <p>We''re a non-profit group focused on serving the Cincinnati and Northern
+        Kentucky Agile communities.</p> <p>More details: <a href=\"http://www.agilecincy.org/\"
+        class=\"linkified\">http://www.agilecincy.org/</a></p> ","visibility":"public","member_pay_fee":false},{"created":1548685236000,"duration":5400000,"id":"lrctqqyfckbzb","name":"CinJUG:
+        Java User''s Group","date_in_series_pattern":false,"status":"upcoming","time":1689780600000,"local_date":"2023-07-19","local_time":"11:30","updated":1548685236000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":25548413,"name":"Callibrity","lat":39.253318786621094,"lon":-84.38121032714844,"repinned":true,"address_1":"4555
+        Lake Forest Drive","city":"Blue Ash","country":"US","localized_country_name":"USA"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/lrctqqyfckbzb/","description":"<p>Details<br/>&lt;
+        Presentor needed &gt;</p> <p>Location:<br/>4555 Lake Forest Drive<br/>Suite
+        150<br/>Blue Ash, OH. 45242</p> <p>The building has a big \"HQ\" sign on it
+        and is right next to BW3.</p> <p>Enter lobby, head down the left hallway and
+        look for a Cinjug sign.</p> <p>Bio:<br/>&lt; Presentor Bio &gt;</p> <p>Site
+        Sponsor:<br/>Callibrity - www.callibrity.com</p> <p>Meeting Sponsor:<br/>&lt;
+        Meeting Sponsor &gt;</p> <p>Cinjug links:<br/><a href=\"https://groups.google.com/forum/#!forum/cinjug\"
+        class=\"linkified\">https://groups.google.com/forum/#!forum/cinjug</a><br/><a
+        href=\"https://plus.google.com/u/0/communities/102335575810446164227?cfem=1\"
+        class=\"linkified\">https://plus.google.com/u/0/communities/102335575810446164227?cfem=1</a></p>
+        ","how_to_find_us":"Suite 150, enter Lobby, halfway on left, follow sign","visibility":"public","member_pay_fee":false},{"created":1663170626000,"duration":3600000,"id":"gnzkxsyfckbbc","name":"Ruby
+        Brigade","date_in_series_pattern":false,"status":"upcoming","time":1689868800000,"local_date":"2023-07-20","local_time":"12:00","updated":1663170626000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/gnzkxsyfckbbc/","why":"We
+        love Ruby!","description":"<p>Meet and talk about the best stuff going on
+        in your Ruby world or the community in general!</p> <p><a href=\"https://cincyrb.com/\"
+        class=\"linkified\">https://cincyrb.com/</a></p> <p><a href=\"https://twitter.com/#!/cincinnatirb\"
+        class=\"linkified\">https://twitter.com/#!/cincinnatirb</a></p> ","visibility":"public","member_pay_fee":false},{"created":1646715886000,"duration":9000000,"id":"pfsvssyfckbbc","name":"CiNPA
+        - Security SIG","rsvp_limit":60,"date_in_series_pattern":false,"status":"upcoming","time":1689892200000,"local_date":"2023-07-20","local_time":"18:30","updated":1646715886000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":27142074,"name":"TechSolve,
+        Inc","lat":39.18585968017578,"lon":-84.47218322753906,"repinned":true,"address_1":"6705
+        Steger Dr","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45237","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/pfsvssyfckbbc/","description":"<p>Meeting
+        Topic: TBD</p> <p>Please stay tuned and check back later for our meeting topic(s)
+        and speaker(s) announcement.</p> <p>About Us:</p> <p>The CiNPA Security SIG
+        is the Cincinnati Networking Professionals Association Security Special Interest
+        Group. We meet monthly on the third Thursday of each month, starting at 6:30
+        p.m.</p> <p>The CiNPA Security SIG''s monthly meeting format typically consists
+        of one or two main monthly meeting topics featuring live presentations or
+        demonstrations promoting open and interactive group discussions. Our focus
+        is primarily on the technical aspects of InfoSec, but we occasionally touch
+        on other areas of cybersecurity as well. Information security news, announcements,
+        and round-table discussions follow our main meeting topics.</p> <p>Attendee
+        Benefits:</p> <p>\u2022 Attendance qualifies for 2 hours of CPE or CEU credit
+        towards certification renewals</p> <p>\u2022 Maintaining awareness of new
+        vulnerabilities and exploits</p> <p>\u2022 Learning about the latest security
+        tools, utilities, products, services, solutions, strategies, techniques, frameworks,
+        and best practices</p> <p>\u2022 Sharing of information regarding trends concerning
+        enterprise systems and technology</p> <p>\u2022 Hearing announcements of upcoming
+        area security conferences and events</p> <p>\u2022 Networking with peers in
+        the local Information Security (InfoSec) community</p> ","how_to_find_us":"Kettering
+        & Wright Conference Rooms.","visibility":"public","member_pay_fee":false},{"created":1652196752000,"duration":7200000,"id":"qfxztsyfckbhc","name":"CINNUG/CinARC
+        Monthly Meeting","date_in_series_pattern":false,"status":"upcoming","time":1690322400000,"local_date":"2023-07-25","local_time":"18:00","updated":1652196752000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26333709,"name":"Tech
+        Elevator Cincinnati","lat":39.15209197998047,"lon":-84.46752166748047,"repinned":true,"address_1":"1776
+        Mentor Ave Suite 355","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45212","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/qfxztsyfckbhc/","description":"<p>Catching
+        up with the CINNUG Community.</p> <p>We are back to meeting in person! Special
+        thanks for TechElevator for sponsoring us!</p> <p>CINNUG:</p> <p>Topic: TBD<br/>Presenter:
+        TBD</p> <p>CINARC:</p> <p>Come join this new special interest group as we
+        discuss topics related to software architecture. This meeting is run after
+        CINNUG where the attendees are encouraged to share their thoughts with everyone.
+        What topic will we cover? Well, that''s up to the attendees! If you have a
+        strong opinion about a topic you''d like to suggest or want to learn more
+        about the topics, then make sure you swing by the meeting.</p> ","how_to_find_us":"We
+        are in the first floor conference room #160. Just follow the signs!\nThe door
+        locks at 6:00, so please be early or email us if you get there late so we
+        can let you in.","visibility":"public","member_pay_fee":false},{"created":1655948621000,"duration":7200000,"id":"rvbvvsyfclbdb","name":"CINPA
+        Monthly Meeting","date_in_series_pattern":false,"status":"upcoming","time":1691017200000,"local_date":"2023-08-02","local_time":"19:00","updated":1655948621000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/rvbvvsyfclbdb/","description":"<p>N.B.:
+        Check comments here (below) or [<a href=\"http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic\"
+        class=\"linkified\">http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic</a>)
+        each month for new meeting LINK.</p> <p>Cincinnati Networking Professionals
+        Association - CINPA</p> <p>Monthly Meeting - FIRST WEDNESDAY - Typically we
+        have an IT Industry professional present on a subject of interest. Oftentimes
+        these are hardware, software or services vendors.</p> <p>We usually take a
+        break half way through the evening for a pizza (etc.) socializing time.</p>
+        <p>Specific meeting information can be found at CINPA website ([<a href=\"http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic\"
+        class=\"linkified\">http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic</a>))</p>
+        ","visibility":"public","member_pay_fee":false},{"created":1578415364000,"duration":10800000,"id":"rhfrmryfclblb","name":"Cincy
+        Functional Programmers","date_in_series_pattern":false,"status":"upcoming","time":1691533800000,"local_date":"2023-08-08","local_time":"18:30","updated":1578415364000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26800165,"name":"8035
+        Hosbrook Rd","lat":39.203285217285156,"lon":-84.37220764160156,"repinned":false,"address_1":"8035
+        Hosbrook Rd","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45236","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/rhfrmryfclblb/","description":"<p>Functional
+        Programmers Group meets 2nd Tuesday of each month at Pinnacle Solutions Group.</p>
+        <p>The meeting starts at 6:30 \u2013 Food is not usually provided, but feel
+        free to bring you own.</p> <p>Twitter: @cincyfp</p> ","visibility":"public","member_pay_fee":false},{"created":1610660852000,"duration":7200000,"id":"xqzhdsyfclbnb","name":"Agile
+        Cincinnati","date_in_series_pattern":false,"status":"upcoming","time":1691704800000,"local_date":"2023-08-10","local_time":"18:00","updated":1610660853000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/xqzhdsyfclbnb/","description":"<p>Check
+        out the Agile Cincinnati Eventbrite page or our website for more information:
+        <a href=\"https://agilecincinnati.eventbrite.com/\" class=\"linkified\">https://agilecincinnati.eventbrite.com/</a></p>
+        <p>Please be sure to register on Eventbrite to receive the meeting Zoom link.</p>
+        <p>We''re a non-profit group focused on serving the Cincinnati and Northern
+        Kentucky Agile communities.</p> <p>More details: <a href=\"http://www.agilecincy.org/\"
+        class=\"linkified\">http://www.agilecincy.org/</a></p> ","visibility":"public","member_pay_fee":false},{"created":1548685236000,"duration":5400000,"id":"lrctqqyfclbvb","name":"CinJUG:
+        Java User''s Group","date_in_series_pattern":false,"status":"upcoming","time":1692199800000,"local_date":"2023-08-16","local_time":"11:30","updated":1548685236000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":25548413,"name":"Callibrity","lat":39.253318786621094,"lon":-84.38121032714844,"repinned":true,"address_1":"4555
+        Lake Forest Drive","city":"Blue Ash","country":"US","localized_country_name":"USA"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/lrctqqyfclbvb/","description":"<p>Details<br/>&lt;
+        Presentor needed &gt;</p> <p>Location:<br/>4555 Lake Forest Drive<br/>Suite
+        150<br/>Blue Ash, OH. 45242</p> <p>The building has a big \"HQ\" sign on it
+        and is right next to BW3.</p> <p>Enter lobby, head down the left hallway and
+        look for a Cinjug sign.</p> <p>Bio:<br/>&lt; Presentor Bio &gt;</p> <p>Site
+        Sponsor:<br/>Callibrity - www.callibrity.com</p> <p>Meeting Sponsor:<br/>&lt;
+        Meeting Sponsor &gt;</p> <p>Cinjug links:<br/><a href=\"https://groups.google.com/forum/#!forum/cinjug\"
+        class=\"linkified\">https://groups.google.com/forum/#!forum/cinjug</a><br/><a
+        href=\"https://plus.google.com/u/0/communities/102335575810446164227?cfem=1\"
+        class=\"linkified\">https://plus.google.com/u/0/communities/102335575810446164227?cfem=1</a></p>
+        ","how_to_find_us":"Suite 150, enter Lobby, halfway on left, follow sign","visibility":"public","member_pay_fee":false},{"created":1663170626000,"duration":3600000,"id":"gnzkxsyfclbwb","name":"Ruby
+        Brigade","date_in_series_pattern":false,"status":"upcoming","time":1692288000000,"local_date":"2023-08-17","local_time":"12:00","updated":1663170626000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/gnzkxsyfclbwb/","why":"We
+        love Ruby!","description":"<p>Meet and talk about the best stuff going on
+        in your Ruby world or the community in general!</p> <p><a href=\"https://cincyrb.com/\"
+        class=\"linkified\">https://cincyrb.com/</a></p> <p><a href=\"https://twitter.com/#!/cincinnatirb\"
+        class=\"linkified\">https://twitter.com/#!/cincinnatirb</a></p> ","visibility":"public","member_pay_fee":false},{"created":1646715886000,"duration":9000000,"id":"pfsvssyfclbwb","name":"CiNPA
+        - Security SIG","rsvp_limit":60,"date_in_series_pattern":false,"status":"upcoming","time":1692311400000,"local_date":"2023-08-17","local_time":"18:30","updated":1646715886000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":27142074,"name":"TechSolve,
+        Inc","lat":39.18585968017578,"lon":-84.47218322753906,"repinned":true,"address_1":"6705
+        Steger Dr","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45237","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/pfsvssyfclbwb/","description":"<p>Meeting
+        Topic: TBD</p> <p>Please stay tuned and check back later for our meeting topic(s)
+        and speaker(s) announcement.</p> <p>About Us:</p> <p>The CiNPA Security SIG
+        is the Cincinnati Networking Professionals Association Security Special Interest
+        Group. We meet monthly on the third Thursday of each month, starting at 6:30
+        p.m.</p> <p>The CiNPA Security SIG''s monthly meeting format typically consists
+        of one or two main monthly meeting topics featuring live presentations or
+        demonstrations promoting open and interactive group discussions. Our focus
+        is primarily on the technical aspects of InfoSec, but we occasionally touch
+        on other areas of cybersecurity as well. Information security news, announcements,
+        and round-table discussions follow our main meeting topics.</p> <p>Attendee
+        Benefits:</p> <p>\u2022 Attendance qualifies for 2 hours of CPE or CEU credit
+        towards certification renewals</p> <p>\u2022 Maintaining awareness of new
+        vulnerabilities and exploits</p> <p>\u2022 Learning about the latest security
+        tools, utilities, products, services, solutions, strategies, techniques, frameworks,
+        and best practices</p> <p>\u2022 Sharing of information regarding trends concerning
+        enterprise systems and technology</p> <p>\u2022 Hearing announcements of upcoming
+        area security conferences and events</p> <p>\u2022 Networking with peers in
+        the local Information Security (InfoSec) community</p> ","how_to_find_us":"Kettering
+        & Wright Conference Rooms.","visibility":"public","member_pay_fee":false},{"created":1652196752000,"duration":7200000,"id":"qfxztsyfclbdc","name":"CINNUG/CinARC
+        Monthly Meeting","date_in_series_pattern":false,"status":"upcoming","time":1692741600000,"local_date":"2023-08-22","local_time":"18:00","updated":1652196752000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26333709,"name":"Tech
+        Elevator Cincinnati","lat":39.15209197998047,"lon":-84.46752166748047,"repinned":true,"address_1":"1776
+        Mentor Ave Suite 355","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45212","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/qfxztsyfclbdc/","description":"<p>Catching
+        up with the CINNUG Community.</p> <p>We are back to meeting in person! Special
+        thanks for TechElevator for sponsoring us!</p> <p>CINNUG:</p> <p>Topic: TBD<br/>Presenter:
+        TBD</p> <p>CINARC:</p> <p>Come join this new special interest group as we
+        discuss topics related to software architecture. This meeting is run after
+        CINNUG where the attendees are encouraged to share their thoughts with everyone.
+        What topic will we cover? Well, that''s up to the attendees! If you have a
+        strong opinion about a topic you''d like to suggest or want to learn more
+        about the topics, then make sure you swing by the meeting.</p> ","how_to_find_us":"We
+        are in the first floor conference room #160. Just follow the signs!\nThe door
+        locks at 6:00, so please be early or email us if you get there late so we
+        can let you in.","visibility":"public","member_pay_fee":false},{"created":1655948621000,"duration":7200000,"id":"rvbvvsyfcmbjb","name":"CINPA
+        Monthly Meeting","date_in_series_pattern":false,"status":"upcoming","time":1694041200000,"local_date":"2023-09-06","local_time":"19:00","updated":1655948621000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/rvbvvsyfcmbjb/","description":"<p>N.B.:
+        Check comments here (below) or [<a href=\"http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic\"
+        class=\"linkified\">http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic</a>)
+        each month for new meeting LINK.</p> <p>Cincinnati Networking Professionals
+        Association - CINPA</p> <p>Monthly Meeting - FIRST WEDNESDAY - Typically we
+        have an IT Industry professional present on a subject of interest. Oftentimes
+        these are hardware, software or services vendors.</p> <p>We usually take a
+        break half way through the evening for a pizza (etc.) socializing time.</p>
+        <p>Specific meeting information can be found at CINPA website ([<a href=\"http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic\"
+        class=\"linkified\">http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic</a>))</p>
+        ","visibility":"public","member_pay_fee":false},{"created":1578415364000,"duration":10800000,"id":"rhfrmryfcmbqb","name":"Cincy
+        Functional Programmers","date_in_series_pattern":false,"status":"upcoming","time":1694557800000,"local_date":"2023-09-12","local_time":"18:30","updated":1578415364000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26800165,"name":"8035
+        Hosbrook Rd","lat":39.203285217285156,"lon":-84.37220764160156,"repinned":false,"address_1":"8035
+        Hosbrook Rd","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45236","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/rhfrmryfcmbqb/","description":"<p>Functional
+        Programmers Group meets 2nd Tuesday of each month at Pinnacle Solutions Group.</p>
+        <p>The meeting starts at 6:30 \u2013 Food is not usually provided, but feel
+        free to bring you own.</p> <p>Twitter: @cincyfp</p> ","visibility":"public","member_pay_fee":false},{"created":1610660852000,"duration":7200000,"id":"xqzhdsyfcmbsb","name":"Agile
+        Cincinnati","date_in_series_pattern":false,"status":"upcoming","time":1694728800000,"local_date":"2023-09-14","local_time":"18:00","updated":1610660853000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/xqzhdsyfcmbsb/","description":"<p>Check
+        out the Agile Cincinnati Eventbrite page or our website for more information:
+        <a href=\"https://agilecincinnati.eventbrite.com/\" class=\"linkified\">https://agilecincinnati.eventbrite.com/</a></p>
+        <p>Please be sure to register on Eventbrite to receive the meeting Zoom link.</p>
+        <p>We''re a non-profit group focused on serving the Cincinnati and Northern
+        Kentucky Agile communities.</p> <p>More details: <a href=\"http://www.agilecincy.org/\"
+        class=\"linkified\">http://www.agilecincy.org/</a></p> ","visibility":"public","member_pay_fee":false},{"created":1548685236000,"duration":5400000,"id":"lrctqqyfcmbbc","name":"CinJUG:
+        Java User''s Group","date_in_series_pattern":false,"status":"upcoming","time":1695223800000,"local_date":"2023-09-20","local_time":"11:30","updated":1548685236000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":25548413,"name":"Callibrity","lat":39.253318786621094,"lon":-84.38121032714844,"repinned":true,"address_1":"4555
+        Lake Forest Drive","city":"Blue Ash","country":"US","localized_country_name":"USA"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/lrctqqyfcmbbc/","description":"<p>Details<br/>&lt;
+        Presentor needed &gt;</p> <p>Location:<br/>4555 Lake Forest Drive<br/>Suite
+        150<br/>Blue Ash, OH. 45242</p> <p>The building has a big \"HQ\" sign on it
+        and is right next to BW3.</p> <p>Enter lobby, head down the left hallway and
+        look for a Cinjug sign.</p> <p>Bio:<br/>&lt; Presentor Bio &gt;</p> <p>Site
+        Sponsor:<br/>Callibrity - www.callibrity.com</p> <p>Meeting Sponsor:<br/>&lt;
+        Meeting Sponsor &gt;</p> <p>Cinjug links:<br/><a href=\"https://groups.google.com/forum/#!forum/cinjug\"
+        class=\"linkified\">https://groups.google.com/forum/#!forum/cinjug</a><br/><a
+        href=\"https://plus.google.com/u/0/communities/102335575810446164227?cfem=1\"
+        class=\"linkified\">https://plus.google.com/u/0/communities/102335575810446164227?cfem=1</a></p>
+        ","how_to_find_us":"Suite 150, enter Lobby, halfway on left, follow sign","visibility":"public","member_pay_fee":false},{"created":1663170626000,"duration":3600000,"id":"gnzkxsyfcmbcc","name":"Ruby
+        Brigade","date_in_series_pattern":false,"status":"upcoming","time":1695312000000,"local_date":"2023-09-21","local_time":"12:00","updated":1663170626000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/gnzkxsyfcmbcc/","why":"We
+        love Ruby!","description":"<p>Meet and talk about the best stuff going on
+        in your Ruby world or the community in general!</p> <p><a href=\"https://cincyrb.com/\"
+        class=\"linkified\">https://cincyrb.com/</a></p> <p><a href=\"https://twitter.com/#!/cincinnatirb\"
+        class=\"linkified\">https://twitter.com/#!/cincinnatirb</a></p> ","visibility":"public","member_pay_fee":false},{"created":1646715886000,"duration":9000000,"id":"pfsvssyfcmbcc","name":"CiNPA
+        - Security SIG","rsvp_limit":60,"date_in_series_pattern":false,"status":"upcoming","time":1695335400000,"local_date":"2023-09-21","local_time":"18:30","updated":1646715886000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":27142074,"name":"TechSolve,
+        Inc","lat":39.18585968017578,"lon":-84.47218322753906,"repinned":true,"address_1":"6705
+        Steger Dr","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45237","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/pfsvssyfcmbcc/","description":"<p>Meeting
+        Topic: TBD</p> <p>Please stay tuned and check back later for our meeting topic(s)
+        and speaker(s) announcement.</p> <p>About Us:</p> <p>The CiNPA Security SIG
+        is the Cincinnati Networking Professionals Association Security Special Interest
+        Group. We meet monthly on the third Thursday of each month, starting at 6:30
+        p.m.</p> <p>The CiNPA Security SIG''s monthly meeting format typically consists
+        of one or two main monthly meeting topics featuring live presentations or
+        demonstrations promoting open and interactive group discussions. Our focus
+        is primarily on the technical aspects of InfoSec, but we occasionally touch
+        on other areas of cybersecurity as well. Information security news, announcements,
+        and round-table discussions follow our main meeting topics.</p> <p>Attendee
+        Benefits:</p> <p>\u2022 Attendance qualifies for 2 hours of CPE or CEU credit
+        towards certification renewals</p> <p>\u2022 Maintaining awareness of new
+        vulnerabilities and exploits</p> <p>\u2022 Learning about the latest security
+        tools, utilities, products, services, solutions, strategies, techniques, frameworks,
+        and best practices</p> <p>\u2022 Sharing of information regarding trends concerning
+        enterprise systems and technology</p> <p>\u2022 Hearing announcements of upcoming
+        area security conferences and events</p> <p>\u2022 Networking with peers in
+        the local Information Security (InfoSec) community</p> ","how_to_find_us":"Kettering
+        & Wright Conference Rooms.","visibility":"public","member_pay_fee":false},{"created":1652196752000,"duration":7200000,"id":"qfxztsyfcmbjc","name":"CINNUG/CinARC
+        Monthly Meeting","date_in_series_pattern":false,"status":"upcoming","time":1695765600000,"local_date":"2023-09-26","local_time":"18:00","updated":1652196752000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26333709,"name":"Tech
+        Elevator Cincinnati","lat":39.15209197998047,"lon":-84.46752166748047,"repinned":true,"address_1":"1776
+        Mentor Ave Suite 355","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45212","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/qfxztsyfcmbjc/","description":"<p>Catching
+        up with the CINNUG Community.</p> <p>We are back to meeting in person! Special
+        thanks for TechElevator for sponsoring us!</p> <p>CINNUG:</p> <p>Topic: TBD<br/>Presenter:
+        TBD</p> <p>CINARC:</p> <p>Come join this new special interest group as we
+        discuss topics related to software architecture. This meeting is run after
+        CINNUG where the attendees are encouraged to share their thoughts with everyone.
+        What topic will we cover? Well, that''s up to the attendees! If you have a
+        strong opinion about a topic you''d like to suggest or want to learn more
+        about the topics, then make sure you swing by the meeting.</p> ","how_to_find_us":"We
+        are in the first floor conference room #160. Just follow the signs!\nThe door
+        locks at 6:00, so please be early or email us if you get there late so we
+        can let you in.","visibility":"public","member_pay_fee":false},{"created":1655948621000,"duration":7200000,"id":"rvbvvsyfcnbgb","name":"CINPA
+        Monthly Meeting","date_in_series_pattern":false,"status":"upcoming","time":1696460400000,"local_date":"2023-10-04","local_time":"19:00","updated":1655948621000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/rvbvvsyfcnbgb/","description":"<p>N.B.:
+        Check comments here (below) or [<a href=\"http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic\"
+        class=\"linkified\">http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic</a>)
+        each month for new meeting LINK.</p> <p>Cincinnati Networking Professionals
+        Association - CINPA</p> <p>Monthly Meeting - FIRST WEDNESDAY - Typically we
+        have an IT Industry professional present on a subject of interest. Oftentimes
+        these are hardware, software or services vendors.</p> <p>We usually take a
+        break half way through the evening for a pizza (etc.) socializing time.</p>
+        <p>Specific meeting information can be found at CINPA website ([<a href=\"http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic\"
+        class=\"linkified\">http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic</a>))</p>
+        ","visibility":"public","member_pay_fee":false},{"created":1578415364000,"duration":10800000,"id":"rhfrmryfcnbnb","name":"Cincy
+        Functional Programmers","date_in_series_pattern":false,"status":"upcoming","time":1696977000000,"local_date":"2023-10-10","local_time":"18:30","updated":1578415364000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26800165,"name":"8035
+        Hosbrook Rd","lat":39.203285217285156,"lon":-84.37220764160156,"repinned":false,"address_1":"8035
+        Hosbrook Rd","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45236","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/rhfrmryfcnbnb/","description":"<p>Functional
+        Programmers Group meets 2nd Tuesday of each month at Pinnacle Solutions Group.</p>
+        <p>The meeting starts at 6:30 \u2013 Food is not usually provided, but feel
+        free to bring you own.</p> <p>Twitter: @cincyfp</p> ","visibility":"public","member_pay_fee":false},{"created":1610660852000,"duration":7200000,"id":"xqzhdsyfcnbqb","name":"Agile
+        Cincinnati","date_in_series_pattern":false,"status":"upcoming","time":1697148000000,"local_date":"2023-10-12","local_time":"18:00","updated":1610660853000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/xqzhdsyfcnbqb/","description":"<p>Check
+        out the Agile Cincinnati Eventbrite page or our website for more information:
+        <a href=\"https://agilecincinnati.eventbrite.com/\" class=\"linkified\">https://agilecincinnati.eventbrite.com/</a></p>
+        <p>Please be sure to register on Eventbrite to receive the meeting Zoom link.</p>
+        <p>We''re a non-profit group focused on serving the Cincinnati and Northern
+        Kentucky Agile communities.</p> <p>More details: <a href=\"http://www.agilecincy.org/\"
+        class=\"linkified\">http://www.agilecincy.org/</a></p> ","visibility":"public","member_pay_fee":false},{"created":1548685236000,"duration":5400000,"id":"lrctqqyfcnbxb","name":"CinJUG:
+        Java User''s Group","date_in_series_pattern":false,"status":"upcoming","time":1697643000000,"local_date":"2023-10-18","local_time":"11:30","updated":1548685236000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":25548413,"name":"Callibrity","lat":39.253318786621094,"lon":-84.38121032714844,"repinned":true,"address_1":"4555
+        Lake Forest Drive","city":"Blue Ash","country":"US","localized_country_name":"USA"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/lrctqqyfcnbxb/","description":"<p>Details<br/>&lt;
+        Presentor needed &gt;</p> <p>Location:<br/>4555 Lake Forest Drive<br/>Suite
+        150<br/>Blue Ash, OH. 45242</p> <p>The building has a big \"HQ\" sign on it
+        and is right next to BW3.</p> <p>Enter lobby, head down the left hallway and
+        look for a Cinjug sign.</p> <p>Bio:<br/>&lt; Presentor Bio &gt;</p> <p>Site
+        Sponsor:<br/>Callibrity - www.callibrity.com</p> <p>Meeting Sponsor:<br/>&lt;
+        Meeting Sponsor &gt;</p> <p>Cinjug links:<br/><a href=\"https://groups.google.com/forum/#!forum/cinjug\"
+        class=\"linkified\">https://groups.google.com/forum/#!forum/cinjug</a><br/><a
+        href=\"https://plus.google.com/u/0/communities/102335575810446164227?cfem=1\"
+        class=\"linkified\">https://plus.google.com/u/0/communities/102335575810446164227?cfem=1</a></p>
+        ","how_to_find_us":"Suite 150, enter Lobby, halfway on left, follow sign","visibility":"public","member_pay_fee":false},{"created":1663170626000,"duration":3600000,"id":"gnzkxsyfcnbzb","name":"Ruby
+        Brigade","date_in_series_pattern":false,"status":"upcoming","time":1697731200000,"local_date":"2023-10-19","local_time":"12:00","updated":1663170626000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/gnzkxsyfcnbzb/","why":"We
+        love Ruby!","description":"<p>Meet and talk about the best stuff going on
+        in your Ruby world or the community in general!</p> <p><a href=\"https://cincyrb.com/\"
+        class=\"linkified\">https://cincyrb.com/</a></p> <p><a href=\"https://twitter.com/#!/cincinnatirb\"
+        class=\"linkified\">https://twitter.com/#!/cincinnatirb</a></p> ","visibility":"public","member_pay_fee":false},{"created":1646715886000,"duration":9000000,"id":"pfsvssyfcnbzb","name":"CiNPA
+        - Security SIG","rsvp_limit":60,"date_in_series_pattern":false,"status":"upcoming","time":1697754600000,"local_date":"2023-10-19","local_time":"18:30","updated":1646715886000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":27142074,"name":"TechSolve,
+        Inc","lat":39.18585968017578,"lon":-84.47218322753906,"repinned":true,"address_1":"6705
+        Steger Dr","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45237","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/pfsvssyfcnbzb/","description":"<p>Meeting
+        Topic: TBD</p> <p>Please stay tuned and check back later for our meeting topic(s)
+        and speaker(s) announcement.</p> <p>About Us:</p> <p>The CiNPA Security SIG
+        is the Cincinnati Networking Professionals Association Security Special Interest
+        Group. We meet monthly on the third Thursday of each month, starting at 6:30
+        p.m.</p> <p>The CiNPA Security SIG''s monthly meeting format typically consists
+        of one or two main monthly meeting topics featuring live presentations or
+        demonstrations promoting open and interactive group discussions. Our focus
+        is primarily on the technical aspects of InfoSec, but we occasionally touch
+        on other areas of cybersecurity as well. Information security news, announcements,
+        and round-table discussions follow our main meeting topics.</p> <p>Attendee
+        Benefits:</p> <p>\u2022 Attendance qualifies for 2 hours of CPE or CEU credit
+        towards certification renewals</p> <p>\u2022 Maintaining awareness of new
+        vulnerabilities and exploits</p> <p>\u2022 Learning about the latest security
+        tools, utilities, products, services, solutions, strategies, techniques, frameworks,
+        and best practices</p> <p>\u2022 Sharing of information regarding trends concerning
+        enterprise systems and technology</p> <p>\u2022 Hearing announcements of upcoming
+        area security conferences and events</p> <p>\u2022 Networking with peers in
+        the local Information Security (InfoSec) community</p> ","how_to_find_us":"Kettering
+        & Wright Conference Rooms.","visibility":"public","member_pay_fee":false},{"created":1652196752000,"duration":7200000,"id":"qfxztsyfcnbgc","name":"CINNUG/CinARC
+        Monthly Meeting","date_in_series_pattern":false,"status":"upcoming","time":1698184800000,"local_date":"2023-10-24","local_time":"18:00","updated":1652196752000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26333709,"name":"Tech
+        Elevator Cincinnati","lat":39.15209197998047,"lon":-84.46752166748047,"repinned":true,"address_1":"1776
+        Mentor Ave Suite 355","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45212","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/qfxztsyfcnbgc/","description":"<p>Catching
+        up with the CINNUG Community.</p> <p>We are back to meeting in person! Special
+        thanks for TechElevator for sponsoring us!</p> <p>CINNUG:</p> <p>Topic: TBD<br/>Presenter:
+        TBD</p> <p>CINARC:</p> <p>Come join this new special interest group as we
+        discuss topics related to software architecture. This meeting is run after
+        CINNUG where the attendees are encouraged to share their thoughts with everyone.
+        What topic will we cover? Well, that''s up to the attendees! If you have a
+        strong opinion about a topic you''d like to suggest or want to learn more
+        about the topics, then make sure you swing by the meeting.</p> ","how_to_find_us":"We
+        are in the first floor conference room #160. Just follow the signs!\nThe door
+        locks at 6:00, so please be early or email us if you get there late so we
+        can let you in.","visibility":"public","member_pay_fee":false},{"created":1655948621000,"duration":7200000,"id":"rvbvvsyfcpbcb","name":"CINPA
+        Monthly Meeting","date_in_series_pattern":false,"status":"upcoming","time":1698879600000,"local_date":"2023-11-01","local_time":"19:00","updated":1655948621000,"utc_offset":-14400000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/rvbvvsyfcpbcb/","description":"<p>N.B.:
+        Check comments here (below) or [<a href=\"http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic\"
+        class=\"linkified\">http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic</a>)
+        each month for new meeting LINK.</p> <p>Cincinnati Networking Professionals
+        Association - CINPA</p> <p>Monthly Meeting - FIRST WEDNESDAY - Typically we
+        have an IT Industry professional present on a subject of interest. Oftentimes
+        these are hardware, software or services vendors.</p> <p>We usually take a
+        break half way through the evening for a pizza (etc.) socializing time.</p>
+        <p>Specific meeting information can be found at CINPA website ([<a href=\"http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic\"
+        class=\"linkified\">http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic</a>))</p>
+        ","visibility":"public","member_pay_fee":false},{"created":1610660852000,"duration":7200000,"id":"xqzhdsyfcpbmb","name":"Agile
+        Cincinnati","date_in_series_pattern":false,"status":"upcoming","time":1699570800000,"local_date":"2023-11-09","local_time":"18:00","updated":1610660853000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/xqzhdsyfcpbmb/","description":"<p>Check
+        out the Agile Cincinnati Eventbrite page or our website for more information:
+        <a href=\"https://agilecincinnati.eventbrite.com/\" class=\"linkified\">https://agilecincinnati.eventbrite.com/</a></p>
+        <p>Please be sure to register on Eventbrite to receive the meeting Zoom link.</p>
+        <p>We''re a non-profit group focused on serving the Cincinnati and Northern
+        Kentucky Agile communities.</p> <p>More details: <a href=\"http://www.agilecincy.org/\"
+        class=\"linkified\">http://www.agilecincy.org/</a></p> ","visibility":"public","member_pay_fee":false},{"created":1578415364000,"duration":10800000,"id":"rhfrmryfcpbsb","name":"Cincy
+        Functional Programmers","date_in_series_pattern":false,"status":"upcoming","time":1700004600000,"local_date":"2023-11-14","local_time":"18:30","updated":1578415364000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26800165,"name":"8035
+        Hosbrook Rd","lat":39.203285217285156,"lon":-84.37220764160156,"repinned":false,"address_1":"8035
+        Hosbrook Rd","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45236","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/rhfrmryfcpbsb/","description":"<p>Functional
+        Programmers Group meets 2nd Tuesday of each month at Pinnacle Solutions Group.</p>
+        <p>The meeting starts at 6:30 \u2013 Food is not usually provided, but feel
+        free to bring you own.</p> <p>Twitter: @cincyfp</p> ","visibility":"public","member_pay_fee":false},{"created":1548685236000,"duration":5400000,"id":"lrctqqyfcpbtb","name":"CinJUG:
+        Java User''s Group","date_in_series_pattern":false,"status":"upcoming","time":1700065800000,"local_date":"2023-11-15","local_time":"11:30","updated":1548685236000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":25548413,"name":"Callibrity","lat":39.253318786621094,"lon":-84.38121032714844,"repinned":true,"address_1":"4555
+        Lake Forest Drive","city":"Blue Ash","country":"US","localized_country_name":"USA"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/lrctqqyfcpbtb/","description":"<p>Details<br/>&lt;
+        Presentor needed &gt;</p> <p>Location:<br/>4555 Lake Forest Drive<br/>Suite
+        150<br/>Blue Ash, OH. 45242</p> <p>The building has a big \"HQ\" sign on it
+        and is right next to BW3.</p> <p>Enter lobby, head down the left hallway and
+        look for a Cinjug sign.</p> <p>Bio:<br/>&lt; Presentor Bio &gt;</p> <p>Site
+        Sponsor:<br/>Callibrity - www.callibrity.com</p> <p>Meeting Sponsor:<br/>&lt;
+        Meeting Sponsor &gt;</p> <p>Cinjug links:<br/><a href=\"https://groups.google.com/forum/#!forum/cinjug\"
+        class=\"linkified\">https://groups.google.com/forum/#!forum/cinjug</a><br/><a
+        href=\"https://plus.google.com/u/0/communities/102335575810446164227?cfem=1\"
+        class=\"linkified\">https://plus.google.com/u/0/communities/102335575810446164227?cfem=1</a></p>
+        ","how_to_find_us":"Suite 150, enter Lobby, halfway on left, follow sign","visibility":"public","member_pay_fee":false},{"created":1663170626000,"duration":3600000,"id":"gnzkxsyfcpbvb","name":"Ruby
+        Brigade","date_in_series_pattern":false,"status":"upcoming","time":1700154000000,"local_date":"2023-11-16","local_time":"12:00","updated":1663170626000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/gnzkxsyfcpbvb/","why":"We
+        love Ruby!","description":"<p>Meet and talk about the best stuff going on
+        in your Ruby world or the community in general!</p> <p><a href=\"https://cincyrb.com/\"
+        class=\"linkified\">https://cincyrb.com/</a></p> <p><a href=\"https://twitter.com/#!/cincinnatirb\"
+        class=\"linkified\">https://twitter.com/#!/cincinnatirb</a></p> ","visibility":"public","member_pay_fee":false},{"created":1646715886000,"duration":9000000,"id":"pfsvssyfcpbvb","name":"CiNPA
+        - Security SIG","rsvp_limit":60,"date_in_series_pattern":false,"status":"upcoming","time":1700177400000,"local_date":"2023-11-16","local_time":"18:30","updated":1646715886000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":27142074,"name":"TechSolve,
+        Inc","lat":39.18585968017578,"lon":-84.47218322753906,"repinned":true,"address_1":"6705
+        Steger Dr","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45237","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/pfsvssyfcpbvb/","description":"<p>Meeting
+        Topic: TBD</p> <p>Please stay tuned and check back later for our meeting topic(s)
+        and speaker(s) announcement.</p> <p>About Us:</p> <p>The CiNPA Security SIG
+        is the Cincinnati Networking Professionals Association Security Special Interest
+        Group. We meet monthly on the third Thursday of each month, starting at 6:30
+        p.m.</p> <p>The CiNPA Security SIG''s monthly meeting format typically consists
+        of one or two main monthly meeting topics featuring live presentations or
+        demonstrations promoting open and interactive group discussions. Our focus
+        is primarily on the technical aspects of InfoSec, but we occasionally touch
+        on other areas of cybersecurity as well. Information security news, announcements,
+        and round-table discussions follow our main meeting topics.</p> <p>Attendee
+        Benefits:</p> <p>\u2022 Attendance qualifies for 2 hours of CPE or CEU credit
+        towards certification renewals</p> <p>\u2022 Maintaining awareness of new
+        vulnerabilities and exploits</p> <p>\u2022 Learning about the latest security
+        tools, utilities, products, services, solutions, strategies, techniques, frameworks,
+        and best practices</p> <p>\u2022 Sharing of information regarding trends concerning
+        enterprise systems and technology</p> <p>\u2022 Hearing announcements of upcoming
+        area security conferences and events</p> <p>\u2022 Networking with peers in
+        the local Information Security (InfoSec) community</p> ","how_to_find_us":"Kettering
+        & Wright Conference Rooms.","visibility":"public","member_pay_fee":false},{"created":1652196752000,"duration":7200000,"id":"qfxztsyfcpblc","name":"CINNUG/CinARC
+        Monthly Meeting","date_in_series_pattern":false,"status":"upcoming","time":1701212400000,"local_date":"2023-11-28","local_time":"18:00","updated":1652196752000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26333709,"name":"Tech
+        Elevator Cincinnati","lat":39.15209197998047,"lon":-84.46752166748047,"repinned":true,"address_1":"1776
+        Mentor Ave Suite 355","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45212","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/qfxztsyfcpblc/","description":"<p>Catching
+        up with the CINNUG Community.</p> <p>We are back to meeting in person! Special
+        thanks for TechElevator for sponsoring us!</p> <p>CINNUG:</p> <p>Topic: TBD<br/>Presenter:
+        TBD</p> <p>CINARC:</p> <p>Come join this new special interest group as we
+        discuss topics related to software architecture. This meeting is run after
+        CINNUG where the attendees are encouraged to share their thoughts with everyone.
+        What topic will we cover? Well, that''s up to the attendees! If you have a
+        strong opinion about a topic you''d like to suggest or want to learn more
+        about the topics, then make sure you swing by the meeting.</p> ","how_to_find_us":"We
+        are in the first floor conference room #160. Just follow the signs!\nThe door
+        locks at 6:00, so please be early or email us if you get there late so we
+        can let you in.","visibility":"public","member_pay_fee":false},{"created":1655948621000,"duration":7200000,"id":"rvbvvsyfcqbjb","name":"CINPA
+        Monthly Meeting","date_in_series_pattern":false,"status":"upcoming","time":1701907200000,"local_date":"2023-12-06","local_time":"19:00","updated":1655948621000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/rvbvvsyfcqbjb/","description":"<p>N.B.:
+        Check comments here (below) or [<a href=\"http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic\"
+        class=\"linkified\">http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic</a>)
+        each month for new meeting LINK.</p> <p>Cincinnati Networking Professionals
+        Association - CINPA</p> <p>Monthly Meeting - FIRST WEDNESDAY - Typically we
+        have an IT Industry professional present on a subject of interest. Oftentimes
+        these are hardware, software or services vendors.</p> <p>We usually take a
+        break half way through the evening for a pizza (etc.) socializing time.</p>
+        <p>Specific meeting information can be found at CINPA website ([<a href=\"http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic\"
+        class=\"linkified\">http://www.cinpa.org/meeting-topic](http://www.cinpa.org/meeting-topic</a>))</p>
+        ","visibility":"public","member_pay_fee":false},{"created":1578415364000,"duration":10800000,"id":"rhfrmryfcqbqb","name":"Cincy
+        Functional Programmers","date_in_series_pattern":false,"status":"upcoming","time":1702423800000,"local_date":"2023-12-12","local_time":"18:30","updated":1578415364000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":0,"venue":{"id":26800165,"name":"8035
+        Hosbrook Rd","lat":39.203285217285156,"lon":-84.37220764160156,"repinned":false,"address_1":"8035
+        Hosbrook Rd","city":"Cincinnati","country":"us","localized_country_name":"USA","zip":"45236","state":"OH"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/rhfrmryfcqbqb/","description":"<p>Functional
+        Programmers Group meets 2nd Tuesday of each month at Pinnacle Solutions Group.</p>
+        <p>The meeting starts at 6:30 \u2013 Food is not usually provided, but feel
+        free to bring you own.</p> <p>Twitter: @cincyfp</p> ","visibility":"public","member_pay_fee":false},{"created":1610660852000,"duration":7200000,"id":"xqzhdsyfcqbsb","name":"Agile
+        Cincinnati","date_in_series_pattern":false,"status":"upcoming","time":1702594800000,"local_date":"2023-12-14","local_time":"18:00","updated":1610660853000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":26906060,"name":"Online
+        event","repinned":false,"country":"","localized_country_name":""},"is_online_event":true,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/xqzhdsyfcqbsb/","description":"<p>Check
+        out the Agile Cincinnati Eventbrite page or our website for more information:
+        <a href=\"https://agilecincinnati.eventbrite.com/\" class=\"linkified\">https://agilecincinnati.eventbrite.com/</a></p>
+        <p>Please be sure to register on Eventbrite to receive the meeting Zoom link.</p>
+        <p>We''re a non-profit group focused on serving the Cincinnati and Northern
+        Kentucky Agile communities.</p> <p>More details: <a href=\"http://www.agilecincy.org/\"
+        class=\"linkified\">http://www.agilecincy.org/</a></p> ","visibility":"public","member_pay_fee":false},{"created":1548685236000,"duration":5400000,"id":"lrctqqyfcqbbc","name":"CinJUG:
+        Java User''s Group","date_in_series_pattern":false,"status":"upcoming","time":1703089800000,"local_date":"2023-12-20","local_time":"11:30","updated":1548685236000,"utc_offset":-18000000,"waitlist_count":0,"yes_rsvp_count":1,"venue":{"id":25548413,"name":"Callibrity","lat":39.253318786621094,"lon":-84.38121032714844,"repinned":true,"address_1":"4555
+        Lake Forest Drive","city":"Blue Ash","country":"US","localized_country_name":"USA"},"is_online_event":false,"group":{"created":1243032644000,"name":"TechLife
+        Cincinnati","id":1460552,"join_mode":"open","lat":39.27000045776367,"lon":-84.41000366210938,"urlname":"TechLife-Cincinnati","who":"members","localized_location":"Cincinnati,
+        OH","state":"OH","country":"us","region":"en_US","timezone":"US/Eastern"},"link":"https://www.meetup.com/techlife-cincinnati/events/lrctqqyfcqbbc/","description":"<p>Details<br/>&lt;
+        Presentor needed &gt;</p> <p>Location:<br/>4555 Lake Forest Drive<br/>Suite
+        150<br/>Blue Ash, OH. 45242</p> <p>The building has a big \"HQ\" sign on it
+        and is right next to BW3.</p> <p>Enter lobby, head down the left hallway and
+        look for a Cinjug sign.</p> <p>Bio:<br/>&lt; Presentor Bio &gt;</p> <p>Site
+        Sponsor:<br/>Callibrity - www.callibrity.com</p> <p>Meeting Sponsor:<br/>&lt;
+        Meeting Sponsor &gt;</p> <p>Cinjug links:<br/><a href=\"https://groups.google.com/forum/#!forum/cinjug\"
+        class=\"linkified\">https://groups.google.com/forum/#!forum/cinjug</a><br/><a
+        href=\"https://plus.google.com/u/0/communities/102335575810446164227?cfem=1\"
+        class=\"linkified\">https://plus.google.com/u/0/communities/102335575810446164227?cfem=1</a></p>
+        ","how_to_find_us":"Suite 150, enter Lobby, halfway on left, follow sign","visibility":"public","member_pay_fee":false}]'
+  recorded_at: Tue, 20 Dec 2022 13:43:12 GMT
+recorded_with: VCR 6.1.0

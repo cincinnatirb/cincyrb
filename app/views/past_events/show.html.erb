@@ -1,18 +1,20 @@
 <section class="past-event u-push__top--lg">
-  <%- @past_events.each do |event| %>
-    <article class=>
-      <%- event.videos.each do |video| %>
+  <article class=>
+    <div><%= link_to 'Past Events', past_events_path %></div>
+    <% unless @event %>
+      <div class="past-event__date">
+        <p>No meeting for <%= @meeting_date %></p>
+      </div>
+    <% else %>
+      <h3 class="past-event__topic"><%= "#{@meeting_date}: #{@event.topic}" %></h3>
+      <% @event.videos.each do |video| %>
         <div class="past-event__video">
           <iframe src="<%= video.url %>" width="100%"></iframe>
         </div>
-      <%- end %>
-      <div class="past-event__date">
-        <p><%= link_to event.date.strftime("%-m/%-d/%Y"), past_event_path(year: event.date.year, month: event.date.month) %></p>
-      </div>
-      <h3 class="past-event__topic"><%= event.topic %></h3>
-      <p class="past-event__description"><%= event.description ? event.description : "" %></p>
+      <% end %>
+      <p class="past-event__description"><%= @event.description ? @event.description : "" %></p>
       <div class='past-event__speakers'>
-      <%- event.speakers.each do |speaker| %>
+      <% @event.speakers.each do |speaker| %>
         <div class='speaker'>
           <div class='speaker__headshot'>
             <% if speaker.name == "Jim Weirich" %>
@@ -26,7 +28,7 @@
           <h4 class='speaker__name'><%= speaker.name %></h4>
           <!-- <p class="speaker__bio"><%= speaker.bio %></p> -->
         </div>
-      <%- end %>
-    </article>
-  <%- end %>
+      <% end %>
+    <% end %>
+  </article>
 </section>
