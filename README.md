@@ -1,5 +1,5 @@
-# Cincinnati.rb Homepage / Webapp
-[![Build Status](https://secure.travis-ci.org/cincinnatirb/cincyrb.png)](http://travis-ci.org/cincinnatirb/cincyrb)
+# Cincinnati Ruby Brigade Website
+![Build Status](https://github.com/cincinnatirb/cincyrb/actions/workflows/rubyonrails.yml/badge.svg)
 
 ## Dependencies
 * [asdf](https://asdf-vm.com/#/)
