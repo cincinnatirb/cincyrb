@@ -5,16 +5,18 @@ gem 'bootsnap'
 gem 'coffee-rails'
 gem 'devise'
 gem 'eco'
-gem 'httparty'
+gem 'httparty', '>= 0.21.0'
 gem 'jquery-rails'
 gem 'json'
 gem 'net-smtp', require: false
 gem 'newrelic_rpm'
-gem "nokogiri", ">= 1.12.5"
+gem 'nokogiri', '>= 1.13.10'
 gem 'oauth'
 gem 'pg'
 gem 'puma', '>= 5.5.1'
-gem 'rails', '7.0.4'
+gem 'rack', '~> 2.2.6'
+gem 'rails', '7.0.4.1'
+gem 'rails-html-sanitizer', '>= 1.4.4'
 gem 'rake', '>= 10'
 gem 'sass-rails'
 gem 'sprockets-rails', require: 'sprockets/railtie'
@@ -25,6 +27,8 @@ group :production, :staging do
 end
 
 group :development, :test do
+  gem 'brakeman'
+  gem 'bundler-audit'
   gem 'byebug'
   gem 'dotenv'
   gem 'factory_bot_rails'

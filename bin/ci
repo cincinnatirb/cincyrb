@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+APP_ROOT = File.expand_path('..', __dir__)
+Dir.chdir(APP_ROOT) do
+  system('bin/rspec')
+  system('bin/bundler-audit --update')
+  system('bin/brakeman -q -w2')
+  system('bin/rubocop --parallel')
+end

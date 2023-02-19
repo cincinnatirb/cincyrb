@@ -20,7 +20,7 @@ RSpec.describe Meeting, type: :model do
   describe ".ruby_brigade_meetings" do
     let!(:events) {
       VCR.use_cassette("meetup", match_requests_on: %i[host path], record: :new_episodes) do
-        described_class.ruby_brigade_meetings.map { |meeting| meeting["name"] }
+        described_class.ruby_brigade_meetings.pluck("name")
       end
     }
 
