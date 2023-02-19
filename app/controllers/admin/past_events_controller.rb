@@ -2,6 +2,18 @@ module Admin
   class PastEventsController < AdminController
     before_action :past_event, only: %i[destroy edit show update]
 
+    def index
+      @past_events = PastEvent.all.order('date DESC')
+    end
+
+    def show; end
+
+    def new
+      @past_event = PastEvent.new
+    end
+
+    def edit; end
+
     def create
       @past_event = PastEvent.new(past_event_params)
 
@@ -17,29 +29,17 @@ module Admin
       render 'new'
     end
 
-    def destroy
-      past_event.destroy
-
-      redirect_to admin_past_events_url, notice: 'Past Event was successfully deleted.'
-    end
-
-    def edit; end
-
-    def new
-      @past_event = PastEvent.new
-    end
-
-    def index
-      @past_events = PastEvent.all.order('date DESC')
-    end
-
-    def show; end
-
     def update
       @past_event.update(past_event_params)
       redirect_to admin_past_event_path(@past_event) and return unless @past_event.errors.any?
 
       render 'edit'
+    end
+
+    def destroy
+      past_event.destroy
+
+      redirect_to admin_past_events_url, notice: 'Past Event was successfully deleted.'
     end
 
     private
