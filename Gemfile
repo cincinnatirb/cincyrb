@@ -61,4 +61,4 @@ group :test do
   gem 'webmock'
 end
 
-gem "dockerfile-rails", ">= 1.5", :group => :development
+gem "dockerfile-rails", ">= 1.5", group: :development
