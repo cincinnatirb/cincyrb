@@ -60,3 +60,5 @@ group :test do
   gem 'webdrivers'
   gem 'webmock'
 end
+
+gem "dockerfile-rails", ">= 1.5", :group => :development

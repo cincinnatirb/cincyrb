@@ -10,3 +10,4 @@ vendor/ruby
 .rvmrc
 .yarn-integrity
 /coverage/
+*.dump

@@ -116,6 +116,8 @@ GEM
       warden (~> 1.2.3)
     diff-lcs (1.5.0)
     docile (1.4.0)
+    dockerfile-rails (1.5.1)
+      rails
     dotenv (2.8.1)
     e2mmap (0.1.0)
     eco (1.0.0)
@@ -167,7 +169,6 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.1)
     minitest (5.18.0)
     msgpack (1.6.0)
     multi_xml (0.6.0)
@@ -182,8 +183,9 @@ GEM
       net-protocol
     newrelic_rpm (8.10.1)
     nio4r (2.5.9)
-    nokogiri (1.14.2)
-      mini_portile2 (~> 2.8.0)
+    nokogiri (1.14.2-aarch64-linux)
+      racc (~> 1.4)
+    nokogiri (1.14.2-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.14.2-x86_64-darwin)
       racc (~> 1.4)
@@ -389,7 +391,8 @@ GEM
     zeitwerk (2.6.7)
 
 PLATFORMS
-  ruby
+  aarch64-linux
+  arm64-darwin-21
   x86_64-darwin
   x86_64-linux
 
@@ -402,6 +405,7 @@ DEPENDENCIES
   coffee-rails
   database_cleaner-active_record
   devise
+  dockerfile-rails (>= 1.5)
   dotenv
   eco
   factory_bot_rails
