@@ -56,3 +56,14 @@ jobs:
         run: bin/brakeman -q -w2
       - name: Lint Ruby files
         run: bin/rubocop --parallel
+
+  deploy:
+    needs: [build, lint]
+    env:
+      FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: superfly/flyctl-actions/setup-flyctl@1.4
+      - run: flyctl deploy --remote-only
