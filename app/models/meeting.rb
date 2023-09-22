@@ -15,6 +15,6 @@ class Meeting
     response = get('/TechLife-Cincinnati/events')
     return [] unless response.parsed_response.is_a?(Array)
 
-    response.parsed_response.select { |event| event["name"] == "Ruby Brigade" }
+    response.parsed_response.select { |event| event["name"][/Ruby Brigade/] }
   end
 end
