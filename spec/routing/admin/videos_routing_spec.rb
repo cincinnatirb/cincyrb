@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe Admin::VideosController, type: :routing do
+RSpec.describe Admin::VideosController do
   describe "routing" do
     it "routes to #create" do
       expect(post: "/admin/videos").to route_to("admin/videos#create")

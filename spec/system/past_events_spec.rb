@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe "Past Events", type: :system do
+RSpec.describe "Past Events" do
   context 'when listing' do
     subject { page }
 
@@ -21,7 +21,7 @@ RSpec.describe "Past Events", type: :system do
 
     it { is_expected.to have_text(past_event.speakers.first.name) }
     it { is_expected.to have_text(past_event.speakers.last.name) }
-    it { is_expected.to have_selector('div.past-event__video') }
+    it { is_expected.to have_css('div.past-event__video') }
     it { is_expected.to have_selector("iframe[src='#{video.url}']") }
   end
 end

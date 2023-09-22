@@ -4,7 +4,7 @@ RSpec.describe PagesController, type: :controller do
   describe 'GET #index' do
     it 'is publicly accessible' do
       VCR.use_cassette('pages_controller_spec-get-index', record: :new_episodes) { get :index, params: {} }
-      expect(response.code).to eq('200')
+      expect(response).to have_http_status(:ok)
     end
   end
 
@@ -12,7 +12,7 @@ RSpec.describe PagesController, type: :controller do
     it 'is publicly accessible' do
       get :this_month_in_ruby
 
-      expect(response.code).to eq('200')
+      expect(response).to have_http_status(:ok)
     end
   end
 end

@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe Admin::PastEventsController, type: :routing do
+RSpec.describe Admin::PastEventsController do
   describe "routing" do
     it "routes to #create" do
       expect(post: "/admin/past_events").to route_to("admin/past_events#create")

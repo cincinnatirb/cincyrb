@@ -3,7 +3,7 @@ module Admin
     before_action :speaker, only: %i[destroy edit show update]
 
     def index
-      @speakers = Speaker.all.order('name')
+      @speakers = Speaker.order('name')
     end
 
     def show; end

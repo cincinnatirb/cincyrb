@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Speaker, type: :model do
+RSpec.describe Speaker do
   context 'Associations & Validations' do # rubocop:disable RSpec/ContextWording
     before { build(:speaker) }
 

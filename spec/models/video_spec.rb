@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Video, type: :model do
+RSpec.describe Video do
   context 'Associations & Validations' do # rubocop:disable RSpec/ContextWording
     before { build(:video) }
 

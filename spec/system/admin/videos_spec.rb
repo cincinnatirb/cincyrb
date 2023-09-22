@@ -1,7 +1,7 @@
 require "rails_helper"
 require 'securerandom'
 
-RSpec.describe "Video Administration", type: :system do
+RSpec.describe "Video Administration" do
   let!(:admin_user) { create(:admin_user, email: 'jim@example.com', password: 'P4ssw0rd') }
   let!(:past_event) { create(:past_event) }
   let(:url) { Faker::Internet.url(host: 'example.com', path: "/videos/#{SecureRandom.alphanumeric(8)}") }
@@ -12,7 +12,7 @@ RSpec.describe "Video Administration", type: :system do
 
       fill_in :admin_user_email, with: admin_user.email
       fill_in :admin_user_password, with: 'P4ssw0rd'
-      click_on 'Log in'
+      click_button 'Log in'
 
       visit new_admin_video_path
       expect(page).to have_text('New Video')
@@ -22,7 +22,7 @@ RSpec.describe "Video Administration", type: :system do
       fill_in 'video[url]', with: url
       select past_event.topic, from: 'video[past_event_id]'
 
-      click_on 'commit'
+      click_button 'commit'
 
       new_video = Video.last
       expect(new_video.url).to eq(url)
@@ -39,7 +39,7 @@ RSpec.describe "Video Administration", type: :system do
 
       fill_in :admin_user_email, with: admin_user.email
       fill_in :admin_user_password, with: 'P4ssw0rd'
-      click_on 'Log in'
+      click_button 'Log in'
 
       visit edit_admin_video_path(video)
       expect(page).to have_text('Editing Video')
@@ -49,7 +49,7 @@ RSpec.describe "Video Administration", type: :system do
       fill_in 'video[url]', with: "#{video.url}v2"
       select other_event.topic, from: 'video[past_event_id]'
 
-      click_on 'commit'
+      click_button 'commit'
 
       old_data = video.attributes
       video.reload
@@ -68,7 +68,7 @@ RSpec.describe "Video Administration", type: :system do
 
       fill_in :admin_user_email, with: admin_user.email
       fill_in :admin_user_password, with: 'P4ssw0rd'
-      click_on 'Log in'
+      click_button 'Log in'
 
       visit admin_videos_path
       expect(page).to have_text('Videos')

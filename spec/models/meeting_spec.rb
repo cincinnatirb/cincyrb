@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Meeting, type: :model do
+RSpec.describe Meeting do
   describe ".next_meeting" do
     before { allow(described_class).to receive(:ruby_brigade_meetings).and_return([1, 2, 3, 4]) }
 
