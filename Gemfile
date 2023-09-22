@@ -13,9 +13,9 @@ gem 'newrelic_rpm'
 gem 'nokogiri', '>= 1.13.10'
 gem 'oauth'
 gem 'pg'
-gem 'puma', '>= 5.5.1'
+gem 'puma', '>= 5.6.7'
 gem 'rack'
-gem 'rails', '>= 7.0.5.1'
+gem 'rails', '>= 7.0.7.1'
 gem 'rails-html-sanitizer', '>= 1.4.4'
 gem 'rake', '>= 10'
 gem 'sass-rails'
@@ -54,10 +54,10 @@ group :test do
   gem 'database_cleaner-active_record'
   gem 'faker'
   gem 'rails-controller-testing'
+  gem 'selenium-webdriver'
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
   gem 'vcr'
-  gem 'webdrivers'
   gem 'webmock'
 end
 
