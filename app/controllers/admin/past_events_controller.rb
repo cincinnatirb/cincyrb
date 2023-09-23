@@ -3,7 +3,7 @@ module Admin
     before_action :past_event, only: %i[destroy edit show update]
 
     def index
-      @past_events = PastEvent.all.order('date DESC')
+      @past_events = PastEvent.order('date DESC')
     end
 
     def show; end

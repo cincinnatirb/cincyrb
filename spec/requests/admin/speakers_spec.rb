@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe '/admin/speakers', type: :request do
+RSpec.describe '/admin/speakers' do
   let!(:admin_user) { create(:admin_user, password: 'P4ssw0rd!') }
   let!(:speaker) { create(:speaker) }
   let(:valid_attributes) { { name: Faker::Name.unique.name } }

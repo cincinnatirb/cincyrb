@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe PastEvent, type: :model do
+RSpec.describe PastEvent do
   context 'Associations & Validations' do # rubocop:disable RSpec/ContextWording
     before { build(:past_event) }
 

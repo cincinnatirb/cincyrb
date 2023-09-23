@@ -2,7 +2,7 @@ require 'rails_helper'
 require 'securerandom'
 
 module Admin
-  RSpec.describe VideosController, type: :request do
+  RSpec.describe VideosController do
     let!(:admin_user) { create(:admin_user, password: 'P4ssw0rd!') }
     let!(:video) { create(:video) }
     let(:valid_attributes) { { past_event_id: video.past_event.id, url: Faker::Internet.url(host: 'example.com', path: "/videos/#{SecureRandom.alphanumeric(8)}") } }

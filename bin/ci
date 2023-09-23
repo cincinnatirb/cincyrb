@@ -1,8 +1,37 @@
 #!/usr/bin/env ruby
+
+def pass_fail(passed, message)
+  puts "#{message}: #{passed ? "\e[32m\u2713\e[0m" : "\e[31m\u2717\e[0m" }\n"
+end
+
+def terminal_message(text)
+  puts "\e[1m\e[96m#{text}\e[0m"
+end
+
 APP_ROOT = File.expand_path('..', __dir__)
 Dir.chdir(APP_ROOT) do
-  system('bin/rspec')
-  system('bin/bundler-audit --update')
-  system('bin/brakeman -q -w2')
-  system('bin/rubocop --parallel')
+  terminal_message("Running Ruby Tests...")
+  ruby_tests_passed = system("bin/rspec")
+  terminal_message("Done.\n\n")
+
+  terminal_message("Linting Ruby Code...")
+  ruby_linting_passed = system("bin/rubocop --parallel")
+  terminal_message("Done.\n\n")
+
+  terminal_message("Auditing Gems...")
+  gem_audit_passed = system('bin/bundler-audit --update')
+  terminal_message("Done.\n\n")
+
+  terminal_message("Vulnerability Scanning...")
+  vulnerability_scan_passed = system('bin/brakeman -q -w2')
+  terminal_message("Done.\n\n")
+
+  pass_fail(ruby_tests_passed, "Ruby Tests")
+  pass_fail(ruby_linting_passed, "Ruby Linter")
+  pass_fail(gem_audit_passed, "Gem Audit")
+  pass_fail(vulnerability_scan_passed, "Vulnerability Scan")
+
+  return 1 unless ruby_tests_passed && ruby_linting_passed && gem_audit_passed && vulnerability_scan_passed
+
+  return 0
 end

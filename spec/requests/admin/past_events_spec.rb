@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe '/admin/past_events', type: :request do
+RSpec.describe '/admin/past_events' do
   let!(:admin_user) { create(:admin_user, password: 'P4ssw0rd!') }
   let!(:speaker) { create(:speaker) }
   let(:valid_attributes) {

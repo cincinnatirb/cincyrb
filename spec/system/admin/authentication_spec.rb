@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Authentication', type: :system do
+RSpec.describe 'Authentication' do
   subject { page }
 
   let(:password) { 'P4ssw0rd' }
@@ -12,7 +12,7 @@ RSpec.describe 'Authentication', type: :system do
 
       fill_in :admin_user_email, with: admin_user.email
       fill_in :admin_user_password, with: password
-      click_on 'Log in'
+      click_button 'Log in'
     end
 
     it { is_expected.to have_text('Signed in successfully.') }
@@ -24,7 +24,7 @@ RSpec.describe 'Authentication', type: :system do
 
       fill_in :admin_user_email, with: admin_user.email
       fill_in :admin_user_password, with: "#{password}-fat-fingers!"
-      click_on 'Log in'
+      click_button 'Log in'
     end
 
     it { is_expected.to have_text('Invalid email or password.') }

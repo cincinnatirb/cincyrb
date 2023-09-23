@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe ApplicationController, type: :request do
+RSpec.describe ApplicationController do
   describe 'logging in' do
     let(:admin_user) { create(:admin_user, password:) }
     let(:email) { admin_user.email }

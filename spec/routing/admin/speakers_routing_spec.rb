@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe Admin::SpeakersController, type: :routing do
+RSpec.describe Admin::SpeakersController do
   describe "routing" do
     it "routes to #create" do
       expect(post: "/admin/speakers").to route_to("admin/speakers#create")

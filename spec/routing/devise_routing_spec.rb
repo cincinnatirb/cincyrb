@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 module Devise
-  RSpec.describe SessionsController, type: :routing do
+  RSpec.describe SessionsController do
     describe 'routing' do
       it 'routes to #new' do
         expect(get: '/admin/login').to route_to('devise/sessions#new')
@@ -21,7 +21,7 @@ module Devise
     end
   end
 
-  RSpec.describe PasswordsController, type: :routing do
+  RSpec.describe PasswordsController do
     describe 'routing' do
       it 'routes to #create' do
         expect(post: '/admin/password').to route_to('devise/passwords#create')
