@@ -1,0 +1,38 @@
+<div class="bluesky-feed">
+  <div class="bluesky-header">
+    <h2>Latest from @<%= @handle %></h2>
+    <a href="https://bsky.app/profile/<%= @handle %>" target="_blank" rel="noopener noreferrer">
+      View on Bluesky
+    </a>
+  </div>
+
+  <div class="bluesky-posts">
+    <% if posts.any? %>
+      <% posts.each do |post| %>
+        <div class="post">
+          <div class="post-content">
+            <%= simple_format(post[:text]) %>
+          </div>
+
+          <div class="post-meta">
+            <span class="timestamp">
+              <%= time_ago_in_words(post[:created_at]) %> ago
+            </span>
+            <div class="interactions">
+              <span title="Likes"><%= post[:likes] %> 👍</span>
+              <span title="Reposts"><%= post[:reposts] %> 🔁</span>
+              <span title="Replies"><%= post[:replies] %> 💬</span>
+            </div>
+            <a href="<%= post[:url] %>" target="_blank" rel="noopener noreferrer">
+              View Post →
+            </a>
+          </div>
+        </div>
+      <% end %>
+    <% else %>
+      <div class="no-posts">
+        Unable to load posts. Please try again later.
+      </div>
+    <% end %>
+  </div>
+</div>

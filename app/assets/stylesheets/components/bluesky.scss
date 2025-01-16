@@ -1,0 +1,85 @@
+.bluesky-feed {
+  max-width: 600px;
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+
+  .bluesky-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    h2 {
+      margin: 0;
+      color: #1B1B1B;
+    }
+
+    a {
+      color: #3B82F6;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .bluesky-posts {
+    .post {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+
+      .post-content {
+        margin-bottom: 0.75rem;
+
+        p {
+          margin: 0 0 0.5rem;
+          &:last-child { margin-bottom: 0; }
+        }
+      }
+
+      .post-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.875rem;
+        color: #6b7280;
+
+        .timestamp {
+          flex-shrink: 0;
+        }
+
+        .interactions {
+          display: flex;
+          gap: 0.75rem;
+
+          span {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+          }
+        }
+
+        a {
+          color: #3B82F6;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .no-posts {
+      text-align: center;
+      padding: 2rem;
+      color: #6b7280;
+      background: #f9fafb;
+      border-radius: 8px;
+    }
+  }
+}

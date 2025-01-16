@@ -21,6 +21,7 @@ gem 'rake', '>= 10'
 gem 'sass-rails'
 gem 'sprockets-rails', require: 'sprockets/railtie'
 gem 'uglifier', '>= 1.0.3'
+gem 'view_component'
 
 group :production, :staging do
   gem 'rails_12factor'
@@ -61,4 +62,4 @@ group :test do
   gem 'webmock'
 end
 
-gem "dockerfile-rails", ">= 1.5", group: :development
+gem 'dockerfile-rails', '>= 1.5', group: :development
