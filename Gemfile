@@ -15,7 +15,7 @@ gem 'oauth'
 gem 'pg'
 gem 'puma', '>= 5.6.7'
 gem 'rack'
-gem 'rails', '>= 7.0.7.1'
+gem "rails", "~> 7.1.0"
 gem 'rails-html-sanitizer', '>= 1.4.4'
 gem 'rake', '>= 10'
 gem 'sass-rails'

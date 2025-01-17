@@ -9,7 +9,7 @@ class BlueskyFeedComponent < ViewComponent::Base
   end
 
   def posts
-    return [] unless did = @client.resolve_handle(@handle)
+    return [] unless (did = @client.resolve_handle(@handle))
 
     @posts ||= begin
       feed = @client.get_author_feed(did, @limit)
@@ -26,7 +26,7 @@ class BlueskyFeedComponent < ViewComponent::Base
     record = post["post"]
     {
       text: record["record"]["text"],
-      created_at: Time.parse(record["record"]["createdAt"]),
+      created_at: Time.zone.parse(record["record"]["createdAt"]),
       likes: record["likeCount"],
       reposts: record["repostCount"],
       replies: record["replyCount"],
