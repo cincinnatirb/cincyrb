@@ -15,12 +15,13 @@ gem 'oauth'
 gem 'pg'
 gem 'puma', '>= 5.6.7'
 gem 'rack'
-gem 'rails', '>= 7.0.7.1'
+gem "rails", "~> 7.1.0"
 gem 'rails-html-sanitizer', '>= 1.4.4'
 gem 'rake', '>= 10'
 gem 'sass-rails'
 gem 'sprockets-rails', require: 'sprockets/railtie'
-gem 'uglifier', '>= 1.0.3'
+gem 'terser', '~> 1.2.4'
+gem 'view_component'
 
 group :production, :staging do
   gem 'rails_12factor'
@@ -61,4 +62,4 @@ group :test do
   gem 'webmock'
 end
 
-gem "dockerfile-rails", ">= 1.5", group: :development
+gem 'dockerfile-rails', '>= 1.5', group: :development

@@ -13,7 +13,6 @@ Rails.application.routes.draw do
   get  'past_events'               => 'past_events#index'
   get  'past_events/:year/:month'  => 'past_events#show', as: :past_event
   get  'this_month_in_ruby'        => 'pages#this_month_in_ruby'
-  get  'twitter/timeline'
 
   devise_for :admin_users, path: 'admin', path_names: {
     sign_in: 'login',

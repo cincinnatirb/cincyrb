@@ -11,3 +11,5 @@ vendor/ruby
 .yarn-integrity
 /coverage/
 *.dump
+
+/config/master.key
