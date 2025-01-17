@@ -20,7 +20,7 @@ gem 'rails-html-sanitizer', '>= 1.4.4'
 gem 'rake', '>= 10'
 gem 'sass-rails'
 gem 'sprockets-rails', require: 'sprockets/railtie'
-gem 'uglifier', '>= 1.0.3'
+gem 'terser', '~> 1.2.4'
 gem 'view_component'
 
 group :production, :staging do
