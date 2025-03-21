@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     services:
       postgres:
-        image: postgres:15.3-alpine
+        image: postgres:15.3
         ports:
           - "5432:5432"
         env:
@@ -36,12 +36,6 @@ jobs:
           bundler-cache: true
       - name: Set up database schema
         run: bin/rails db:schema:load
-      - name: List environment variables
-        run: printenv
-      - name: List installed gems
-        run: gem list
-      - name: List VCR cassettes
-        run: ls -lR spec/cassettes
       - name: Run specs
         run: bin/rspec
 
