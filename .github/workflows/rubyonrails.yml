@@ -30,6 +30,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+      - name: Install system dependencies
+        run: sudo apt-get install -y libpq-dev
       - name: Install Ruby and gems
         uses: ruby/setup-ruby@v1
         with:
@@ -38,9 +40,17 @@ jobs:
         run: bin/rails db:schema:load
       - name: Ensure VCR cassettes are available
         run: |
-          if [ ! -d spec/vcr_cassettes ]; then
-            mkdir -p spec/vcr_cassettes
+          if [ ! -d spec/cassettes ]; then
+            mkdir -p spec/cassettes
           fi
+      - name: Verify PostgreSQL service
+        run: pg_isready -h localhost -p 5432 -U rails
+      - name: Check database connection
+        run: |
+          bin/rails db:environment:set RAILS_ENV=test
+          bin/rails db:prepare
+      - name: List VCR cassettes
+        run: ls -l spec/cassettes
       - name: Run specs
         run: bin/rspec
         env:
