@@ -414,8 +414,6 @@ GEM
     unicode-display_width (3.1.4)
       unicode-emoji (~> 4.0, >= 4.0.4)
     unicode-emoji (4.0.4)
-    vcr (6.3.1)
-      base64
     version_gem (1.1.4)
     view_component (3.21.0)
       activesupport (>= 5.2.0, < 8.1)
@@ -488,7 +486,6 @@ DEPENDENCIES
   spring
   sprockets-rails
   terser (~> 1.2.4)
-  vcr
   view_component
   webmock
 

@@ -31,9 +31,15 @@ class BlueskyClient
   end
 
   def create_session
-    self.class.post('/com.atproto.server.createSession',
-                    body: auth_credentials.to_json,
-                    headers: { 'Content-Type' => 'application/json' })
+    response = self.class.post('/com.atproto.server.createSession',
+                               body: auth_credentials.to_json,
+                               headers: { 'Content-Type' => 'application/json' })
+
+    if response.success?
+      response
+    else
+      handle_auth_error(response)
+    end
   end
 
   def handle_authentication_response(response)

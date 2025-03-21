@@ -7,11 +7,7 @@ RSpec.describe "Past Events" do
     let!(:past_event) { create(:past_event, :with_speakers, speaker_count: 2) }
     let!(:video) { create(:video, url: 'https://example.com/video/qwerty', past_event:) }
 
-    before do
-      VCR.use_cassette('spec_system_past-events-spec', record: :new_episodes) do
-        visit past_events_path
-      end
-    end
+    before { visit past_events_path }
 
     it { is_expected.to have_text(past_event.topic) }
 
