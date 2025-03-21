@@ -8,13 +8,14 @@ gem 'eco'
 gem 'httparty', '>= 0.21.0'
 gem 'jquery-rails'
 gem 'json'
+gem 'net-imap', '>= 0.5.6', require: false
 gem 'net-smtp', require: false
 gem 'newrelic_rpm'
-gem 'nokogiri', '>= 1.13.10'
+gem 'nokogiri', '>= 1.18.3'
 gem 'oauth'
 gem 'pg'
 gem 'puma', '>= 5.6.7'
-gem 'rack'
+gem 'rack', '>= 3.1.12'
 gem "rails", "~> 7.1.0"
 gem 'rails-html-sanitizer', '>= 1.4.4'
 gem 'rake', '>= 10'

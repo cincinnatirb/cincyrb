@@ -24,4 +24,4 @@ end
 require "rubygems"
 require "bundler/setup"
 
-load Gem.bin_path("rack", "rackup")
+load Gem.bin_path("rackup", "rackup")
