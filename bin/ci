@@ -23,7 +23,7 @@ Dir.chdir(APP_ROOT) do
   terminal_message("Done.\n\n")
 
   terminal_message("Vulnerability Scanning...")
-  vulnerability_scan_passed = system('bin/brakeman -q -w2')
+  vulnerability_scan_passed = system('bin/brakeman -q -w2 --no-pager')
   terminal_message("Done.\n\n")
 
   pass_fail(ruby_tests_passed, "Ruby Tests")
@@ -31,7 +31,9 @@ Dir.chdir(APP_ROOT) do
   pass_fail(gem_audit_passed, "Gem Audit")
   pass_fail(vulnerability_scan_passed, "Vulnerability Scan")
 
-  return 1 unless ruby_tests_passed && ruby_linting_passed && gem_audit_passed && vulnerability_scan_passed
-
-  return 0
+  if ruby_tests_passed && ruby_linting_passed && gem_audit_passed && vulnerability_scan_passed
+    exit 0
+  else
+    exit 1
+  end
 end
