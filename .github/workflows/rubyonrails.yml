@@ -39,6 +39,9 @@ jobs:
       # Add or replace test runners here
       - name: Run specs
         run: bin/rspec
+        env:
+          VCR_RECORD_MODE: new_episodes
+          CI: 'true'
 
   lint:
     runs-on: ubuntu-latest
