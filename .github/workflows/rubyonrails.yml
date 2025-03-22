@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     services:
       postgres:
-        image: postgres:15.3
+        image: postgres:15-alpine
         ports:
           - "5432:5432"
         env:
@@ -36,6 +36,10 @@ jobs:
           bundler-cache: true
       - name: Set up database schema
         run: bin/rails db:schema:load
+      - name: Ensure VCR cassettes are available
+        run: |
+          mkdir -p spec/vcr_cassettes
+          cp -r vcr_cassettes/* spec/vcr_cassettes/
       - name: Run specs
         run: bin/rspec
 
