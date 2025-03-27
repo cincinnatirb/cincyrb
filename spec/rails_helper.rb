@@ -4,6 +4,7 @@ require 'support/database_cleaner'
 require 'support/factory_bot'
 require 'capybara/rails'
 require 'capybara/rspec'
+require 'webmock/rspec'
 
 # Checks for pending migrations and applies them before tests are run.
 # If you are not using ActiveRecord, you can remove these lines.
@@ -57,3 +58,5 @@ Shoulda::Matchers.configure do |config|
     with.library :rails
   end
 end
+
+WebMock.disable_net_connect!(allow_localhost: true)

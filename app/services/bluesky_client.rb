@@ -57,8 +57,8 @@ class BlueskyClient
 
   def auth_credentials
     {
-      identifier: Rails.application.credentials.dig(:bluesky, :username),
-      password: Rails.application.credentials.dig(:bluesky, :app_password)
+      identifier: ENV['BLUESKY_USERNAME'] || Rails.application.credentials.dig(:bluesky, :username),
+      password: ENV['BLUESKY_APP_PASSWORD'] || Rails.application.credentials.dig(:bluesky, :app_password)
     }
   end
 

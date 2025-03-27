@@ -5,9 +5,12 @@ RSpec.describe "Past Events" do
     subject { page }
 
     let!(:past_event) { create(:past_event, :with_speakers, speaker_count: 2) }
-    let!(:video) { create(:video, url: 'https://example.com/video/qwerty', past_event:) }
+    let!(:video) { create(:video, url: 'https://example.com/video/stubbing-requests', past_event:) }
 
-    before { visit past_events_path }
+    before do
+      stub_request(:any, /example\.com/).to_return(status: 200)
+      visit past_events_path
+    end
 
     it { is_expected.to have_text(past_event.topic) }
 
