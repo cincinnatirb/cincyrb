@@ -12,6 +12,8 @@ RSpec.describe "Speaker Administration" do
 
       click_button 'Log in'
 
+      expect(page).to have_link('Logout')
+
       visit new_admin_speaker_path
       expect(page).to have_text('New Speaker')
     end
@@ -24,7 +26,11 @@ RSpec.describe "Speaker Administration" do
 
       click_button 'commit'
 
-      new_speaker = Speaker.last
+      expect(page).to have_current_path(%r{/admin/speakers/\d+}) # Regex for /admin/speakers/ID
+      expect(page).to have_text('Speaker was successfully created.')
+
+      new_speaker = Speaker.find_by(name: 'Jim Weirich') # Use find_by instead of .last
+      expect(new_speaker).not_to be_nil
       expect(new_speaker.name).to eq('Jim Weirich')
       expect(new_speaker.bio).to eq('I\'ve done it all.')
       expect(new_speaker.email).to eq('jim.weirich@example.com')
@@ -41,6 +47,8 @@ RSpec.describe "Speaker Administration" do
       fill_in :admin_user_email, with: admin_user.email
       fill_in :admin_user_password, with: 'P4ssw0rd'
       click_button 'Log in'
+
+      expect(page).to have_link('Logout')
 
       visit edit_admin_speaker_path(speaker)
       expect(page).to have_text('Editing Speaker')
@@ -74,6 +82,8 @@ RSpec.describe "Speaker Administration" do
       fill_in :admin_user_email, with: admin_user.email
       fill_in :admin_user_password, with: 'P4ssw0rd'
       click_button 'Log in'
+
+      expect(page).to have_link('Logout')
 
       visit admin_speakers_path
       expect(page).to have_text('Speakers')

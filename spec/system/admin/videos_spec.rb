@@ -14,6 +14,8 @@ RSpec.describe "Video Administration" do
       fill_in :admin_user_password, with: 'P4ssw0rd'
       click_button 'Log in'
 
+      expect(page).to have_link('Logout')
+
       visit new_admin_video_path
       expect(page).to have_text('New Video')
     end
@@ -24,7 +26,11 @@ RSpec.describe "Video Administration" do
 
       click_button 'commit'
 
-      new_video = Video.last
+      expect(page).to have_current_path(%r{/admin/videos/\d+}) # Regex for /admin/videos/ID
+      expect(page).to have_text('Video was successfully created.')
+
+      new_video = Video.find_by(url: url) # Use find_by instead of .last
+      expect(new_video).not_to be_nil
       expect(new_video.url).to eq(url)
       expect(new_video.past_event).to eq(past_event)
     end
@@ -40,6 +46,8 @@ RSpec.describe "Video Administration" do
       fill_in :admin_user_email, with: admin_user.email
       fill_in :admin_user_password, with: 'P4ssw0rd'
       click_button 'Log in'
+
+      expect(page).to have_link('Logout')
 
       visit edit_admin_video_path(video)
       expect(page).to have_text('Editing Video')
@@ -71,6 +79,8 @@ RSpec.describe "Video Administration" do
       fill_in :admin_user_password, with: 'P4ssw0rd'
       click_button 'Log in'
 
+      expect(page).to have_link('Logout')
+
       visit admin_videos_path
       expect(page).to have_text('Videos')
     end
@@ -79,7 +89,7 @@ RSpec.describe "Video Administration" do
     it { is_expected.to have_text(videos[1].past_event.topic) }
 
     it 'lists all Videos' do
-      expect(page.all('[data-test^="video-id"]').count).to eq(videos.count)
+      expect(page).to have_selector('[data-test^="video-id"]', count: videos.count)
     end
   end
 end
