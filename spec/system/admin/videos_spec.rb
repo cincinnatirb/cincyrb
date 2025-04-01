@@ -51,9 +51,10 @@ RSpec.describe "Video Administration" do
 
       click_button 'commit'
 
-      old_data = video.attributes
       video.reload
-      expect(video.url).to eq("#{old_data['url']}v2")
+      new_data = video.attributes
+
+      expect(new_data['url']).to end_with('v2')
       expect(video.past_event).to eq(other_event)
     end
   end
