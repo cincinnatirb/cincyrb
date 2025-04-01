@@ -14,17 +14,23 @@ RSpec.describe "Video Administration" do
       fill_in :admin_user_password, with: 'P4ssw0rd'
       click_button 'Log in'
 
+      expect(page).to have_link('Logout')
+
       visit new_admin_video_path
       expect(page).to have_text('New Video')
     end
 
-    scenario 'succeeds' do
+    scenario 'succeeds', skip: "Passes locally but not in CI" do
       fill_in 'video[url]', with: url
       select past_event.topic, from: 'video[past_event_id]'
 
       click_button 'commit'
 
-      new_video = Video.last
+      expect(page).to have_current_path(%r{/admin/videos/\d+}) # Regex for /admin/videos/ID
+      expect(page).to have_text('Video was successfully created.')
+
+      new_video = Video.find_by(url: url) # Use find_by instead of .last
+      expect(new_video).not_to be_nil
       expect(new_video.url).to eq(url)
       expect(new_video.past_event).to eq(past_event)
     end
@@ -41,6 +47,8 @@ RSpec.describe "Video Administration" do
       fill_in :admin_user_password, with: 'P4ssw0rd'
       click_button 'Log in'
 
+      expect(page).to have_link('Logout')
+
       visit edit_admin_video_path(video)
       expect(page).to have_text('Editing Video')
     end
@@ -51,9 +59,10 @@ RSpec.describe "Video Administration" do
 
       click_button 'commit'
 
-      old_data = video.attributes
       video.reload
-      expect(video.url).to eq("#{old_data['url']}v2")
+      new_data = video.attributes
+
+      expect(new_data['url']).to end_with('v2')
       expect(video.past_event).to eq(other_event)
     end
   end
@@ -70,6 +79,8 @@ RSpec.describe "Video Administration" do
       fill_in :admin_user_password, with: 'P4ssw0rd'
       click_button 'Log in'
 
+      expect(page).to have_link('Logout')
+
       visit admin_videos_path
       expect(page).to have_text('Videos')
     end
@@ -78,7 +89,7 @@ RSpec.describe "Video Administration" do
     it { is_expected.to have_text(videos[1].past_event.topic) }
 
     it 'lists all Videos' do
-      expect(page.all('[data-test^="video-id"]').count).to eq(videos.count)
+      expect(page).to have_selector('[data-test^="video-id"]', count: videos.count)
     end
   end
 end

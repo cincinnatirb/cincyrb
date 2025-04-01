@@ -1,13 +1,16 @@
-development:
+default: &default
   adapter: postgresql
-  database: cincyrb_development
+  host: localhost
+  port: 5432
+  username: postgres
   pool: 5
   min_messages: 'warning'
   encoding: utf8
 
-test: &test
-  adapter: postgresql
+development:
+  <<: *default
+  database: cincyrb_development
+
+test:
+  <<: *default
   database: cincyrb_test
-  pool: 5
-  min_messages: 'warning'
-  encoding: utf8
