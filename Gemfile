@@ -16,12 +16,13 @@ gem 'oauth'
 gem 'pg'
 gem 'puma', '>= 5.6.7'
 gem 'rack', '>= 3.1.12'
-gem "rails", "~> 7.1.0"
+gem "rails", "~> 7.2.0"
 gem 'rails-html-sanitizer', '>= 1.4.4'
 gem 'rake', '>= 10'
 gem 'sass-rails'
 gem 'sprockets-rails', require: 'sprockets/railtie'
 gem 'terser', '~> 1.2.4'
+gem "turbo-rails", "~> 2.0"
 gem 'view_component'
 
 group :production, :staging do
@@ -32,6 +33,7 @@ group :development, :test do
   gem 'brakeman'
   gem 'bundler-audit'
   gem 'byebug'
+  gem 'dockerfile-rails', '>= 1.5'
   gem 'dotenv'
   gem 'factory_bot_rails'
   gem 'poltergeist'
@@ -49,6 +51,7 @@ end
 group :development do
   gem 'listen'
   gem 'solargraph'
+  gem 'tidewave'
 end
 
 group :test do
@@ -61,5 +64,3 @@ group :test do
   gem 'simplecov', require: false
   gem 'webmock'
 end
-
-gem 'dockerfile-rails', '>= 1.5', group: :development

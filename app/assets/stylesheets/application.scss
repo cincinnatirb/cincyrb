@@ -19,3 +19,22 @@
 "components/video";
 
 @import "base/utilities";
+
+// Custom styles for making buttons look like links
+.link-button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  color: $dark-red; // Match the site's link color
+  text-decoration: underline;
+
+  &:hover {
+    color: darken($dark-red, 10%); // Match the site's visited link color
+  }
+
+  &:visited {
+    color: darken($dark-red, 10%);
+  }
+}

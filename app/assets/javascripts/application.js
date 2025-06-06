@@ -10,9 +10,13 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery
+//= require jquery_ujs
 //= require main
 
-$(() => $(".scroll").click(function(event) {
-  event.preventDefault();
-  return $('html,body').animate({scrollTop: $(this.hash).offset().top}, 500);
-}));
+$(document).ready(function() {
+  $(".scroll").click(function(event) {
+    event.preventDefault();
+    return $('html,body').animate({scrollTop: $(this.hash).offset().top}, 500);
+  });
+});

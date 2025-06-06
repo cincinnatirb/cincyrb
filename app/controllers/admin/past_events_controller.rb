@@ -15,7 +15,7 @@ module Admin
     def edit; end
 
     def create
-      @past_event = PastEvent.new(past_event_params)
+      @past_event = PastEvent.new(past_event_params.except(:speaker_ids))
 
       PastEvent.transaction do
         @past_event.save
