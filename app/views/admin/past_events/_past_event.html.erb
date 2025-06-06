@@ -5,5 +5,5 @@
   <td><%= past_event.description %></td>
   <td><%= link_to 'Show', admin_past_event_path(past_event) %></td>
   <td><%= link_to 'Edit', edit_admin_past_event_path(past_event) %></td>
-  <td><%= link_to 'Destroy', admin_past_event_path(past_event), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  <td><%= button_to 'Destroy', admin_past_event_path(past_event), method: :delete, form: { style: "display: inline;" }, class: "link-button", onclick: "return confirm('Are you sure?')" %></td>
 </tr>

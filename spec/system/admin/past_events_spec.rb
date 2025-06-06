@@ -85,4 +85,44 @@ RSpec.describe "PastEvent Administration" do
       expect(page.all('[data-test^="past-event-id"]').count).to eq(past_events.count)
     end
   end
+
+  context 'when destroying' do
+    let!(:past_event) { create(:past_event, :all_fields, :with_speakers, speaker_count: 1, topic: 'Event to be Destroyed') }
+
+    before do
+      visit admin_user_session_path
+
+      fill_in :admin_user_email, with: admin_user.email
+      fill_in :admin_user_password, with: 'P4ssw0rd'
+      click_button 'Log in'
+
+      visit admin_past_events_path
+      expect(page).to have_text('Past Events')
+      expect(page).to have_text('Event to be Destroyed')
+    end
+
+    scenario 'can destroy a past event via the Destroy link', :js do
+      expect(PastEvent.count).to eq(1)
+
+      # Find the destroy button for our specific past event
+      within("[data-test='past-event-id-#{past_event.id}']") do
+        # Handle the confirmation dialog
+        accept_confirm 'Are you sure?' do
+          click_button 'Destroy'
+        end
+      end
+
+      # Should redirect back to index page
+      expect(current_path).to eq(admin_past_events_path)
+
+      # Should show success message
+      expect(page).to have_text('Past Event was successfully deleted.')
+
+      # Past event should be removed from the database
+      expect(PastEvent.count).to eq(0)
+
+      # Should no longer appear on the page
+      expect(page).not_to have_text('Event to be Destroyed')
+    end
+  end
 end

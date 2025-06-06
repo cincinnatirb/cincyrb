@@ -22,6 +22,7 @@ gem 'rake', '>= 10'
 gem 'sass-rails'
 gem 'sprockets-rails', require: 'sprockets/railtie'
 gem 'terser', '~> 1.2.4'
+gem "turbo-rails", "~> 2.0"
 gem 'view_component'
 
 group :production, :staging do
@@ -32,6 +33,7 @@ group :development, :test do
   gem 'brakeman'
   gem 'bundler-audit'
   gem 'byebug'
+  gem 'dockerfile-rails', '>= 1.5'
   gem 'dotenv'
   gem 'factory_bot_rails'
   gem 'poltergeist'
@@ -62,5 +64,3 @@ group :test do
   gem 'simplecov', require: false
   gem 'webmock'
 end
-
-gem 'dockerfile-rails', '>= 1.5', group: :development
