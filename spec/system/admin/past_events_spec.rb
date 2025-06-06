@@ -101,7 +101,7 @@ RSpec.describe "PastEvent Administration" do
       expect(page).to have_text('Event to be Destroyed')
     end
 
-    scenario 'can destroy a past event via the Destroy link', :js do
+    scenario 'can destroy a past event via the Destroy link' do
       expect(PastEvent.count).to eq(1)
 
       # Find the destroy button for our specific past event
