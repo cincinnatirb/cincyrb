@@ -105,6 +105,45 @@ RSpec.describe '/admin/past_events' do
           post admin_past_events_url, params: { past_event: valid_attributes }
           expect(response).to redirect_to(admin_past_event_url(PastEvent.last))
         end
+
+        it 'creates exactly one speaker assignment per selected speaker' do
+          create_params = {
+            date: 1.week.from_now,
+            topic: 'Test Event with Duplicate Speaker Bug',
+            speaker_ids: [speaker.id.to_s]
+          }
+
+          expect {
+            post admin_past_events_url, params: { past_event: create_params }
+          }.to change(SpeakerAssignment, :count).by(1)
+        end
+
+        it 'does not create duplicate speaker assignment records' do
+          create_params = {
+            date: 1.week.from_now,
+            topic: 'Test Event with Duplicate Speaker Bug',
+            speaker_ids: [speaker.id.to_s]
+          }
+
+          post admin_past_events_url, params: { past_event: create_params }
+          new_past_event = PastEvent.last
+
+          expect(new_past_event.speaker_assignments.count).to eq(1)
+        end
+
+        it 'creates unique speaker assignment pairs' do
+          create_params = {
+            date: 1.week.from_now,
+            topic: 'Test Event with Duplicate Speaker Bug',
+            speaker_ids: [speaker.id.to_s]
+          }
+
+          post admin_past_events_url, params: { past_event: create_params }
+          new_past_event = PastEvent.last
+          speaker_assignment_pairs = new_past_event.speaker_assignments.pluck(:past_event_id, :speaker_id)
+
+          expect(speaker_assignment_pairs.uniq.length).to eq(speaker_assignment_pairs.length)
+        end
       end
 
       context 'with invalid parameters' do
@@ -125,9 +164,7 @@ RSpec.describe '/admin/past_events' do
   describe 'PATCH /update' do
     context 'when NOT logged in' do
       it 'redirects to the root path' do
-        new_topic = "Updated #{past_event.topic}!"
-        update_attributes = { date: past_event.date, topic: new_topic }
-        patch admin_past_event_url(past_event), params: { past_event: update_attributes }
+        patch admin_past_event_url(past_event), params: { past_event: valid_attributes }
         expect(response).to redirect_to(root_path)
       end
     end
@@ -153,9 +190,9 @@ RSpec.describe '/admin/past_events' do
       end
 
       context 'with invalid parameters' do
-        it "renders a successful response (i.e. to display the 'edit' template)" do
+        it "renders an 'edit' template" do
           patch admin_past_event_url(past_event), params: { past_event: invalid_attributes }
-          expect(response).to be_successful
+          expect(response.body).to include('Editing Past Event')
         end
       end
     end
