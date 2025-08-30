@@ -20,11 +20,11 @@ RSpec.describe "Video Administration" do
       expect(page).to have_text('New Video')
     end
 
-    scenario 'succeeds', skip: "Passes locally but not in CI" do
+    scenario 'succeeds' do
       fill_in 'video[url]', with: url
       select past_event.topic, from: 'video[past_event_id]'
 
-      click_button 'commit'
+      click_button 'Submit'
 
       expect(page).to have_current_path(%r{/admin/videos/\d+}) # Regex for /admin/videos/ID
       expect(page).to have_text('Video was successfully created.')
@@ -53,16 +53,19 @@ RSpec.describe "Video Administration" do
       expect(page).to have_text('Editing Video')
     end
 
-    scenario 'succeeds', skip: "Passes locally but not in CI" do
-      fill_in 'video[url]', with: "#{video.url}v2"
+    scenario 'succeeds' do
+      new_url = "#{video.url}v2"
+      fill_in 'video[url]', with: new_url
       select other_event.topic, from: 'video[past_event_id]'
 
-      click_button 'commit'
+      click_button 'Submit'
+
+      # Wait for redirect and verify we're on the show page
+      expect(page).to have_current_path(admin_video_path(video))
 
       video.reload
-      new_data = video.attributes
 
-      expect(new_data['url']).to end_with('v2')
+      expect(video.url).to eq(new_url)
       expect(video.past_event).to eq(other_event)
     end
   end

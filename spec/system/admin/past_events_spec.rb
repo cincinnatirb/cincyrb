@@ -18,7 +18,7 @@ RSpec.describe "PastEvent Administration" do
       expect(page).to have_text('New Past Event')
     end
 
-    scenario 'can select multiple Speakers', skip: "Passes locally but not in CI" do
+    scenario 'can select multiple Speakers' do
       expect(page).to have_field('past_event_date', disabled: false)
       fill_in 'past_event_date', with: 1.day.from_now.strftime('%Y-%m-%d') # Date fields expect YYYY-MM-DD format
       fill_in 'past_event[topic]', with: 'A Really Cool Rails Feature'
@@ -26,7 +26,11 @@ RSpec.describe "PastEvent Administration" do
       select other_speaker.name, from: 'past_event[speaker_ids][]'
       fill_in 'past_event[description]', with: 'No, we mean it! This is a reeeeally cool Rails feature.'
 
-      click_button 'commit'
+      click_button 'Submit'
+
+      # Wait for redirect to show page
+      expect(page).to have_current_path(%r{/admin/past_events/\d+})
+      expect(page).to have_text('A Really Cool Rails Feature')
 
       new_past_event = PastEvent.last
       expect(new_past_event.topic).to eq('A Really Cool Rails Feature')
@@ -51,12 +55,23 @@ RSpec.describe "PastEvent Administration" do
     end
 
     scenario 'removes specific Speaker(s) and adds new Speaker(s)' do
-      unselect past_event.speakers.first.name, from: 'past_event[speaker_ids][]'
+      # Store the original speakers for comparison
+      original_speakers = past_event.speakers.to_a
+      first_speaker = original_speakers.first
+      remaining_speaker = original_speakers.last
+
+      unselect first_speaker.name, from: 'past_event[speaker_ids][]'
       select other_speaker.name, from: 'past_event[speaker_ids][]'
 
-      click_button 'commit'
+      click_button 'Submit'
 
-      expect(past_event.reload.speakers.map(&:name).sort).to eq([other_speaker.name, past_event.speakers.last.name].sort)
+      # Wait for redirect to show page
+      expect(page).to have_current_path(admin_past_event_path(past_event))
+
+      updated_speakers = past_event.reload.speakers
+      expect(updated_speakers).to include(other_speaker, remaining_speaker)
+      expect(updated_speakers).not_to include(first_speaker)
+      expect(updated_speakers.count).to eq(2)
     end
   end
 

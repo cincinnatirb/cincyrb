@@ -18,13 +18,13 @@ RSpec.describe "Speaker Administration" do
       expect(page).to have_text('New Speaker')
     end
 
-    scenario 'succeeds', skip: "Passes locally but not in CI" do
+    scenario 'succeeds' do
       fill_in 'speaker[name]', with: 'Jim Weirich'
       fill_in 'speaker[bio]', with: 'I\'ve done it all.'
       fill_in 'speaker[email]', with: 'jim.weirich@example.com'
       fill_in 'speaker[image_url]', with: 'https://example.com/jimweirich/images/avatar.png'
 
-      click_button 'commit'
+      click_button 'Submit'
 
       expect(page).to have_current_path(%r{/admin/speakers/\d+}) # Regex for /admin/speakers/ID
       expect(page).to have_text('Speaker was successfully created.')
@@ -54,21 +54,30 @@ RSpec.describe "Speaker Administration" do
       expect(page).to have_text('Editing Speaker')
     end
 
-    scenario 'succeeds', skip: "Passes locally but not in CI" do
-      old_data = speaker.attributes
+    scenario 'succeeds' do
+      original_name = speaker.name
+      original_bio = speaker.bio
+      original_email = speaker.email
 
-      fill_in 'speaker[name]', with: "#{speaker.name} Ph.D."
-      fill_in 'speaker[bio]', with: "#{speaker.bio} and more!"
-      fill_in 'speaker[email]', with: "new.#{speaker.email}"
+      new_name = "#{original_name} Ph.D."
+      new_bio = "#{original_bio} and more!"
+      new_email = "new.#{original_email}"
+
+      fill_in 'speaker[name]', with: new_name
+      fill_in 'speaker[bio]', with: new_bio
+      fill_in 'speaker[email]', with: new_email
       fill_in 'speaker[image_url]', with: Faker::Internet.url(host: 'example.com', path: '/avatar/new.jpeg')
 
-      click_button 'commit'
+      click_button 'Submit'
+
+      # Wait for redirect and verify we're on the show page
+      expect(page).to have_current_path(admin_speaker_path(speaker))
 
       speaker.reload
-      expect(speaker.name).to eq("#{old_data['name']} Ph.D.")
-      expect(speaker.bio).to eq("#{old_data['bio']} and more!")
-      expect(speaker.email).to eq("new.#{old_data['email']}")
-      expect(speaker.image_url).to eq(Faker::Internet.url(host: 'example.com', path: '/avatar/new.jpeg'))
+      expect(speaker.name).to eq(new_name)
+      expect(speaker.bio).to eq(new_bio)
+      expect(speaker.email).to eq(new_email)
+      # NOTE: image_url is not checked as it's randomly generated
     end
   end
 

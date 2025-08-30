@@ -18,14 +18,20 @@ module Admin
       @video = Video.new(video_params)
       @video.save
 
-      redirect_to admin_video_path(@video) and return if @video.id
+      if @video.id
+        redirect_to admin_video_path(@video), notice: 'Video was successfully created.'
+        return
+      end
 
       render 'new'
     end
 
     def update
       @video.update(video_params)
-      redirect_to admin_video_path(@video) and return unless @video.errors.any?
+      unless @video.errors.any?
+        redirect_to admin_video_path(@video)
+        return
+      end
 
       render 'edit'
     end
