@@ -19,19 +19,23 @@ module Admin
 
       PastEvent.transaction do
         @past_event.save
-        speaker_ids.each do |speaker_id|
-          SpeakerAssignment.create(past_event_id: @past_event.id, speaker_id:)
-        end
+        assign_speakers_to_event
       end
 
-      redirect_to admin_past_event_path(@past_event) and return if @past_event.id
+      if @past_event.id
+        redirect_to admin_past_event_path(@past_event)
+        return
+      end
 
       render 'new'
     end
 
     def update
       @past_event.update(past_event_params)
-      redirect_to admin_past_event_path(@past_event) and return unless @past_event.errors.any?
+      unless @past_event.errors.any?
+        redirect_to admin_past_event_path(@past_event)
+        return
+      end
 
       render 'edit'
     end
@@ -54,6 +58,12 @@ module Admin
 
     def speaker_ids
       params[:past_event][:speaker_ids]&.filter(&:present?)&.map(&:to_i)
+    end
+
+    def assign_speakers_to_event
+      speaker_ids.each do |speaker_id|
+        SpeakerAssignment.create(past_event_id: @past_event.id, speaker_id:)
+      end
     end
   end
 end
