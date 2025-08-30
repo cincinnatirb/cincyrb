@@ -54,15 +54,15 @@ RSpec.describe "Video Administration" do
     end
 
     scenario 'succeeds' do
-      fill_in 'video[url]', with: "#{video.url}v2"
+      new_url = "#{video.url}v2"
+      fill_in 'video[url]', with: new_url
       select other_event.topic, from: 'video[past_event_id]'
 
       click_button 'commit'
 
       video.reload
-      new_data = video.attributes
 
-      expect(new_data['url']).to end_with('v2')
+      expect(video.url).to eq(new_url)
       expect(video.past_event).to eq(other_event)
     end
   end

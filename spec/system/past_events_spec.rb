@@ -8,7 +8,9 @@ RSpec.describe "Past Events" do
     let!(:video) { create(:video, url: 'https://example.com/video/stubbing-requests', past_event:) }
 
     before do
-      stub_request(:any, /example\.com/).to_return(status: 200)
+      # Stub external requests made by the view (Gravatar images)
+      stub_request(:get, /gravatar\.com/).to_return(status: 200, body: "", headers: {})
+      # NOTE: iframe src doesn't make an actual HTTP request from the test server
       visit past_events_path
     end
 

@@ -19,8 +19,8 @@ RSpec.describe "PastEvent Administration" do
     end
 
     scenario 'can select multiple Speakers' do
-      expect(page).to have_field('past_event_date', disabled: false)
-      fill_in 'past_event_date', with: 1.day.from_now.strftime('%Y-%m-%d') # Date fields expect YYYY-MM-DD format
+      expect(page).to have_field('past_event[date]', disabled: false)
+      fill_in 'past_event[date]', with: 1.day.from_now.strftime('%Y-%m-%d') # Date fields expect YYYY-MM-DD format
       fill_in 'past_event[topic]', with: 'A Really Cool Rails Feature'
       select speaker.name, from: 'past_event[speaker_ids][]'
       select other_speaker.name, from: 'past_event[speaker_ids][]'
