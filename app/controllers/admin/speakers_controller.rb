@@ -18,7 +18,7 @@ module Admin
       @speaker = Speaker.new(speaker_params)
       @speaker.save
 
-      redirect_to admin_speaker_path(@speaker) and return if @speaker.id
+      redirect_to admin_speaker_path(@speaker), notice: 'Speaker was successfully created.' and return if @speaker.id
 
       render 'new'
     end

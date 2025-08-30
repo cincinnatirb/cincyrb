@@ -18,7 +18,7 @@ module Admin
       @video = Video.new(video_params)
       @video.save
 
-      redirect_to admin_video_path(@video) and return if @video.id
+      redirect_to admin_video_path(@video), notice: 'Video was successfully created.' and return if @video.id
 
       render 'new'
     end
