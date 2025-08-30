@@ -128,6 +128,13 @@ When adding new features:
 4. Add corresponding views using existing component patterns
 5. Write comprehensive specs covering happy path and edge cases
 6. Run RuboCop and fix any style violations
+7. **CRITICAL**: Always run `bin/ci` before committing to ensure all checks pass
+
+**NEVER COMMIT CODE WHILE THE LOCAL BUILD IS NOT PASSING**
+- Always run `bin/ci` before any commit
+- This script runs: tests, linting, gem audit, and vulnerability scanning
+- All checks must pass before committing changes
+- If `bin/ci` fails, fix all issues before committing
 
 The codebase follows standard Rails conventions with a focus on clean, maintainable code and comprehensive test coverage.
 

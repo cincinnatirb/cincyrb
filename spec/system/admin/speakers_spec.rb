@@ -24,7 +24,7 @@ RSpec.describe "Speaker Administration" do
       fill_in 'speaker[email]', with: 'jim.weirich@example.com'
       fill_in 'speaker[image_url]', with: 'https://example.com/jimweirich/images/avatar.png'
 
-      click_button 'commit'
+      click_button 'Submit'
 
       expect(page).to have_current_path(%r{/admin/speakers/\d+}) # Regex for /admin/speakers/ID
       expect(page).to have_text('Speaker was successfully created.')
@@ -58,7 +58,7 @@ RSpec.describe "Speaker Administration" do
       original_name = speaker.name
       original_bio = speaker.bio
       original_email = speaker.email
-      
+
       new_name = "#{original_name} Ph.D."
       new_bio = "#{original_bio} and more!"
       new_email = "new.#{original_email}"
@@ -68,7 +68,7 @@ RSpec.describe "Speaker Administration" do
       fill_in 'speaker[email]', with: new_email
       fill_in 'speaker[image_url]', with: Faker::Internet.url(host: 'example.com', path: '/avatar/new.jpeg')
 
-      click_button 'commit'
+      click_button 'Submit'
 
       # Wait for redirect and verify we're on the show page
       expect(page).to have_current_path(admin_speaker_path(speaker))
@@ -77,7 +77,7 @@ RSpec.describe "Speaker Administration" do
       expect(speaker.name).to eq(new_name)
       expect(speaker.bio).to eq(new_bio)
       expect(speaker.email).to eq(new_email)
-      # Note: image_url is not checked as it's randomly generated
+      # NOTE: image_url is not checked as it's randomly generated
     end
   end
 

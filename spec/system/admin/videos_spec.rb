@@ -24,7 +24,7 @@ RSpec.describe "Video Administration" do
       fill_in 'video[url]', with: url
       select past_event.topic, from: 'video[past_event_id]'
 
-      click_button 'commit'
+      click_button 'Submit'
 
       expect(page).to have_current_path(%r{/admin/videos/\d+}) # Regex for /admin/videos/ID
       expect(page).to have_text('Video was successfully created.')
@@ -58,11 +58,11 @@ RSpec.describe "Video Administration" do
       fill_in 'video[url]', with: new_url
       select other_event.topic, from: 'video[past_event_id]'
 
-      click_button 'commit'
+      click_button 'Submit'
 
       # Wait for redirect and verify we're on the show page
       expect(page).to have_current_path(admin_video_path(video))
-      
+
       video.reload
 
       expect(video.url).to eq(new_url)

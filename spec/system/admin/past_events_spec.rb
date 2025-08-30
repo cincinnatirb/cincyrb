@@ -26,7 +26,11 @@ RSpec.describe "PastEvent Administration" do
       select other_speaker.name, from: 'past_event[speaker_ids][]'
       fill_in 'past_event[description]', with: 'No, we mean it! This is a reeeeally cool Rails feature.'
 
-      click_button 'commit'
+      click_button 'Submit'
+
+      # Wait for redirect to show page
+      expect(page).to have_current_path(%r{/admin/past_events/\d+})
+      expect(page).to have_text('A Really Cool Rails Feature')
 
       new_past_event = PastEvent.last
       expect(new_past_event.topic).to eq('A Really Cool Rails Feature')
@@ -59,7 +63,10 @@ RSpec.describe "PastEvent Administration" do
       unselect first_speaker.name, from: 'past_event[speaker_ids][]'
       select other_speaker.name, from: 'past_event[speaker_ids][]'
 
-      click_button 'commit'
+      click_button 'Submit'
+
+      # Wait for redirect to show page
+      expect(page).to have_current_path(admin_past_event_path(past_event))
 
       updated_speakers = past_event.reload.speakers
       expect(updated_speakers).to include(other_speaker, remaining_speaker)
