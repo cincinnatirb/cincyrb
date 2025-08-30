@@ -19,8 +19,8 @@ RSpec.describe "PastEvent Administration" do
     end
 
     scenario 'can select multiple Speakers' do
-      expect(page).to have_field('past_event[date]', disabled: false)
-      fill_in 'past_event[date]', with: 1.day.from_now.strftime('%Y-%m-%d') # Date fields expect YYYY-MM-DD format
+      expect(page).to have_field('past_event_date', disabled: false)
+      fill_in 'past_event_date', with: 1.day.from_now.strftime('%Y-%m-%d') # Date fields expect YYYY-MM-DD format
       fill_in 'past_event[topic]', with: 'A Really Cool Rails Feature'
       select speaker.name, from: 'past_event[speaker_ids][]'
       select other_speaker.name, from: 'past_event[speaker_ids][]'
@@ -51,12 +51,20 @@ RSpec.describe "PastEvent Administration" do
     end
 
     scenario 'removes specific Speaker(s) and adds new Speaker(s)' do
-      unselect past_event.speakers.first.name, from: 'past_event[speaker_ids][]'
+      # Store the original speakers for comparison
+      original_speakers = past_event.speakers.to_a
+      first_speaker = original_speakers.first
+      remaining_speaker = original_speakers.last
+
+      unselect first_speaker.name, from: 'past_event[speaker_ids][]'
       select other_speaker.name, from: 'past_event[speaker_ids][]'
 
       click_button 'commit'
 
-      expect(past_event.reload.speakers.map(&:name).sort).to eq([other_speaker.name, past_event.speakers.last.name].sort)
+      updated_speakers = past_event.reload.speakers
+      expect(updated_speakers).to include(other_speaker, remaining_speaker)
+      expect(updated_speakers).not_to include(first_speaker)
+      expect(updated_speakers.count).to eq(2)
     end
   end
 

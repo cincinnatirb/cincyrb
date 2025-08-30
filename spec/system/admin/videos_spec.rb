@@ -60,6 +60,9 @@ RSpec.describe "Video Administration" do
 
       click_button 'commit'
 
+      # Wait for redirect and verify we're on the show page
+      expect(page).to have_current_path(admin_video_path(video))
+      
       video.reload
 
       expect(video.url).to eq(new_url)
